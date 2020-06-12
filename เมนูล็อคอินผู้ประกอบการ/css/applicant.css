@@ -1,0 +1,60 @@
+.applicant-dropdown{ float: right; margin-top: 0;}
+.dropdown-menu-applicant li a{ color: #555;}
+.pic-applicant{ margin-top: 4px; border-right: 1px solid #d1d1d1; padding: 0; padding-right: 10px; border-radius: 0;}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{ background-color: transparent;
+    border-color: 0; box-shadow: none;}
+.pic-applicant img{ transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.pic-applicant img:hover{ transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -ms-transform: scale(1.1);}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default{ background-color: transparent;}
+.pic-applicant, .dropdown-flag-1{float: left;}
+
+.dropdown-flag-1{ font-size: 1.2rem; font-size: 12px; margin-top: 12px; padding-left: 10px;}
+.dropdown-flag-1 a{ text-decoration: none; color: #555;}
+.dropdown-flag-1 ul{ min-width: 100%; right: -100%;}
+.dropdown-flag-in li{ text-align: center; font-size: 1.2rem; font-size: 12px;}
+.dropdown-flag-in li a{ padding: 3px 5px;}
+
+.dropdown-menu-applicant{ left: -100px; min-width: 100%; right: 0;}
+.dropdown-menu-applicant li a{ white-space: normal;}
+
+.text-pic-applicant{ text-align: center;}
+ul.sub-text-pic{ margin: 0; padding: 0; list-style: none; display: inline-block}
+ul.sub-text-pic li{ color: #555;}
+ul.sub-text-pic li.text-pic-img a{ background: #f47920; color: #ffffff; border-radius: 4px; padding: 0 5px; text-decoration: none; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+ul.sub-text-pic li.text-pic-img a:hover{ background: #D40101;}
+
+@media (max-width:767px){
+	.dropdown-menu-applicant{ left: -200px;}
+	.pic-applicant{ border-right: 0; margin-top: 8px;}
+	.pic-in-applicant img{ max-width: 100%; width: auto;}
+}
+
+@media (max-width:576px){
+	ul.dropdown-menu-applicant li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+@media (max-width:380px){
+	.pic-applicant{ margin-top: 5px;}
+	.dropdown-menu-applicant{ left: -200px;}
+}
+
+.focus-member{ background: #ebebeb;}
+
+.applicant-pro{ left: -10px; margin: 0 auto;}
+.applicant-only{ border-right: 0; padding-right: 0; float: none;}
+.pic-in-applicant{ text-align: center;}
+
+/* เมนู user ทางขวาของเว็ป */
+.sub-list > ul{ margin: 0; padding: 0; list-style: none;}
+.sub-list li a{ padding: 5px 0; display: block; text-decoration: none; padding: 10px 15px;}
+.sub-list li a:hover, .sub-list li a.active{ background: var(--bg-gray-young);}
+.sub-list button{ background: transparent; border: 0; padding: 5px 0; transition: 0.5s ease-in-out; width: 100%; text-align: left; padding: 10px 15px;}
+.sub-list button:hover{ background: var(--bg-gray-young);}
+
+.dropdownMenuNone{ display: none; }
+ul.listMenuBlock{ margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--bg-gray);}
+ul.listMenuBlock li{ padding-left: 15px;}
+
+.applicant-mobile{ text-align: right;}

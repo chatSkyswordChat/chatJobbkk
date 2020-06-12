@@ -1,0 +1,1476 @@
+.margin-top-1{ margin-top: 10px;}
+.border-bottom-grey-1{ border-bottom: 1px solid #BFBFBF;}
+.i-train{ background: transparent; border: 0; color: #1d8094;}
+.modal-footer{ border-top: 0;}
+.line-border{ border-bottom: 1px solid #bfbfbf; overflow: hidden; margin-bottom: 20px;}
+h2.head-head{ font-size: 20px; font-size: 2rem;}
+.table-cus{ margin-bottom: 0;}
+
+@media (max-width:576px){
+	.name-company h4{ font-size: 1.2rem; font-size: 12px;}
+	label.original{ font-size: 1.2rem; font-size: 12px;}
+	h2.head-head{ font-size: 14px; font-size: 1.4rem;}
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right { display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0); position: relative; -webkit-transition-property: color; transition-property: color; -webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;}
+.hvr-sweep-to-right:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; border-radius: 10px; background: #f6f3f2;
+	-webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transform-origin: 0 50%; transform-origin: 0 50%; -webkit-transition-property: transform;
+	transition-property: transform; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease-out;
+  	transition-timing-function: ease-out;}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active { color: #333;}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before { -webkit-transform: scaleX(1); transform: scaleX(1);}
+.hvr-sweep-to-right-owner:before{ background: #f6f3f2;}
+
+.text-green{ color: #00A403;}
+
+.jobbkk-profile-owner{ font-size: 1.2rem; font-size: 12px;}
+ul.jobbkk.profile-owner li{ margin-top: 7px;}
+ul.jobbkk.profile-owner li:first-child{ margin-top: -5px;}
+ul.jobbkk.applicant li.dropdown-flag.profile-owner-flag{ margin-top: 7px;}
+
+.jobbkk-link-text ul{ margin: 0; padding: 0; list-style: none; overflow: hidden;}
+.jobbkk-link-text ul li{ float: left; padding: 5px;}
+.jobbkk-link-text ul li:first-child{ padding-left: 0;}
+.jobbkk-link-text ul li a{ color: #555; text-decoration: none;}
+.jobbkk-link-text ul li a.text-red{ color: #D40101;}
+.jobbkk-link-text ul li a:hover{ color: #D40101;}
+
+@media (max-width:576px){
+	.jobbkk-link-text ul li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.jobbkk-border-radius{ border-radius: 10px;}
+.jobbkk-border-grey{ border: 1px solid #bfbfbf; position: relative;}
+.jobbkk-border-bottom-grey{ border-bottom: 1px solid #bfbfbf; overflow: hidden;}
+.text-data-company{ background: #f6f3f2; border-radius: 10px 10px 0 0;}
+.text-data-company ul{ margin: 0; padding: 0; list-style: none; display: inline-block; width: 100%;}
+.text-data-company ul li{ float: left; padding: 10px 0; color: #555; width: 100%; text-align: center;}
+.text-data-company ul li.top-top{ margin-top: 6px;}
+.text-data-company ul li.select-pic{ float: right;}
+.text-data-company ul li.select-pic button{ background: #f47920; border: 1px solid #f47920; border-radius: 4px; 
+	color: #ffffff; padding: 3px; font-size: 1.2rem; font-size: 12px; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.text-data-company ul li.select-pic button:hover{ background: #d40101; border: 1px solid #d40101;}
+.text-data-company ul li a{ background: #D40101; color: #ffffff; padding: 2px 10px; border-radius: 10px; 
+	text-decoration: none;}
+.text-data-company ul li a:hover{ background: #ebebeb; color: #D40101;}
+
+.text-data-company ul li.select-pic label.up-vdo{ padding: 6px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 4px; cursor: pointer; margin-bottom: 0; 
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.text-data-company ul li.select-pic label.up-vdo:hover{ background: #ebebeb; color: #d40101;}
+.text-data-company ul li.select-pic label.up-vdo input[type="file"] { display: none;}
+.text-data-company ul li.select-pic button{ background: #D40101; border: 1px solid #d40101; padding: 5px; border-radius: 4px; 
+	color: #fff;}
+
+@media (max-width:767px){
+	.text-data-company ul li{ width: 50%; text-align: inherit;}
+	.text-data-company ul li.select-pic{ text-align: right;}
+}
+
+@media (max-width:576px){
+	.text-data-company ul li label.up-vdo{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.del-pic button{ background: #d40101; color: #fff; border: 1px solid #d40101; border-radius: 4px; width: 100%; padding: 5px; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.del-pic button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #555;}
+.alert-note h6{ font-size: 1rem; font-size: 10px;}
+
+@media (max-width:767px){
+	.text-data-company ul li.choose-choose .choose-text-pic{ width: 50%;}
+	.del-pic{ text-align: right;}
+	.del-pic button{ width: auto;}
+}
+
+@media (max-width:576px){
+	.text-data-company ul li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.pic-company{ text-align: center;}
+.pic-company img{ position: relative; max-width: 150px; object-fit: scale-down;}
+
+.change-pic a{ color: #555;}
+.change-pic a:hover{ color: #D40101;}
+
+@media (max-width:768px){
+	.pic-company{ text-align: left;}
+}
+
+@media (max-width:576px){
+	.pic-company{ width: 35%;}
+}
+
+.data-adress h6{ margin-bottom: 5px;}
+.data-adress p{ font-size: 1.2rem; font-size: 12px;}
+
+@media (max-width:576px){
+	.data-adress{ width: 65%;}
+	.data-adress h6{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.see-profile{ text-align: center;}
+.see-profile a{ color: #ffffff; background: #D40101; padding: 5px 50px; border-radius: 10px; text-decoration: none;}
+.see-profile a:hover{ background: #ebebeb; color: #D40101;}
+
+@media (max-width:576px){
+	.see-profile a{ font-size: 1.2rem; font-size: 12px;}
+}
+
+@media (max-width:380px){
+	.see-profile a{ display: block;}
+}
+
+/* menu dashboard pc*/
+.nav-side-menu { overflow: auto; background-color: #ffffff; height: 100%; position: relative; color: #555;}
+.nav-side-menu .toggle-btn { display: none;}
+.nav-side-menu ul, .nav-side-menu li { list-style: none; padding: 0px; margin: 0px; cursor: pointer;}
+.nav-side-menu ul :not(collapsed) .arrow:before, .nav-side-menu li :not(collapsed) .arrow:before { font-family: FontAwesome; content: "\f078"; 
+	display: inline-block; padding-left: 10px; padding-right: 10px; vertical-align: middle; float: right;}
+.nav-side-menu ul .active, .nav-side-menu li .active { border-left: 3px solid #ffffff; background-color: #ebebeb;}
+.nav-side-menu ul .sub-menu li.active, .nav-side-menu li .sub-menu li.active { color: #555; background: #ebebeb;}
+.nav-side-menu ul .sub-menu li, .nav-side-menu li .sub-menu li { background-color: #ffffff; border: none; border-bottom: 1px solid #ebebeb; margin-left: 0px;}
+.nav-side-menu ul .sub-menu li:hover, .nav-side-menu li .sub-menu li:hover { background-color: #ebebeb;}
+.nav-side-menu ul .sub-menu li:before, .nav-side-menu li .sub-menu li:before { font-family: FontAwesome; 
+	content: "\f105"; display: inline-block; float: left; padding-left: 10px; padding-right: 10px; vertical-align: middle;}
+.nav-side-menu li { padding: 10px 0; padding-left: 0px; border-left: 3px solid #ffffff;}
+.nav-side-menu li a { text-decoration: none; color: #555;}
+.nav-side-menu li a i { padding-left: 10px; width: 20px; padding-right: 20px;}
+.nav-side-menu li:hover { border-left: 3px solid #d40101; background-color: #ebebeb; -webkit-transition: all 1s ease; -moz-transition: all 1s ease;
+  	-o-transition: all 1s ease;-ms-transition: all 1s ease; transition: all 1s ease;}
+.nav-side-menu li.active-red{ border-left: 3px solid #d40101;}
+ul.job-sub-menu li{ padding: 10px 0;}
+
+.nav-side-menu ul li.list-job-lv1 a{ display: block;}
+.nav-side-menu ul li.list-job-lv2 a{ display: block;}
+
+.dashboard-job{ display: none;}
+.dashboard-new, .dashboard-soon{ background: #d40101; padding: 1px 3px; color: #ffffff; font-size: 12px; border-radius: 4px;}
+ul.menu-dashboard li a img{ max-width: 25px; width: 15%; margin-right: 10px;}
+
+@media (max-width: 767px) {
+  	.nav-side-menu { position: relative; width: 100%; margin-bottom: 10px;}
+	.bg-side-menu{ background: #ebebeb;}
+  	.nav-side-menu .toggle-btn { display: block; cursor: pointer; position: absolute; right: 10px; top: 10px; z-index: 10 !important; padding: 3px; 
+	  background-color: #ffffff; color: #555; width: 40px; text-align: center; border-radius: 4px;}
+	.dashboard-job{ display: block;}
+	.dashboard-job h3{ padding: 12px 10px;}
+}
+
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content { display: block;}
+}
+
+@media (max-width: 576px) {
+	.dashboard-job h3{ padding: 14px 10px;}
+}
+
+.contact-sale, .pic-sale{ text-align: center;}
+.pic-sale img{ max-width: 150px; border-radius: 100%;}
+.text-sale ul{ margin: 0; padding: 0; list-style: none;}
+.text-sale ul li{ margin-bottom: 5px;}
+.text-sale ul li:first-child{ font-size: 1.6rem; font-size: 16px;}
+.text-sale img{ max-width: 20px;}
+.paymoney-click ul{ margin: 0; padding: 0; list-style: none;}
+.paymoney-click ul li a{ color: #555; text-decoration: none;}
+.paymoney-click ul li a span{ color: #D40101;}
+.paymoney-click ul li a:hover{ color: #D40101;}
+
+.welcome ul{ margin: 0; padding: 0; list-style: none; margin-bottom: 5px; overflow: hidden;}
+.welcome ul li{ float: left; font-size: 1.8rem; font-size: 18px;}
+.welcome ul li:last-child{ float: right; text-align: right; font-size: 1.4rem; font-size: 14px;}
+.welcome ul li span{ color: #D40101;}
+
+@media (max-width:576px){
+	.welcome ul li:last-child{ font-size: 1.2rem; font-size: 12px;}
+	.welcome ul li, .welcome ul li span{ font-size: 1.6rem; font-size: 16px;}
+}
+
+.jobbkk-announce-buy ul{ margin: 0; padding: 0; list-style: none; display: flex;}
+.jobbkk-announce-buy ul li{ float: left; text-align: center; width: 20%;}
+.jobbkk-announce-buy ul li a{ display: block; padding: 10px 0; text-decoration: none;}
+.pic-text{ margin-bottom: 10px;}
+.pic-text img{ max-width: 70px;}
+.pic-text p{ color: #555;}
+.pic-text p.jobbk-text-blue{ color: #0F6FC9;}
+.company-select-bg{ background: #f6f3f2; border-radius: 10px;}
+
+@media (max-width:991px){
+	.jobbkk-announce-buy ul{ display: inherit;}
+	.jobbkk-announce-buy ul li{ width: 50%;}
+}
+
+@media (max-width:767px){
+	.jobbkk-announce-buy ul{ display: flex;}
+	.jobbkk-announce-buy ul li{ width: 20%;}
+}
+
+@media (max-width:576px){
+	.jobbkk-announce-buy ul{ display: inherit;}
+	.jobbkk-announce-buy ul li{ width: 50%; font-size: 1.2rem; font-size: 12px;}
+}
+
+.bg-profile{ background: #ebebeb; overflow: hidden; border-radius: 10px 10px 0 0;}
+.bg-tone-grey{ background: #f6f3f2; overflow: hidden;}
+
+@media (max-width:991px){
+	.jobbkk-pack-user h3{ font-size: 1.8rem; font-size: 18px;}
+}
+
+.new-packages-1 ul, .new-promotion-1 ul, .new-packages-2 ul, .new-promotion-2 ul, .additional-services-1 ul, .additional-services-2 ul, .order ul, .easy-sms-1 ul, 
+.easy-sms-2 ul{ margin: 0; padding: 0; list-style: none;}
+.new-packages-1 ul li, .new-promotion-1 ul li, .additional-services-1 ul li, .additional-services-2 ul li{ margin-bottom: 5px;}
+.order{ margin-top: 10px; text-align: right;}
+.order ul li a{ background: #D40101; padding: 5px 10px; color: #ffffff; border-radius: 10px; text-decoration: none;}
+.order ul li a:hover{ background: #ebebeb; color: #D40101;}
+
+@media (max-width:576px){
+	.order ul li a{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.icon-pack-user{ margin-top: 20px; padding: 0 15px; width: 100%; overflow: hidden;}
+.icon-pack-user a{ display: block; color: #555;}
+.icon-pack-user a:hover{ color: #D40101;}
+.icon-pack-user-1 .icon-pack-user-font{ font-size: 3rem; font-size: 30px; color: #0F6FC9;}
+.icon-pack-user-2 ul{ margin: 0; padding: 0; list-style: none;}
+.icon-pack-user-2 ul li:first-child{ color: #0F6FC9;}
+.icon-new{ background: #D40101; padding: 0 5px; color: #ffffff; border-radius: 4px;}
+
+@media (max-width:767px){
+	.icon-pack-user-2{ padding-left: 15px;}
+}
+
+@media (max-width:480px){
+	.icon-pack-user-1{ width: 10%;}
+	.icon-pack-user-2{ width: 90%;}
+}
+
+@media (max-width:380px){
+	.icon-pack-user-1{ width: 15%;}
+	.icon-pack-user-2{ width: 75%;}
+}
+
+ul.alert-work{ margin: 0; padding: 0; list-style: none;}
+ul.alert-work li.alert-work-1{ float: left; font-size: 1.8rem; font-size: 18px;}
+ul.alert-work li.alert-work-1:first-child{ width: 70%;}
+ul.alert-work li.alert-work-1:last-child{ width: auto; float: right; font-size: 1.2rem; font-size: 12px;}
+
+ul.alert-lang{ margin: 0 -10px; padding: 0; list-style: none;}
+ul.alert-lang li.default-lang{ float: left; padding: 0 10px;}
+ul.alert-lang li.default-lang button{ background: transparent; border: 1px solid #d40101; border-right: 0;}
+ul.alert-lang li.alert-lang-th button{ border-radius: 4px 0 0 4px;}
+ul.alert-lang li.alert-lang-en button{ border-right: 1px solid #d40101; border-radius: 0 4px 4px 0;}
+ul.alert-lang li.default-lang button:hover{ background: #ebebeb; color: #555; border: 1px solid #ebebeb; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; 
+	-moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+ul.alert-lang li.default-lang button.active{ background: #d40101; color: #fff; border: 1px solid #d40101;}
+
+ul.alert-lang li.alert-lang-th{ padding-right: 0; color: #d40101;}
+ul.alert-lang li.alert-lang-en{ padding-left: 0; color: #d40101;}
+
+.none-none{ display: none;}
+.job-flag{ background: #ebebeb;}
+.job-flag option{ background: #fff;}
+
+@media (max-width:991px){
+	ul.alert-work li.alert-work-1:first-child{ width: 60%;}
+}
+
+@media (max-width:380px){
+	ul.alert-work li.alert-work-1:first-child{ width: 50%;}
+	ul.alert-lang{ width: 100%; text-align: right;}
+	ul.alert-lang{ margin: 0;}
+	ul.alert-lang li.default-lang:first-child{ width: 100%; margin-bottom: 5px; padding-right: 0;}
+	ul.alert-lang li.alert-lang-th{ width: 50%;}
+	ul.alert-lang li.alert-lang-en{ width: 50%; padding-right: 0;}
+	ul.alert-lang li.alert-lang-th button{ width: 100%;}
+	ul.alert-lang li.alert-lang-en button{ width: 100%;}
+}
+
+.text-form-select{ color: #555;}
+.text-form-select option{ color: #555;}
+.jobbkk-post-job ul{  margin: 0; padding: 0; list-style: none; display: flex;}
+.jobbkk-post-job ul li{ width: 50%; float: left; text-align: center; padding: 10px; color: #555; display: inline-grid;}
+.jobbkk-post-job ul li.line-red{ border-bottom: 5px solid #D40101; background: #f6f3f2;}
+
+.jobbkk-form-control{ padding-left: 10px}
+textarea.form-control.jobbkk-textarea{ height: 100px;}
+
+/*select2*/
+.select2-selection__choice__remove { display: none !important;}
+.select2-container--default .select2-selection--multiple{ border-radius: 10px; border: 1px solid #ccc;}
+.select2-container--default.select2-container--focus .select2-selection--multiple{ border: 1px solid #ccc;}
+button#all-branch, button#clear-branch{ font-size: 1.4rem; font-size: 14px;}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{margin-left: 0;}
+.checkbox, .radio{ margin-top: 0; margin-bottom: 0;}
+
+@media (max-width:991px){
+	.time-work{ margin-bottom: 10px;}
+}
+
+.push-google a{ border: 1px solid #D40101; color: #D40101; border-radius: 4px; padding: 3px 10px; text-decoration: none;}
+.push-google a:hover{ background: #D40101; color: #ffffff;}
+
+.detail-service{ background: #f7fcfd; border-radius: 10px; border: 1px solid #1d8094; padding: 10.5px 10px; margin-top: 30px; max-height: 100px; 
+	overflow-y: auto;}
+.detail-service h6{ color: #1d8094;}
+
+@media (max-width:991px){
+	.detail-service{ margin-top: 0;}
+}
+
+@media (max-width:576px){
+	.head-form-100{ width: 100%;}
+	.head-form-100.head-form-bottom{ margin-bottom: 10px;}
+	h6, .text-form-select, .jobbkk-textarea, span.text-12{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.jobbkk-save{ text-align: center;}
+.jobbkk-save ul{ display: inline-block; margin: 0 -15px; padding: 0; list-style: none;}
+.jobbkk-save ul li{ float: left; padding: 0 15px;}
+.jobbkk-save button{ display: block; padding: 5px 25px; background: #D40101; color: #ffffff; border-radius: 10px; text-decoration: none; 
+	border: 1px solid #D40101; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+.jobbkk-save button:hover{ border: 1px solid #ebebeb; color: #D40101; background: #ebebeb;}
+.jobbkk-save li:last-child button{ background: #ffffff; color: #D40101;}
+.jobbkk-save li:last-child button:hover{ background: #ebebeb;}
+
+@media (max-width:576px){
+	.jobbkk-save a{ font-size: 1.2rem; font-size: 12px;}
+}
+
+/*calendar*/
+.form-control-date{ padding-left: 10px;}
+.input-group.jobbkk-input-group{ position: relative; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; /*flex-wrap: wrap;*/ -ms-flex-align: stretch; 
+	align-items: stretch;width: 100%;}
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child){ border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control{ position: relative; -ms-flex: 1 1 auto; flex: 1 1 auto; width: 1%;
+    margin-bottom: 0;}
+.input-group-append{ margin-left: -1px;}
+.input-group-append, .input-group-prepend{ display: flex; display: -ms-flexbox;}
+.btn-border{ border: 1px solid #ccc;}
+.input-group-append .btn, .input-group-prepend .btn{ position: relative; z-index: 2;}
+.btn-outline-secondary.disabled, .btn-outline-secondary:disabled{ color: #6c757d; background-color: transparent;}
+.btn.disabled, .btn:disabled{ opacity: .65;}
+.btn-outline-secondary { color: #6c757d; background-color: transparent; background-image: none; border-color: #6c757d;}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text{ border-top-left-radius: 0; border-bottom-left-radius: 0;}
+
+@media (max-width:576px){
+	.jobbkk-calendar{ width: 100%;}
+}
+
+.box-mail input[type="email"]{ height: 34px; border-radius: 10px; border: 1px solid #9e9e9e; padding: 6px 12px; width: 50%; margin-right: 5px;}
+
+@media (max-width:576px){
+	.box-mail input[type="email"]{ width: 100%; margin-bottom: 10px; font-size: 1.2rem; font-size: 12px;}
+	.box-mail span{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.jobbkk-send-ex{ text-align: center;}
+ul.send-ex{ margin: 0; padding: 0; list-style: none; display: flex;}
+ul.send-ex li{ float: left; width: 25%; padding-right: 10px; margin-bottom: 10px; display: inline-grid;}
+ul.send-ex li:last-child{ padding-right: 0;}
+ul.send-ex li a{ padding: 5px 10px; background: #D40101; color: #ffffff; border-radius: 10px; border: 1px solid #D40101; text-decoration: none; display: block;}
+ul.send-ex li a:hover{ background: #ebebeb; color: #D40101; border: 1px solid #ebebeb;}
+
+@media (max-width:767px){
+	ul.send-ex{ display: inherit;}
+	ul.send-ex li{ width: 50%;}
+	ul.send-ex li:nth-child(2){ padding-right: 0;}
+	ul.send-ex li a{ font-size: 1.2rem; font-size: 12px; display: block;}
+}
+
+@media (max-width:320px){
+	ul.send-ex li a{ font-size: 1rem; font-size: 10px;}
+}
+
+.box-contact{ border: 1px solid #DBDBDB; border-radius: 10px; padding: 10px; overflow: hidden;}
+.line-contact ul{ margin: 0 0 0 -10px; padding: 0; list-style: none; overflow: hidden;}
+.line-contact ul li{ float: left; border-right: 1px solid #DBDBDB; padding: 0 10px;}
+.line-contact ul li:last-child{ border-right: 0;}
+
+@media (max-width:576px){
+	.line-contact ul li{ width: 100%; padding: 0 0 10px; border-right: 0; font-size: 1.2rem; font-size: 12px;}
+}
+
+.jobbkk-push-print{ text-align: center;}
+.jobbkk-push-print ul{ display: inline-block; margin: 0; padding: 0; list-style: none;}
+.jobbkk-push-print ul li{ float: left; padding: 10px;}
+.jobbkk-push-print ul li button{ background: #D40101; border: 1px solid #D40101; border-radius: 4px; padding: 5px 10px; color: #ffffff; 
+	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.jobbkk-push-print ul li:last-child button{ background: #ebebeb; color: #555; border: 1px solid #ebebeb;}
+.jobbkk-push-print ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #D40101;}
+
+@media (max-width:576px){
+	.jobbkk-push-print ul{ display: flex;}
+	.jobbkk-push-print ul li{ font-size: 1.2rem; font-size: 12px; width: 50%; display: inline-grid;}
+	.jobbkk-push-print ul li:first-child{ padding-left: 0;}
+	.jobbkk-push-print ul li:last-child{ padding-right: 0;}
+}
+
+.bg-time-view-job{ height: 350px; overflow-y: auto;}
+.bg-time-view-job::-webkit-scrollbar{ width: 5px; background-color: #7D7979;}
+.bg-time-view-job::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;  }
+.bg-time-view-job::-webkit-scrollbar-thumb { background-color:#7D7979;}
+.view-job{ padding-left: 0;}
+.time-job{ padding-right: 0; text-align: right;}
+.view-job ul, .time-job ul{ margin: 0; padding: 0; list-style: none;}
+.view-job ul li a{ display: inline-block; color: #D40101;}
+.time-job ul li{ color: #0F6FC9; font-size: 1.2rem; font-size: 12px;}
+
+.select-only ul{ margin: 0; padding: 0; list-style: none;}
+.select-only ul li{ float: left; padding: 0 5px 5px 0; color: #ffffff;}
+.select-only ul li button{ background: #D40101; border: 1px solid #d40101; padding: 5px 5px; border-radius: 4px;}
+
+@media (max-width:576px){
+	.select-only ul li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.jobbkk-exclamation{ overflow: hidden; margin-bottom: 8px;}
+.jobbkk-exclamation ul{ margin: 0; padding: 0; list-style: none;}
+.jobbkk-exclamation ul li{ float: left; color: #555; font-size: 14px;}
+.jobbkk-exclamation ul li:first-child{ width: 90%;}
+.jobbkk-exclamation ul li:last-child{ width: 10%; text-align: right;}
+.jobbkk-exclamation ul li button{ background: transparent; border: 0; color: #333; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.jobbkk-exclamation ul li button:hover{ color: #D40101;}
+
+.original{ font-weight: normal; margin-bottom: 0;}
+
+@media (max-width:991px){
+	.original-remove{ margin-bottom: 0;}
+}
+
+@media (max-width:576px){
+	.show-email{ margin-bottom: 20px;}
+}
+
+button.default-ex{ background: transparent; border: 0; color: #333; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+button.default-ex:hover{ color: #D40101;}
+
+@media (max-width:991px){
+	.money-management{ margin-bottom: 20px;}
+}
+
+.mark-red{ font-size: 1.2rem; font-size: 12px;}
+
+textarea.form-control.jobbkk-textarea-1{ height: 34px;}
+.job-remove-height{ height: 92px;}
+.job-remove-height-1{ height: 109px;}
+
+@media (max-width:991px){
+	.job-remove-height, .job-remove-height-1{ height: auto;}
+}
+
+/*.work-complete ul{ margin: 0; padding: 15px; list-style: none; text-align: center; background: #f6f3f2; border: 1px solid #ddd;*/
+	/*border-radius: 10px;}*/
+/*.work-complete ul li:first-child{ font-size: 2rem; font-size: 20px; margin-bottom: 10px; color: #D40101;}*/
+.work-complete{ background: #f6f3f2; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; padding: 15px;}
+.text-text{ text-align: right;}
+.text-sub-sub{ text-align: left; padding-left: 0;}
+.push-work{ margin: 20px 0}
+.push-work a{ color: #0F6FC9; text-decoration: underline;}
+
+.complete-recomment ul{ margin: 0; padding: 0; list-style: none; text-align: center;}
+.complete-recomment ul li{ color: #0F6FC9;}
+
+.jobbkk.applicant.profile-owner li a:hover{ background: transparent;}
+
+.file-map ul{ margin: 0; padding: 0; list-style: none; display: flex;}
+.file-map ul li{ float: left; width: 50%; display: inline-grid; padding-right: 10px; text-align: center; font-size: 1.4rem; font-size: 14px; color: #555; 
+position: relative;}
+.file-map ul li.select-pic label.up-vdo{ padding: 10px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 10px; cursor: pointer; margin-bottom: 0; width: 100%;
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.file-map ul li.select-pic label.up-vdo input[type="file"] { display: none;}
+.file-map ul li.select-pic label.up-vdo:hover{ background: #ebebeb; color: #d40101;}
+.file-map ul li:last-child{ padding-right: 0; background: #f7fcfd; border-radius: 10px; border: 1px solid #1d8094; padding: 8px; font-size: 12px; font-size: 1.2rem;}
+
+.select-pic{ text-align: center;}
+.select-pic label.up-vdo{ padding: 10px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 10px; cursor: pointer; margin-bottom: 0; width: 100%;
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.select-pic label.up-vdo input[type="file"] { display: none;}
+.select-pic label.up-vdo:hover{ background: #ebebeb; color: #d40101;}
+
+@media (max-width:991px){
+.file-map ul{ display: inherit;}
+.file-map ul li{ width: 100%; float: none; display: inherit; padding-right: 0; margin-bottom: 10px;}
+}
+
+@media (max-width:767px){
+.file-map ul{ display: flex;}
+.file-map ul li{ width: 100%; float: left; display: inline-grid; padding-right: 10px; margin-bottom: 0;}
+}
+
+@media (max-width:576px){
+	.file-map ul li label.up-vdo, .select-pic label.up-vdo{ font-size: 1.2rem; font-size: 12px;}
+}
+
+@media (max-width:320px){
+.file-map ul{ display: inherit;}
+.file-map ul li{ width: 100%; float: none; display: inherit; padding-right: 0; margin-bottom: 10px;}
+}
+
+.file-register button{ background: #f47920; border-radius: 10px; color: #ffffff; border: 1px solid #f47920; padding: 6.5px; width: 100%;
+transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.file-register button:hover{ background: #f6f3f2; color: #d40101; border: 1px solid #f6f3f2;}
+
+@media (max-width:576px){
+.jobbkk-file-register{ width: 100%;}
+}
+
+.map-google ul{ margin: 0; padding: 0; list-style: none; display: flex;}
+.map-google ul li{ float: left; width: 50%; padding-right: 10px; display: inline-grid;}
+.map-google ul li button{ width: 100%; padding: 6.5px;}
+.map-google ul li:first-child button{ background: #f47920; border-radius: 10px; color: #ffffff; border: 1px solid #f47920;
+transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.map-google ul li:last-child button{ background: #f6f3f2; color: #555; border: 1px solid #f6f3f2; border-radius: 10px;
+transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+
+.map-google ul li:first-child:hover button{ background: #f6f3f2; color: #d40101; border: 1px solid #f6f3f2;}
+.map-google ul li:last-child:hover button{ background: #ebebeb; color: #d40101; border: 1px solid #ebebeb;}
+
+@media (max-width:576px){
+.jobbkk-map-google{ width: 100%;}
+}
+
+@media (max-width:320px){
+.jobbkk-map-google{ width: 100%;}
+.map-google ul{ margin: 0; padding: 0; list-style: none; display: inherit;}
+.map-google ul li{ float: nonr; width: 100%; padding-right: 0; display: inherit; margin-bottom: 10px;}
+}
+
+.padding-hide{ padding: 15px 0;}
+.detail-service-top{ margin-top: 10px;}
+.work-only-use a{ display: block; background: #f47920; padding: 5px 10px; border-radius: 10px; text-align: center; color: #ffffff; text-decoration: none;}
+.work-only-use a:hover{ background: #f6f3f2; color: #D40101;}
+
+.top-company{ margin-top: 20px;}
+
+.slide-theme ul{ margin: 0; padding: 0; list-style: none;}
+.slide-theme ul li{ float: left;}
+.slide-theme ul li:first-child{ width: 80%;}
+.slide-theme ul li:last-child{ text-align: right; width: 20%;}
+.slide-theme ul li a{ display: block; color: #555; text-decoration: none;}
+.slide-theme ul li a:hover{ color: #D40101;}
+
+.bg-pic-small{ background: #ebebeb; overflow: hidden;}
+ul.pic-small-small{ margin: 0 -5px; padding: 0; list-style: none;}
+ul.pic-small-small li.small-small{ width: 20%; float: left; padding: 0 5px;}
+.image-e{ margin-right: 5px;}
+
+@media (max-width:991px){
+ul.pic-small-small li.small-small{ width: 50%; margin-bottom: 20px;}
+}
+
+@media (max-width:767px){
+ul.pic-small-small li.small-small{ width: 33.3333333%;}
+}
+
+@media (max-width:380px){
+ul.pic-small-small li.small-small{ width: 50%;}
+}
+
+@media (max-width:290px){
+ul.pic-small-small li.small-small{ width: 100%;}
+}
+
+ul.pic-small-small-1 li.small-small{ width: 25%;}
+ul.pic-small-small-1{ margin: 0; padding: 0; list-style: none;}
+ul.pic-small-small-1 li{ float: left; padding: 10px 5px; font-size: 1.2rem; font-size: 12px;}
+ul.pic-small-small-1 li.select-pic label.up-vdo{ padding: 6px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 4px; cursor: pointer; margin-bottom: 0; 
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+ul.pic-small-small-1 li.select-pic label.up-vdo:hover{ background: #ebebeb; color: #d40101;}
+ul.pic-small-small-1 li.select-pic label.up-vdo input[type="file"] { display: none;}
+ul.pic-small-small-1 li.select-pic button{ background: #D40101; border: 1px solid #d40101; padding: 5px; border-radius: 4px; color: #fff;}
+ul.pic-small-small-1 li button{ border: 0; background: transparent;}
+ul.pic-small-small-1 li:last-child{ float: right; font-size: 14px; font-size: 1.4rem; margin-top: 5px;}
+
+.panel{ box-shadow: 0 0 0 rgba(0,0,0,.0);}
+
+@media (max-width:576px){
+	ul.pic-small-small-1 li.select-pic label.up-vdo, ul.pic-small-small-1 li:last-child{ font-size: 1.2rem; font-size: 12px;}
+}
+
+@media (max-width:991px){
+ul.pic-small-small-job li.small-small{ width: 50%;}
+}
+
+@media (max-width:767px){
+ul.pic-small-small-job li.small-small{ width: 25%;}
+}
+
+@media (max-width:576px){
+ul.pic-small-small-job li.small-small{ width: 50%;}
+}
+
+@media (max-width:290px){
+ul.pic-small-small-job li.small-small{ width: 100%;}
+}
+
+.mem-cancel{text-align: center;}
+.mem-cancel ul{ margin: 0; padding: 0; list-style: none; display: inline-block;}
+.mem-cancel ul li{ float: left; padding: 0 10px;}
+.mem-cancel ul li button{ background: #D40101; border: 1px solid #D40101; border-radius: 4px; padding: 5px 15px; color: #ffffff; transition: all 0.3s ease-in;
+-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.mem-cancel ul li:first-child button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #D40101;}
+.mem-cancel ul li:last-child button{ background: #ffffff; border: 1px solid #bfbfbf; color: #555;}
+.mem-cancel ul li:last-child button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #D40101;}
+
+@media (max-width:320px){
+.jobbkk-graph{ width: 100%;}
+}
+
+.bg-text-graph{ padding: 15px; background: #ebebeb; border: 1px solid #bfbfbf; border-radius: 10px;}
+a.button-graph{ background: #d40101; padding: 5px 10px; border-radius: 4px; text-decoration: none; color: #ffffff; margin-left: 5px; display: inline-block;}
+a.button-graph:hover{ background: #ebebeb; color: #D40101;}
+
+.focus-member{ background: #ebebeb;}
+.sub-list li a{ padding: 5px 15px; display: block; text-decoration: none;}
+
+.block-pic{ position: relative; display: inline-block;}
+.box-circle{ width: auto; position: absolute; top: 5px; right: 0; z-index: 99;}
+.box-circle .chart{ position: relative; width: 80px; height: 80px; margin: 0 auto; text-align: center; font-size: 18px; line-height: 4.5; color: #555;
+background: #ffffff; border-radius: 50%; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in;
+-ms-transition:all 0.3s ease-in;}
+.box-circle .chart:hover{  -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+.box-circle canvas{ position: absolute; top: 0; left: 0; right: 0;}
+
+.has-feedback .form-control-mail{ width: 50%; float: left; padding-left: 10px; margin-right: 10px;}
+.minus-feed{ margin: 8px 0 0 -35px; position:absolute; color: #D40101; cursor: pointer;}
+.box-view{ margin-top: 5px;}
+
+@media (max-width:576px){
+	.has-feedback .form-control-mail{ width: 100%;}
+}
+
+button.plus-email{ background: #f47920; padding: 5px 15px; border-radius: 4px; border: 1px solid #f47920; color: #ffffff; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+button.plus-email:hover{ background: #ebebeb; color: #D40101; border: 1px solid #ebebeb;}
+
+.job-emai-padding{
+	padding-left: 10px;
+}
+.job-email-margin{
+	margin-top: 15px;
+}
+
+/*ค้นหาตำแหน่งงาน*/
+.form-control.form-control-search{ width: 100%; padding-left: 10px;}
+.btn-position{ background: #ebebeb; border: 1px solid #bfbfbf; border-left: 0; border-radius: 0 10px 10px 0;}
+.btn-position button{ transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.btn-position button:hover{ background: #ebebeb; border-radius: 0 10px 10px 0; border-left: 1px solid #bfbfbf;}
+
+/*เพื่อประโยชน์สูงสุดในการประกาศงานของท่านสมาชิก*/
+.announce-benefit{ padding: 15px; text-align: center; border-radius: 10px; margin-left: 0;}
+
+/*ลบ อัพเดต ออนไลน์ ออฟไลน์ เครดิตเหลือ*/
+.jobbkk-list-custom ul{ margin: 0-10px; padding: 0; list-style: none;}
+.jobbkk-list-custom ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
+.jobbkk-list-custom ul li:last-child{ border-right: 0;}
+.jobbkk-list-custom ul li span{ color: #d40101;}
+.jobbkk-list-custom ul li button{ color: #555; background: transparent; border: 0; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.jobbkk-list-custom ul li button:hover{ color: #d40101;}
+
+@media (max-width:991px){
+	.jobbkk-list-custom ul li{ width: 25%; text-align: center;}
+	.jobbkk-list-custom ul li h6{ background: #ebebeb; display: inline-block; padding: 5px; border-radius: 4px;}
+}
+
+@media (max-width:576px){
+	.jobbkk-list-custom ul li{ font-size: 12px; font-size: 1.2rem;}
+}
+
+@media (max-width:380px){
+	.jobbkk-list-custom ul li{ width: 50%; margin-bottom: 10px;}
+	.jobbkk-list-custom ul li:last-child{ margin: 0;}
+	.jobbkk-list-custom ul li:nth-child(2){ border-right: 0;}
+}
+
+label.bottom-zero{ margin-bottom: 0;}
+thead tr th.td-position, tbody tr td.td-position{ text-align: center;}
+tbody tr td a.position-work{ color: #0F6FC9; text-decoration: none;}
+tbody tr td button.red-offline{ background: #d40101; border: 0; color: #fff; padding: 0 3px; border-radius: 4px;}
+tbody tr td button.green-online{ background: #2FA71D; border: 0; color: #fff; padding: 0 3px; border-radius: 4px;}
+tbody tr td ul{ list-style: none; padding: 0; margin: 0}
+tbody tr td ul li a.manage{ color: #0F6FC9; text-decoration: none; display: block;}
+tbody tr td ul li a.red-offline{ color: #d40101;}
+tbody tr td ul li a.green-online{ color: #2FA71D;}
+tbody tr td ul li button{ width: 100%;}
+tbody tr td ul li button.open-premium, tbody tr td ul li button.close-premium{ background: transparent; border: 0; padding: 3px 20px; text-align: left;}
+tbody tr td ul li button.open-premium{ color: #2FA71D;}
+tbody tr td ul li button.close-premium{ color: #d40101;}
+tbody tr td ul li button.open-premium:hover, tbody tr td ul li button.close-premium:hover{ background: #ebebeb; 
+	color: #262626;}
+.the-lock{ color: #555;}
+
+.table-responsive::-webkit-scrollbar{ height: 10px; background-color: #7D7979; margin-top: 15px;}
+.table-responsive::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5;}
+.table-responsive::-webkit-scrollbar-thumb { background-color:#7D7979; border-radius: 20px;}
+
+/*
+@media (max-width:576px){
+	thead tr th, tbody tr td, tbody tr td button{ font-size: 12px; font-size: 1.2rem;}
+}
+*/
+
+@media (max-width:767px){
+	.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th
+	{ padding: 5px 15px;}
+}
+
+/*popup ออฟไลน์ ออนไลน์ พรีเมียม*/
+.modal-header{ background: #d40101; border-radius: 10px 10px 0 0;}
+.modal-content{ border-radius: 10px;}
+.modal-header h4{ text-align: center; color: #fff;}
+
+/*แสดงผล*/
+.display-show{ width: auto; padding-left: 10px; height: 30px; padding: 0 12px; margin-top: -5px; margin-left: 5px;}
+.list-all{ text-align: right;}
+.list-all-center{ text-align: center;}
+
+@media (max-width:320px){
+ 	.display-show-show, .list-all{ width: 100%; text-align: center;}
+	.display-show-show h6{ text-align: right;}
+	.display-show-show h6, .display-show{ width: 40%;}
+}
+
+/*สัญลักษณ์ไอคอน ว่าแสดงสถานะอะไร*/
+span.green-online{ color: #2FA71D;}
+span.red-offline{ color: #d40101;}
+span.the-lock{ color: #555;}
+.status-icon ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.status-icon ul li{ float: left; padding: 0 10px; margin-bottom: 10px;}
+
+@media (max-width:576px){
+	.status-icon ul li{ font-size: 12px; font-size: 1.2rem;}
+}
+
+/*ปุ่ม mail job hilight*/
+.nav-tabs>li>a{ padding: 10px 15px;}
+.jobbkk-suggestion{ margin-top: 40px;}
+.nav-suggestion{ border-bottom: 0;}
+.nav-suggestion>li:first-child{ border-radius: 10px 0 0 10px;}
+.nav-suggestion>li:last-child{ border-radius: 0 10px 10px 0;}
+.nav-suggestion>li.active:first-child>a, .nav-suggestion>li.active:first-child>a:focus, .nav-suggestion>li.active:first-child>a:hover{ border-radius: 10px 0 0 10px;}
+.nav-suggestion>li:first-child>a{ border-radius: 10px 0 0 10px;}
+.nav-suggestion>li:last-child>a{ border-radius: 0 10px 10px 0;}
+.nav-tabs>li{ min-width: inherit;}
+
+@media (max-width:991px){
+	.nav-tabs>li{ width: 50%;}
+	.nav-suggestion>li.reports{ border-radius: 0;}
+	.nav-suggestion>li.reports.active:first-child a, .nav-suggestion>li.reports.active a{ border-radius: 0;}
+	.nav-suggestion>li.reports:nth-child(3){ border-left: 1px solid #bfbfbf;}
+}
+
+@media (max-width:767px){
+	.nav-tabs>li:first-child { border-left: 1px solid #bfbfbf;}
+}
+
+@media (max-width:320px){
+	.nav-tabs>li>a{ padding: 10px 5px;}
+}
+
+/*ตำแหน่งงานที่ลบ*/
+.jobbkk-list-custom ul li.no-border{ border-right: 0;}
+.jobbkk-list-custom ul li span.circle{ border-radius: 50%; background: #d40101; width: 22px; text-align: center; color: #fff; display: inline-block; font-size: 12px; font-size: 1.2rem; padding: 2px;}
+span.red-offline{ background: #d40101; border: 0; color: #fff; padding: 0 5px; border-radius: 4px;}
+span.green-online{ background: #2FA71D; border: 0; color: #fff; padding: 0 5px; border-radius: 4px;}
+
+@media (max-width:991px){
+	.jobbkk-list-del ul li{ width: auto; text-align: left;}
+	.jobbkk-list-del ul li:last-child{ margin-top: 0; width: auto;}
+}
+
+/*ลบ เครดิต เหลือวันใช้งาน*/
+.job-del h6 button{ color: #555; background: transparent; border: 0; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.job-del h6 button:hover{ color: #d40101;}
+.job-credit{ margin-bottom: 20px;}
+.job-credit ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
+.job-credit ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
+.job-credit ul li:last-child{ border-right: 0;}
+
+@media (max-width:576px){
+	.nav-del>li:first-child, .nav-del>li.active:first-child>a, .nav-del>li.active:first-child>a:focus, .nav-del>li.active:first-child>a:hover,
+	.nav-del>li:last-child, .nav-del>li:last-child>a{ border-radius: 0;}
+	.nav-del>li:nth-child(3){ border-left: 1px solid #bfbfbf;}
+	.job-credit ul li{ font-size: 12px; font-size:1.2rem;}
+}
+
+@media (max-width:380px){
+	.job-del, .job-credit{ width: 100%;}
+	.job-del{ margin-bottom: 10px;}
+}
+
+/*easy sms*/
+.label-box{ width: 20px;}
+.manage-sms{ background: transparent; border: 0; color: #0F6FC9;}
+
+/*modal ผู้ติดต่อ*/
+.head-contact{ text-align: right; margin-top: 5px;}
+
+@media (max-width:767px){
+	.head-contact{ text-align: left;}
+}
+
+/*สร้างใหม่ ชื่อ มือถือ*/
+.bg-create{ background: #ebebeb; border-radius: 10px; padding: 15px;}
+.box-cre{ margin-bottom: 20px;}
+.name-1{ text-align: right; margin-top: 5px;}
+.name-1-ex{ margin-top: 0;}
+.name-2, .name-3, .name-1-ex{ padding-left: 0;}
+.name-3 button{ background: #d40101; color: #fff; border: 0; border-radius: 10px; padding: 7.4px 5px; width: 100%;}
+.sms-excel button{ color: #d40101; background: #fff; border: 1px solid #d40101; border-radius: 10px;
+	width: 100%; padding: 7.4px 0; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.sms-excel button:hover{ background: #d40101; color: #fff; border: 1px solid #d40101;}
+
+@media (max-width:991px){
+	.name-1{ text-align: left;}
+	.name-2, .name-1-ex{ padding-left: 15px;}
+	.name-3{ padding-left: 15px;}
+}
+
+@media (max-width:767px){
+	.name-3-ex{ margin-top: 0;}
+	.name-3-ex1{ margin-top: 10px;}
+}
+
+@media (max-width:576px){
+	.name-1, .name-2, .name-3, .box-cre{ width: 100%;}
+	.name-3-ex{ margin-top: 10px;}
+}
+
+/*กลุ่ม จำนวน*/
+a.group, a.how-group{ color: #0F6FC9; text-decoration: none;}
+a.group:hover, a.how-group:hover{ color: #d40101;}
+
+/*แก้ไข เพิ่ม*/
+.correct-add{ text-align: center;}
+.correct-add ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
+.correct-add ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
+.correct-add ul li:last-child{ border-right: 0;}
+.correct-add ul li a{ display: block; text-decoration: none;}
+.correct-add ul li a.correct{ color: #2FA71D;}
+.correct-add ul li a.add{ color: #0F6FC9;}
+.correct-add ul li a.correct:hover, .correct-add ul li a.add:hover{ color: #d40101;}
+
+.send-sms a{ display: inline-block; text-align: center; background: #0F6FC9; color: #fff; border-radius: 4px; 
+	padding: 0 5px; text-decoration: none;}
+.send-sms a:hover{ background: #d40101;}
+
+/*จากสมุดโทรศัพท์ รายชื่อ*/
+.name-contact{ text-align: right;}
+.box-phone{ height: 150px; overflow-y: scroll; overflow-x: hidden; border: 1px solid #bfbfbf; padding: 10px 0;}
+.box-phone::-webkit-scrollbar-track{ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5;}
+.box-phone::-webkit-scrollbar{ width: 5px; background-color: #7D7979;}
+.box-phone::-webkit-scrollbar-thumb{ background-color:#7D7979;}
+
+@media (max-width:767px){
+	.name-contact{ text-align: left; padding-left: 30px; margin-bottom: 10px;}
+}
+
+/*เพิ่มรายชื่อใหม่*/
+.row-addname{ text-align: right; margin-top: 5px;}
+
+@media (max-width:767px){
+	.row-addname{ text-align: left; margin-top: 5px;}
+}
+
+/*ส่งข้อความ*/
+.send-left{ text-align: right; margin-top: 5px;}
+.add-name-contact button, .add-group-contact button{ border-radius: 10px; padding: 6.4px 5px; width: 100%; 
+	color: #fff; 	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+.add-name-contact button{ background: #d40101; border: 1px solid #d40101;}
+.add-group-contact button{ background: #0F6FC9; border: 1px solid #0F6FC9;}
+.add-name-contact button:hover, .add-group-contact button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #555;}
+
+textarea.area-message{ width: 100%; border-radius: 10px; padding: 10px; height: 200px;}
+p.note-message{ font-size: 12px; font-size: 1.2rem; color: #d40101; margin-bottom: 10px;}
+.send-message-now{ text-align: center;}
+.send-message-now button{ background: #d40101; border: 1px solid #D40101; color: #fff; padding: 5px 15px; border-radius: 4px;}
+
+@media (max-width:1199px){
+	.group-phone{ margin-bottom: 10px;}
+}
+
+@media (max-width:767px){
+	.send-left{ text-align: left;}
+}
+
+@media (max-width:576px){
+	.add-name-contact button, .add-group-contact button{ font-size: 12px; font-size: 1.2rem;}
+}
+
+/*ประวัติการส่ง*/
+.go-go button{ background: #d40101; color: #fff; border-radius: 10px; border: 0; padding: 7.4px 15px; width: 100%;}
+.calendar-date{ border-radius: 10px !important;}
+.no-left{ padding-left: 0; text-align: right; margin-top: 5px;}
+.no-top{ margin-top: 0;}
+.no-right{ padding-right: 0;}
+
+.small-font{ font-size: 12px; font-size: 1.2rem; color: #d40101;}
+.text-note{ text-align: right; margin-top: 5px;}
+.download button{ width: 100%; background: #d40101; border-radius: 10px; padding: 5px 10px; border: 1px solid #d40101; 
+	color: #fff; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.download button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #555;}
+
+.text-green-on{ color: #2FA71D;}
+.text-red-off{ color: #d40101;}
+
+@media (max-width:991px){
+	.sort-for{ margin-bottom: 10px;}
+	.text-note{ text-align: left;}
+}
+
+@media (max-width:767px){
+	.no-right-tab{ padding-right: 15px;}
+	.text-note{ margin-bottom: 10px;}
+}
+
+@media (max-width:576px){
+	.calendar-tab{ width: 100%; margin-bottom: 10px;}
+	.go-go{ width: 100%;}
+	.no-left{ padding-left: 15px;}
+}
+
+
+/*ชื่อบัญชีหลัก*/
+.name-account{ margin-bottom: 10px;}
+.lang-sec ul{ margin: 0 -10px 0 5px; padding: 0; list-style: none;}
+.lang-sec ul li{ float: left; padding: 0 10px;}
+
+@media (max-width:576px){
+	.receive-new{ font-size: 12px; font-size: 1.2rem;}
+}
+
+/*แก้ไข บูทแทปทัวร์*/
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){ padding: 5px; font-size: 14px; font-size: 1.4rem;}
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){ padding: 5px; font-size: 14px; font-size: 1.4rem;}
+.btn-sm.btn-danger{ padding: 5px; font-size: 14px; font-size: 1.4rem;}
+
+/*สั่งซื้อสิทธิการใช้งานเพิ่มเติม*/
+.box-purchase-order{ text-align: center;}
+a.purchase-order{ padding: 5px 10px; text-align: center; background: #fff; border: 1px solid #d40101; color: #d40101; border-radius: 10px; text-decoration: none;}
+a.purchase-order:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+
+/*บริการช่วยเหลือ ช่วยเหลือ*/
+.frame-frame{ border: 1px solid #bfbfbf; overflow: hidden; border-radius: 10px; padding: 10px;}
+.help-help ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.help-help ul li{ padding: 0 10px;}
+.help-help ul li a{ color: #555;}
+.help-help ul li a:hover{ color: #d40101;}
+
+@media (max-width:576px){
+	.help-help ul li a{ font-size: 12px; font-size: 1.2rem;}
+}
+
+/*เข้าสู่ระบบ*/
+.enter-system{ text-align: center; margin-top: 10px;}
+.enter-system button{ background: #d40101; padding: 5px 10px; border: 0; border-radius: 4px; color: #fff; 
+	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.enter-system button:hover{ background: #ebebeb; color: #555;}
+
+/*ตรวจสอบ*/
+.investigate button{ background: #d40101; padding: 7.4px 10px; border: 0; border-radius: 4px; color: #fff; 
+	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.investigate button:hover{ background: #ebebeb; color: #555;}
+
+@media (max-width:380px){
+	.name-investigate, .investigate{ width: 100%;}
+	.investigate{ text-align: center; margin-top: 10px;}
+}
+
+/*กรุณากรอกข้อมูลของท่านเพื่อทำการเช็คประวัติ*/
+td.remove-button button{ background: #2FA71D; border: 0; border-radius: 4px; padding: 2px 5px; color: #fff; 
+	transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+td.remove-button button:hover{ background: #ebebeb; color: #555;}
+
+/*ใบสมัครงานโดยผู้สมัคร*/
+.position-work-work{ margin-top: 5px; padding-right: 0;}
+.box-position-work-work{ padding-left: 0;}
+
+@media (max-width:991px){
+	.position-work-work{ padding-right: 15px;}
+	.box-position-work-work{ padding-left: 15px;}
+}
+
+.jobbkk-list-complaint{ margin-top: 5px;}
+.jobbkk-list-complaint ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.jobbkk-list-complaint ul li{ float: left; padding: 0 10px; border-right: 1px solid #bfbfbf;}
+.jobbkk-list-complaint ul li:last-child{ border-right: 0;}
+.jobbkk-list-complaint ul li button{ background: transparent; border: 0; color: #555; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.jobbkk-list-complaint ul li button:hover{ color: #d40101;}
+
+@media (max-width:991px){
+	.jobbkk-list-complaint{ margin-bottom: 10px;}
+}
+
+@media (max-width:576px){
+	.jobbkk-list-complaint ul li button{ font-size: 12px; font-size: 1.2rem;}
+}
+
+span.sq-gray{ color: #555;}
+td.user-apply ul{ margin: 0; padding: 0; list-style: none;}
+td.user-apply ul li a{ display: inline-block; color: #0F6FC9;}
+.progress-bar-cus{ background: #f47920;}
+
+td.user-apply ul li.confirm-tel-mail ul{ margin: 0 -5px; padding: 0; list-style: none;}
+td.user-apply ul li.confirm-tel-mail ul li{ float: left; padding: 0 5px;}
+td.user-apply ul li.confirm-tel-mail ul li.use-confirm{ color: #2FA71D;}
+td.user-apply ul li.confirm-tel-mail ul li.no-confirm{ color: #bfbfbf;}
+
+td.interview button{ background: #f47920; color: #fff; padding: 2px 5px; border: 0; border-radius: 4px; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+td.interview button:hover{ background: #d40101;}
+
+.block-day-time{ margin-bottom: 30px;}
+.form-control.form-control-day-time{ width: 100%; background: #fff; padding-left: 15px;}
+.bootstrap-datetimepicker-widget{ width: 100% !important; overflow-x: scroll; bottom: 0;}
+.table-condensed{ width: 100%; text-align: center;}
+.picker-switch{ text-align: center;}
+th.prev, th.next{ text-align: center;}
+th.dow{ text-align: center;}
+
+/*ขั้นตอนการนัดสัมภาษณ์*/
+.td-green{ color: #2FA71D;}
+.td-red{ color: #d40101;}
+td.td-management ul{ margin: 0 -10px; padding: 0; list-style: none;}
+td.td-management ul li button.interview-tracking{ background: #d40101; border: 1px solid #d40101; border-radius: 4px; color: #fff; margin-bottom: 10px;}
+td.td-management ul li button.interview{ background: #fff; border: 1px solid #d40101; border-radius: 4px; color: #d40101;}
+td.td-management ul li button{ width: 100%; padding: 3px; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+td.td-management ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #555;}
+
+.table-responsive-cus::-webkit-scrollbar{ height: 8px; background-color: #7D7979;}
+.table-responsive-cus::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);	background-color: #F5F5F5;}
+.table-responsive-cus::-webkit-scrollbar-thumb { background-color:#7D7979;}
+
+button.gear-setting{ background: transparent; border: 0; display: block; width: 100%; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+button.gear-setting:hover{ color: #d40101;}
+.form-day{ width: auto; display: initial;}
+
+.status-your ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.status-your ul li{ float: left; padding: 0 10px; width: 33.3333333%;}
+
+@media (max-width:576px){
+	.status-your ul li{ font-size: 12px; font-size: 1.2rem; float: none; width: 100%; margin-bottom: 10px;}
+}
+
+.refuse{ text-align: center;}
+.refuse button{ background: #fff; border: 1px solid #d40101; color: #d40101; padding: 5px 15px; border-radius: 4px; width: 25%; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.refuse button:hover{ background: #d40101; color: #fff;}
+
+@media (max-width:576px){
+	.refuse button{ font-size: 12px; font-size: 1.2rem; width: 50%;}
+}
+
+@media (max-width:320px){
+	.refuse button{ width: 100%;}
+}
+
+.jobbkk-tel-apply{ margin-top: 25px;}
+textarea.text-interview-area{ width: 100%; padding: 10px; border-radius: 10px; height: 150px;}
+
+@media (max-width:767px){
+	.jobbkk-tel-apply{ margin-top: 0; margin-bottom: 20px;}
+}
+
+.panel-group a{ display: block; padding: 0; border: 0; color: #3680BC; background: transparent;}
+.panel-group a:hover{ background: transparent; color: #3680BC;}
+.interview-no-interview ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.interview-no-interview ul li.interview-cus{ float: left; padding: 0 10px; width: 50%; margin-top: 0 !important;}
+.interview-no-interview a.interview-cus-cus{ display: inline-block; padding: 0; border: 0; color: #555; 
+	background: transparent;}
+.interview-no-interview a.interview-cus-cus:hover{ background: transparent; color: #555;}
+
+.panel-body-cus{ padding: 15px 15px 0;}
+h6.panel-title{ font-size: 14px; font-size: 1.4rem;}
+
+@media (max-width:576px){
+	.interview-no-interview ul li.interview-cus{ width: 100%;}
+}
+
+/*รับเข้าทำงาน*/
+span.time-employer{ color: #555;}
+
+/*ใบสมัคร fast resume*/
+.jobbkk-load-excel-sms ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.jobbkk-load-excel-sms ul li{ float: left; padding: 0 10px;}
+.jobbkk-load-excel-sms ul li button{ background: #d40101; border: 1px solid #D40101; padding: 5px 10px; border-radius: 10px; color: #fff; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.jobbkk-load-excel-sms ul li a{ background: #d40101; padding: 5px 10px; border-radius: 10px; color: #fff; text-decoration: none;}
+.jobbkk-load-excel-sms ul li:last-child{ margin-top: 5px;}
+.jobbkk-load-excel-sms ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+.jobbkk-load-excel-sms ul li a:hover{ background: #ebebeb; color: #d40101;}
+
+@media (max-width:991px){
+	.jobbkk-load-excel-sms{ margin-bottom: 10px;}
+	.jobbkk-load-excel-sms li{ width: 50%; text-align: center;}
+	.jobbkk-load-excel-sms ul li button{ width: 100%;}
+	.jobbkk-load-excel-sms ul li a{ display: block; padding: 5px 10px; border:1px solid #d40101;}
+	.jobbkk-load-excel-sms ul li a:hover{ border: 1px solid #ebebeb;}
+	.jobbkk-load-excel-sms ul li:last-child{ margin-top: 0;}
+}
+
+@media (max-width:576px){
+	.jobbkk-load-excel-sms ul{ display: flex;}
+	.jobbkk-load-excel-sms ul li{ display: inline-grid;}
+}
+
+.jobbkk-list-table tr td a.name-form{ color: #555; text-decoration: none;}
+.jobbkk-list-table tr td a.name-form:hover{ color: #d40101;}
+
+.jobbkk-list-table tr td a.list-apply{ color: #0F6FC9; text-decoration: none;}
+.jobbkk-list-table tr td a.list-apply:hover{ color: #d40101;}
+
+.jobbkk-list-table tr td a.send-sms-icms{ background: #f47920; padding: 0 10px; text-decoration: none; border-radius: 4px; color: #fff;}
+.jobbkk-list-table tr td a.send-sms-icms:hover{ background: #d40101;}
+
+.jobbkk-list-table tr td a.name-form-sms{ color: #0F6FC9; text-decoration: none;}
+.jobbkk-list-table tr td a.name-form-sms:hover{ color: #d40101;}
+
+@media (max-width:576px){
+	.jobbkk-list-table{ width: 100%;}
+}
+
+/*ใบสมัครงานที่เลือก*/
+.td-management-system ul li{ margin-bottom: 10px;}
+.td-management-system ul li button.interview-tracking-system{ margin-bottom: 0 !important;}
+
+/*ใบสมัครตรงเงื่อนไขทั้งหมด*/
+.jobbkk-condition{ background: #ebebeb; border: 1px solid #bfbfbf; padding: 15px; text-align: center; border-radius: 10px;}
+
+/*หน้าประกาศงาน แก้ span เป็น label*/
+.error{ font-size: 12px; font-size: 1.2rem; color: #d40101; font-weight: normal;}
+.form-show{ margin-bottom: 10px;}
+.form-group-chat{ margin-bottom: 0;}
+
+/*คุณยังไมไ่ด้สร้างโปรไฟล์*/
+.you-no-cre{ background: #f6f3f2; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; padding: 15px;}
+.announce-cre{ text-align: center;}
+.announce-cre ul{ display: inline-block; margin: 95px 0 0; padding: 0; list-style: none;}
+.announce-cre ul li{ text-align: center;}
+.announce-cre ul li:first-child{ font-size: 28px; font-size: 2.8rem; margin-bottom: 20px;}
+.announce-cre ul li a{ background: #d40101; color: #fff; border-radius: 4px; padding: 5px 15px; font-size: 18px; font-size: 1.8rem; text-decoration: none;}
+.announce-cre ul li a:hover{ background: #ebebeb; color: #d40101;}
+
+@media (max-width:1199px){
+	.announce-cre ul{ margin: 65px 0 0;}
+}
+
+@media (max-width:991px){
+	.announce-cre ul li:first-child{ font-size: 20px; font-size: 2rem;}
+	.announce-cre ul{ margin: 30px 0 0;}
+	.announce-cre ul li a{ font-size: 14px; font-size: 1.4rem;}
+}
+
+@media (max-width:767px){
+	.announce-cre ul li:first-child{ font-size: 24px; font-size: 2.4rem;}
+	.announce-cre ul{ margin: 40px 0 0;}
+}
+
+@media (max-width:576px){
+	.nocre-pic, .announce-cre{ width: 100%; text-align: center;}
+	.nocre-pic img{ max-width: 250px;}
+	.announce-cre ul li:first-child{ font-size: 24px; font-size: 2.4rem;}
+	.announce-cre ul{ margin-bottom: 20px;}
+}
+
+/*วันเดือนปีเกิด*/
+.input-group .form-control.form-bb{ float: left; border-right: 0; padding: 6px 5px;}
+.input-group .form-control.form-date{ width: 30%;}
+.input-group .form-control.form-month, .input-group .form-control.form-year{ width: 35%;}
+.input-group .form-control.form-border{ border-right: 1px solid #ccc;}
+.group-addon-cus{ border-radius: 10px;}
+
+.search-position ul{ margin: 0; padding: 0; list-style: none;}
+.search-position ul li.right-credit{ margin-bottom: 10px; text-align: right;}
+.search-position ul li span{ color: #d40101;}
+
+@media (max-width:991px){
+	.search-position ul li.right-credit{ text-align: center;}
+	.search-position ul li.right-search{ margin-bottom: 20px;}
+}
+
+@media (max-width:576px){
+	.icms-form-date, .search-position{ width: 100%;}
+}
+
+/*jobstarget สมัครงานทั้งหมด*/
+.jobstarget-form-control{ padding-left: 10px; height: auto; padding: 3px;}
+
+@media (max-width:991px){
+	.jobstarget-form-control{ width: auto;}
+}
+
+.allow-green{ background: #2FA71D; border-radius: 4px; padding: 3px; color: #fff; display: block;}
+.no-allow-red{ background: #d40101; border-radius: 4px; padding: 3px; color: #fff; display: block;}
+.waiting-response-grey{ background: #bfbfbf; border-radius: 4px; padding: 3px; color: #fff; display: block;}
+
+h6.header-form{ color: #000000;}
+
+.up-video img{ max-width: 100%;}
+.button-del button{ background: #f47920; border-radius: 4px; border: 1px solid #f47920; color: #FFFFFF; padding: 5px; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.button-del button{ padding: 5px 10px;}
+.button-del button:hover{ background: #d40101; border: 1px solid #d40101;}
+.text-video h6{ font-size: 1.2rem; font-size: 12px;}
+
+@media (max-width:576px){
+	.button-del button{ font-size: 1.2rem; font-size: 12px;}
+	.jobbkk-up-video, .jobbkk-text-video{ width: 100%;}
+}
+
+.button-up ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.button-up ul li{ float: left; padding: 0 10px;}
+.button-up ul li label.up-vdo{ padding: 6px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 4px; cursor: pointer; margin-bottom: 0; 
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.button-up ul li label.up-vdo:hover{ background: #ebebeb; color: #d40101;}
+.button-up ul li label.up-vdo input[type="file"] { display: none;}
+.button-up ul li button{ background: #D40101; border: 1px solid #d40101; padding: 5px; border-radius: 4px; color: #fff;}
+
+@media (max-width:576px){
+	.button-up ul li label.up-vdo, .button-up ul li button{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.input-group-addon-date{ padding: 0; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.btn-date{ font-size: 14px; background: #d40101; color: #fff; padding: 10px; width: 100%; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; 
+	-moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.btn-date:hover{ background: #ebebeb; color: #d40101;}
+.input-group-addon-date:hover{ background: #d40101; color: #fff;}
+
+@media (max-width:576px){
+	.date-date{ width: 100%;}
+}
+
+/*ชื่อผู้ใช้หลัก อื่นๆ*/
+.head-name-account{ margin-bottom: 20px;}
+.sub-name-account{ background: #ebebeb; padding: 15px 10px; border-radius: 10px;}
+
+.name-account-edit{ margin-bottom: 20px;}
+.name-account-default{ margin-bottom: 10px;}
+
+.sub-name-account-1{ text-align: right;}
+.sub-name-account-1 h6{font-size: 14px; font-size: 1.4rem; color: #000;}
+.sub-name-account-2 h6{font-size: 14px; font-size: 1.4rem; text-align: left;}
+
+.sub-name-account-2 ul{ margin: 0; padding: 0; list-style: none;}
+.sub-name-account-2 ul li{ color: #555; padding: 0;}
+.sub-name-account-2 label{ font-weight: 100;}
+
+.sub-lang ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.sub-lang ul li{ float: left; padding: 0 10px;}
+
+.edit-name{ text-align: right;}
+.edit-name a{font-size: 14px; font-size: 1.4rem; color: #fff; text-decoration: none; background: #f47920; border-radius: 4px; text-align: center; padding: 0 5px; 
+	display: inline-block;}
+.edit-name a:hover{ background: #bfbfbf; color: #fff;}
+.edit-name span{ color: #555;}
+
+.alert-account{ font-size: 12px; font-size: 1.2rem;}
+
+.save-cancel{ margin-top: 5px;}
+.save-cancel ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.save-cancel ul li{ float: left; padding: 0 10px;}
+.save-cancel ul li.top-top{ margin-top: 2px;}
+
+.save-cancel ul li span.allow-use{ background: #2FA71D; border-radius: 4px; color: #fff; padding: 1px 5px;}
+.save-cancel ul li span.no-use{ background: #555; border-radius: 4px; color: #fff; padding: 1px 5px;}
+.save-cancel ul li button.save{ background: #d40101; border: 1px solid #d40101; color: #fff;}
+.save-cancel ul li button.cancel{ background: #fff; border: 1px solid #bfbfbf; color: #555;}
+.save-cancel ul li button{ border-radius: 4px; font-size: 14px; font-size: 1.4rem; transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; 
+	-moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.save-cancel ul li button:hover{ background: #bfbfbf; color: #fff; border: 1px solid #bfbfbf;}
+
+.form-default{ margin-bottom: 5px;}
+.panel-body-account{ padding: 15px 0;}
+.panel-default-account{ padding: 10px 10px 0; border: 1px solid #bfbfbf;}
+.panel-group .panel-default-account{ margin-bottom: 10px;}
+/*.panel-group-account{ margin-bottom: 0;}*/
+
+@media (max-width:767px){
+	.sub-name-account-left{ text-align: left; margin-bottom: 5px;}
+	.sub-name-account-1{ text-align: left; margin-bottom: 10px;}
+}
+
+.manage-account{ margin-bottom: 10px;}
+.manage-account h2{ font-size: 22px; font-size: 2.2rem; color: #d40101;}
+
+@media (max-width:576px){
+	.manage-account h2{ font-size: 18px; font-size: 1.8rem;}
+}
+
+/*ตารางนัดหมาย*/
+ #calendar { max-width: 900px; margin: 0 auto;}
+.fc-day-grid-event .fc-time{ font-weight: 100;}
+.fc-button-primary{ background: #FFE3E3; color: #555; border-color: #bfbfbf;}
+.fc-button-primary:not(:disabled).fc-button-active, .fc-button-primary:not(:disabled):active { color: #fff; background-color: #d40101; border-color: #d40101;}
+
+@media (max-width:991px){
+	.fc-toolbar{ display: inherit;}
+	.fc-left, .fc-center, .fc-right{ text-align: center; margin-bottom: 10px;}
+	.fc-right{ margin-bottom: 0;}
+	.fc-button-group{ width: 100%; margin-bottom: 10px;}
+	.fc-toolbar>*>:not(:first-child){ margin-left: 0; width: 100%;}
+}
+
+/*ยืนยันการชำระเงิน*/
+.name-payment{ text-align: right;}
+.name-payment-top{ margin-top: 5px;}
+.jobbkk-form-control{ padding-left: 10px}
+
+@media (max-width:991px){
+	.name-payment{ text-align: left;}
+	.name-payment-top{ margin-top: 0;}
+}
+
+.pay-pay ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.pay-pay ul li{ float: left; padding: 0 10px;}
+
+.pay-area{ width: 100%; border-radius: 4px; height: 100px;}
+
+.select-pic label.select-file{ padding: 10px; background: #f47920; display: table; color: #fff; font-weight: 100; border-radius: 4px; cursor: pointer; margin-bottom: 0;
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+.select-pic label.select-file input[type="file"] { display: none;}
+.select-pic label.select-file:hover{ background: #ebebeb; color: #d40101;}
+
+.select-only ul{ margin: 0; padding: 0; list-style: none;}
+.select-only ul li{ float: left; padding: 0 5px 5px 0; color: #ffffff;}
+.select-only ul li button{ background: #D40101; border: 1px solid #d40101; padding: 5px 5px; border-radius: 4px;}
+
+@media (max-width:576px){
+	.select-only ul li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+.sky-sky>thead:first-child>tr:first-child>th{ background: #c6ecff;}
+.bg-pay{ background: #ebebeb !important;}
+
+.list-list ul{ margin: 0; padding: 0; list-style: none;}
+.package-list{ color: #0F6FC9;}
+.pending-red{ color: #d40101;}
+.complete-green{ color: #5cb85c;}
+
+.list-all-center{ text-align: center;}
+.input-group>.form-control{ width: 100%;}
+
+.download-report ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.download-report ul li{ float: left; padding: 0 10px;}
+.download-report ul li img{ max-width: 25px;}
+.download-report ul li a{ color: #fff; padding: 10px; border-radius: 4px; text-decoration: none; background: #ebebeb;}
+.download-report ul li a.file-pdf{ color: #d40101;}
+.download-report ul li a.file-excel{ color: #2FA71D;}
+.download-report ul li a:hover{ background: #bfbfbf; color: #fff;}
+
+@media (max-width:767px){
+	.download-report ul li.text-report{ width: 100%; text-align: center; margin-bottom: 20px;}
+	.download-report ul li.file-report{ width: 50%;}
+	.download-report ul li.file-report-only{ width: 100%;}
+	.download-report ul li.file-report a{ display: block; text-align: center; padding: 15px 10px;}
+	.warn-warn{ text-align: center;}
+}
+
+.success{ color: #2FA71D;}
+.warning{ color: #f47920;}
+.danger{ color: #d40101;}
+.success, .warning, .danger{ text-decoration: none;}
+
+/*bootstrap editable*/
+.editable-click, a.editable-click, a.editable-click:hover{ border-bottom: 0;}
+.editable-container.editable-inline{ width: 100%;}
+.editable-input{ width: 90%;}
+.editableform .form-control{ width: 100%; height: 34px; border-radius: 10px; padding-right: 0; padding-left: 15px;}
+
+.editable-submit{ background: #d40101; padding: 5px;}
+.editable-cancel{ background: #fff; padding: 5px; border: 1px solid #bfbfbf;}
+
+.editable-click, a.editable-click, a.editable-click:hover{ text-align: left;}
+
+@media (max-width:991px){
+	.editable-input, .editableform .form-control{ width: auto;}
+}
+
+@media (max-width:767px){
+	.editable-input{ width: 80%;}
+	.editableform .form-control{ width: 100%;}
+}
+
+@media (max-width:320px){
+	.editable-input{ width: 75%;}
+}
+
+.bg-use{ background: #ebebeb; padding: 15px; text-align: center; border-radius: 10px;}
+.use-confirm{ color: #2FA71D;}
+.no-confirm{ color: #bfbfbf;}
+
+.guide-icon ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.guide-icon ul li{ float: left; padding: 0 10px;}
+
+.note-step{ margin: 0 -15px; padding: 0; list-style: none;}
+.note-step li{ float: left; padding: 0 15px; text-align: left;}
+.note-step li:first-child{ width: 85%;}
+.note-step li:last-child{ width: 15%; text-align: right;}
+
+.panel-group-cus{ margin-bottom: 0;}
+.panel-group-cus .panel{ border-radius: 10px; overflow: hidden; border: 1px solid #bfbfbf;}
+.panel-group-cus a{ display: block; text-decoration: none; color: #555; border-radius: 10px; background: #ebebeb; padding: 15px; overflow: hidden;}
+.panel-group-cus a:hover{ background: #ebebeb; border-radius: 10px 10px 0 0;}
+
+.text-note-change{ padding-top: 15px; text-align: center; margin-bottom: 20px;}
+.edit-correct{ text-align: center;}
+.edit-correct a{ display: inline-block; border-radius: 10px; padding: 10px; background: #d40101; color: #fff;}
+.edit-correct a:hover{ background: #ebebeb; color: #d40101;}
+
+.center-graph{ align-items: center; display: flex;}
+.buy-product{ position: absolute; right: 0; left: 0; text-align: center;}
+.buy-product a{ background: #d40101; color: #fff; border-radius: 4px; padding: 5px 15px; display: inline-block; 
+	text-decoration: none !important;}
+.buy-product a:hover{ background: #ebebeb; color: #d40101;}
+.text-graph{ font-size: 1.6rem;}
+
+@media (max-width:991px){
+	.buy-product a{ font-size: 2rem;}
+}
+
+@media (max-width:767px){
+	.text-graph{ font-size: 2rem;}
+	.buy-product a{ font-size: 3rem;}
+}
+
+@media (max-width:480px){
+	.text-graph{ font-size: 1.8rem;}
+	.buy-product a{ font-size: 2rem;}
+}
+
+@media (max-width:320px){
+	.buy-product a{ font-size: 3rem;}
+}
+	
+.entrance-system{ text-align: center;}
+.entrance-system ul{ display: inline-block; margin: 0 -10px; padding: 0; list-style: none;}
+.entrance-system ul li{ float: left; padding: 0 10px;}
+.entrance-system ul li button{ border-radius: 4px; padding: 5px 10px; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; 
+	-ms-transition:all 0.3s ease-in;}
+.entrance-system ul li button.enter{ background: #d40101; border: 1px solid #d40101; color: #fff;}
+.entrance-system ul li button.clear{ background: #fff; border: 1px solid #d40101; color: #d40101;}
+.entrance-system ul li button:hover{ background: #ebebeb; color: #d40101; border: 1px solid #ebebeb;}
+
+@media (min-width: 768px){
+	.container-768{ width: 768px;}
+}
+
+.use-use{ text-align: right;}
+.use-use button{ background: #2FA71D; border: 1px solid #2FA71D; border-radius: 4px; padding: 3px 10px; color: #ffffff; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; 
+	-moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.use-use button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+
+.status-icon-st ul{ margin: 0; padding: 0; list-style: none; border-top: 1px solid #bfbfbf; padding-top: 15px;}
+.status-icon-st ul li span.green-online{ color: #2FA71D; background: transparent; padding: 0; border-radius: 0;}
+.status-icon-st ul li span.red-offline{ color: #d40101; background: transparent; padding: 0; border-radius: 0;}
+.status-icon-st ul li span.buyPackage{ color: #00b4ff;}
+.status-icon-st ul li span.correct{ color: #0F6FC9;}

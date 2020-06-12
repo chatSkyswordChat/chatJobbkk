@@ -1,0 +1,28 @@
+/* best company */
+.headNoGrid{ margin-bottom: var(--margin-bottom20);}
+.bestCompany{ margin-bottom: var(--margin-bottom40);}
+.bestCompanyGrid{ display: grid; grid-template-columns: repeat(7, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.bestCompanyGrid li a{ padding: 15px; border-radius: 10px; border: 1px solid var(--bg-gray); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;}
+.bestCompanyGrid li a:hover{ transform: scale(1.05);}
+
+.stallPinCompany{ position: absolute; top: 0; left: 0; background: var(--bg-red); width: 30px; height: 30px; color: var(--color-white); display: flex; justify-content: center; align-items: center; 
+	border-radius: 0 0 10px 0; opacity: 0.9;}
+.stallPinCompany .fa-thumb-tack{ transform: rotate(45deg);}
+
+@media (max-width:991px){
+	.bestCompanyGrid{ overflow-x: inherit; grid-template-columns: repeat(5, 1fr); padding-bottom: inherit;}
+}
+
+@media (max-width:768px){
+	.bestCompanyGrid{ grid-template-columns: repeat(5, 1fr);}
+}
+
+@media (max-width:576px){
+	.bestCompanyGrid{ grid-template-columns: repeat(4, 1fr);}
+	.stallPinCompany{ width: 20px; height: 20px;}
+	.bestCompanyGrid li a{ padding: 5px;}
+}
+
+@media (max-width:380px){
+	.bestCompanyGrid{ grid-template-columns: repeat(3, 1fr);}
+}

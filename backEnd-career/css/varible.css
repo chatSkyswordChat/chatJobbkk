@@ -1,0 +1,68 @@
+:root{ 
+	--color-red: #d40101; 
+	--color-white: #fff; 
+	--color-black-gray: #333;
+	--color-black: #000;
+	--color-gray: #bfbfbf; 
+	
+	--bg-white: #fff; 
+	--bg-red: #d40101;
+	--bg-dark-red: #b90303;
+	--bg-gray-young: #ebebeb; 
+	--bg-gray: #bfbfbf;
+	--bg-black-gray: #333;
+
+	--font36: 3.6rem; 
+	--font32: 3.2rem; 
+	--font28: 2.8rem; 
+	--font24: 2.4rem; 
+	--font22: 2.2rem; 
+	--font20: 2rem; 
+	--font18: 1.8rem; 
+	--font16: 1.6rem; 
+	--font14: 1.4rem;
+	--font12: 1.2rem;
+
+	--margin-bottom5: 5px;
+	--margin-bottom10: 10px; 
+	--margin-bottom20: 20px; 
+	--margin-bottom40: 40px;
+
+	--margin-top5: 5px;
+	--margin-top10: 10px; 
+	--margin-top20: 20px; 
+	--margin-top40: 40px;
+}
+
+@media (max-width:576px){
+	:root{
+		--font36: 2.4rem; 
+		--font32: 2.4rem; 
+		--font28: 2.2rem; 
+		--font24: 2rem; 
+		--font22: 2rem; 
+		--font20: 1.8rem; 
+		--font18: 1.6rem;
+	}
+}
+
+.font-size-14{ font-size: 14px;}
+.font-size-16{ font-size: 16px;}
+.font-size-18{ font-size: 18px;}
+.font-size-20{ font-size: 20px;}
+.font-size-22{ font-size: 22px;}
+.font-size-24{ font-size: 24px;}
+.font-size-28{ font-size: 28px;}
+.font-size-32{ font-size: 32px;}
+.font-size-36{ font-size: 36px;}
+
+@media (max-width:576px){
+	.font-size-16{ font-size: 14px;}
+	.font-size-18{ font-size: 16px;}
+	.font-size-20{ font-size: 18px;}
+	.font-size-22{ font-size: 20px;}
+	.font-size-24{ font-size: 22px;}
+	.font-size-28{ font-size: 26px;}
+	.font-size-32{ font-size: 30px;}
+	.font-size-36{ font-size: 34px;}
+}

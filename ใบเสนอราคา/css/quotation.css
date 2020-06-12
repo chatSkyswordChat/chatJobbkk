@@ -1,0 +1,58 @@
+@media all{
+		img{ max-width: 100%; width: 100%;}
+		p{ margin: 0; font-size: 14px;}
+		p.head-text{ font-size: 16px;}
+		.container{ margin-top: 20px; width: 1170px; margin-bottom: 20px;}
+		.head{ margin-bottom: 10px;}
+		.line-bottom{ border-bottom: 1px solid #555; position: relative;}
+		.line-sub-text{ border: 1px solid #555; position: relative; overflow: hidden;}
+		.line-sub-text-1{ border-left: 0;}
+		.line-text{ border: 1px solid #555; padding: 5px 0; overflow: hidden; margin: 0;}
+		.quotation{ text-align: center; font-size: 24px; font-weight: 900; margin: 10px 0;}
+		.text-center{ text-align: center;}
+		.text-top{ position: absolute; right: -15px; top: 0;}
+		.remove-line{ border: 0; border-left: 1px solid #555;}
+		.remove-line-1{ border-right: 0;}
+		.box-left{ padding-right: 0;}
+		.box-right{ padding-left: 0; border-left: 1px solid #555;}
+		.top-bottom{ padding: 10px 0; overflow: hidden;}
+		.right-left{ padding-right: 15px; padding-left: 15px;}
+		.flex{ display: flex;}
+		
+		.table{ margin-bottom: 0;}
+		.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, 
+		.table-bordered>thead>tr>th{ border: 1px solid #555 !important; text-align: center;}
+		.table-bordered>thead>tr>th{ border-top: 0 !important; vertical-align: middle;}
+		.table-bordered>tbody>tr>td.no-center{ text-align: left;}
+		.table-striped>tbody>tr:nth-of-type(odd){ background-color:#fff;}
+		span.right-15{ margin-left: 15px;}
+		
+		.line-top{ border-top: 0;}
+		tbody.bank-number tr td{ text-align: left; border: 0 !important; padding: 5px 0 0;}
+		tbody.bank-number tr td.float-right{ text-align: right;}
+		.border{ border-bottom: 1px solid #555;}
+		.border-bottom{ border-bottom: 0;}
+		.line-text-1{ padding: 10px 0;}
+		.box-padding-right{ padding-right: 0;}
+		.box-padding-left{ padding-left: 0;}
+		.border-right{ border-right: 1px solid #555;}
+		.margin-bottom{ position: relative; margin-bottom: 20px;}
+		
+		p.under-line{ text-decoration: underline;}
+		.sign{ height: 80px; background: #fff; border: 1px solid #555;}
+		.line-line{ border-bottom: 1px solid #555;}
+		.sign-user{ margin-top: 30px;}
+		.line-sub-text-top{ border-top: 0;}
+		.row-left{ margin-left: -30px;}
+		.text-right{ text-align: right;}
+	}
+	
+	@media print{ 
+		.container{ width: 100% !important; margin-top: 0; margin-bottom: 0;}
+		p{ margin: 0; font-size: 12px;}
+		p.head-text{ font-size: 14px;}
+		.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, 
+		.table-bordered>thead>tr>th, .border, tbody.bank-number{ font-size: 12px;}
+		.sign-user{ margin-top: 20px;}
+		.sign{ height: 60px;}
+	}

@@ -1,0 +1,27 @@
+.push-create{text-align: center; margin-bottom: 20px;}
+.push-create a{ display: inline-block; padding: 10px 25px; border-radius: 10px; background: #d40101; color: #ffffff; text-decoration: none; 
+	font-size: 1.8rem; font-size: 18px;}
+.push-create a:hover{ background: #ebebeb; color: #D40101;}
+
+@media (max-width:576px){
+	.push-create a{ display: block;}
+}
+
+.default-heading{ background: #ffffff; border-radius: 10px;}
+.default-heading .default-resume{ border-radius: 10px; padding: 10px; border: 1px solid #bfbfbf; color: #bfbfbf;}
+
+.bg-resume-address{ background: #bfbfbf; border-radius: 10px; padding: 10px; margin-bottom: 10px;}
+.bg-resume-address ul{ margin: 0 -10px; padding: 0; list-style: none; overflow: hidden;}
+.bg-resume-address ul li{ float: left; padding: 0 10px; width: 33.3333333%; color: #555; text-align: center;}
+
+@media (max-width:576px){
+	.bg-resume-address ul li{ font-size: 1.2rem; font-size: 12px;}
+}
+
+@media (max-width:480px){
+	.bg-resume-address ul li{ float: none; text-align: left; width: 100%; margin-bottom: 5px;}
+}
+
+.name-name{ color: #555; font-size: 1.4rem;font-size: 14px;}
+.bg-resume{ border-radius: 10px; border: 1px solid #bfbfbf; display: grid; padding: 15px 0;}
+.head-resume{ color: #ccc;}

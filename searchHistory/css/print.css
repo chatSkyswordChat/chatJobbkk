@@ -1,0 +1,406 @@
+@page {
+    size: A4;
+    margin: 1cm;
+}
+
+@media print {
+	/*#footer { position: fixed; width: 100%; bottom: 0; left: 480px !important; display: block;}*/
+	.container-print{ width: 100%; display: block; page-break-after: always;}
+	.row-print{ margin-left: inherit; margin-right: inherit;}
+    .print-left {
+        width: 35% !important;
+    }
+
+    .print-right {
+        width: 65% !important;
+    }
+
+    .pic-profile img {
+        position: relative;
+        border-radius: 50% !important;
+        border: 8px solid #fff !important;
+        -webkit-print-color-adjust: exact;
+        max-width: 100px !important;
+        height: 100px !important;
+        top: -60px !important;
+        object-fit: cover;
+    }
+
+    .img-signature {
+        max-width: 50px !important;
+    }
+
+    .signature {
+        text-align: right !important;
+        margin-top: 0 !important;
+        width: 100% !important;
+        display: inline-block !important;
+		margin-bottom: 10px;
+    }
+
+    .signature span {
+        display: block !important;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    span {
+        /*font-size: 5px !important;*/
+    }
+	
+	span.sig{ font-size: 5px !important;}
+
+    h5
+        {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 20px !important;
+    }
+	h6{ font-size: 16px !important;}
+
+    .bg-grey-young,
+    .bg-red,
+    .jobbkk-news-sp,
+    .jobbkk-link-text,
+    .margin-control,
+    .bg-black,
+    .jobbkk-pc,
+    .jobbkk-mobile,
+    .edit-resume-mobile,
+    .edit-resume {
+        display: none;
+    }
+
+    .text-red {
+        color: #d40101 !important;
+    }
+
+    .therm .inner-therm {
+        background-color: #f47920 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .therm .outer-therm {
+        background-color: #555 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .bg-preview {
+        background-color: #f5f3f2 !important;
+        -webkit-print-color-adjust: exact;
+        border-radius: 10px;
+    }
+
+    .padding-none {
+        padding: 0;
+    }
+
+    .main-name {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        /* margin-top: 70px; */
+    }
+
+    .pic-profile img {
+        position: relative;
+        border-radius: 50%;
+        border: 8px solid #fff !important;
+        -webkit-print-color-adjust: exact;
+        max-width: 130px !important;
+        height: 130px !important;
+        top: -60px !important;
+        object-fit: cover !important;
+    }
+
+    .pic-profile {
+        text-align: center;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .name {
+        padding: 5px;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .name p,
+    .education p,
+    .expected p,
+    .salary p,
+    .content-2 p
+        {
+        padding: 5px 15px;
+    }
+
+    .name .center {
+        margin-top: -40px;
+        text-align: center;
+    }
+
+    .gender-slot1 {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        border-right: 5px solid #f5f3f2;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .gender-slot2 {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        border-right: none;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .box-content-2,
+    .box-content,
+    .box-education,
+    .box-education-2 {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        padding: 0 10px;
+    }
+
+    .line {
+        border-bottom: 1px solid #ebebeb !important;
+        -webkit-print-color-adjust: exact;
+        padding-bottom: 10px;
+    }
+
+    .line-right {
+        border-right: 1px solid #ebebeb !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .training,
+    .education,
+    .lang {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+    }
+
+    .jobbkk-graph {
+		text-align: center;
+        width: 25% !important;
+        padding: 0 !important;
+    }
+
+    .chartjs-render-monitor {
+        display: block !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .training {
+        width: 100% !important;
+    }
+
+    .training p {
+        padding: 0 !important;
+    }
+
+    .training h5 {
+        padding: 15px 10px;
+    }
+
+    .expected {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        padding: 20px 10px;
+    }
+
+    .salary {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        padding: 20px 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .lang {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .skills {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        margin-top: 70px !important;
+        padding: 20px 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+    .inner-therm span {
+        color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        display: inline-block;
+        float: right;
+        font-family: 'Prompt-Regular' !important;
+        font-size: 15px !important;
+        font-weight: bold;
+    }
+
+    .work-hostory {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border-top: 5px solid #f5f3f2;
+        padding: 20px 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .edit-resume-mobile ul {
+        margin: 0 -13px;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+        margin-top: 30px;
+        /* margin-bottom: -60px; */
+    }
+
+    .edit-resume-mobile {
+        text-align: right;
+        z-index: 999;
+    }
+
+    .edit-resume-mobile ul li {
+        padding: 0 10px;
+        float: left;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .edit-resume-mobile ul li a {
+        border: 1px solid #D40101;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        color: #D40101;
+        padding: 5px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .edit-resume-mobile ul li a:hover {
+        background: #D40101 !important;
+        -webkit-print-color-adjust: exact;
+        color: #ebebeb;
+        text-decoration: none;
+    }
+
+    .edit-resume {
+        text-align: right;
+        z-index: 999;
+    }
+
+    .edit-resume ul {
+        margin: 0 -23px;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }
+
+    .edit-resume ul li {
+        padding: 0 10px;
+        float: left;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .edit-resume ul li a {
+        border: 1px solid #D40101;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        color: #D40101;
+        padding: 5px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .edit-resume ul li a:hover {
+        background: #D40101 !important;
+        -webkit-print-color-adjust: exact;
+        color: #ebebeb;
+        text-decoration: none;
+    }
+
+    .name img,
+    .gender img,
+    .expected img,
+    .training img,
+    .salary img,
+    .skills img,
+    .education img,
+    .work-hostory img,
+    .lang img {
+        max-width: 20px !important;
+        width: 15% !important;
+    }
+
+    .timeline-2 {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .timeline-2::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        background-color: #d40101 !important;
+        -webkit-print-color-adjust: exact;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .circle-2 {
+        padding: 0px 17px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    .circle-2::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -12px;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact;
+        border: 4px solid #d40101;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .left-2 {
+        left: 0;
+    }
+
+    .right-2 {
+        left: 50%;
+    }
+
+    .right-2::after {
+        left: -18px !important;
+    }
+}

@@ -1,0 +1,6 @@
+.logo-company a img{ max-width: 200px;}
+.logo-company-1{ padding: 10px;}
+
+@media (max-width:320px){
+	.ad-recomment{ width: 100%;}
+}

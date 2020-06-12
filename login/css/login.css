@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Prompt-Regular';
+    src: url('../fonts/Prompt-Regular.eot?#iefix') format('embedded-opentype'),  
+    url('../fonts/Prompt-Regular.woff') format('woff'), url('../fonts/Prompt-Regular.ttf')  
+    format('truetype'), url('../fonts/Prompt-Regular.svg#Prompt-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html{ font-size:62.5%;}
+body{ font-size: 1.4em; font-family: 'Prompt-Regular'; font-weight: normal; font-style: normal; background: #ebebeb;}
+a, button{ transition: 0.5s ease-in-out; text-decoration: none;}
+a:focus, button:focus{ outline: none;}
+img { max-width: 100%; width: 100%; outline: 0; height: auto;}
+h1, h2, h3, h4, h5, h6{ margin: 0;}
+h1{ font-size: var(--font24);}
+h2{ font-size: var(--font20);}
+h6{ font-size: var(--font16);}
+label, p{ margin: 0; font-weight: normal;}
+
+.flex{ display: flex; align-items: center; justify-content: center;}
+.bgLogin{ background: var(--bg-white); display: grid; grid-template-columns: 1fr 0.8fr; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 850px; width: 100%;}
+.bgLogin.noAb{ position: relative; top: 0; left: 0; transform: inherit; margin: 5% 0;}
+
+@media (max-width:1199px){
+    .bgLogin{ position: relative; transform: translate(0, 0); top: 0; left: 0; margin: 5% 0;}
+}
+
+@media (max-width:991px){
+    .bgLogin{ grid-template-columns: 1fr;}
+}
+
+/* left */
+.loginLeft{ display: flex; flex-direction: column; align-items: center; padding: 25px 15px;}
+.headLogin{ margin-bottom: 30px;}
+
+.flexSocial{ display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 30px;}
+.loginSocial{ margin-bottom: 10px;}
+.loginSocial ul{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: center;}
+.loginSocial li{ margin: 0 10px; font-size: var(--font20); text-align: center;}
+.loginSocial a{ display: flex; align-items: center; justify-content: center; text-decoration: none; width: 50px; height: 50px; 
+    border: 1px solid var(--bg-gray); border-radius: 50%; padding: 15px; color: var(--color-black-gray);}
+.loginSocial a:hover{ color: var(--bg-white);}
+
+.loginSocial a.facebook:hover{ background: #4267b2; border: 1px solid #4267b2;}
+.loginSocial a.google:hover{ background: #d93025; border: 1px solid #d93025;}
+.loginSocial a.linkedin:hover{ background: #2977c9; border: 1px solid #2977c9;}
+
+.flexBody{ display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; 
+    border-top: 1px dashed var(--bg-gray); padding-top: 15px;}
+.textEnter{ font-weight: 700; margin-bottom: 15px; text-align: center;}
+
+.flexForm{ display: flex; align-items: center; justify-content: center; width: 100%;}
+.form-control-feed{ right: inherit; top: 10px;}
+.form-control-back{ padding-left: 30px; border-radius: 10px;}
+.hasJobbkk{ width: 100%;}
+
+.enterBack{ margin-bottom: 15px;}
+.enterBack ul{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: center;}
+.enterBack li{ margin: 0 10px;}
+.enterBack button{ background: var(--bg-red); border: 1px solid var(--bg-red); color: var(--bg-white); border-radius: 4px; padding: 5px 10px;}
+.enterBack a{ display: inline-block; background: var(--bg-white); border: 1px solid var(--bg-gray); border-radius: 4px; 
+    color: var(--color-black-gray); padding: 5px 10px; text-decoration: none;}
+
+.enterBack button:hover{ background: var(--bg-dark-red); border: 1px solid var(--bg-dark-red);}
+.enterBack a:hover{ background: var(--bg-dark-red); color: var(--bg-white);}
+
+.forget{ margin-bottom: 15px;}
+.forget ul{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: center;}
+.forget li{ margin: 0 10px; text-align: center;}
+.forget a.clickRegis{ color: var(--bg-red);}
+.forget label{ cursor: pointer;}
+
+.alertText{ background: var(--bg-white); border: 1px solid var(--bg-red); padding: 15px; border-radius: 10px; margin-bottom: 15px; width: 100%; text-align: center;}
+.alertText p{ font-size: var(--font14); color: var(--bg-red);}
+
+.easyResume{ display: flex; align-items: center; justify-content: center; flex-direction: column; background: var(--bg-gray-young); padding: 15px;
+    border-radius: 10px; width: 100%; font-size: var(--font18); border: 1px solid var(--bg-gray); text-align: center;}
+.easyResume span{ color: var(--bg-red);}
+.clickEasy a{ display: inline-block; background: var(--bg-red); border-radius: 4px; color: var(--bg-white); padding: 5px 10px; 
+    font-size: var(--font24); text-decoration: none;}
+.clickEasy a:hover{ background: var(--bg-dark-red);}
+
+/* right */
+.loginRight{ background: var(--bg-red); display: flex; flex-direction: column; align-items: center;
+    position: relative; padding: 25px 15px;}
+.loginRight h2{ color: var(--bg-white); margin-bottom: 15px; text-align: center;}
+.loginRight h6{ text-align: center; color: var(--bg-white); margin-bottom: 15px; font-size: var(--font14); line-height: 1.5;}
+.picApplicant{ margin-top: 15px; width: 65%;}
+.picApplicant img.imgTwo{ max-width: 100%;}
+
+.theStep{ margin-bottom: 30px;}
+.theStep ul{ margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; color: var(--bg-white); font-size: var(--font16);}
+.theStep li:first-child{ line-height: 2.5;}
+.theStep li.stepTwo{ color: #ffbd85; font-weight: 900;}
+
+.ready{ border: 1px dashed var(--bg-white); padding: 10px; border-radius: 10px; font-size: var(--font16); text-align: center;
+    color: var(--bg-white); width: 100%;}
+.ready span{ color: #ffbd85; font-weight: 900;}
+
+.register{ margin-bottom: 15px; border-bottom: 1px dashed var(--bg-white); padding-bottom: 15px; width: 100%; text-align: center;}
+.register a{ display: inline-block; border-radius: 50px; background: var(--bg-white); color: var(--color-black-gray); padding: 10px 20px;
+    font-size: var(--font18); text-decoration: none;}
+.register a:hover{ background: var(--color-orange); color: var(--bg-white);}
+
+@media (max-width:991px){
+    .picApplicant{ width: 100%;}
+}
+
+.searchFour{ display: flex; flex-direction: column; margin-bottom: 30px; width: 100%;}
+.boxFour{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.boxFour div{ display: flex; flex-direction: column; align-items: center; width: 100%; color: var(--bg-white);
+    margin-bottom: 15px;}
+.boxFour figure{ margin-bottom: 10px;}
+.boxFour figcaption{ text-align: center; font-size: var(--font18);}
+.boxFour img{ max-width: 50px;}

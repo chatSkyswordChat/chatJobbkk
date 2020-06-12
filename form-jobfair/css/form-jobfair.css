@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'Prompt-Regular';
+  src: url('../fonts/Prompt-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Prompt-Regular.woff') format('woff'), url('../fonts/Prompt-Regular.ttf')  format('truetype'), url('../fonts/Prompt-Regular.svg#Prompt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{ font-size:62.5%;}
+body{ font-size: 1.4em; font-family: 'Prompt-Regular'; font-weight: normal; font-style: normal; color: #555;}
+a, button{ transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in; text-decoration: none;}
+img { max-width: 100%; width: 100%; outline: 0; height: auto;}
+figure{ margin: 0;}
+p{ margin: 0;}
+.margin-bottom-05{ margin-bottom: 5px;}
+h1, h2, h3, h4, h5, h6{ margin-top: 0; line-height: 1.4; font-weight: normal; margin-bottom: 0; color: #555; white-space: initial;}
+h1{ font-size: 3.6rem; font-size: 36px;}
+h2{ font-size: 3rem; font-size: 30px;}
+h3{ font-size: 2.2rem; font-size: 22px;}
+h4{ font-size: 2rem; font-size: 20px;}
+h5{ font-size: 1.6rem; font-size: 16px;}
+h6{ font-size: 1.4rem; font-size: 14px;}
+
+.line-line{ border-bottom: 1px solid #bfbfbf;}
+
+.font-size-14{ font-size: 14px;}
+.font-size-16{ font-size: 16px;}
+.font-size-18{ font-size: 18px;}
+.font-size-20{ font-size: 20px;}
+.font-size-22{ font-size: 22px;}
+.font-size-24{ font-size: 24px;}
+.font-size-28{ font-size: 28px;}
+.font-size-32{ font-size: 32px;}
+.font-size-36{ font-size: 36px;}
+
+@media (max-width:576px){
+	.font-size-16{ font-size: 14px;}
+	.font-size-18{ font-size: 16px;}
+	.font-size-20{ font-size: 18px;}
+	.font-size-22{ font-size: 20px;}
+	.font-size-24{ font-size: 22px;}
+	.font-size-28{ font-size: 26px;}
+	.font-size-32{ font-size: 30px;}
+	.font-size-36{ font-size: 34px;}
+}
+
+/*backTOtop*/
+.cd-top { display: inline-block; height: 40px; width: 40px; position: fixed; bottom: 40px; right: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden; text-indent: 100%; white-space: nowrap; background: rgba(232, 98, 86, 0.8) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s; z-index: 99999;}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover { -webkit-transition: opacity .3s 0s, visibility 0s 0s; 
+	-moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s;}
+.cd-top.cd-is-visible { /* the button becomes visible */ visibility: visible; opacity: 1;}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 1}
+.no-touch .cd-top:hover { background-color: #e86256; opacity: 1;}
+
+@media only screen and (min-width: 768px) {
+  .cd-top { right: 20px; bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top { height: 60px; width: 60px; right: 30px; bottom: 30px;}
+}
+
+@media (max-width: 767px){
+	.container { max-width: 100%;}
+}
+
+.tooltip { font-size: 12px; font-size: 1.2rem;}
+.error{ font-size: 12px; font-size: 1.2rem; color: #d40101;}
+.margin-bottom-0{ margin-bottom: 0;}
+.margin-bottom-5{ margin-bottom: 5px;}
+.margin-bottom-10{ margin-bottom: 10px;}
+.margin-bottom-15{ margin-bottom: 15px;}
+.margin-bottom-20{ margin-bottom: 20px;}
+.margin-top-5{margin-top: 5px;}
+.margin-top-20{margin-top: 20px;}
+
+.line-jobfair{ border-bottom: 1px solid #bfbfbf;}
+.font-text-12{ font-size: var(--font14);}
+.jobbkk-important ul li a.i-train{ color: #1d8094; background: transparent; font-size: 16px; font-size: 1.6rem;}
+
+/*หัว JOBBKK.COM เว็บไซต์ หางาน สมัครงาน ยอดนิยมอันดับหนึ่งของไทย เพราะชีวิตไม่ได้มีแค่เรื่องงาน*/
+.bg-head-form{ background: #ebebeb; padding: 10px 0;}
+.text-web-search{ margin-top: 5px;}
+.jobbkk-red{ color: #d40101;}
+a.jobbkk-red:hover{ color: #d40101;}
+.jobbkk-white{ color: #fff;}
+
+.text-social{ text-align: right;}
+.text-social ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
+.text-social ul li{ float: left; padding: 0 10px;}
+.text-social ul li a{ display: block;}
+.text-social ul li a img{ max-width: 25px; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.text-social ul li a:hover img{ -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+
+.text-social ul li button{ background: transparent; border: 0; cursor: pointer;}
+.text-social ul li button img{ max-width: 25px; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.text-social ul li button:hover img{ -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1);}
+.text-social ul li button:focus img{ outline: 0;}
+
+@media (max-width:767px){
+	.text-web-search{ text-align: center; margin: 0 0 10px;}
+	.text-social{ text-align: center;}
+}
+
+/*แบนเนอ*/
+.jobfair-banner{ margin-bottom: 20px;}
+
+/*สำคัญมาก กรุณากรอกให้ชัดเจน เพื่อใช้ยืนยันในการลงทะเบียน*/
+.bg-form-jobfair{ background: #f5f3f2; border: 1px solid #bfbfbf; border-radius: 10px; padding: 15px;}
+.jobbkk-important{ margin-bottom: 20px;}
+.jobbkk-important ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.jobbkk-important ul li{ float: left; padding: 0 10px;}
+.jobbkk-important ul li:first-child{ color: #d40101;}
+.jobbkk-important ul li:last-child{ float: right;}
+.jobbkk-important ul li button{ cursor: pointer; background: #f47920; border: 0; color: #fff; border-radius: 4px;}
+.jobbkk-important ul li button:hover{ background: #ebebeb; color: #D40101;}
+.jobbkk-important ul li button:focus{ outline: 0;}
+
+.jobbkk-important ul li a{ background: #d40101; color: #fff; border-radius: 4px; text-decoration: none;}
+.jobbkk-important ul li a:hover{ background: #ebebeb; color: #D40101;}
+
+@media (max-width:576px){
+	.jobbkk-important ul li:first-child{ text-align: center; margin-bottom: 10px;}
+	.jobbkk-important ul li:last-child{ float: none; text-align: center;}
+}
+
+.bg-white-jobbkk{ background: #fff; border: 1px solid #bfbfbf; border-radius: 10px 10px 0 0; padding: 15px; overflow: hidden;}
+.bg-head-jobbkk{ background: #d40101; border: 1px solid #d40101; border-radius: 10px 10px 0 0; padding: 15px;}
+.radius-white{ border-radius: 0 0 10px 10px; border-top: 0;}
+
+/*ข้อมูลส่วนตัว*/
+.data-pivate{ font-size: 16px; font-size: 1.6rem; color: #d40101}
+.data-pivate ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.data-pivate ul li{ float: left; padding: 0 10px;}
+.data-pivate ul li.lang-flag{ float: right;}
+.data-pivate ul li.lang-flag img{ max-width: 25px; border: 1.5px solid #fff; transition: all 0.3s ease-in; 
+	-webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.data-pivate ul li.lang-flag button{ background: transparent; border: 0; padding: 0; cursor: pointer;}
+.data-pivate ul li.lang-flag button:focus{ outline: 0;}
+.data-pivate ul li.lang-flag img.opacity-flag{ opacity: 0.5;}
+.data-pivate ul li.lang-flag img.opacity-flag.active{opacity: 1;}
+.data-pivate ul li.lang-flag img:hover{ opacity: 1;}
+
+.form-control-jobbkk{ font-size: 14px; font-size: 1.4rem; border-radius: 10px; padding-left: 10px; height: 34px;}
+.form-control-no{ font-size: 14px; font-size: 1.4rem; font-weight: bold; border: 0; padding: 0; background: transparent;}
+.form-control-no:focus{ box-shadow: none;}
+
+@media (max-width:576px){
+	.data-pivate{ font-size: 14px; font-size: 1.4rem;}
+}
+
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child){ height: 34px; font-size: 14px; font-size: 1.4rem;}
+.input-group-calendar{ border-radius: 0 10px 10px 0 !important; height: 34px;}
+.form-date{ border-radius: 10px 0 0 10px;}
+.fa-1dot5x{ font-size: 1.5em;}
+
+/*สาขาอาชีพที่ต้องการสมัคร*/
+.part-salary{ max-width: 20%;}
+
+@media (max-width:991px){
+	.part-salary{ max-width: 33.3333333%;}
+}
+
+@media (max-width:576px){
+	.part-salary{ max-width: 100%;}
+}
+
+.jobfair-salary ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.jobfair-salary ul li{ float: left; padding: 0 10px;}
+.jobfair-salary ul li.the-first{ margin-top: 5px; width: 20%;}
+.jobfair-salary ul li.the-second{ width: 80%;}
+
+@media (max-width:576px){
+	.jobfair-salary-m{ margin-top: 5px;}
+}
+
+/*ประวัติการศึกษาปัจจุบัน*/
+.education-top{ margin-top: 5px;}
+
+/*ประสบการณ์การทำงาน / ฝึกงาน*/
+/* [data-toggle="collapse"]:after{ display: inline-block; font: normal normal normal 14px/1 Font Awesome 5 Free; font-size: inherit; text-rendering: auto;
+	content: "\f078";
+	font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; transform: rotate(90deg); transition: all linear 0.25s; float: right; 
+	margin-top: 3px;}   
+[data-toggle="collapse"].collapsed:after{ transform: rotate(0deg);} */
+.downArrow{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 0 15px;}
+.downArrow span:last-child{ text-align: right;}
+
+@media (max-width:576px){
+	.downArrow{ grid-template-columns: 2fr 1fr;}
+}
+
+.card-collapse{ border-radius: 10px; border: 1px solid #bfbfbf;}
+.card-header:first-child{ border-radius: 10px;}
+.card-header-collapse{ background: #d40101; border: 1px solid #d40101; border-bottom: 0; padding: 0;}
+.collapse-top{ border-top: 1px solid #bfbfbf;}
+.head-form-collapse a.box-collapse{ color: #fff; text-decoration: none; display: block; padding: 15px;}
+
+textarea.form-control{ height: 100px; font-size: 14px; font-size: 1.4rem;}
+.form-control-area{ border-radius: 10px;}
+
+/*ความสามารถด้านภาษา*/
+.form-control-height{ height: auto; margin-top: -5px;}
+.col-padding-left-0{ padding-left: 0;}
+.col-padding-right-0{ padding-right: 0;}
+.col-bottom-5{ margin-bottom: 5px;}
+
+.lang-other ul{ margin: 0; padding: 0; list-style: none;}
+.lang-other ul li{ float: left; padding: 0 15px;}
+
+@media (max-width:427px){
+	.col-tofel{ max-width: 100%; flex: 0 0 100%; margin-bottom: 15px;}
+}
+
+@media (max-width:380px){
+	.col-lang{ max-width: 100%; flex: 0 0 100%; margin-bottom: 15px;}
+}
+
+/*รายละเอียดการอัพโหลดรูปถ่าย*/
+.col-photo{ text-align: center;}
+.col-photo img{ width: auto;}
+.photo-change{ text-align: center;}
+.photo-change ul{ display: inline-block; margin: 0 -10px; padding: 0; list-style: none;}
+.photo-change ul li{ float: left; padding: 0 10px; font-size: var(--font16);}
+.photo-change ul li button{ background: var(--bg-red); border: 1px solid var(--bg-red); border-radius: 4px; padding: 5px 15px; color: var(--color-white);
+	 cursor: pointer; 
+	 transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.photo-change ul li:last-child button{ background: var(--bg-white); border: 1px solid var(--bg-black-gray); color: var(--color-black-gray);}
+.photo-change ul li button:hover{ background: var(--bg-dark-red); border: 1px solid var(--bg-dark-red); color: var(--color-white);}
+
+.photo-change ul li a{ background: #d40101; border-radius: 4px; padding: 5px 15px; color: #fff; text-decoration: none;}
+.photo-change ul li:last-child a{ background: #fff; border: 1px solid #bfbfbf; color: #555;}
+.photo-change ul li a:hover{ background: #ebebeb; color: #d40101; border: 1px solid #ebebeb;}
+
+@media (max-width:576px){
+	.col-photo, .photo-change{ display: none;}
+}
+
+.upload-pic{ text-align: center;}
+input[type="file"]{position: absolute; left: 0; opacity: 0; top: 0; bottom: 0; width: 100%;}
+label.choose-choose{ display: inline-block; margin-bottom: 0; position: relative; cursor: pointer !important; width: 100%; padding: 16px 8px;}
+.choose-text{ position: absolute; left: 0; top: 0; bottom: 0; width: 100%; display: flex; align-items: center; justify-content: center; background: #f47920; border-radius: 4px; 
+	color: #ffffff; font-weight: normal; transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in;
+-moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.choose-text:hover{ background: #ebebeb; color: #D40101;}
+
+label.choose-choose-1{ padding: 17px 8px; width: 150px;;}
+label.choose-choose-2{ padding: 9px 4px;}
+.choose-text-2{ border-radius: 4px; width: auto; padding: 0 4px;}
+
+.detail-pic{ text-align: center;}
+.detail-pic ul{ margin: 0; padding: 0; list-style: none;}
+
+.condition a{ color: #d40101;}
+.jobbkk-scan{ text-align: center;}
+.jobbkk-scan ul{ display: inline-block; margin: 0; padding: 0; list-style: none;}
+.jobbkk-scan ul li{ text-align: center;}
+.jobbkk-scan ul li:first-child{ font-size: 18px; font-size: 1.8rem; color: #d40101;}
+
+.jobbkk-save{ text-align: center;}
+.jobbkk-save button{ background: var(--bg-red); border: 1px solid var(--bg-red); border-radius: 4px; padding: 5px 15px; color: var(--color-white); 
+	cursor: pointer; font-size: var(--font16);}
+.jobbkk-save button:hover{ background: var(--bg-dark-red);}
+
+@media (max-width:991px){
+.file-map ul{ display: inherit;}
+.file-map ul li{ width: 100%; float: none; display: inherit; padding-right: 0; margin-bottom: 10px;}
+label.choose-choose{ padding: 17px 8px;}
+label.choose-choose-2{ padding: 9px 4px;}
+}
+
+@media (max-width:576px){
+	.jobbkk-scan ul li:first-child{ font-size: 16px; font-size: 1.6rem;}
+}
+
+@media (max-width:380px){
+	.video-jobbkk{ width: auto; max-width: 100%; height: auto;}
+}
+
+.all-right{ text-align: center;}
+
+/*print jobfair*/
+.pic-pivate{ height: 180px; position: relative;}
+.pic-pivate img{ max-width: 100%; height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; 
+	transform: translate(-50%, -50%);}
+.logo-jobbkk{ text-align: right; margin-bottom: 20px;}
+.logo-jobbkk img{ max-width: 100px;}
+
+.data-pivate ul li.id-user{ float: right; font-weight: bold;}
+
+@media (max-width: 1199px){
+	.pic-pivate{ height: 150px;}
+}
+
+@media (max-width: 576px){
+	.pic-user{ width: 30%;}
+	.box-form{ width: 70%;}
+	.pic-pivate{ height: 150px;}
+}
+
+@media (max-width: 480px){
+	.pic-pivate{ height: 120px;}
+}
+
+@media (max-width: 420px){
+	.pic-pivate{ height: 100px;}
+}
+
+@media (max-width: 320px){
+	.pic-pivate{ height: 80px;}
+}
+
+.jobbkk-condition{ text-align: center;}
+.color-b{ color: #000000;}
+.list-career ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.list-career ul li{ float: left; padding: 0 10px;}
+
+.mark-head{ color: #000000; font-size: 16px; font-size: 1.6rem;}
+.tab-esay{ display: flex; align-items: center;}
+.logo-jobfair img{ max-width: 65px;}
+.logo-resume{ text-align: right;}
+.logo-resume img{ max-width: 120px;}
+
+@media (max-width: 576px){
+	.logo-jobfair{ width: 100%; text-align: center;}
+	.logo-resume{ text-align: center; width: 100%;}
+}
+
+.print-paper{ text-align: right;}
+.print-paper button{ background: #fff; border: 1px solid #bfbfbf; border-radius: 4px; padding: 5px 10px; color: #555;}
+.print-paper button:hover{ background: #ebebeb; color: #d40101; border: 1px solid #ebebeb;}
+
+.print-paper-center{ text-align: center;}
+
+textarea.text-interview-area{ width: 100%; padding: 10px; border-radius: 10px; height: 150px;}
+.bg-whtie-resume{ background: #fff; overflow: hidden; margin-bottom: 20px; border-radius: 0 0 10px 10px; padding: 15px;}
+p.no-eng-resume{ font-size: 24px; font-size: 2.4rem; color: #555; text-align: center;}
+.goto-resume-thai{ margin-bottom: 20px; text-align: center;}
+.goto-resume-thai a{ background: #d40101; color: #fff; border-radius: 10px; padding: 10px 15px; display: inline-block; 
+	text-decoration: none;}
+.goto-resume-thai a:hover{ background: #ebebeb; color: #d40101;}
+
+@media (max-width:576px){
+	p.no-eng-resume{ font-size: 16px; font-size: 1.6rem;}
+}
+
+@page { size: A4; margin: 1cm;}
+
+@media print {
+	html, body { width: 210mm; height: 297mm;}
+	.jobbkk-pc{ display: none;}
+	.jobbkk-mobile{ display: none;}
+	
+	.logo-jobfair{ text-align: left !important;}
+	.logo-resume{ text-align: right !important;}
+	.logo-jobfair{ width: 66.66666667%;}
+	.logo-resume{ width: 33.33333333%;}
+	.logo-jobfair img{ max-width: 65px !important;}
+	.logo-resume img{ max-width: 120px !important;}
+	
+	.bg-form-jobfair{ background: #f5f3f2 !important; -webkit-print-color-adjust: exact;}
+	.bg-white-jobbkk{ background: #fff !important; -webkit-print-color-adjust: exact; border: 1px solid #bfbfbf;}
+	.radius-white{ border-radius: 0 0 10px 10px !important;}
+	.cd-top{ display: none;}
+	.color-b{ color: #000000;}
+	
+	.pic-user{ width: 20% !important;}
+	.box-form{ width: 80% !important;}
+	.col-print-3, .col-print-4, .col-print-6, .col-print-8{ float: left; position: relative; min-height: 1px; 
+		padding-right: 15px; padding-left: 15px;}
+	.col-print-3{ width: 25% !important;}
+	.col-print-4{ width: 33.33333333% !important;}
+	.col-print-6{ width: 50% !important;}
+	.col-print-8{ width: 66.66666667%!important;}
+	.col-print-12{ width: 100% !important;}
+	
+	.jobbkk-red{ color: #d40101 !important;}
+	.fa, :after, :before{ color: #d40101 !important;}
+	.print-paper, .print-paper-center{ display: none;}
+}
+
+.mobileGridUpload{ display: flex; flex-direction: column; font-size: var(--font14); align-items: center;}
+.flexButton{ display: flex; flex-direction: column; align-content: space-around; flex-wrap: wrap;}
+.gridButton{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 0 15px;}
+.formControlGrid{ border-radius: 4px; padding: 20px 15px; font-size: var(--font14);}
+.flexButton section:first-child{ margin-bottom: var(--margin-bottom20);}
+
+.photoUpload{ text-align: center;}
+.photoUpload img{ width: auto;}
+.gridButton button{ padding: 10px 15px; background: var(--bg-white); border: 1px solid var(--bg-gray); color: var(--color-black-gray); border-radius: 4px; 
+	cursor: pointer;}
+.gridButton button:hover{ background: var(--bg-dark-red); border: 1px solid var(--bg-red); color: var(--color-white);}
+/* .buttonDel{ display: none;} */
+
+label.attachments{ padding: 10px 15px; background: var(--bg-red); color: var(--color-white); border-radius: 4px; cursor: pointer; margin-bottom: 0; 
+	display: inline-block; border: 1px solid var(--bg-red); text-align: center; font-size: var(--font16);
+	transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -ms-transition: all 0.3s ease-in;}
+label.attachments:hover{ background:var(--bg-dark-red);}
+label.attachments input[type="file"] { display: none;}
+
+@media (max-width:576px){
+	.gridButton{ grid-template-columns: 1fr;}
+	label.attachments{ margin-bottom: var(--margin-bottom10);}
+}

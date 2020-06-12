@@ -1,0 +1,253 @@
+/* contain-grid และ ปุ่มอ่านต่อ  */
+.headGrid{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 0 15px; align-items: center; margin-bottom: var(--margin-bottom20);}
+.headContent{ font-size: var(--font28); color: var(--color-black-gray); text-transform: uppercase;}
+.readMore{ text-align: right;}
+.readMore a{ display: inline-block; text-decoration: none; background: var(--bg-red); color: var(--color-white); border-radius: 4px; padding: 10px; font-size: var(--font14);}
+.readMore a:hover{ background: var(--bg-dark-red);}
+
+/* งานด่วน */
+.UrgentlyNeededJobs{ margin-bottom: var(--margin-bottom40);}
+.UrgentlyNeededJobsGrid{ display: grid; grid-template-columns: repeat(8, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.UrgentlyNeededJobsGrid li{ height: 100%;}
+.UrgentlyNeededJobsGrid li a{ padding: 5px; border-radius: 10px; border: 1px solid var(--bg-gray); display: flex; align-items: center; justify-content: center; height: 120px;}
+.UrgentlyNeededJobsGrid li a img{ height: 100%; object-fit: scale-down;}
+.UrgentlyNeededJobsGrid li a:hover{ transform: scale(1.05);}
+
+@media (max-width:991px){
+	.UrgentlyNeededJobsGrid{ overflow-x: scroll; grid-template-columns: repeat(8, 16%); padding-bottom: 10px;}
+}
+
+@media (max-width:768px){
+	.UrgentlyNeededJobsGrid{ grid-template-columns: repeat(8, 22%);}
+}
+
+@media (max-width:576px){
+	.UrgentlyNeededJobsGrid{ grid-template-columns: repeat(8, 25%);}
+}
+
+@media (max-width:480px){
+	.UrgentlyNeededJobsGrid li a{ height: 100px;}
+}
+
+@media (max-width:320px){
+	.UrgentlyNeededJobsGrid li a{ height: 80px;}
+}
+
+/* job fair */
+.jobFair{ margin-bottom: var(--margin-bottom40);}
+.jobFairGrid{ display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.jobFairGrid img{ border: 1px solid var(--bg-gray);}
+.jobFairGrid li a{ display: flex; align-items: center; justify-content: center;}
+.jobFairGrid li a:hover{ transform: scale(1.03);}
+
+@media (max-width:991px){
+	.jobFairGrid{ grid-template-columns: repeat(2, 1fr);}
+}
+
+@media (max-width:576px){
+	.jobFairGrid{ grid-template-columns: 1fr;}
+}
+
+/* premium company */
+.premiumCompany{ margin-bottom: var(--margin-bottom40);}
+.premiumCompanyGrid{ display: grid; grid-template-columns: repeat(5, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.premiumCompanyGrid img{ border: 1px solid var(--bg-gray);}
+.premiumCompanyGrid li a{ display: flex; align-items: center; justify-content: center;}
+.premiumCompanyGrid li a:hover{ transform: scale(1.03);}
+
+@media (max-width:991px){
+	.premiumCompanyGrid{ overflow-x: scroll; grid-template-columns: repeat(5, 33.3333333%); padding-bottom: 10px;}
+}
+
+@media (max-width:768px){
+	.premiumCompanyGrid{ grid-template-columns: repeat(5, 35%);}
+}
+
+@media (max-width:576px){
+	.premiumCompanyGrid{ grid-template-columns: repeat(5, 45%);}
+}
+
+/* full banner */
+.fullBanner{ margin-bottom: var(--margin-bottom40); text-align: center;}
+.fullBanner a{ display: block;}
+.fullBanner a:hover{ transform: scale(1.01);}
+.fullBanner img{ border: 1px solid var(--bg-gray); width: auto;}
+
+/* งานทั่วไทยไปทุกภาค */
+.jobsAroundThailand{ margin-bottom: var(--margin-bottom40);}
+.jobsAroundThailandBottom{ margin-bottom: var(--margin-bottom20);}
+.jobsAroundThailandGrid{ display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.jobsAroundThailandGrid li a{ display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none;}
+.jobsAroundThailandGrid li a:hover{ transform: scale(1.03);}
+
+.nameRegion{ background: #ebebeb; border: 1px solid #bfbfbf; padding: 10px; border-radius: 0 0 10px 10px; display: flex; align-items: center; justify-content: space-between; width: 100%; text-align: center;}
+.nameRegion p:first-child{ font-size: var(--font16); color: var(--color-black-gray);}
+.nameRegion p:last-child{ background: var(--bg-red); color: var(--color-white); border-radius: 4px; padding: 5px; transition: ease-in 0.5s; font-size: var(--font14);}
+.jobsAroundThailandGrid li a:hover .nameRegion p:last-child{ background: var(--bg-dark-red);}
+
+@media (max-width:991px){
+	.jobsAroundThailandGrid{ overflow-x: scroll; grid-template-columns: repeat(4, 33.3333333%); padding-bottom: 10px;}
+}
+
+@media (max-width:768px){
+	.jobsAroundThailandGrid{ grid-template-columns: repeat(4, 40%);}
+}
+
+@media (max-width:576px){
+	.jobsAroundThailandGrid{ grid-template-columns: repeat(4, 45%);}
+	.nameRegion p:first-child{ margin-bottom: var(--margin-bottom10);}
+	.nameRegion{ flex-direction: column;}
+}
+
+@media (max-width:480px){
+	.jobsAroundThailandGrid{ grid-template-columns: repeat(4, 50%);}
+	.nameRegion p:first-child{ font-size: var(--font14);}
+}
+
+/* hot career */
+.bgHotCareer{ background: var(--bg-gray-young); padding: 15px;}
+.hotCareer{ margin-bottom: var(--margin-bottom40);}
+.hotCareerBottom{ margin-bottom: var(--margin-bottom20);}
+.hotCareerGrid{ display: grid; grid-template-columns: repeat(25, 12.5%); list-style: none; margin: 0; padding: 0; grid-gap: 15px; overflow-x: scroll; padding: 10px 0; margin-bottom: var(--margin-bottom10);}
+.hotCareerGrid li a{ display: flex; align-items: center; justify-content: center; text-decoration: none;}
+.hotCareerGrid li a:hover{ transform: scale(1.03);}
+.hotCareerGrid li img{ margin-bottom: var(--margin-bottom5); width: auto;}
+.hotCareerGrid div{ display: flex; align-items: center; flex-direction: column; justify-content: center;}
+.hotCareerGrid div p{ color: var(--color-black-gray); text-align: center;}
+.hotCareerGrid div p.positionWork{ color: var(--color-red); font-size: var(--font12);}
+.hotCareerCut{ height: 60px;}
+
+.hotCareerGrid::-webkit-scrollbar{ height: 10px; background: #fff; border-radius: 10px;}
+.hotCareerGrid::-webkit-scrollbar-track{ box-shadow: inset 0 0 5px #ebebeb; border-radius: 10px;}
+.hotCareerGrid::-webkit-scrollbar-thumb{ background: #bfbfbf; border-radius: 10px;}
+.hotCareerGrid::-webkit-scrollbar-thumb:hover{ background: #333;}
+
+.controlScroll{ display: flex; justify-content: center;}
+.controlScroll button{ margin: 0 15px;}
+#buttonScrollLeft, #buttonScrollRight{ background: var(--bg-red); color: var(--color-white); border: 1px solid var(--bg-dark-red); border-radius: 4px; padding: 5px 15px;}
+.controlScroll #buttonScrollLeft:hover, .controlScroll #buttonScrollRight:hover{ background: var(--bg-dark-red);}
+
+@media (max-width:991px){
+	.hotCareerGrid{ grid-template-columns: repeat(25, 15%);}
+}
+
+@media (max-width:576px){
+	.hotCareerGrid{ grid-template-columns: repeat(25, 18%);}
+}
+
+@media (max-width:480px){
+	.hotCareerGrid{ grid-template-columns: repeat(25, 25%);}
+}
+
+/* งานพาทไทม์ */
+.partTimeJobs{ margin-bottom: var(--margin-bottom40);}
+.partTimeJobsGrid{ display: grid; grid-template-columns: repeat(7, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.partTimeJobsGrid li{ height: 100%;}
+.partTimeJobsGrid li a{ display: flex; align-items: center; justify-content: center; flex-direction: column; border: 1px solid var(--bg-gray); border-radius: 10px; overflow: hidden; 
+	text-decoration: none; color: var(--color-black-gray);}
+.partTimeJobsGrid li a img{ height: 120px; object-fit: scale-down; padding: 5px;}
+.partTimeJobsGrid li a:hover{ transform: scale(1.05); color: var(--color-red);}
+
+.bgPartTimeJobs{ background: var(--bg-gray-young); padding: 10px; border-radius: 0 0 10px 10px; height: 72px; width: 100%; padding: 10px;}
+
+@media (max-width:991px){
+	.partTimeJobsGrid{ grid-template-columns: repeat(7, 25%); overflow-x: scroll; padding-bottom: 10px;}
+}
+
+@media (max-width:576px){
+	.partTimeJobsGrid{ grid-template-columns: repeat(7, 28%);}
+}
+
+@media (max-width:480px){
+	.partTimeJobsGrid{ grid-template-columns: repeat(7, 33%);}
+	.partTimeJobsGrid li a img{ height: 100px;}
+}
+
+/* hot news */
+.hotNews{ margin-bottom: var(--margin-bottom40);}
+.hotNewsGrid{ display: grid; grid-template-columns: 0.5fr 1fr; list-style: none; margin: 0; padding: 0; grid-gap: 15px; position: relative;}
+.hotNewsGrid li{ height: 100%; position: relative;}
+.hotNewsGrid li a{ display: flex; align-items: center; flex-direction: column; border: 1px solid var(--bg-gray); border-radius: 10px; overflow: hidden; 
+	text-decoration: none; color: var(--color-black-gray); height: 100%; position: relative;}
+.hotNewsGrid li a img{ object-fit: scale-down; padding: 5px;}
+.hotNewsGrid li a:hover{ transform: scale(1.05);}
+
+.stallPin{ position: absolute; top: 0; left: 0; background: var(--bg-red); width: 50px; height: 50px; color: var(--color-white); display: flex; justify-content: center; align-items: center; 
+	border-radius: 0 0 10px 0; opacity: 0.9;}
+.stallPin .fa-thumb-tack{ transform: rotate(45deg);}
+
+.hotNewsGrid li ul{ display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.bghotNews{ padding: 10px; display: flex; flex-wrap: wrap; margin-bottom: 40px; position: relative;}
+.bghotNews p:first-child{ margin-bottom: var(--margin-bottom10);}
+.bghotNews p:last-child{ color: var(--color-black-gray);}
+.hotNewsRead{ padding: 10px; position: absolute; bottom: 0; display: flex; justify-content: flex-end; width: 100%;}
+.hotNewsRead p{ background: var(--bg-red); color: var(--color-white); border-radius: 4px; padding: 5px; display: inline-block; transition: all 0.5s ease-in;}
+.hotNewsGrid:hover .hotNewsRead p{ background: var(--bg-dark-red);}
+
+.hotNewsMobile{ display: none;}
+
+@media (max-width:1170px){
+	.hotNewsGrid{ display: grid; grid-template-columns: 1fr;}
+	.hotNewsGrid li ul{ grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (max-width:768px){
+	.hotNewsGrid{ /*grid-template-columns: 1fr;*/ display: inherit; overflow-x: inherit; padding-bottom: inherit;}
+	.hotNewsGrid li{ height: inherit; min-height: 100%;}
+	.hotNewsGrid li ul.subContent{ display: flex; overflow-x: scroll; padding-bottom: 10px;}
+	.hotNewsGrid li ul.subContent li{ min-width: 35%; min-height: 100%; padding-left: 15px;}
+	.hotNewsGrid li ul.subContent li:first-child{ padding-left: 0;}
+	.hotNewsPC{ display: none;}
+	.hotNewsMobile{ display: block;}
+}
+
+@media (max-width:576px){
+	.hotNewsGrid li ul.subContent li{ min-width: 40%;}
+}
+
+@media (max-width:480px){
+	.hotNewsGrid li ul.subContent li{ min-width: 45%;}
+	.stallPin{ width: 40px; height: 40px;}
+}
+
+@media (max-width:320px){
+	.hotNewsGrid li ul.subContent li{ min-width: 55%;}
+}
+
+/* best company */
+.bestCompany{ margin-bottom: var(--margin-bottom40);}
+.bestCompanyGrid{ display: grid; grid-template-columns: repeat(7, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.bestCompanyGrid li a{ padding: 15px; border-radius: 10px; border: 1px solid var(--bg-gray); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;}
+.bestCompanyGrid li a:hover{ transform: scale(1.05);}
+
+.stallPinCompany{ position: absolute; top: 0; left: 0; background: var(--bg-red); width: 30px; height: 30px; color: var(--color-white); display: flex; justify-content: center; align-items: center; 
+	border-radius: 0 0 10px 0; opacity: 0.9;}
+.stallPinCompany .fa-thumb-tack{ transform: rotate(45deg);}
+
+@media (max-width:991px){
+	.bestCompanyGrid{ overflow-x: scroll; grid-template-columns: repeat(7, 16%); padding-bottom: 10px;}
+}
+
+@media (max-width:768px){
+	.bestCompanyGrid{ grid-template-columns: repeat(7, 18%);}
+}
+
+@media (max-width:576px){
+	.bestCompanyGrid{ grid-template-columns: repeat(7, 20%);}
+	.stallPinCompany{ width: 20px; height: 20px;}
+	.bestCompanyGrid li a{ padding: 5px;}
+}
+
+.businessPartners{ margin-bottom: var(--margin-bottom40);}
+.businessPartnersGrid{ display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 0; padding: 0; grid-gap: 15px;}
+.businessPartnersGrid li a{ padding: 5px; border-radius: 10px; border: 1px solid var(--bg-gray); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;}
+.businessPartnersGrid li a:hover{ transform: scale(1.05);}
+.businessPartnersGrid li img{ width: auto;}
+
+@media (max-width:991px){
+	.businessPartnersGrid{ grid-template-columns: repeat(4, 28%); overflow-x: scroll; padding-bottom: 10px;}
+}
+
+@media (max-width:480px){
+	.businessPartnersGrid{ grid-template-columns: repeat(4, 33%);}
+}

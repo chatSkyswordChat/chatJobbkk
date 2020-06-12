@@ -1,0 +1,60 @@
+button{ transition: all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; -moz-transition:all 0.3s ease-in; -ms-transition:all 0.3s ease-in;}
+.breakChum ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.breakChum ul li{ float: left; padding: 0 10px;}
+.breakChum ul li a{ text-decoration: none;}
+
+.line-line{ border-bottom: 1px solid #bfbfbf;}
+
+.box-border{ border: 1px solid #bfbfbf; overflow: hidden;}
+.team-work{ color: #fff; padding: 10px; margin: 15px 0 10px;}
+
+.use-social ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.use-social ul li{ float: left; padding: 0 10px;}
+.use-social ul li a{ border-radius: 4px; border: 1px solid #bfbfbf; padding: 5px 10px; text-align: center; text-decoration: none; color: #555; display: block;}
+.use-social ul li a.facebook:hover{ background: #4267b2; color: #fff; border: 1px solid #4267b2;}
+.use-social ul li a.twister:hover{ background: #1c94e0; color: #fff; border: 1px solid #1c94e0;}
+.use-social ul li a.google:hover{ background: #db4437; color: #fff; border: 1px solid #db4437;}
+
+.name-left{ text-align: right;}
+.align-item-c{ display: flex; align-items: center;}
+.jobbkk-form-control{ padding-left: 10px}
+
+.capcha{ margin-bottom: 5px;}
+.capcha img{ width: auto;}
+.add-capsha ul{ margin: 0 -10px; padding: 0; list-style: none;}
+.add-capsha ul li{ float: left; padding: 0 10px;}
+.add-capsha ul li button{ background: #d40101; padding: 5px 10px; border-radius: 4px; color: #fff; border: 1px solid #d40101;}
+.add-capsha ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+
+@media (max-width: 480px){
+	.add-capsha ul li{ width: 100%; float: none; margin-bottom: 5px;}
+	.add-capsha ul li button{ width: 100%;}
+}
+
+.send-clear{ text-align: center;}
+.send-clear ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
+.send-clear ul li{ float: left; padding: 0 10px;}
+.send-clear ul li button{ border-radius: 4px; padding: 5px 10px;}
+.send-clear ul li:first-child button{ background: #d40101; color: #fff; border: 1px solid #d40101;}
+.send-clear ul li:last-child button{ background: #fff; color: #555; border: 1px solid #bfbfbf;}
+.send-clear ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+
+.line-border{ margin: 20px 0; border-bottom: 1px solid #bfbfbf; padding-bottom: 20px;}
+.color-user{ width: 50px; height: 50px; border-radius: 50%; background: #d40101; display: grid; align-items: center; text-align: center; color: #fff; margin: 0 auto;}
+.border-user{ border-right: 1px solid #bfbfbf; text-align: center;}
+
+.score ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-flex; align-items: center;}
+.score ul li{ float: left; padding: 0 10px;}
+.score ul li:nth-child(2){ border-right: 1px solid #bfbfbf;}
+.score ul li button{ background: #d40101; border: 1px solid#d40101; color: #fff; padding: 5px 10px; border-radius: 4px;}
+.score ul li button:hover{ background: #ebebeb; border: 1px solid #ebebeb; color: #d40101;}
+
+.name-user{ text-align: right;}
+
+@media (max-width: 767px){
+	.score{ margin-bottom: 10px; text-align: center;}
+	.name-user{ text-align: center;}
+}
+
+
+
