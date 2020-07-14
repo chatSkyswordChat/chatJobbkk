@@ -1,55 +1,68 @@
-:root{
-	--dropDownHeightSearchWork: 34px;
+.flexSearchChat{ display: flex; flex-direction: column; background: var(--color-gray-young); padding: 15px;}
+.gridSearch{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
+.lineDash{ border-bottom: 1px dashed var(--color-black-gray); height: 2px; margin: 15px 0;}
+.dropDrop{ padding: 15px; width: 100%; font-size: var(--font16);}
+.dropPad a{ display: block; padding: 5px; margin: 0 -15px; font-size: var(--font16);}
+.dropPad a:hover{ background: var(--color-gray-young); }
+label{ cursor: pointer; display: block; font-weight: 100;}
+.headWork{ margin-bottom: 15px;}
+.text-red{ color: var(--color-red);}
+
+@media (max-width:991px){
+	.gridSearch{ grid-template-columns: 1fr;}
 }
-.dropDownTabWork{ height: var(--dropDownHeightSearchWork);}
 
-/*ค้นหางาน*/
-.searchWorkJobbkk{ margin-bottom: var(--margin-bottom40);}
-.bg-height{ height: 18px;}
-.panel-body{ padding: 0 15px 15px;}
-.form-control{ padding-left: 30px; border-radius: 10px;}
-.form-control-feedback{ left: 0; top: 10px; color: #D40101;}
+/*ประเภทงานทั้งหมด*/
+.dropDownTabWork, .button-group{ position: relative;}
+.form-control-feedback{ top: 8px;}
+.category-work{ width: 100%; background: var(--color-white); color: var(--color-black-gray); border-radius: 10px;
+	display: flex; align-items: center; justify-content: space-between; height: 34px; cursor: pointer;
+	font-size: var(--fontdetail); border: 1px solid var(--color-gray);}
+.formControl{ padding: 6px 12px; border-radius: 10px; text-decoration: none !important;}
+.radiusLeft{ border-radius: 10px 0 0 10px;}
+.radiusRight{ border-radius: 0 10px 10px 0;}
 
-/*สถานที่ทำงานทั้งหมด*/
-.button-group{ position: relative;}
-.workarea-all{ width: 100%; background: #FFFFFF; padding: 8.5px 12px; font-size: 1.4rem; font-size: 14px; border: 1px solid #bfbfbf; color: #9999a9; 
-	text-align: left; border-radius: 10px;}
-.workarea-all .fa-chevron-down{ text-align: right;}
-.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover, .btn-default:hover{ background: #FFFFFF; color: #9999a9;}
+.flexSelect{ display: flex; justify-content: space-between;}
+.flexSelect>*{ margin-right: 15px;}
+.flexSelect>*:last-child{ margin-right: 0;}
 
-.dropdown-menuJobbkk{ min-width: 100%; padding: 15px;}
-.list-select{ border-bottom: 1px solid #bfbfbf; padding-bottom: 15px; margin-bottom: 15px; display: grid; grid-template-columns: 4fr 1fr; grid-template-rows: auto; grid-gap:0 10px; 
-	justify-items: end;}
-.list-select-work ul{ margin: 0 -10px; padding: 0; list-style: none; display: inline-block;}
-.list-select-work ul li{ padding: 0 10px; float: left; margin-bottom: 5px;}
-.list-select-work ul li button{ background: #337ab7; border: 1px solid #337ab7; border-radius: 4px; color: #fff; width: 100%;}
-.confirmJobbkk button{ background: #d40101; border: 1px solid #d40101; color: #fff; border-radius: 4px;}
+.listSelectWork{ margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap;}
+.listSelectWork>*{ margin-right: 15px;}
+.listSelectWork li{ margin-bottom: 5px;}
+.listSelectWork button{ background: var(--color-blue); border: 1px solid var(--color-blue); 
+	border-radius: 4px; color: var(--color-white);}
+.listSelectWork button:hover{ background: var(--color-blue-hover);}
+.confirmButton{ background: var(--color-red); border: 1px solid var(--color-red); padding: 5px 10px; 
+	border-radius: 4px; color: var(--color-white); height: fit-content;}
 
-.dropdown-menuLeftRight{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 0 10px;}
-.dropdown-menu-left{ border-right: 1px solid #bfbfbf; height: 250px; overflow-y: scroll;}
-.dropdown-menu-right{ height: 250px; overflow-y: scroll;}
-.dropdown-menu-left li a{ display: block; padding: 3px 0; text-decoration: none; color: #555;}
-.dropdown-menu-left li a.active, .dropdown-menu-left li a:hover{ background: #ebebeb; padding-left: 5px;}
-.dropdown-menu-right li{ display: flex; align-items: center; justify-content: space-between;}
-.dropdown-menu-right li button{ background: transparent; border: 0; color: #333; font-size: 1.6rem;}
+.dropdown-menuLeftRight{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.dropdown-menu-left, .dropdown-menu-right{ height: 250px; overflow-y: scroll;}
+.dropdown-menu-left a{ display: block; padding: 5px; color: var(--color-black-gray); text-decoration: none; 
+	margin-right: 5px;}
+.dropdown-menu-left a:hover, .dropdown-menu-left a.active{ background: var(--color-gray-young);}
 
-.dropdown-menu-right::-webkit-scrollbar, .dropdown-menu-left::-webkit-scrollbar{ width: 5px; background-color: #7D7979;}
-.dropdown-menu-right::-webkit-scrollbar-track, .dropdown-menu-left::-webkit-scrollbar-track{ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5;}
+.dropdown-menu-right::-webkit-scrollbar, .dropdown-menu-left::-webkit-scrollbar{ width: 5px;}
+.dropdown-menu-right::-webkit-scrollbar-track, 
+.dropdown-menu-left::-webkit-scrollbar-track{ box-shadow: inset 0 0 6px rgba(0,0,0,0.5); background-color: #F5F5F5;}
 .dropdown-menu-right::-webkit-scrollbar-thumb, .dropdown-menu-left::-webkit-scrollbar-thumb{ background-color:#7D7979;}
 
-.dropdown-menuMo{ min-width: 100%; height: auto;}
-.dropdown-menuCus{ height: 250px; overflow-y: scroll; min-width: 100%;}
-.dropdown-menuCus::-webkit-scrollbar, .dropdown-menu-left::-webkit-scrollbar{ width: 5px; background-color: #7D7979;}
-.dropdown-menuCus::-webkit-scrollbar-track, .dropdown-menu-left::-webkit-scrollbar-track{ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); background-color: #F5F5F5;}
-.dropdown-menuCus::-webkit-scrollbar-thumb, .dropdown-menu-left::-webkit-scrollbar-thumb{ background-color:#7D7979;}
-.dropdown-menuCusRight{ left: inherit; right: 0;}
+.selectWorkFlex{ display: flex; align-items: center;}
+.selectWork5{ text-align: center; padding: 5px;}
+.selectWork5 figure img{ max-width: 150px;}
+.selectWork5 figcaption{ color: #337ab7; font-size: 2rem; font-weight: bold;}
 
-.other ul{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 5px 12px;}
+.flexDi{ display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; width: 100%;}
+
+.gridMoney{ display: grid; grid-template-columns: 1fr 1fr;}
+
+.other ul{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; 
+	background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 5px 12px;}
 .other ul li{ float: left; padding: 0 10px;}
 .other ul li:first-child{ padding-left: 0;}
 
 @media (max-width:576px){
-	.other ul{ display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; align-items: stretch; grid-gap: 10px;}
+	.other ul{ display: grid; grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: auto; align-items: stretch; grid-gap: 10px;}
 	.other ul li{ padding: 0;}
 	.other ul li:first-child{ grid-column: 1/span 3;}
 }
@@ -58,11 +71,6 @@
 	.other ul{ display: grid; grid-template-columns: 1fr;}
 	.other ul li:first-child{ grid-column: 1;}
 }
-
-.selectWorkFlex{ display: flex; align-items: center;}
-.selectWork5{ text-align: center; padding: 5px;}
-.selectWork5 figure img{ max-width: 150px;}
-.selectWork5 figcaption{ color: #337ab7; font-size: 2rem; font-weight: bold;}
 
 @media (max-width:576px){
 	.selectWork5 figure img{ max-width: 100px;}
@@ -80,7 +88,8 @@
 }
 
 .clearSearch{ text-align: right;}
-.clearSearch button{ width: 100%; background: transparent; border: 1px solid #ccc; background: #fff; border-radius: 10px; height: 34px;}
+.clearSearch button{ width: 100%; background: transparent; border: 1px solid #ccc; 
+	background: #fff; border-radius: 10px; height: 34px;}
 .clearSearch button:hover{ background: #333; color: #fff; border: 1px solid #333;}
 
 .clearSearch{ text-align: center;}
@@ -93,17 +102,21 @@
 
 .detail .panel-group{ margin-bottom: 0;}
 .detail .panel-group .panel-heading{ padding: 0;}
-.detail a{ width: 100%; height: 34px; background: #fff; border: 1px solid #ccc; border-radius: 10px; display: block; text-align: center; padding: 6.5px 12px; color: #555; text-decoration: none;}
+.detail a{ width: 100%; height: 34px; background: #fff; border: 1px solid #ccc; 
+	border-radius: 10px; display: block; text-align: center; padding: 6.5px 12px; color: #555; text-decoration: none;}
 
 .panel-group .panel-headingJobbkk{ padding: 0;}
 .panel-bodyJobbkk{ padding: 0 15px;}
 
-.search-work a{ background: #d40101; border-radius: 10px; color: #fff; display: block; text-align: center; text-decoration: none; height: 34px; padding: 6.5px 12px;}
+.search-work a{ background: #d40101; border-radius: 10px; color: #fff; display: block; 
+	text-align: center; text-decoration: none; height: 34px; padding: 6.5px 12px;}
 .search-work a:hover{ background: #b90303;}
-.search-work button{ background: #d40101; border-radius: 10px; color: #fff; display: block; text-align: center; text-decoration: none; height: 34px; padding: 6.5px 12px; border: 1px solid #d40101;}
+.search-work button{ background: #d40101; border-radius: 10px; color: #fff; display: block; 
+	text-align: center; text-decoration: none; height: 34px; padding: 6.5px 12px; border: 1px solid #d40101;}
 .search-work button:hover{ background: #b90303; border: 1px solid #b90303;}
 
-.search-work button{ border-radius: 10px; width: 100%; height: 34px; padding: 6.5px 12px; color: #fff; border: 1px solid #D40101; text-align: center;}
+.search-work button{ border-radius: 10px; width: 100%; height: 34px; padding: 6.5px 12px; 
+	color: #fff; border: 1px solid #D40101; text-align: center;}
 .search-work button:hover{ background: #b90303;}
 
 @media (max-width:380px){
@@ -148,43 +161,3 @@
 .menu-other-work li label{ padding: 3px 20px;margin-bottom: 0px;}
 */
 
-/*ประเภทงานทั้งหมด*/
-.category-work{ width: 100%; background: #FFFFFF; padding: 8.5px 12px; font-size: 1.4rem; font-size: 14px; border: 1px solid #ccc; color: #9999a9; 
-	text-align: left; border-radius: 10px;}
-
-.block-salary{ width: 100%;}
-.jobbkk-salary-1, .jobbkk-salary-2{ width: 50%;}
-.jobbkk-btn{ border:1px solid #ccc; font-size: 1.4rem; font-size: 14px; border-radius: 10px; background: #FFFFFF; padding: 8.5px 12px; color: #9999a9; width: 100%;}
-.block-salary ul.dropdown-menu{ min-width: 100%;}
-.jobbkk-salary-left{ text-align: left;}
-.jobbkk-famoney{ margin-right: 5px;}
-
-@media (max-width:380px){
-	.block-salary ul.jobbkk-dropdown-menu-left{ right: -100%;}
-	.block-salary ul.jobbkk-dropdown-menu-right{ left: -100%; right: 0;}
-}
-
-.jobbkk-format-work .area-menu{ height: auto;}
-a.format-work{ width: 100%; background: #FFFFFF; padding: 8.5px 12px; font-size: 1.4rem; font-size: 14px; border: 1px solid #ccc; color: #9999a9; 
-	text-align: left; border-radius: 10px;}
-
-button.format-work{ width: 100%; background: #FFFFFF; padding: 8.5px 12px; font-size: 1.4rem; font-size: 14px; border: 1px solid #ccc; color: #9999a9; 
-	text-align: left; border-radius: 10px;}
-
-.jobbkk-vehicle .area-menu{ height: 250px; overflow-y: scroll;}
-.vehicle{ width: 100%; background: #FFFFFF; padding: 8.5px 12px; font-size: 1.4rem; font-size: 14px; border: 1px solid #ccc; color: #9999a9; 
-	text-align: left; border-radius: 10px;}
-
-.panel-body-mobile{ padding: 0 15px;}
-.jobbkk-mobile-searchwork{ display: none;}
-
-@media (max-width:1170px){
-	.jobbkk-pc-searchwork{ display: none;}
-	.jobbkk-mobile-searchwork{ display: block;}
-}
-
-/* shorthand 5 งาน jobbkk */
-.shortHandListJob ul{ display: flex; align-items: center; list-style: none; margin: 0; padding: 0; flex-wrap: wrap;}
-.shortHandListJob ul li{ margin-right: 15px; margin-bottom: var(--margin-bottom20);}
-.shortHandListJob ul li a{ background: var(--bg-white); border-radius: 10px; padding: 6.5px 12px; display: inline-block; border: 1px solid #ccc; color: var(--color-black-gray); text-decoration: none;}
-.shortHandListJob ul li a:hover{ background: var(--bg-red); color: var(--color-white); border: 1px solid ##d40101;}

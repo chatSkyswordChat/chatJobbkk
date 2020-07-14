@@ -12,6 +12,7 @@
 	--color-green: #5fad56;
 	--color-green-hover: #3b7e33;
 
+	--fontdetail: clamp(1.4rem, 1.6rem, 1.6rem);
 	--font28: 2.8rem; 
 	--font24: 2.4rem; 
 	--font22: 2.2rem; 

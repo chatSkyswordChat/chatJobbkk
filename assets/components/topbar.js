@@ -1,48 +1,36 @@
 $(()=>{
     let topbar = ''
-    let url = $(location).attr('href')
-    let link = url.split('/')
-    let linkLogo = ''
-    let picLogo = ''
-    let banner = ''
-    console.log(link) 
-
-    if(link.length == 6 && 4){
-        linkLogo = 'index.html'
-        picLogo = 'assets/images/logo.png'
-        banner = 'assets/images/toppage-ad.jpg'
-        var logins =[
-            { name: 'ผู้สมัครงาน', link: 'login/login-applicant.html'},
-            { name: 'ผู้ประกอบการ', link: 'login/login-owner.html'},
-            { name: 'สมัครสมาชิก', link: 'login/register.html'}
-        ]
-    }else{
-        linkLogo = '../index.html'
-        picLogo = '../assets/images/logo.png'
-        banner = '../assets/images/toppage-ad.jpg'
-        var logins =[
-            { name: 'ผู้สมัครงาน', link: '../login/login-applicant.html'},
-            { name: 'ผู้ประกอบการ', link: '../login/login-owner.html'},
-            { name: 'สมัครสมาชิก', link: '../login/register.html'}
-        ]
+    
+    let userAll = ($(location).attr('href').split('/').length == 7) ? '':'../'
+    console.log(userAll);
+    
+    let linked = { 
+        linkLogo : userAll+'index.html', 
+        picLogo : userAll+'assets/images/logo.png', 
+        banner : userAll+'assets/images/toppage-ad.jpg'
     }
+    let logins = [
+        { name: 'ผู้สมัครงาน', link: userAll+'login/login-applicant.html'},
+        { name: 'ผู้ประกอบการ', link: userAll+'login/login-owner.html'},
+        { name: 'สมัครสมาชิก', link: userAll+'login/register.html'}
+    ]
 
-    topbar +=`<div class="btn-list" style="display: none;">`
-		topbar +=`<button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="toggle">`
-		    topbar +=`<i class="fa fa-bars" aria-hidden="true">`            
-            topbar +=`</i>`
-		topbar +=`</button>`
-	topbar +=`</div>`
-
-	topbar +=`<div class="flexLogo">`
+    topbar +=`<div class="flexLogo">`
+        topbar +=`<div class="btn-list">`
+		    topbar +=`<button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="toggle">`
+		        topbar +=`<i class="fa fa-bars" aria-hidden="true">`            
+                topbar +=`</i>`
+		    topbar +=`</button>`
+        topbar +=`</div>`
+    
 		topbar +=`<div class="logo">`
-			topbar +=`<a href="${linkLogo}"><img src="${picLogo}">`
+			topbar +=`<a href="${linked.linkLogo}"><img src="${linked.picLogo}">`
             topbar +=`</a>`
 		topbar +=`</div>`
 
 		topbar +=`<div class="banner">`
 			topbar +=`<a href="javascript:void(0)">`
-                topbar +=`<img src="${banner}">`
+                topbar +=`<img src="${linked.banner}">`
             topbar +=`</a>`
 		topbar +=`</div>`
 
