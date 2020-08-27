@@ -1,0 +1,86 @@
+.workUrgent{ border: 1px solid var(--clGray); border-radius: 10px; padding: 15px; background: var(--clWhite);}
+.gridUrgentRec{ display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 15px;}
+.flexPic{ display: flex; justify-content: space-between; grid-gap: 15px;}
+.flexPic figure{ border: 1px solid var(--clGray); border-radius: 50%; max-width: 80px; height: 80px; width: 100%;}
+.flexPic img{ max-width: 80px; height: 80px; object-fit: scale-down; border-radius: 50%; padding: 5px;}
+
+.workUrgent{ transition: 0.5s ease-in-out;}
+.workUrgent a{ width: 100%;}
+.workUrgent:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
+.workUrgent p{ color: var(--clBlackGray);}
+
+.linkLink a:hover{ text-decoration: underline !important; color: var(--clRedHover);}
+.flexProcessList{ display: flex; align-items: center;}
+.formControlList{ border-radius: 10px;}
+.flexIn{ display: flex; justify-content: space-between; grid-gap: 15px; width: 100%;}
+
+@media (max-width:768px){
+    .flexProcessList{ flex-direction: column; align-items: baseline;}
+    .flexProcessList .form-group{ width: 100%; margin-top: 10px;}
+    .formControlList{ margin-left: 0 !important;}
+}
+
+.gridUnder{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
+.gridUnder p{ font-size: var(--fontSubText);}
+.gridUnder a{ background: var(--clRed); color: var(--clWhite); text-align: center; border-radius: 50px; padding: 5px 10px; 
+    display: inline-block;}
+.gridUnder a:hover{ background: var(--clRedHover);}
+
+.gridListWork{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
+.saveWork button{ background: transparent; border: 0;}
+.saveWork button:hover, .saveWork button.active{ color: var(--clRed);}
+
+@media (max-width:991px){
+    .gridListWork{ grid-template-columns: 1fr;}
+}
+
+@media (max-width:768px){
+    .flexIn{ justify-content: start; flex-direction: column;}
+    .gridUnder{ grid-template-columns: 1fr;}
+    .gridUnder div + div{ text-align: center;}
+    .gridUnder a{ max-width: 50%;}
+}
+
+@media (max-width:576px){
+    .gridUnder a{ max-width: 100%;}
+}
+
+.workAll{ border-radius: 10px; margin-bottom: 15px;}
+.workAll a{ display: block; padding: 5px;}
+.workAll a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.workHit{ border-radius: 10px; margin-bottom: 15px;}
+.workHit a{ display: block; padding: 5px;}
+.workHit a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.careerHit{ border-radius: 10px; margin-bottom: 15px;}
+.careerHit a{ display: block; padding: 5px;}
+.careerHit a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.tagHit{ border-radius: 10px; margin-bottom: 15px;}
+.tagHit ul{ display: flex; flex-wrap: wrap; grid-gap: 10px;}
+.tagHit a{ display: inline-block; padding: 2px 8px; background: var(--clWhite); border: 1px solid var(--clBlackGray); 
+    border-radius: 50px;}
+.tagHit a:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+
+.popUpUrgent{ background: var(--clWhite); padding: 10px; border-radius: 10px; border: 1px solid var(--clBlackGray); 
+    text-align: center; position: sticky; top: 15px; z-index: 10; max-width: 312px; height: auto;}
+.popUpUrgent button{ padding: 5px 20px; border: 1px solid var(--clGreen); border-radius: 50px; color: var(--clWhite);}
+.popUpUrgent button:hover{ background: var(--clGreenHover);}
+
+@media (max-width:991px){
+    .bannerUrgent{ display: none;}
+    .workAll, .workHit, .careerHit, .tagHit{ display: none;}
+    .popUpUrgent{ max-width: 100%;}
+}
+
+.jobSearch{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+
+@media (max-width:768px){
+    .jobSearch{ grid-template-columns: 1fr;}
+}
+
+.flexCheck{ display: flex !important; justify-content: center ; align-items: baseline; flex-direction: column; grid-gap: 15px;
+    max-width: 200px; margin: 0 auto; padding: 15px;}
+.form-check{ padding: 0;}
+.formCheckInput{ margin-top: 0; position: relative;}

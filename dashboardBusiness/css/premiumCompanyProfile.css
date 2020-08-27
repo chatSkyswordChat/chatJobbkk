@@ -1,0 +1,149 @@
+.flexMenuBusiness{ display: flex; justify-content: flex-end;}
+.gridPremiumCompanyProfile{ display: grid; grid-template-columns: 0.3fr 1fr; grid-gap: 15px; background: var(--clWhitetGray); padding: 15px; border-radius: 10px;}
+.logoPremiumCompanyProfile{ width: 100%;}
+.logoPremiumCompanyProfile figure{ border: 1px solid var(--clGray); border-radius: 10px; background: var(--clWhite); margin: 0 auto;}
+.logoPremiumCompanyProfile img{ padding: 10px;}
+
+@media (max-width:991px){
+    .gridPremiumCompanyProfile{ grid-template-columns: 1fr;}
+    .logoPremiumCompanyProfile{ border-bottom: 1px dashed var(--clBlackGray); padding-bottom: 15px;}
+    .logoPremiumCompanyProfile figure{ width: 200px;}
+    .slide-menu-control{ display: none;}
+}
+
+@media (max-width:768px){
+    .flexMenuBusiness{ justify-content: center;}
+}
+
+button.urgentButton{ border-radius: 50px; color: var(--clWhite); margin: 15px 0; padding: 5px 20px; display: inline-block; 
+    border: 1px solid var(--clRed);}
+button.urgentButton:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover)}
+.blHei img{ object-fit: cover;}
+
+.gridBlade{ display: grid; grid-template-columns: 100px 1fr; grid-gap: 15px;}
+.flexAce{ display: flex; flex-direction: column; gap: 15px;}
+.readRead{ text-align: right;}
+.readRead a{ display: inline-block; background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+.readRead a:hover{ background: var(--clRedHover);}
+
+.formControl{ border-radius: 50px;}
+.selectCus select{ appearance: none; -moz-appearance: none; position: relative;}
+.selectCus{ position: relative; display: block;}
+.selectCus:after {font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f078";
+    color: var(--clBlackGray); position: absolute; right: 15px; top: 7px; z-index: 1; text-align: center; 
+    height: 100%; pointer-events: none;box-sizing: border-box;   
+}
+
+.flexUrgentNow{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.plusPlus a{ background: var(--clGreen); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+.plusPlus a:hover{ background: var(--clGreenHover);}
+.gridListing{ display: grid; grid-template-columns: 1fr 1fr 0.7fr; grid-gap: 15px; flex: 1 0 auto;}
+.gridListing button{ border-radius: 50px; background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); padding: 5px 20px;}
+.gridListing button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+@media (max-width:991px){
+    .flexUrgentNow{ flex-direction: column;}
+    .gridListing{ width: 100%; grid-template-columns: 1fr;align-items: center;}
+    .plusPlus, .gridListing button{ width: 100%; text-align: center;}
+}
+
+
+.btnList{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.btnTab{ background: transparent; border: 1px solid var(--clBlackGray); color: var(--clBlackGray); border-radius: 5px; padding: 5px 20px;}
+.btnTab.active{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite);}
+.btnTab:hover{ background: var(--clRedHover); color: var(--clWhite);}
+
+.gridViewView{ display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 15px;}
+.gridListView{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
+
+span.urgent{ background: var(--clRed); color: var(--clWhite); border-radius: 5px; padding: 2px 5px;}
+span.new{ background: var(--clGreen); color: var(--clWhite); border-radius: 5px; padding: 2px 5px;}
+.logoCompanyProfile{ width: 100%; position: relative;}
+.logoCompanyProfile p{ position: absolute; top: 0; right: 0; color: var(--clWhite); border-radius: 5px; padding: 2px 5px;}
+.logoCompanyProfile p.urgent{ background: var(--clRed);}
+.logoCompanyProfile p.new{ background: var(--clGreen);}
+.logoCompanyProfile figure{ border: 1px solid var(--clGray); border-radius: 50%; max-width: 80px; height: 80px; background: var(--clWhite); margin: 0 auto;}
+.logoCompanyProfile img{ max-width: 80px; height: 80px; object-fit: scale-down; border-radius: 50%; padding: 5px;}
+
+.gridViewView a{ background: var(--clWhite); color: var(--clBlackGray); border-radius: 10px;}
+.gridViewView a:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
+.companyHeight{ height: 100%;}
+
+.gridLineView{ display: grid; grid-template-columns: 80px 1fr 0.4fr; grid-gap: 15px; transition: 0.5s ease-in-out;}
+.gridLineView:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
+
+.flexStep1{ display: flex; flex-direction: column; text-align: right; justify-content: space-between}
+.flexStep1 a{ background: var(--clWhite); border-radius: 50px; padding: 5px 20px; color: var(--clBlackGray); border: 1px solid var(--clBlackGray); 
+    display: inline-block; text-align: center;}
+.flexStep1 a:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+
+.flexStep2{ display: flex; align-items: center; justify-content: flex-end; gap: 15px; flex-wrap: wrap;}
+.flexStep2 .applyNow{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed); padding: 5px 20px; border-radius: 50px;}
+.flexStep2 .applyNow:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+.flexStep2 button{ background: transparent; border: 0;}
+.flexStep2 button:hover, .flexStep2 button.active{ color: var(--clRed);}
+.flexStep2 .applyNow{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed); padding: 5px 20px; border-radius: 50px;}
+.flexStep2 .applyNow:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover); color: var(--clWhite);}
+
+@media (max-width:991px){
+    .gridViewView a:hover{ margin-top: 0;}
+    .gridLineView{ grid-template-columns: 80px 1fr 0.5fr;}
+    .flexStep2 li:last-child{ flex: 1 0 100%; order: 1;}
+    .flexStep2 li:first-child, .flexStep2 li:nth-child(2){ order: 2;}
+}
+
+@media (max-width:768px){
+    .logoCompanyProfile{ grid-column: 1/2;}
+    .gridLineView{ grid-template-columns: 1fr;}
+    .flexStep2 li:last-child{ flex: 0 0 auto; order: 2;}
+    .flexStep2 li:first-child, .flexStep2 li:nth-child(2){ order: 1;}
+    .flexStep1{ display: flex; align-items: center; justify-content: space-between; flex-direction: inherit;}
+}
+
+@media (max-width:576px){
+    .flexStep1{ display: flex; flex-direction: column;}
+    .flexStep2{ margin-bottom: 10px;}
+}
+
+.flexUseMenuPremium{ display: flex; justify-content: center; flex-wrap: wrap;}
+.flexUseMenuPremium>*{ display: flex; justify-content: center; text-align: center; position: relative;}
+.flexUseMenuPremium a{ display: flex; align-items: center; justify-content: space-evenly; color: var(--clBlackGray); padding: 20px 15px; width: 100%;}
+.flexUseMenuPremium a:hover, .flexUseMenuPremium a.active{ background: var(--clGray);}
+
+.gridImages{ display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); grid-gap: 15px; align-items: center;}
+.gridIm{ display: grid; grid-template-columns: 0.5fr 1fr; grid-gap: 15px;}
+.circle{ font-size: 0.5rem;}
+.flexCircle{ display: flex; align-items: center; gap: 15px;}
+
+@media (max-width:768px){
+    .gridIm{grid-template-columns: 1fr;}
+}
+
+.flexOverView{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px;}
+.headOverView{ background: var(--clBlackGray); color: var(--clWhite); border-radius: 50px; width: 100%; text-align: center;}
+.flexView{ display: flex; flex-direction: column; align-items: center;}
+.flexFloat{ display: flex; align-items: center; justify-content: center; gap: 15px;}
+.iconView{ background: var(--clGreen); color: var(--clWhite); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
+
+@media (max-width:991px){
+    .headOverView{ width: auto;}
+}
+
+.flexCheck{ display: flex !important; justify-content: center ; align-items: baseline; flex-direction: column; grid-gap: 15px;
+    max-width: 200px; margin: 0 auto; padding: 15px;}
+.form-check{ padding: 0;}
+.formCheckInput{ margin-top: 0; position: relative;}
+
+.socialShare{ display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 15px;}
+.socialShare button{ width: 60px; height: 60px; border: 0;}
+.socialShare button:hover{ transform: scale(1.2);}
+.socialShare button.fb{ background: url(../images/social-01.svg) top center no-repeat; background-size: cover;}
+.socialShare button.tw{ background: url(../images/social-02.svg) top center no-repeat; background-size: cover;}
+.socialShare button.line{ background: url(../images/social-06.svg) top center no-repeat; background-size: cover;}
+.socialShare button.link{ background: url(../images/social-07.svg) top center no-repeat; background-size: cover;}
+
+.gridMap{ display: grid; grid-template-columns: 1fr 0.7fr; grid-gap: 15px;}
+
+@media (max-width:991px){
+    .gridMap{ grid-template-columns: 1fr;}
+}

@@ -1,0 +1,66 @@
+.bgRegister{ display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 850px; width: 100%; margin: 0 auto;}
+.gridForm{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.bgLeft{ background: var(--clWhite); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px;}
+
+.flexReturn{ display: flex; align-items: center; flex-direction: column; width: 100%; gap: 15px;}
+.flexReturn a{ display: inline-block; border-radius: 50px; padding: 5px 20px; color: var(--clBlackGray);
+    background: var(--clWhite); border: 1px solid var(--clBlackGray);}
+.flexReturn a:hover{ background: var(--clRedHover); color: var(--clWhite); border: 1px solid var(--clRedHover);}
+
+.loginSocial{ margin: 0; padding: 0; list-style: none; display: flex; align-items: center; justify-content: center; gap: 15px;}
+.loginSocial a{ display: flex; align-items: center; justify-content: center; text-decoration: none; width: 50px; height: 50px; 
+    border: 1px solid var(--clBlackGray); border-radius: 50%; color: var(--clBlackGray);}
+.loginSocial a:hover{ color: var(--clWhite);}
+
+.loginSocial a.facebook:hover{ background: #4267b2; border: 1px solid #4267b2;}
+.loginSocial a.google:hover{ background: #d93025; border: 1px solid #d93025;}
+.loginSocial a.linkedin:hover{ background: #2977c9; border: 1px solid #2977c9;}
+
+.flexGroup{ display: flex; flex-direction: column; margin-bottom: 15px;}
+.flexGroup p{ color: var(--bg-red); font-size: var(--font14);}
+
+.hasJobbkk{ position: relative; margin-bottom: 5px;}
+.form-control-feed{ position: absolute; top: 10px; left: 10px;}
+.form-control-back{ padding-left: 30px; border-radius: 50px;}
+.form-group-c{ margin: 0;}
+.form-control-c{ padding-left: 15px;}
+
+.confirm span{ color: var(--clRed);}
+.head{ color: var(--clBlackGray) !important; font-weight: 900;}
+
+@media (max-width:991px){
+    .gridForm{ grid-template-columns: 1fr;}
+}
+
+.code{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.code img{ max-width: 100%;}
+.code button{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); width: 40px; height: 40px; border-radius: 50%;}
+.code button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+.gridLabel{ display: grid; grid-template-columns: 10px 1fr; align-items: baseline; grid-gap: 15px; cursor: pointer;}
+.panelCollapse{ margin-top: 10px; height: 300px; overflow-y: scroll;}
+.panelCollapse::-webkit-scrollbar{ width: 5px; background-color: #7D7979;}
+.panelCollapse::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;  }
+.panelCollapse::-webkit-scrollbar-thumb { background-color:#7D7979;}
+
+.indent{ padding-left: 15px;}
+.textIndent{ text-indent: 30px; font-size: var(--font14);}
+
+.regisUser{ display: flex; align-items: center; justify-content: center;}
+.regisUser button{ background: var(--clRed); padding: 5px 20px; border-radius: 50px; color: var(--clWhite); border: 1px solid var(--clRed);}
+.regisUser button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+.app{ display: flex; align-items: center; justify-content: center; flex-direction: column; line-height: 2;}
+.app span{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+
+.applicantJobbkk{ color: var(--bg-white);}
+.regisForThai{ display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 5px 15px;}
+.regisForThai img{ max-width: 150px;}
+
+.social{ display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;}
+.social a{ color: var(--clBlackGray);}
+.social figure{ text-align: center;}
+.social img{ max-width: 50px; text-align: center;}
+.social p{ text-align: center;}
+

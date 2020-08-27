@@ -1,0 +1,270 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="accordion" id="resumeUrgentButton">
+                <div id="headButton">
+                    <h6 class="fontHead flexCollapse">
+                        <span>Resume Urgent </span>
+                        <div>
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#colButton" aria-expanded="true" aria-controls="colButton">
+                                อ่านเพิ่มเติม
+                            </button>
+                        </div>
+                    </h6>
+                </div>
+
+                <div id="colButton" class="collapse" aria-labelledby="headButton" data-parent="#resumeUrgentButton">
+                    <div class="card-body cardBody mt-3 text-center">
+                        <h6 class="fontSubHead mb-3"><span class="textRed">Resume Urgent</span> คือ
+                            สถานะของผู้สมัครงานที่กด
+                            <span class="textRed">ปุ่มต้องการงานด่วน</span>
+                            เพื่อแสดงให้ผู้ประกอบการเห็นถึงความพร้อมในการเริ่มงานได้ทันทีตั้งแต่ 7/15/30
+                            วัน</h6>
+                        <p class="fontSubText">* ผู้สมัครที่ <span class="textRed">กดปุ่มต้องการงานด่วน</span> ได้นั่น
+                            ต้องผ่านการตรวจสอบคุณภาพเรซูเม่จากระบบคัดกรอง ว่าคุณภาพเรซูเม่ตั้งแต่ 85%
+                            ขึ้นไป เพื่อความสมบูรณ์ในการสมัครงานกับผู้ประกอบการ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineDash"></div>
+
+            <div>
+                <h2 class="fontSubHead font-weight-bold mb-3">ค้นหาประวัติพร้อมใช้ เปิด Resume
+                    Urgent ทันใจ ได้คนที่ต้องการ</h2>
+
+                <!-- ขั้นตอน 1-2 -->
+                <section class="formSearch gridResumeUrgent">
+                    <!-- ขั้นตอนที่ 1 เลือกสาขาอาชีพที่ต้องการค้นหา -->
+                    <article class="flexSmall">
+                        <label class="mb-2 textRed">1. เลือกสาขาอาชีพที่ต้องการค้นหา</label>
+                        <!-- เลือกสาขาอาชีพหลัก -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกสาขาอาชีพหลัก</option>
+                                <option>ทั้งหมด</option>
+                                <option>การแพทย์</option>
+                                <option>การศึกษา/วิชาการ</option>
+                                <option>ขนสั่ง/คลังสินค้า</option>
+                                <option>ขาย</option>
+                                <option>คนขับรถ</option>
+                                <option>โฆษณา/สื่อ</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกสาขาอาชีพหลัก -->
+
+                        <!-- เลือกสาขาอาชีพรอง -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกสาขาอาชีพรอง</option>
+                                <option>ทั้งหมด</option>
+                                <option>การแพทย์</option>
+                                <option>การศึกษา/วิชาการ</option>
+                                <option>ขนสั่ง/คลังสินค้า</option>
+                                <option>ขาย</option>
+                                <option>คนขับรถ</option>
+                                <option>โฆษณา/สื่อ</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกสาขาอาชีพรอง -->
+                    </article>
+                    <!-- end ขั้นตอนที่ 1 เลือกสาขาอาชีพที่ต้องการค้นหา -->
+
+                    <!-- ขั้นตอนที่ 2 เลือกพื้นที่ที่ต้องการค้นหา -->
+                    <article class="flexSmall">
+                        <label class="mb-2 textRed">2. เลือกพื้นที่ที่ต้องการค้นหา</label>
+                        <!-- เลือกจังหวัด -->
+                        <div class="dropdown dropdownFilter">
+                            <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="searchEllipsis">เลือกจังหวัด</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+
+                            <div class="dropdown-menu dropdownNative p-3">
+                                <div class="allWorkList">
+                                    <label><input type="checkbox"> ทั้งหมด</label>
+                                    <button>ตกลง</button>
+                                </div>
+
+                                <div class="lineDashUrgent"></div>
+
+                                <ul class="workList listAgain">
+                                    <li><label>กรุงเทพมหานคร</label></li>
+                                    <li><label>กาญจนบุรี</label></li>
+                                    <li><label>สมุทรปราการ</label></li>
+                                    <li><label>เชียงใหม่</label></li>
+                                    <li><label>นครปฐม</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end เลือกจังหวัด -->
+
+                        <!-- เลือกอำเภอ -->
+                        <div class="dropdown dropdownFilter">
+                            <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="searchEllipsis">เลือกอำเภอ</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+
+                            <div class="dropdown-menu dropdownNative p-3">
+                                <div class="allWorkList">
+                                    <label><input type="checkbox"> ทั้งหมด</label>
+                                    <button>ตกลง</button>
+                                </div>
+
+                                <div class="lineDashUrgent"></div>
+
+                                <ul class="workList listAgain">
+                                    <li><label><input type="checkbox"> บางกะปิ</label></li>
+                                    <li><label><input type="checkbox"> สะพานสูง</label></li>
+                                    <li><label><input type="checkbox"> วังทองหลาง</label></li>
+                                    <li><label><input type="checkbox"> ลาดพร้าว</label></li>
+                                    <li><label><input type="checkbox"> บางใหญ่</label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end เลือกอำเภอ -->
+                    </article>
+                    <!-- end ขั้นตอนที่ 2 เลือกพื้นที่ที่ต้องการค้นหา -->
+                </section>
+                <!-- end ขั้นตอน 1-2 -->
+
+                <div class="lineDash"></div>
+
+                <!-- ขั้นตอน 3-4 -->
+                <section class="formSearch gridResumeUrgent">
+                    <!-- ขั้นตอนที่ 3 เลือกระดับการศึกษา ที่ต้องการค้นหา -->
+                    <article class="flexSmall">
+                        <label class="mb-2 textRed">3. เลือกระดับการศึกษา ที่ต้องการค้นหา</label>
+                        <!-- เลือกระดับการศึกษาต่ำสุด -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกระดับการศึกษาต่ำสุด</option>
+                                <option>ปริญญาตรี</option>
+                                <option>ปริญญาโท</option>
+                                <option>ปริญญาเอก</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกระดับการศึกษาต่ำสุด -->
+
+                        <!-- เลือกระดับการศึกษาสูงสุด -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกระดับการศึกษาสูงสุด</option>
+                                <option>ปริญญาตรี</option>
+                                <option>ปริญญาโท</option>
+                                <option>ปริญญาเอก</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกระดับการศึกษาสูงสุด -->
+                    </article>
+                    <!-- end ขั้นตอนที่ 3 เลือกระดับการศึกษา ที่ต้องการค้นหา -->
+
+                    <!-- ขั้นตอนที่ 4 เลือกประสบการณ์ทำงาน ที่ต้องการค้นหา -->
+                    <article class="flexSmall">
+                        <label class="mb-2 textRed">4. เลือกประสบการณ์ทำงาน ที่ต้องการค้นหา</label>
+                        <!-- เลือกประสบการณ์สูงสุด -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกประสบการณ์สูงสุด</option>
+                                <option>1 ปี</option>
+                                <option>2 ปี</option>
+                                <option>3 ปี</option>
+                                <option>4 ปี</option>
+                                <option>5 ปี</option>
+                                <option>6 ปี</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกประสบการณ์ทำงานสูงสุด -->
+
+                        <!-- เลือกประสบการณ์ต่ำสุด -->
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกประสบการณ์ต่ำสุด</option>
+                                <option>1 ปี</option>
+                                <option>2 ปี</option>
+                                <option>3 ปี</option>
+                                <option>4 ปี</option>
+                                <option>5 ปี</option>
+                                <option>6 ปี</option>
+                            </select>
+                        </label>
+                        <!-- end เลือกประสบการณ์ต่ำสุด -->
+                    </article>
+                    <!-- end ขั้นตอนที่ 4 เลือกประสบการณ์ทำงาน ที่ต้องการค้นหา -->
+                </section>
+                <!-- end ขั้นตอน 3-4 -->
+
+                <div class="lineDash"></div>
+
+                <div class="text-center mt-3"><button class="urgentSearch width">ค้นหา Resume Urgent</button>
+                </div>
+            </div>
+
+            <div class="lineDash"></div>
+
+            <!-- ค้นหาจากการพิมพ์ -->
+            <div>
+                <h2 class="fontSubHead font-weight-bold mb-3">ค้นหาจากการพิมพ์</h2>
+                <section class="gridTextSearch mb-3">
+                    <div>
+                        <input type="text" class="form-control formControl"
+                            placeholder="พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา">
+                        <p class="fontSubText textSky mt-1">ตัวอย่าง เช่น พนักงานขายรถยนต์,
+                            วิศวกรไฟฟ้า, ช่างอาคาร เป็นต้น</p>
+                    </div>
+
+                    <div>
+                        <label class="selectCus">
+                            <select class="form-control formControl">
+                                <option value="">เลือกสถานที่ทำงาน</option>
+                                <option>รัชดา</option>
+                                <option>ลาดพร้าว</option>
+                                <option>รามคำแหง</option>
+                                <option>พหลโยธิน</option>
+                                <option>เกษตรนวมินทร์</option>
+                                <option>สุขุมวิท</option>
+                                <option>ทองหล่อ</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <button class="urgentSearch">ค้นหา Resume Urgent</button>
+                    </div>
+                </section>
+
+                <section class="hiddenHit">
+                    <h6 class="mb-3 fontText font-weight-bold">คำค้นหายอดนิยม</h6>
+                    <ul class="flexSearch mb-3">
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">พนักงานขาย</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">Digital
+                                Marketing</a></li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">sales</a></li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">programmer</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">sale
+                                engineer</a></li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">IT support</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">บัญชีต้นทุน</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">programmer</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">sale
+                                engineer</a></li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">IT support</a>
+                        </li>
+                        <li class="mr-2 mb-2 fontSubText"><a href="javascript:void:(0)" onclick="link()">บัญชีต้นทุน</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!-- end ค้นหาจากการพิมพ์ -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+.gridPremium{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 15px;}
+.gridPremium a{ transition: 0.5s ease-in-out; border: 1px solid var(--clGray);}
+.gridPremium a:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
+
+@media (max-width:991px){
+    .gridPremium a:hover{ margin-top: 0;}
+}

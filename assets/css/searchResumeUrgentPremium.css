@@ -1,0 +1,72 @@
+.formSearch label{ cursor: inherit;}
+.gridResumeUrgent{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.gridOther{ display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 15px;}
+.gridTextSearch{ display: grid; grid-template-columns: 1fr 1fr 0.6fr; grid-gap: 15px;}
+.flexSmall{ display: flex; flex-direction: column; gap: 15px;}
+body{ position: relative;}
+
+.flexGetPim{ display: flex; align-items: center; justify-content: space-between;}
+.getPim{ display: inline-block;}
+.getPim button{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px; border: 1xp solid var(--clRed);}
+.getPim button:hover{ background: var(--clRedHover);}
+
+.flexCollapse{ display: flex; align-items: center; justify-content: center; gap: 15px;}
+.flexCollapse button{ background: var(--clRed); display: inline-block; color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+.flexCollapse button:focus{ text-decoration: none;}
+.flexCollapse button:hover{ text-decoration: none; color: var(--clWhite); background: var(--clRedHover);}
+.formControl{ border-radius: 50px;}
+.card-body{ background: var(--clLightGray);}
+.cardBody{ background: var(--clWhite); border-radius: 10px;}
+.buttonFilter{ display: flex; align-items: center; justify-content: space-between;}
+
+.dropDownScroll { min-width: 450px; height: 300px; overflow-y: auto;}
+.dropDownScroll section{ border-bottom: 1px solid var(--clGray);}
+.dropDownScroll::-webkit-scrollbar { width: 10px;}/* width */
+.dropDownScroll::-webkit-scrollbar-track { background: #f1f1f1;}/* Track */
+.dropDownScroll::-webkit-scrollbar-thumb { background: #888; border-radius: 10px;}/* Handle */
+.dropDownScroll::-webkit-scrollbar-thumb:hover {background: #555;}/* Handle on hover */
+
+.dropdownNative{ min-width: 100%; height: 300px; overflow-y: auto;}
+.dropdownNative::-webkit-scrollbar { width: 10px;}/* width */
+.dropdownNative::-webkit-scrollbar-track { background: #f1f1f1;}/* Track */
+.dropdownNative::-webkit-scrollbar-thumb { background: #888; border-radius: 10px;}/* Handle */
+.dropdownNative::-webkit-scrollbar-thumb:hover {background: #555;}/* Handle on hover */
+
+.dropdownHeight{ min-width: 100%;}
+
+select{ -webkit-appearance: none; -moz-appearance: none; appearance: none; position: relative;}
+.selectCus{ position: relative; display: block;}
+.selectCus:after {font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f078";
+    color: var(--clBlackGray); position: absolute; right: 15px; top: 7px; z-index: 1; text-align: center; 
+    height: 100%; pointer-events: none;box-sizing: border-box;   
+}
+
+.flexPositionPre{ display: flex; align-items: center; justify-content: space-between; color: var(--clBlackGray); border-radius: 0;}
+.flexPositionPre:hover, .flexPositionPre:focus{ text-decoration: none; color: var(--clBlackGray); background: var(--clGray);}
+.btn.focus, .btn:focus{ box-shadow: none;}
+.position{ display: flex; align-items: center; justify-content: space-between;}
+
+.allWorkList{ display: flex; align-items: center; justify-content: space-between;}
+.allWorkList label, .workList label{ cursor: pointer;}
+.allWorkList button{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; border: 1px solid var(--clRed);}
+.allWorkList button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+.listAgain li{ transition: 0.5s ease-in-out;}
+.listAgain li:hover{ background: var(--clWhitetGray); padding: 5px 10px; margin: 0 -15px;}
+
+.urgentSearch{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); border-radius: 50px; 
+    padding: 5px 20px; width: 100%;}
+.urgentSearch:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+.urgentSearch.width{ width: auto;}
+
+.flexSearch{ display: flex; flex-wrap: wrap;}
+.flexSearch a{ border-radius: 50px; color: var(--clWhite); background: var(--clBlackGray); padding: 3px 10px;}
+
+@media (max-width:991px){
+    .gridResumeUrgent, .gridOther, .gridTextSearch{ grid-template-columns: 1fr;}
+    .dropDownScroll{ min-width: 100%; left: inherit !important; right: 0 !important; 
+        transform: translate3d(0px, 40px, 0px) !important;
+    }
+    .hiddenHit{ display: none;}
+    .urgentSearch.width{ width: 100%;}
+}

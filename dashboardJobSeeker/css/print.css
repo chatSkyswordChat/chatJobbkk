@@ -1,0 +1,23 @@
+@page {
+    size: A4;
+    margin: 0.5cm;
+}
+
+.showPrint{ display: none;}
+
+@media print{
+    .hiddenPrint{ display: none !important;}
+    .showPrint{ display: block;}
+    .containerPrint{ -webkit-print-color-adjust: exact; page-break-after: always;}
+    .showData{ display: none;}
+    .norNone{display: block;}
+
+    .overFlowPrint{ overflow: hidden;}
+    .logoPrint img{ max-width: 150px;}
+    .gridPreview{ display: grid; grid-template-columns: 0.6fr 1fr; grid-gap: 15px;}
+ 
+    .tableCustom{ min-width: inherit;}
+
+    .flexPic{ display: grid; grid-template-columns: 0.5fr 1fr; grid-gap: 15px;}
+    .table tr th{ background:#333333 !important;}
+}

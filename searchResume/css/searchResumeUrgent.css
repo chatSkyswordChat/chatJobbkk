@@ -1,0 +1,93 @@
+.gridResumeUrgentList{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); grid-gap: 15px;}
+
+.flexPicResume{ display: flex; gap: 15px;}
+.flexPicResume figure{ border: 1px solid var(--clGray); border-radius: 50%; max-width: 80px; height: 80px; width: 100%;}
+.flexPicResume img{ max-width: 80px; height: 80px; object-fit: cover; border-radius: 50%; object-position: top;}
+
+.expWork{ display: flex; gap: 0 15px; flex-wrap: wrap;}
+.expWork li{ display: grid; grid-template-columns: 15px 1fr; grid-gap: 5px;}
+
+.gridArea{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+.flexColumns{ display: flex; flex-direction: column;}
+
+.resumeUrgent{ transition: 0.5s ease-in-out; background: var(--clWhite);}
+.resumeUrgent a{ color: var(--clBlackGray);}
+.resumeUrgent:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
+
+@media (max-width:576px){
+    .gridArea{ grid-template-columns: 1fr; grid-gap: 0;}
+    .flexColumns{ display: flex; flex-direction: inherit; gap: 0 15px;}
+}
+
+.gridUrgentColumn{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
+.flexProcessList{ display: flex; align-items: center; gap: 0 15px;}
+.formControlList{ border-radius: 10px; appearance: revert;}
+.form-group{ margin-bottom: 0;}
+
+@media (max-width:768px){
+    .flexProcessList{ flex-direction: column; align-items: baseline;}
+    .flexProcessList .form-group{ width: 100%; margin-top: 10px;}
+}
+
+.flexAlign{ display: flex; align-items: center; justify-content: start; flex-direction: column;}
+.flexPicResume.between{ justify-content: space-between; gap: 0 30px;}
+.growFlex{ flex: 1 0 auto;}
+.listGrow{ flex: 1 0 70%;}
+
+.flexTwo{ display: flex; justify-content: space-between; gap: 0 15px;}
+
+.saveWork{ display: flex; gap: 0 10px;}
+.saveWork button{ background: transparent; border: 0; padding: 0;}
+.saveWork button:hover, .saveWork button.active{ color: var(--clRed);}
+
+.flexSuper{ display: flex; align-items: center; justify-content: space-between; gap: 0 15px}
+.flexSuper a{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+.flexSuper a:hover{ background: var(--clRedHover);}
+
+.popUpUrgent{ background: var(--clWhite); padding: 10px; border-radius: 10px; border: 1px solid var(--clBlackGray); 
+    text-align: center; position: sticky; top: 15px; z-index: 10; max-width: 312px; height: auto;}
+.popUpUrgent a{ padding: 5px 10px; border-radius: 50px; color: var(--clWhite);}
+.popUpUrgent a:hover{ background: var(--clGreenHover);}
+.closed{ border-radius: 50px; padding: 5px 20px; background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+.closed:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+@media (max-width:991px){
+    .bannerUrgent{ display: none;}
+    .popUpUrgent{ max-width: 100%;}
+    .popUpUrgent a{ display: inline-block; padding: 5px 15px;}
+}
+
+.workAll{ border-radius: 10px; margin-bottom: 15px;}
+.workAll a{ display: block; padding: 5px;}
+.workAll a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.workHit{ border-radius: 10px; margin-bottom: 15px;}
+.workHit a{ display: block; padding: 5px;}
+.workHit a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.careerHit{ border-radius: 10px; margin-bottom: 15px;}
+.careerHit a{ display: block; padding: 5px;}
+.careerHit a:hover{ background: var(--clGray); margin-left: 5px; color: var(--clBlackGray);}
+
+.tagHit{ border-radius: 10px; margin-bottom: 15px;}
+.tagHit ul{ display: flex; flex-wrap: wrap; grid-gap: 10px;}
+.tagHit a{ display: inline-block; padding: 2px 8px; background: var(--clWhite); border: 1px solid var(--clBlackGray); 
+    border-radius: 50px;}
+.tagHit a:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+
+.jobSearch{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
+
+@media (max-width:991px){
+    .gridUrgentColumn{ grid-template-columns: 1fr;}
+    .careerHit, .tagHit{ display: none;}
+}
+
+@media (max-width:768px){
+    .flexTwo, .flexSuper{ flex-direction: column; justify-content: start;}
+    .flexSuper{ gap: 15px;}
+    .jobSearch{ grid-template-columns: 1fr;}
+}
+
+@media (max-width:380px){
+    .flexPicResume.between{ flex-direction: column; justify-content: start; gap: 15px;}
+}

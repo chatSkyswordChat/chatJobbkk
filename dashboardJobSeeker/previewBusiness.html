@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preview ในมุมมองผู้ประกอบการ</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/topbar.css">
+    <link rel="stylesheet" href="../assets/css/show.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
+    <link rel="stylesheet" href="css/preview.css">
+    <link rel="stylesheet" href="css/print.css">
+</head>
+
+<body>
+    <div class="fixBg hiddenPrint"></div>
+    <section class="container containerPrint">
+        <article class="row">
+            <div class="col-12">
+                <!-- topbar -->
+                <article class="topbar hiddenPrint">
+                    <!-- assets/components/topbar.js -->
+                </article>
+                <!-- end topbar -->
+
+                <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+                <article class="clWhitetGray calC businessMenuShow hiddenPrint">
+                    <!-- assets/components/topBarBusiness.js -->
+                    <!-- หรือ -->
+                    <!-- assets/components/topBarJobSeeker.js -->
+                    <!-- businessMenuShow สำหรับผู้ประกอบการ -->
+                    <!-- userMenuShow สำหรับผู้สมัครงาน -->
+                </article>
+                <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+                <article class="mt-5">
+                    <nav aria-label="breadcrumb" class="hiddenPrint">
+                        <ol class="breadcrumb breadcrumbJobbkk">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+
+                    <div class="lineDashUrgent hiddenPrint"></div>
+
+                    <div class="mb-3 hiddenPrint">
+                        <figure class="fontHead wizardBusiness mb-3">
+                            <img src="images/icon1.svg" alt="">
+                            <span>Wizard Resume</span>
+                        </figure>
+
+                        <ul class="flexPrint flexPrintBusiness">
+                            <li><a href="javascript:void(0)" onclick="link()"><i class="fas fa-angle-left"></i>
+                                    ย้อนกลับ</a></li>
+                            <li><button><i class="fas fa-user-tie"></i> นัดสัมภาษณ์</button></li>
+                            <li><button><i class="fas fa-folder-open"></i> เก็บผู้สมัครงาน</button></li>
+                            <li><button><i class="fas fa-paper-plane"></i> ส่งข้อความ</button></li>
+                            <li><button><i class="fas fa-ban"></i> ร้องเรียน</button></li>
+                            <li><button onclick="javascript:window.print()"><i class="fas fa-print"></i> พิมพ์</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- logo โชว์ตอน print -->
+                    <div class="showPrint text-right mb-3">
+                        <figure class="logoPrint"><img src="images/logo.png" alt=""></figure>
+                    </div>
+                    <!-- end logo โชว์ตอน print -->
+
+                    <section class="clWhitetGray borderRadiusStyle p-3 mb-5 overFlowPrint">
+                        <div class="text-right mb-3 hiddenPrint">
+                            <span class="langResume">เรซูเม่ : ไทย</span>
+                        </div>
+
+                        <section class="gridPreview">
+                            <!-- ข้อมูลฝั่งซ้าย -->
+                            <div>
+                                <!-- ข้อมูลติดต่อผู้สมัครงาน -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <div class="flexPic mb-3">
+                                        <figure><img src="images/pic.jpg" alt=""></figure>
+                                        <ul class="resumeScore">
+                                            <li>
+                                                <span>Resume Score</span>
+                                                <span class="textGreen fontHead">99%</span>
+                                            </li>
+                                            <li class="textRed">Resume Urgent : 7 วัน</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="lineDashUrgent hiddenPrint"></div>
+
+                                    <div class="text-center">
+                                        <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                            คลิก</button>
+                                    </div>
+
+                                    <div class="mb-3 norNone hiddenPrint">
+                                        <h6 class="fontSubText mb-2">อัพเดตข้อมูลล่าสุด : 20 ส.ค. 2563</h6>
+                                        <ul class="flexFile">
+                                            <li><button><i class="fas fa-video"></i> After Effect</button></li>
+                                            <li><button><i class="fas fa-paperclip"></i> ไฟล์เรซูเม่</button></li>
+                                            <li><button><i class="fas fa-paperclip"></i> ไฟล์ portfolio</button></li>
+                                            <li><button><i class="fas fa-video"></i> Video Effect</button></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="bgOrder text-center hiddenPrint">
+                                        <p class="mb-2">กรุณาประกาศตำแหน่งงาน
+                                            หรือออนไลน์ตำแหน่งงานของท่านก่อนค้นหาใบประวัติ</p>
+                                        <p><a href="javascript:void(0)">คลิก</a></p>
+                                    </div>
+
+                                    <div class="lineDashUrgent"></div>
+
+                                    <section>
+                                        <h2 class="fontSubHead mb-3">ข้อมูลติดต่อผู้สมัครงาน</h2>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <div class="text-center">
+                                            <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                                คลิก</button>
+                                        </div>
+
+                                        <section class="norNone">
+                                            <!-- ชื่อ / นามสกุล -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-24.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ชื่อ / นามสกุล</span>
+                                                    <span>ฉัตรทอง หงส์วิสุทธิกุล</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ชื่อ / นามสกุล -->
+
+                                            <!-- หมายเลขบัตรประชาชน -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-25.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">หมายเลขบัตรประชาชน</span>
+                                                    <span>1234567891234</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end หมายเลขบัตรประชาชน -->
+
+                                            <!-- เบอร์โทรศัพท์ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-02.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">เบอร์โทรศัพท์</span>
+                                                    <span>0897620645</span>
+                                                    <span>0891234569</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end เบอร์โทรศัพท์ -->
+
+                                            <!-- อีเมล์ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-04.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">อีเมล์</span>
+                                                    <span>dynastystrike@gmail.com</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end อีเมล์ -->
+
+                                            <!-- Facebook -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-18.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">Facebook</span>
+                                                    <span>chatthong hongwisuthikul</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end Facebook -->
+
+                                            <!-- Line ID -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-17.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">Line ID</span>
+                                                    <span>chat_skysword</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end Line ID -->
+
+                                            <!-- ที่อยู่ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-01.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ที่อยู่</span>
+                                                    <span>447 ถ.ลาดพร้าว 109 ต.คลองจั่น ข.บางกะปิ กทม.10240</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ที่อยู่ -->
+                                        </section>
+                                    </section>
+                                </article>
+                                <!-- end ข้อมูลติดต่อผู้สมัครงาน -->
+
+                                <!-- ข้อมูลส่วนตัว -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <h2 class="fontSubHead mb-3">ข้อมูลส่วนตัว</h2>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <section>
+                                            <!-- เพศ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-03.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">เพศ</span>
+                                                    <span>ชาย</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end เพศ -->
+
+                                            <!-- อายุ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-26.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">อายุ</span>
+                                                    <span>33 ปี</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end อายุ -->
+
+                                            <!-- วัน/เดือนปี/เกิด -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-12.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">วัน/เดือนปี/เกิด</span>
+                                                    <span>30 มกราคม 2530</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end วัน/เดือนปี/เกิด -->
+
+                                            <!-- ส่วนสูง/น้ำหนัก -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-13.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ส่วนสูง/น้ำหนัก</span>
+                                                    <span>165 ซม./55 กก.</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ส่วนสูง/น้ำหนัก -->
+
+                                            <!-- สถานภาพการสมรถ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-21.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">สถานภาพการสมรถ</span>
+                                                    <span>โสด</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end สถานภาพการสมรถ -->
+
+                                            <!-- สัญชาติ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-11.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">สัญชาติ</span>
+                                                    <span>ไทย</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end สัญชาติ -->
+
+                                            <!-- ศาสนา -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-14.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ศาสนา</span>
+                                                    <span>พุทธ</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ศาสนา -->
+
+                                            <!-- สถานภาพทางทหาร -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-07.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">สถานภาพทางทหาร</span>
+                                                    <span>ผ่านการเกณฑ์ทหาร</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end สถานภาพทางทหาร -->
+
+                                            <!-- ความพิการ -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-27.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ความพิการ</span>
+                                                    <span>ไม่พิการ</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ความพิการ -->
+
+                                            <!-- ยานพาหนะ -->
+                                            <ul class="gridstep noAlign">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-08.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ยานพาหนะ</span>
+
+                                                    <div class="lineDashUrgent"></div>
+
+                                                    <div>
+                                                        <p class="font-weight-bold">ยานพาหนะที่มี</p>
+                                                        <ul class="flexDrive">
+                                                            <li>รถยนต์</li>
+                                                            <li>จักรยานยนต์</li>
+                                                            <li>รถบรรทุก</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="lineDashUrgent"></div>
+
+                                                    <div>
+                                                        <p class="font-weight-bold">ใบขับขี่</p>
+                                                        <ul class="flexDrive">
+                                                            <li>รถยนต์</li>
+                                                            <li>จักรยานยนต์</li>
+                                                            <li>รถบรรทุก</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="lineDashUrgent"></div>
+
+                                                    <div>
+                                                        <p class="font-weight-bold">ความสามารถในการขับขี่</p>
+                                                        <ul class="flexDrive">
+                                                            <li>รถยนต์</li>
+                                                            <li>จักรยานยนต์</li>
+                                                            <li>รถบรรทุก</li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <!-- end ยานพาหนะ -->
+                                        </section>
+                                    </section>
+                                </article>
+                                <!-- end ข้อมูลส่วนตัว -->
+
+                                <!-- บุคคลอ้างอิง -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <h2 class="fontSubHead mb-3">บุคคลอ้างอิง</h2>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <div class="text-center">
+                                            <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                                คลิก</button>
+                                        </div>
+
+                                        <section class="norNone">
+                                            <!-- ชื่อ / นามสกุล -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-15.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">ชื่อ / นามสกุล</span>
+                                                    <span>ฉัตรทอง หงส์วิสุทธิกุล</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end ชื่อ / นามสกุล -->
+
+                                            <!-- รายละเอียด -->
+                                            <ul class="gridstep">
+                                                <li>
+                                                    <figure><img src="images/skill-resume-16.svg" alt=""></figure>
+                                                </li>
+                                                <li class="flexIn">
+                                                    <span class="textRed">รายละเอียด</span>
+                                                    <span>เป็นบิดา</span>
+                                                </li>
+                                            </ul>
+                                            <!-- end รายละเอียด -->
+                                        </section>
+                                    </section>
+                                </article>
+                                <!-- end บุคคลอ้างอิง -->
+
+                                <article class="gotoLogin text-center hiddenPrint">
+                                    <p class="mb-2">กรุณา ล็อคอิน เพื่อดูข้อมูลการติดต่อ เรซูเม่</p>
+                                    <div>
+                                        <a href="../login/loginBusiness.html">คลิก</a>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- end ข้อมูลฝั่งซ้าย -->
+
+                            <!-- ข้อมูลฝั่งขวา -->
+                            <div>
+                                <!-- งานที่ต้องการ -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-05.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">งานที่ต้องการ</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn">
+                                            <!-- ตำแหน่งงาน -->
+                                            <section>
+                                                <div class="gridWorkView">
+                                                    <p class="number">1.</p>
+                                                    <p><span class="font-weight-bold">ตำแหน่งงาน : </span>Video
+                                                        Designer
+                                                    </p>
+                                                </div>
+
+                                                <div class="gridWorkView">
+                                                    <p class="number">2.</p>
+                                                    <p><span class="font-weight-bold">ตำแหน่งงาน :
+                                                        </span>พนักงานขับรถ
+                                                    </p>
+                                                </div>
+
+                                                <div class="gridWorkView">
+                                                    <p class="number">3.</p>
+                                                    <p><span class="font-weight-bold">ตำแหน่งงาน :
+                                                        </span>เจ้าหน้าที่การตลาด
+                                                    </p>
+                                                </div>
+                                            </section>
+                                            <!-- end ตำแหน่งงาน -->
+
+                                            <div class="lineDashUrgent"></div>
+
+                                            <div>
+                                                <p><span class="font-weight-bold">พื้นที่ที่ต้องการทำงาน :
+                                                    </span>กรุงเทพมหานคร</p>
+                                                <p><span class="font-weight-bold">เงินเดือนที่ต้องการ :
+                                                    </span>50,000 บาท</p>
+                                                <p><span class="font-weight-bold">รูปแบบงานที่ต้องการ :
+                                                    </span>งานประจำ</p>
+                                                <p><span class="font-weight-bold">ระยะเวลาเริ่มงาน : </span>1
+                                                    เดือน</p>
+                                                <p><span class="font-weight-bold">ยินดีทำงานต่างจังหวัด :
+                                                    </span>ได้</p>
+                                                <p><span class="font-weight-bold">ยินดีทำงานต่างประเทศ :
+                                                    </span>ไม่ได้</p>
+                                                <div>
+                                                    <p class="font-weight-bold">รายละเอียดงานที่ต้องการ : </p>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Labore, voluptate. Labore culpa consectetur amet, fugiat
+                                                        deleniti molestias at repellat autem dolores in
+                                                        perferendis voluptatem! Officia temporibus cumque
+                                                        molestias id voluptatem.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end งานที่ต้องการ -->
+
+                                <!-- ประวัติการทำงาน/ฝึกงาน -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-20.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">ประวัติการทำงาน/ฝึกงาน</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn clShineGray borderRadiusStyle p-3">
+                                            <section class="cd-timeline">
+                                                <!-- บริษัท 1 -->
+                                                <div class="cd-timeline-block">
+                                                    <div class="cd-timeline-img cd-picture">
+                                                        <img src="images/skill-resume-20.svg" alt="">
+                                                    </div>
+
+                                                    <article class="cd-timeline-content">
+                                                        <div class="bgHead">
+                                                            <p class="textWhite fontSubText">12 มิถุนายน 2017
+                                                                ถึง ปัจจุบัน
+                                                                (3ปี / 8เดือน)</p>
+                                                            <p class="fontSubHead textWhite">ชื่อตำแหน่งงาน :
+                                                                Web Designer</p>
+                                                        </div>
+
+                                                        <div class="text-center mt-4">
+                                                            <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                                                คลิก</button>
+                                                        </div>
+
+                                                        <div class="norNone">
+                                                            <p><span class="font-weight-bold">ชื่อบริษัท :
+                                                                </span>บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด
+                                                            </p>
+                                                            <p><span class="font-weight-bold">ที่อยู่ :
+                                                                </span>เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิต
+                                                                ดี ชั้น 5
+                                                                ซอยรามคำแหง 39 ถนนประชาอุทิศ แขวงวังทองหลาง
+                                                                เขตวังทองหลาง กรุงเทพฯ 10310</p>
+                                                        </div>
+
+                                                        <div class="lineDashUrgent"></div>
+
+                                                        <p><span class="font-weight-bold">หน้าที่รับผิดชอบ :
+                                                            </span>Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Suscipit molestiae dolores
+                                                            similique voluptatum, natus odio assumenda ex hic
+                                                            dolor eum quae iusto vel tenetur minus velit, nulla
+                                                            atque laboriosam deleniti!</p>
+                                                        <p><span class="font-weight-bold">เงินเดือนที่ได้รับ :
+                                                            </span>30,000 บาท</p>
+                                                    </article>
+                                                </div>
+                                                <!-- end บริษัท 1 -->
+
+                                                <!-- บริษัท 2 -->
+                                                <div class="cd-timeline-block">
+                                                    <div class="cd-timeline-img cd-picture">
+                                                        <img src="images/skill-resume-20.svg" alt="">
+                                                    </div>
+
+                                                    <article class="cd-timeline-content">
+                                                        <div class="bgHead">
+                                                            <p class="textWhite fontSubText">15 กุมภาพันธ์ 2016
+                                                                ถึง 15 พฤษภาคม
+                                                                2017 (1ปี)</p>
+                                                            <p class="fontSubHead textWhite">ชื่อตำแหน่งงาน :
+                                                                Web Designer</p>
+                                                        </div>
+
+                                                        <div class="text-center mt-4">
+                                                            <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                                                คลิก</button>
+                                                        </div>
+
+                                                        <div class="norNone">
+                                                            <p><span class="font-weight-bold">ชื่อบริษัท :
+                                                                </span>บริษัท อีซี่วันไทย
+                                                            </p>
+                                                            <p><span class="font-weight-bold">ที่อยู่ :
+                                                                </span>เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิต
+                                                                ดี ชั้น 5
+                                                                ซอยรามคำแหง 39 ถนนประชาอุทิศ แขวงวังทองหลาง
+                                                                เขตวังทองหลาง กรุงเทพฯ 10310</p>
+                                                        </div>
+
+                                                        <div class="lineDashUrgent"></div>
+
+                                                        <p><span class="font-weight-bold">หน้าที่รับผิดชอบ :
+                                                            </span>Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Suscipit molestiae dolores
+                                                            similique voluptatum, natus odio assumenda ex hic
+                                                            dolor eum quae iusto vel tenetur minus velit, nulla
+                                                            atque laboriosam deleniti!</p>
+                                                        <p><span class="font-weight-bold">เงินเดือนที่ได้รับ :
+                                                            </span>20,000 บาท</p>
+                                                    </article>
+                                                </div>
+                                                <!-- end บริษัท 2 -->
+
+                                                <!-- บริษัท 3 -->
+                                                <div class="cd-timeline-block">
+                                                    <div class="cd-timeline-img cd-picture">
+                                                        <img src="images/skill-resume-20.svg" alt="">
+                                                    </div>
+
+                                                    <article class="cd-timeline-content">
+                                                        <div class="bgHead">
+                                                            <p class="textWhite fontSubText">15 กันยายน 2012 ถึง
+                                                                15 กันยายน 2015
+                                                                (3ปี)</p>
+                                                            <p class="fontSubHead textWhite">ชื่อตำแหน่งงาน :
+                                                                Web Designer</p>
+                                                        </div>
+
+                                                        <div class="text-center mt-4">
+                                                            <button class="showData">ขออนุญาติดูข้อมูลที่ปกปิด
+                                                                คลิก</button>
+                                                        </div>
+
+                                                        <div class="norNone">
+                                                            <p><span class="font-weight-bold">ชื่อบริษัท :
+                                                                </span>บริษัท วินเนอ ออนไลน์
+                                                            </p>
+                                                            <p><span class="font-weight-bold">ที่อยู่ :
+                                                                </span>เลขที่ 446/67-71 ชั้นที่ 2-5
+                                                                อาคารปาร์คอเวนิว 2 ถนนสุขุมวิท 71
+                                                                แขวงพระโขนงเหนือ เขตวัฒนา กรุงเทพฯ 10110</p>
+                                                        </div>
+
+                                                        <div class="lineDashUrgent"></div>
+
+                                                        <p><span class="font-weight-bold">หน้าที่รับผิดชอบ :
+                                                            </span>Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Suscipit molestiae dolores
+                                                            similique voluptatum, natus odio assumenda ex hic
+                                                            dolor eum quae iusto vel tenetur minus velit, nulla
+                                                            atque laboriosam deleniti!</p>
+                                                        <p><span class="font-weight-bold">เงินเดือนที่ได้รับ :
+                                                            </span>18,000 บาท</p>
+                                                    </article>
+                                                </div>
+                                                <!-- end บริษัท 3 -->
+                                            </section>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end ประวัติการทำงาน/ฝึกงาน -->
+
+                                <!-- ประวัติการศึกษา -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-22.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">ประวัติการศึกษา</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn clShineGray borderRadiusStyle p-3">
+                                            <section class="cd-timeline">
+                                                <!-- ประวัติการศึกษา 1 -->
+                                                <div class="cd-timeline-block">
+                                                    <div class="cd-timeline-img cd-picture">
+                                                        <img src="images/skill-resume-22.svg" alt="">
+                                                    </div>
+
+                                                    <article class="cd-timeline-content">
+                                                        <div class="bgHead">
+                                                            <p class="fontSubHead textWhite">มหาวิทยาลัย
+                                                                ราชภัฏสวนสุนันทา</p>
+                                                        </div>
+
+                                                        <div class="mt-4">
+                                                            <p><span class="font-weight-bold">วุฒิการศึกษา :
+                                                                </span>ปริญญาตรี</p>
+                                                            <p><span class="font-weight-bold">สาขา :
+                                                                </span>ออกแบบนิเทศศิลป์</p>
+                                                            <p><span class="font-weight-bold">เกรดเฉลี่ย : </span>3.07
+                                                            </p>
+                                                            <p><span class="font-weight-bold">ปีที่จบการศึกษา :
+                                                                </span>2551</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                                <!-- end บริษัท 1 -->
+
+                                                <!-- ประวัติการศึกษา 2 -->
+                                                <div class="cd-timeline-block">
+                                                    <div class="cd-timeline-img cd-picture">
+                                                        <img src="images/skill-resume-22.svg" alt="">
+                                                    </div>
+
+                                                    <article class="cd-timeline-content">
+                                                        <div class="bgHead">
+                                                            <p class="fontSubHead textWhite">โรงเรียน นวมินทราชินูทิศ
+                                                                บดินทรเดชา</p>
+                                                        </div>
+
+                                                        <div class="mt-4">
+                                                            <p><span class="font-weight-bold">วุฒิการศึกษา :
+                                                                </span>จบการศึกษามัธยมระดับชั้นปีที่ 6</p>
+                                                            <p><span class="font-weight-bold">สาขา :
+                                                                </span>ศิลป์คำนวณ</p>
+                                                            <p><span class="font-weight-bold">เกรดเฉลี่ย : </span>2.5
+                                                            </p>
+                                                            <p><span class="font-weight-bold">ปีที่จบการศึกษา :
+                                                                </span>2547</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                                <!-- end บริษัท 2 -->
+                                            </section>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end ประวัติการศึกษา -->
+
+                                <!-- ทักษะความสามารถ -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-09.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">ทักษะความสามารถ</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn">
+                                            <ul class="skillCom">
+                                                <li>Adobe Photoshop / 3 ปี</li>
+                                                <li>Adobe Illustrator / 10 ปี</li>
+                                                <li>Adobe Premier Pro / 2 ปี</li>
+                                                <li>Adobe XD / เริ่มต้น</li>
+                                                <li>Adobe Lightroom/ 6 ปี</li>
+                                            </ul>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end ทักษะความสามารถ -->
+
+                                <!-- ทักษะทางภาษา -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-10.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">ทักษะทางภาษา</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-striped table-bordered table-hover text-center tableCustom">
+                                                    <thead class="clBlackGray textWhite">
+                                                        <tr>
+                                                            <th scope="col">ทักษะภาษา</th>
+                                                            <th scope="col">การพูด</th>
+                                                            <th scope="col">การฟัง</th>
+                                                            <th scope="col">การอ่าน</th>
+                                                            <th scope="col">การเขียน</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="nameLang">ไทย</td>
+                                                            <td>ดีมาก</td>
+                                                            <td>ดี</td>
+                                                            <td>พอใช้</td>
+                                                            <td>พอใช้</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="nameLang">อังกฤษ</td>
+                                                            <td>ดีมาก</td>
+                                                            <td>ดี</td>
+                                                            <td>พอใช้</td>
+                                                            <td>พอใช้</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="nameLang">จีน</td>
+                                                            <td>ดีมาก</td>
+                                                            <td>ดี</td>
+                                                            <td>พอใช้</td>
+                                                            <td>พอใช้</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="nameLang">ญี่ปุ่น</td>
+                                                            <td>ดีมาก</td>
+                                                            <td>ดี</td>
+                                                            <td>พอใช้</td>
+                                                            <td>พอใช้</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end ทักษะทางภาษา -->
+
+                                <!-- คะแนนทางภาษา / พิมพ์ดีด -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-23.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">คะแนนทางภาษา / พิมพ์ดีด</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn">
+                                            <section class="gridLangSkill">
+                                                <div>
+                                                    <h6 class="textRed fontSubHead mb-1">อังกฤษ</h6>
+                                                    <div class="flexScore">
+                                                        <p><span class="font-weight-bold">toeic : </span>500 คะแนน</p>
+                                                        <p><span class="font-weight-bold">Toefel : </span>500 คะแนน</p>
+                                                        <p><span class="font-weight-bold">Ielts : </span>500 คะแนน</p>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <h6 class="textRed fontSubHead mb-1">ญี่ปุ่น</h6>
+                                                    <p>N1</p>
+                                                </div>
+
+                                                <div>
+                                                    <h6 class="textRed fontSubHead mb-1">จีน</h6>
+                                                    <p>N5</p>
+                                                </div>
+                                            </section>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end คะแนนทางภาษา / พิมพ์ดีด -->
+
+                                <!-- ข้อมูลฝึกอบรม -->
+                                <article class="clWhite borderRadiusStyle p-3 mb-3">
+                                    <section>
+                                        <div class="gridstep">
+                                            <figure><img src="images/skill-resume-06.svg" alt=""></figure>
+                                            <h2 class="fontSubHead">ข้อมูลฝึกอบรม</h2>
+                                        </div>
+
+                                        <div class="lineDashUrgent"></div>
+
+                                        <article class="flexIn">
+                                            <div class="gridNum">
+                                                <p class="number">1.</p>
+                                                <section class="gridTrain">
+                                                    <div>
+                                                        <h6 class="font-weight-bold">สถานที่ฝึกอบรม :</h6>
+                                                        <p>The Brain</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">ระยะเวลา :</h6>
+                                                        <p>25 มิถุนายน ถึง 30 พฤศจิกายน 2563</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">หลักสูตร :</h6>
+                                                        <p>พัฒนาทักษะและความรู้</p>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                            <div class="lineDashUrgent"></div>
+
+                                            <div class="gridNum">
+                                                <p class="number">2.</p>
+                                                <section class="gridTrain">
+                                                    <div>
+                                                        <h6 class="font-weight-bold">สถานที่ฝึกอบรม :</h6>
+                                                        <p>เดอะมอลล์ บางกะปิ</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">ระยะเวลา :</h6>
+                                                        <p>28 มิถุนายน ถึง 10 พฤศจิกายน 2563</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">หลักสูตร :</h6>
+                                                        <p>Developer</p>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                            <div class="lineDashUrgent"></div>
+
+                                            <div class="gridNum">
+                                                <p class="number">3.</p>
+                                                <section class="gridTrain">
+                                                    <div>
+                                                        <h6 class="font-weight-bold">สถานที่ฝึกอบรม :</h6>
+                                                        <p>อาคารทัศนียา</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">ระยะเวลา :</h6>
+                                                        <p>15 มิถุนายน ถึง 20 พฤศจิกายน 2563</p>
+                                                    </div>
+
+                                                    <div>
+                                                        <h6 class="font-weight-bold">หลักสูตร :</h6>
+                                                        <p>อบรมสัมนา IT</p>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </article>
+                                    </section>
+                                </article>
+                                <!-- end ข้อมูลฝึกอบรม -->
+                            </div>
+                            <!-- end ข้อมูลฝั่งขวา -->
+                        </section>
+
+                        <ul class="flexPrint hiddenPrint">
+                            <li><a href="javascript:void(0)" onclick="link()"><i class="fas fa-angle-left"></i>
+                                    ย้อนกลับ</a></li>
+                            <li><button><i class="fas fa-user-tie"></i> นัดสัมภาษณ์</button></li>
+                            <li><button><i class="fas fa-folder-open"></i> เก็บผู้สมัครงาน</button></li>
+                            <li><button><i class="fas fa-paper-plane"></i> ส่งข้อความ</button></li>
+                            <li><button><i class="fas fa-ban"></i> ร้องเรียน</button></li>
+                            <li><button onclick="javascript:window.print()"><i class="fas fa-print"></i> พิมพ์</button>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </div>
+        </article>
+
+        <!-- footer -->
+        <footer class="calC footerJobbkk hiddenPrint">
+            <!-- assets/components/footer.js -->
+        </footer>
+        <!-- end footer -->
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top hiddenPrint">Top</a>
+</body>
+
+<script src="../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/slide-menu.js"></script>
+<script src="../assets/js/backToTop.js"></script>
+<script src="../assets/js/sweetalert2.all.min.js"></script>
+
+<script src="../assets/components/topbar.js"></script>
+<script src="../assets/components/topBarBusiness.js"></script>
+<script src="../assets/components/footer.js"></script>
+
+<script>
+    $('.showData').click(function () {
+        $('.norNone').removeClass('norNone')
+        $('.showData').remove()
+    })
+</script>
+
+</html>

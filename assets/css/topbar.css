@@ -1,0 +1,73 @@
+.bgTopbar{ background: var(--clWhite); position: relative; z-index: 9;}
+.flexTop{ display: flex; align-items: center; justify-content: space-between; position: relative;}
+.flexLangEnter{ display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.flexLang{ display: flex; align-items: center; justify-content: center; gap: 15px;}
+.flexLang button{ border-radius: 5px; background: var(--clWhite); border: 1px solid var(--clBlackGray); color: var(--clBlackGray);}
+.flexLang button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover); color: var(--clWhite);}
+.flexLang button.active{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite);}
+
+.dropdownToggle{ display: flex; align-items: center; justify-content: space-between; background: var(--clWhite);
+    border: 1px solid var(--clBlackGray); border-radius: 5px;}
+.dropdownToggle::after{ border: 0;}
+.dropdownMenu a:hover{ background: var(--clGray);}
+.dropdownItem{ white-space: normal;}
+.dropdownItem:active{ color: var(--clBlackGray);}
+
+.flexNav{ display: flex; background: var(--clRed);}
+.flexNav>*{ flex: 1 0 12.5%; text-align: center;}
+.flexNav a, .dropdownCl a{ color: var(--clWhite); display: block;}
+.flexNav a.theFirst{ padding: 15px; height: 100%; display: flex; align-items: center; justify-content: space-evenly;}
+.flexNav a:hover, .flexNav a.active{ background: var(--clRedHover); color: var(--clWhite);}
+.dropdownHead{ display: flex; align-items: center; justify-content: space-between;}
+.dropdownHead::after{ border: 0;}
+.dropdownHeadDown{ min-width: 100%;}
+.dropdownHeadDown a{ color: var(--clBlackGray); position: relative;}
+.dropdownHeadDown a:hover{ background: var(--clGray); color: var(--clBlackGray);}
+.iconAB{ position: absolute; right: 15px; top: 9px;}
+
+.dropdownHover:hover>.dropdown-menu { display: block;}
+.dropdownHover>.dropdown-toggle:active { pointer-events: none;}
+
+.slide-menu-control{ display: none; background: var(--clRed); color: var(--clWhite);}
+.bannerMobile{ display: none;}
+.goverment{ display: none;}
+
+@media (max-width:991px){
+    .flexNav{ display: none;}
+    .bgTopbar{ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);}
+    .banner{ display: none;}
+    .slide-menu-control{ display: block;}
+    .bannerMobile{ display: block; text-align: center;}
+    .bannerMobile a{ display: inline-block;}
+    .bannerMobile img{ width: auto !important;}
+}
+
+@media (max-width:576px){
+    .logo img{ max-width: 120px;}   
+    .bgTopbar { padding: 15px !important;}
+}
+
+/* mobile */
+.fixBg{ position: fixed; width: 100%; height: 100%; left: 0; background: rgba(0, 0, 0, 0.7); z-index: 1001; opacity: 0; visibility: hidden;}
+.fixBg.show{ opacity: 1; visibility: visible;}
+
+.slide-menu { position: fixed; width: 320px; max-width: 100%; height: 100vh; top: 0; right: 0; display: none; overflow-y: auto; 
+    background: var(--clWhite); color: var(--clWhite); box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-sizing: border-box; transition: transform 300ms ease-in-out; transform: translateX(100%); will-change: transform;
+    z-index: 9999;}
+.slide-menu .slider { position: absolute; top: 60px; left: 0; width: 100%; transition: transform 300ms ease-in-out;
+    transform: translateX(0); will-change: transform;}
+.slide-menu ul { padding-left: 0; list-style: none; position: relative; width: 320px; max-width: 100%; margin: 0;}
+.slide-menu ul ul { position: absolute; top: 0; left: 100%; display: none;}
+.slide-menu ul a { display: block; padding: 12px 24px; color: var(--clBlackGray); text-decoration: none;}
+.slide-menu.no-transition, .slide-menu.no-transition * { transition: none !important;}
+.slide-menu li{ border-bottom: 1px solid var(--clWhitetGray);}
+.slide-menu img{ max-width: 30px;}
+
+.slide-menu .controls { overflow: hidden;}
+.slide-menu a.active{ color: var(--clWhite); background: var(--clBlackGray);}
+.slide-menu .btn { float: right; color: var(--clWhite); background: var(--clRed); padding: 3px 5px;}
+.slide-menu .btn:hover { background: var(--clRed);}
+.slide-menu .btn + .btn { margin-right: 1px;}
+#test-menu-left { padding: 16px;}
+  
