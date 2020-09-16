@@ -244,7 +244,7 @@ let menus = [
   },
   {
     name: "ค้นหางาน ",
-    link: linkMenu + "searchWork/premiumUrgent.html",
+    link: linkMenu + "javascript:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-3.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
@@ -279,7 +279,7 @@ let menus = [
       },
       {
         name: "งาน Jobfair",
-        link: linkMenu + "searchWork/premiumUrgent.html",
+        link: linkMenu + "jobfairEvent/jobfairEvent.html",
         arrow: "",
         arrowMobile: "",
       },
