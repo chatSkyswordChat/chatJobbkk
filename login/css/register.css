@@ -6,8 +6,8 @@
 .flexLogin{ background: var(--clWhite); border-radius: 10px; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); position: relative; top: 30px; 
     max-width: 850px; width: 100%; margin: 0 auto;}
 .bgLogin{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.registerPush button{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px; border: 1px solid var(--clRed);}
-.registerPush button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+.registerPush a{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px; display: inline-block;}
+.registerPush a:hover{ background: var(--clRedHover);}
 
 @media (max-width:576px){
     .bgLogin{ grid-template-columns: 1fr;}
