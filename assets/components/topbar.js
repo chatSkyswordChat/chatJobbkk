@@ -233,7 +233,7 @@ let menus = [
   },
   {
     name: "หางานด่วน",
-    link: linkMenu + "",
+    link: linkMenu + "searchWork/premiumUrgent.html",
     img: linkMenu + "assets/images/iconMenuHomeMobile-2.png",
     classOrigin: "",
     class: "",
