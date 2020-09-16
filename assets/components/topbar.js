@@ -9,6 +9,7 @@ let registers = [
   { name: "สมัครสมาชิก", link: linkRegister + "login/register.html" },
 ];
 
+topbar += `<div class="fixBg"></div>`;
 // banner king
 topbar += `<section class="king calC">`;
 topbar += `<figure><img src="${linkWeb}assets/images/king.jpg" alt=""></figure>`;
