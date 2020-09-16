@@ -5,10 +5,11 @@
 .flexSmall{ display: flex; flex-direction: column; gap: 15px;}
 body{ position: relative;}
 
-.flexGetPim{ display: flex; align-items: center; justify-content: space-between;}
-.getPim{ display: inline-block;}
-.getPim button{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px; border: 1xp solid var(--clRed);}
-.getPim button:hover{ background: var(--clRedHover);}
+.btnList{ display: flex; align-items: center; gap: 15px; flex-wrap: wrap;}
+.btnTab{ background: var(--clWhite); border: 1px solid var(--clBlackGray); color: var(--clBlackGray); 
+    padding: 5px 20px; border-radius: 50px; transition: 0.5s ease-in-out;}
+.btnTab:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+.btnTab.active{ background: var(--clRedHover); color: var(--clWhite); border: 1px solid var(--clRedHover);}
 
 .flexCollapse{ display: flex; align-items: center; justify-content: center; gap: 15px;}
 .flexCollapse button{ background: var(--clRed); display: inline-block; color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}

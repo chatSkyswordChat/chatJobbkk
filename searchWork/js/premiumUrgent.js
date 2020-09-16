@@ -207,7 +207,7 @@ let urgents = [
   },
   {
     name: "บริษัท ไทย สเตมไลฟ์ จำกัด",
-    position: "Customer Representative / เจ้าหน้าที่ขาย (กรุงเทพ)",
+    position: "Customer Representative / เจ้าหน้าที่ขาย (กรุงเทพ) Customer Representative / เจ้าหน้าที่ขาย (กรุงเทพ) Customer Representative / เจ้าหน้าที่ขาย (กรุงเทพ)",
     img: "images/logo4.jpg",
     time: "56นาที ที่แล้ว",
     area: "ปทุมธานี (ทุกเขต/อำเภอ)",
@@ -235,9 +235,9 @@ urgents.forEach((urgent, banner) => {
                                                     <p class="workEllipsis"><span class="font-weight-bold">เงินเดือน(บาท) :</span> 
                                                         ${urgent.money}</p>
                                                 </div>
-                                                <div>
+                                                <div class="flexTimeWork">
                                                     <span class="saveWork">
-                                                        <button class="saveHeart ${urgent.active}" data-toggle="tooltip"
+                                                        <button class="saveHeart p-0 ${urgent.active}" data-toggle="tooltip"
                                                             data-placement="bottom" title="บันทึกงานไว้ดูภายหลัง">
                                                             ${urgent.save}
                                                         </button>

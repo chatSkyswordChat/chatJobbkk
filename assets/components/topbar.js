@@ -9,7 +9,6 @@ let registers = [
   { name: "สมัครสมาชิก", link: linkRegister + "login/register.html" },
 ];
 
-topbar += `<div class="fixBg"></div>`;
 // banner king
 topbar += `<section class="king calC">`;
 topbar += `<figure><img src="${linkWeb}assets/images/king.jpg" alt=""></figure>`;
@@ -63,7 +62,7 @@ topbar += `</div>`;
 
 // user เข้าสู่ระบบ
 let userLogin = (location.href.split('/').length == 5) ? '' : '../'
-topbar += `<div class="dropdown useLogin">`;
+topbar += `<div class="dropdown userLogin">`;
 topbar += `<button class="dropdown-toggle dropdownToggle userToggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
 topbar += `<figure class="picUser mb-1"><img src="${userLogin}assets/images/pic.jpg" alt=""/> <i class="fas fa-angle-down"></i></figure>`;
 topbar += `<p class="idUser fontMark">ID : 123456</p>`;
@@ -527,8 +526,6 @@ topbar += `</nav>`;
 // end menu mobile
 
 document.getElementsByClassName("topbar")[0].innerHTML = topbar;
-
-
 
 $(document).ready(function () {
   // slide menu

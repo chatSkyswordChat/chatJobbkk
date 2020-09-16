@@ -4,7 +4,7 @@ let linkWeb = (location.href.split("/").length == 5) ? "" : "../";
 
 let linkRegister = (location.href.split("/").length == 5) ? "" : "../";
 let registers = [
-    { name: "ผู้สมัครงาน", link: linkRegister + "login/loginJobSeeker.html" },
+    { name: "ผู้สมัครงาน", link: linkRegister + "login/loginApplicant.html" },
     { name: "ผู้ประกอบการ", link: linkRegister + "login/loginBusiness.html" },
     { name: "สมัครสมาชิก", link: linkRegister + "login/register.html" },
 ];
@@ -63,7 +63,7 @@ topbarBusiness += `</div>`;
 
 // user เข้าสู่ระบบ
 let userLogin = (location.href.split('/').length == 5) ? '' : '../'
-topbarBusiness += `<div class="dropdown useLogin">`;
+topbarBusiness += `<div class="dropdown userLogin">`;
 topbarBusiness += `<button class="dropdown-toggle dropdownToggle userToggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
 topbarBusiness += `<figure class="picUser mb-1"><img src="${userLogin}assets/images/pic.jpg" alt=""/> <i class="fas fa-angle-down"></i></figure>`;
 topbarBusiness += `<p class="idUser fontMark">ID : 123456</p>`;
@@ -216,9 +216,11 @@ topbarBusiness += `</section>`;
 topbarBusiness += `</article>`;
 // end ปุ่มแฮมเบอเกอ logo jobbkk banner topPage เข้าสู่ระบบ
 
-let linkMenu = (location.href.split("/").length == 5) ? "" : "../";
+let linkMenu = ((location.href.split("/").length == 5)) ? "" : "../";
 let path = location.href.split("/");
 let lastPath = path[path.length - 1];
+console.log(lastPath);
+
 let menus = [
     {
         name: "ตำแหน่งงาน",
@@ -239,7 +241,7 @@ let menus = [
 ];
 
 // menu PC
-topbarBusiness += `<section class="flexNav calC">`;
+topbarBusiness += `<section class="flexNav iShow calC">`;
 topbarBusiness += `<div class="container">`
 topbarBusiness += `<div class="row">`
 topbarBusiness += `<div class="col-12">`
@@ -249,6 +251,12 @@ menus.forEach((menu) => {
     if (menu.link.includes(lastPath)) {
         activeClass = "active";
     }
+    if(menu.link == '../dashboardBusiness/premiumCompanyProfile.html'){
+        if(lastPath == 'premiumJobDetail.html'){
+            activeClass = "active";
+        }
+    }
+
     topbarBusiness += `<div>`;
     topbarBusiness += `<a href="${menu.link}" class="${activeClass} theFirst">${menu.name}</a>`;
     topbarBusiness += `</div>`;

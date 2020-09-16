@@ -1,8 +1,4 @@
-.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 850px; width: 100%;}
-
-@media (max-width:1199px){
-    .bgLogin{ position: relative; transform: translate(0, 0); top: 0; left: 0; margin-top: 30px;}
-}
+.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; position: relative; top: 30px; max-width: 850px; width: 100%; margin: 0 auto;}
 
 @media (max-width:991px){
     .bgLogin{ grid-template-columns: 1fr;}

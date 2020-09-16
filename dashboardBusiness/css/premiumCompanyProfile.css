@@ -47,7 +47,6 @@ button.urgentButton:hover{ background: var(--clRedHover); border: 1px solid var(
     .plusPlus, .gridListing button{ width: 100%; text-align: center;}
 }
 
-
 .btnList{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
 .btnTab{ background: transparent; border: 1px solid var(--clBlackGray); color: var(--clBlackGray); border-radius: 5px; padding: 5px 20px;}
 .btnTab.active{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite);}
@@ -120,7 +119,7 @@ span.new{ background: var(--clGreen); color: var(--clWhite); border-radius: 5px;
 }
 
 .flexOverView{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px;}
-.headOverView{ background: var(--clBlackGray); color: var(--clWhite); border-radius: 50px; width: 100%; text-align: center;}
+.headOverView{ background: var(--clBlackGray); color: var(--clWhite); border-radius: 50px; width: auto; text-align: center; padding: 10px 30px;}
 .flexView{ display: flex; flex-direction: column; align-items: center;}
 .flexFloat{ display: flex; align-items: center; justify-content: center; gap: 15px;}
 .iconView{ background: var(--clGreen); color: var(--clWhite); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
@@ -146,4 +145,5 @@ span.new{ background: var(--clGreen); color: var(--clWhite); border-radius: 5px;
 
 @media (max-width:991px){
     .gridMap{ grid-template-columns: 1fr;}
+    .flexNav.iShow{ display: block;}
 }

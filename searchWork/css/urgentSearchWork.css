@@ -27,6 +27,7 @@
 .gridUnder a:hover{ background: var(--clRedHover);}
 
 .gridListWork{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
+.flexTimeWork{ flex: 1 0 30%; max-width: 30%; text-align: right;}
 .saveWork button{ background: transparent; border: 0;}
 .saveWork button:hover, .saveWork button.active{ color: var(--clRed);}
 
@@ -35,6 +36,7 @@
 }
 
 @media (max-width:768px){
+    .flexTimeWork{ flex: 1 0 100%; max-width: 100%; text-align: left;}
     .flexIn{ justify-content: start; flex-direction: column;}
     .gridUnder{ grid-template-columns: 1fr;}
     .gridUnder div + div{ text-align: center;}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#ACEBE2;}
+	.st1{fill:#E2E0E0;}
+	.st2{fill:#98D7CE;}
+	.st3{fill:#CECCCC;}
+	.st4{fill:#2BBDC4;}
+	.st5{fill:#495D85;}
+	.st6{fill:#E9EEF0;}
+	.st7{fill:#ADF3FF;}
+	.st8{fill:#FFC870;}
+	.st9{fill:#FFDAA0;}
+	.st10{fill:#FFFFFF;}
+	.st11{fill:#BAEE83;}
+	.st12{fill:#F4FBFF;}
+	.st13{fill:#E4F6FF;}
+	.st14{fill:#E28086;}
+	.st15{fill:#EFC984;}
+	.st16{fill:#4A80AA;}
+	.st17{fill:#407093;}
+	.st18{fill:#FFE07D;}
+	.st19{fill:#FFDDCE;}
+	.st20{fill:#EABC6B;}
+	.st21{fill:#FFCBBE;}
+	.st22{fill:#365E7D;}
+	.st23{fill:#FFD064;}
+	.st24{fill:#D12026;}
+	.st25{fill:#A9DBF5;}
+	.st26{fill:#88C3E0;}
+	.st27{fill:#4380A0;}
+	.st28{fill:#FFD54F;}
+	.st29{fill:#FFC328;}
+	.st30{fill:#F75632;}
+	.st31{fill:#E33629;}
+	.st32{fill:#BBF7FF;}
+	.st33{fill:#8BF0FF;}
+	.st34{fill:#7BE492;}
+	.st35{fill:#45D987;}
+	.st36{fill:#3B7191;}
+	.st37{fill:#EBAD88;}
+	.st38{fill:#F0BC5E;}
+	.st39{fill:#8C95A4;}
+	.st40{fill:#39C3FC;}
+	.st41{fill:#148CE0;}
+	.st42{fill:#ECECEC;}
+	.st43{fill:#89B140;}
+	.st44{fill:#AAC16B;}
+	.st45{fill:#79A73A;}
+	.st46{fill:#FBB540;}
+	.st47{fill:#6C7175;}
+	.st48{fill:#A79BA7;}
+	.st49{fill:#918291;}
+	.st50{fill:#F9F7F8;}
+	.st51{fill:#E5E1E5;}
+	.st52{fill:#B5ADB6;}
+	.st53{fill:#78B9EB;}
+	.st54{fill:#FFAF46;}
+</style>
+<g>
+	<path class="st39" d="M256,16H48c-17.7,0-32,14.3-32,32v416c0,17.7,14.3,32,32,32h208c17.7,0,32-14.3,32-32V320V128V48
+		C288,30.3,273.7,16,256,16z"/>
+	<rect x="16" y="80" class="st40" width="272" height="352"/>
+	<rect x="16" y="400" class="st41" width="272" height="32"/>
+	<path class="st42" d="M192,144v120l-56,56h344c8.8,0,16-7.2,16-16V144c0-8.8-7.2-16-16-16H208C199.2,128,192,135.2,192,144z"/>
+	<polygon class="st41" points="136,320 288,352 288,320 	"/>
+	<path d="M480,120H296V48c0-22.1-17.9-40-40-40H48C25.9,8,8,25.9,8,48v416c0,22.1,17.9,40,40,40h208c22.1,0,40-17.9,40-40V344h-16
+		v80H24V88h256v32h-72c-13.2,0-24,10.8-24,24v116.7L116.7,328H480c13.2,0,24-10.8,24-24V144C504,130.8,493.2,120,480,120z M280,440
+		v24c0,13.2-10.8,24-24,24H48c-13.2,0-24-10.8-24-24v-24H280z M24,72V48c0-13.2,10.8-24,24-24h208c13.2,0,24,10.8,24,24v24H24z
+		 M488,304c0,4.4-3.6,8-8,8H155.3l44.7-44.7V144c0-4.4,3.6-8,8-8h272c4.4,0,8,3.6,8,8V304z"/>
+	<path d="M424,184c8.8,0,16,7.2,16,16h16c0-17.6-14.4-32-32-32s-32,14.4-32,32s14.4,32,32,32c8.8,0,16,7.2,16,16s-7.2,16-16,16
+		s-16-7.2-16-16h-16c0,17.6,14.4,32,32,32s32-14.4,32-32s-14.4-32-32-32c-8.8,0-16-7.2-16-16S415.2,184,424,184z"/>
+	<path d="M264,184c8.8,0,16,7.2,16,16h16c0-17.6-14.4-32-32-32s-32,14.4-32,32s14.4,32,32,32c8.8,0,16,7.2,16,16s-7.2,16-16,16
+		s-16-7.2-16-16h-16c0,17.6,14.4,32,32,32s32-14.4,32-32s-14.4-32-32-32c-8.8,0-16-7.2-16-16S255.2,184,264,184z"/>
+	<polygon points="344,207 334.2,168 312,168 312,272 328,272 328,209 344,273 360,209 360,272 376,272 376,168 353.8,168 	"/>
+	<rect x="120" y="456" width="64" height="16"/>
+	<rect x="248" y="344" width="16" height="16"/>
+	<rect x="216" y="344" width="16" height="16"/>
+	<rect x="184" y="344" width="16" height="16"/>
+	<rect x="152" y="344" width="16" height="16"/>
+</g>
+</svg>

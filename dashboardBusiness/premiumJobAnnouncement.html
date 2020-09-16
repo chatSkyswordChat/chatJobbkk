@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/show.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
     <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
     <link rel="stylesheet" href="../assets/css/select2.min.css">
-    <link rel="stylesheet" href="css/premiumDashboardBusiness.css">
+    <link rel="stylesheet" href="css/premiumJobAnnouncement.css">
+
+    <link rel="stylesheet" href="../assets/css/aboutLogin/userNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/businessLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/noShowEnterSystem.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
 </head>
 
 <body>
@@ -782,6 +785,111 @@
                             </article>
                         </section>
                         <!-- end ขั้นตอนที่ 11 : ข้อมูลการติดต่อบริษัท (ใช้ที่อยู่เดียวกับ Company Profile) -->
+
+                        <div class="lineDash"></div>
+
+                        <!-- ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
+                        <section>
+                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 12 :</span>
+                                <span class="font-weight-bold"> เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ</span></p>
+
+                            <article class="gridDay">
+                                <div>
+                                    <label class="font-weight-bold">วันที่เปิดประกาศ :</label>
+                                    <div class="lineDashUrgent"></div>
+                                    <section class="gridDays">
+                                        <div>
+                                            <p>วัน</p>
+                                            <select name="day" class="form-control formControl selectDis">
+                                                <option value="">เลือกวัน</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <p>เดือน</p>
+                                            <select name="month" class="form-control formControl selectDis">
+                                                <option value="">เลือกเดือน</option>
+                                                <option>มกราคม</option>
+                                                <option>กุมภาพันธ์</option>
+                                                <option>มีนาคม</option>
+                                                <option>เมษายน</option>
+                                                <option>พฤษภาคม</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <p>ปี</p>
+                                            <select name="year" class="form-control formControl selectDis">
+                                                <option value="">เลือกปี</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div>
+                                    <label class="font-weight-bold">วันที่ปิดประกาศ :</label>
+                                    <div class="lineDashUrgent"></div>
+                                    <section class="gridDays">
+                                        <div>
+                                            <p>วัน</p>
+                                            <select name="day1" class="form-control formControl selectDis">
+                                                <option value="">เลือกวัน</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <p>เดือน</p>
+                                            <select name="month1" class="form-control formControl selectDis">
+                                                <option value="">เลือกเดือน</option>
+                                                <option>มกราคม</option>
+                                                <option>กุมภาพันธ์</option>
+                                                <option>มีนาคม</option>
+                                                <option>เมษายน</option>
+                                                <option>พฤษภาคม</option>
+                                            </select>
+                                        </div>
+
+                                        <div>
+                                            <p>ปี</p>
+                                            <select name="year1" class="form-control formControl selectDis">
+                                                <option value="">เลือกปี</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                            </select>
+                                        </div>
+                                    </section>
+                                </div>
+
+                                <div>
+                                    <label class="font-weight-bold">ประกาศไม่มีกำหนดปิด :</label>
+                                    <div class="lineDashUrgent"></div>
+                                    <label class="mTop">
+                                        ประกาศไม่มีกำหนดปิด
+                                        <input type="checkbox" id="selectDisable" onclick="toggleSelect()"> 
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- end ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
 
                         <div class="lineDash"></div>
 

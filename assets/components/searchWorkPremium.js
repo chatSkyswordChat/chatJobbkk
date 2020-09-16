@@ -3,7 +3,7 @@ var searchWorkPremium = "";
 searchWorkPremium += `<div class="container mb-5">`;
 searchWorkPremium += `<div class="row">`;
 searchWorkPremium += `<section class="col-12">`;
-searchWorkPremium += `<div class="searchWorkPremium py-3 mt-4">`;
+searchWorkPremium += `<div class="searchWorkPremium py-3 mt-4 mb-4">`;
 searchWorkPremium += `<h2 class="fontSubHead">คุณกำลังต้องการงานด่วน ใช่ไหม!
                                 <button class="clRed urgentButton modalUrgent" href="javascript:void(0)">คลิก ปุ่มต้องการงานด่วน</button></h2>`;
 
@@ -12,8 +12,6 @@ searchWorkPremium += `<h6 class="fontSubText"><span class="textRed">*เพิ�
                                 ที่ช่วยให้ผู้ประกอบการคัดเลือกเรซูเม่ของคุณ และทราบถึงความพร้อมในการ สมัคร
                                 สัมภาษณ์ และเริ่มงานได้ทันทีของคุณ</h6>`;
 searchWorkPremium += `</div>`;
-
-searchWorkPremium += `<div class="lineDash"></div>`;
 
 // ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์
 searchWorkPremium += `<section>`
@@ -213,70 +211,39 @@ searchWorkPremium += `</div>`;
 searchWorkPremium += `</div>`;
 // end เลือกระดับการทำงาน
 
-// เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด
+// เลือกเงินเดือนที่ต้องการ ต่ำสุด
 searchWorkPremium += `<div class="dropdown dropdownFilter">`;
 searchWorkPremium += `<button class="form-control formControl buttonFilter" type="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-searchWorkPremium += `<span class="searchEllipsis">
-                        <i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด</span>`;
+searchWorkPremium += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด</span>`;
 searchWorkPremium += `<i class="fas fa-chevron-down"></i>`;
 searchWorkPremium += `</button>`;
 
-searchWorkPremium += `<div class="dropdown-menu dropDownScroll">`;
-searchWorkPremium += `<article class="accordion" id="accordionExample2">`;
-searchWorkPremium += `<section>`;
-searchWorkPremium += `<button class="btn btn-link btn-block text-left flexPositionPre" type="button" data-toggle="collapse"
-                                    data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">`;
-searchWorkPremium += `<span>เงินเดือนที่ต้องการ ต่ำสุด</span>`;
+searchWorkPremium += `<div class="dropdown-menu dropDownMenu">`;
+let minMoneys = ["10,000 บาท", "20,000 บาท", "30,000 บาท", "40,000 บาท", "50,000 บาท"];
+for (let minMoney = 0; minMoney < minMoneys.length; minMoney++) {
+  searchWorkPremium += `<a class="dropdown-item" href="javascript:void(0)">${minMoneys[minMoney]}</a>`;
+}
+searchWorkPremium += `</div>`;
+searchWorkPremium += `</div>`;
+// end เลือกเงินเดือนที่ต้องการ ต่ำสุด
+
+// เลือกเงินเดือนที่ต้องการ สูงสุด
+searchWorkPremium += `<div class="dropdown dropdownFilter">`;
+searchWorkPremium += `<button class="form-control formControl buttonFilter" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
+searchWorkPremium += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ สูงสุด</span>`;
 searchWorkPremium += `<i class="fas fa-chevron-down"></i>`;
 searchWorkPremium += `</button>`;
 
-searchWorkPremium += `<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample2">`;
-searchWorkPremium += `<div class="card-body p-3">`;
-searchWorkPremium += `<div class="allWorkList">`;
-searchWorkPremium += `<label><input type="checkbox"> ทั้งหมด</label><button>ตกลง</button>`;
-searchWorkPremium += `</div>`;
-
-searchWorkPremium += `<div class="lineDashUrgent"></div>`;
-
-searchWorkPremium += `<ul>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 10,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 20,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 30,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 40,000 บาท</label></li>`;
-searchWorkPremium += `</ul>`;
+searchWorkPremium += `<div class="dropdown-menu dropDownMenu">`;
+let maxMoneys = ["50,000 บาท", "60,000 บาท", "70,000 บาท", "80,000 บาท", "90,000 บาท"];
+for (let maxMoney = 0; maxMoney < maxMoneys.length; maxMoney++) {
+  searchWorkPremium += `<a class="dropdown-item" href="javascript:void(0)">${maxMoneys[maxMoney]}</a>`;
+}
 searchWorkPremium += `</div>`;
 searchWorkPremium += `</div>`;
-searchWorkPremium += `</section>`;
-
-searchWorkPremium += `<section>`;
-searchWorkPremium += `<button class="btn btn-link btn-block text-left flexPositionPre" type="button" data-toggle="collapse"
-                                data-target="#collapse8" aria-expanded="true" aria-controls="collapse8">`;
-searchWorkPremium += `<span>เงินเดือนที่ต้องการ สูงสุด</span>`;
-searchWorkPremium += `<i class="fas fa-chevron-down"></i>`;
-searchWorkPremium += `</button>`;
-
-searchWorkPremium += `<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample2">`;
-searchWorkPremium += `<div class="card-body p-3">`;
-searchWorkPremium += `<div class="allWorkList">`;
-searchWorkPremium += `<label><input type="checkbox"> ทั้งหมด</label><button>ตกลง</button>`;
-searchWorkPremium += `</div>`;
-
-searchWorkPremium += `<div class="lineDashUrgent"></div>`;
-
-searchWorkPremium += `<ul>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 80,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 90,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 100,000 บาท</label></li>`;
-searchWorkPremium += `<li><label><input type="checkbox"> 110,000 บาท</label></li>`;
-searchWorkPremium += `</ul>`;
-searchWorkPremium += `</div>`;
-searchWorkPremium += `</div>`;
-searchWorkPremium += `</section>`;
-searchWorkPremium += `</article>`;
-searchWorkPremium += `</div>`;
-searchWorkPremium += `</div>`;
-// end เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด
+// end เลือกเงินเดือนที่ต้องการ สูงสุด
 
 // เลือกประเภทธุรกิจ
 searchWorkPremium += `<div class="dropdown dropdownFilter">`;
@@ -289,7 +256,7 @@ searchWorkPremium += `</button>`;
 searchWorkPremium += `<div class="dropdown-menu dropDownMenu">`;
 let types = ["อสังหาริมทรัพย์", "IT", "บริการ", "รักษาความปลอดภัย"];
 for (let type = 0; type < types.length; type++) {
-  searchWorkPremium += `<a class="dropdown-item" href="#">${types[type]}</a>`;
+  searchWorkPremium += `<a class="dropdown-item" href="javascript:void(0)">${types[type]}</a>`;
 }
 searchWorkPremium += `</div>`;
 searchWorkPremium += `</div>`;
@@ -320,7 +287,7 @@ searchWorkPremium += `<span class="searchEllipsis"><i class="fas fa-bus"></i> �
 searchWorkPremium += `<i class="fas fa-chevron-down"></i>`;
 searchWorkPremium += `</button>`;
 
-searchWorkPremium += `<div class="dropdown-menu dropDownScroll">`;
+searchWorkPremium += `<div class="dropdown-menu dropDownAuto">`;
 searchWorkPremium += `<article class="accordion" id="accordionExampleTransport">`;
 
 let iding = 0;
@@ -374,6 +341,14 @@ searchWorkPremium += `</div>`;
 searchWorkPremium += `</div>`;
 // end เลือกการเดินทาง
 
+// Work from home
+searchWorkPremium +=`<div>`
+searchWorkPremium +=`<label style="margin-top:7px">`
+searchWorkPremium +=`<input type="checkbox"/> Work from home`
+searchWorkPremium +=`</label>`
+searchWorkPremium +=`</div>`
+// end Work from home
+
 searchWorkPremium += `<div class="search searchColumn fontSubHead"><button>ค้นหา</button></div>`;
 searchWorkPremium += `</section>`;
 searchWorkPremium += `</div>`;
@@ -424,7 +399,7 @@ searchWorkPremium += `</div>`;
 document.getElementsByClassName("bgSearchPremium")[0].innerHTML = searchWorkPremium;
 
 // เลือกตรงดรอปดาว
-$(document).on("click", ".dropDownScroll", function (e) {
+$(document).on("click", ".dropDownScroll, .dropDownAuto", function (e) {
   e.stopPropagation();
 });
 
@@ -503,3 +478,4 @@ for (let index = 0; index < btns.length; index++) {
     this.className += ' active'
   })
 }
+// end เลือก filter หรือ ค้นหาจากการพิมพ์

@@ -1,0 +1,72 @@
+.gridBoard{ display: grid; grid-template-columns: 0.5fr 1fr; grid-gap: 15px;}
+
+@media (max-width:991px){
+    .gridBoard{ display: flex; flex-direction: column; gap: 15px;}
+}
+
+.flexDataCompany{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.create a{ background: var(--clRed); color: var(--clWhite); padding: 5px 20px; border-radius: 50px; text-align: center;}
+.create a:hover{ background: var(--clRedHover);}
+
+.doProfile a{ background: var(--clRed); color: var(--clWhite); padding: 5px 30px; border-radius: 50px; display: inline-block;}
+.doProfile a:hover{ background: var(--clRedHover);}
+
+.flexPic{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;}
+.flexPic div{ width: 100%; text-align: center;}
+.flexPic figure{ width: 150px; height: 150px; flex: 1 0 auto; margin: 0 auto;}
+.flexPic img{ border-radius: 50%; max-width: 150px; height: 150px; object-fit: cover; border: 1px solid var(--clBlackGray);}
+
+#menuDashboardBusiness{ overflow: hidden;}
+.menuStep1{ display: flex; flex-direction: column;}
+.menuStep1 figure{ width: 100%;}
+.menuStep1 img{ max-width: 25px;}
+.menuStep1 li a{ color: var(--clBlackGray); display: flex; align-items: center; justify-content: space-between; 
+    width: 100%; padding: 5px 0;}
+.menuStep1 ~ li{ display: flex; align-items: center; justify-content: space-between;}
+.menuStep1 li{ border-bottom: 1px dashed var(--clGray);}
+.menuStep1 li:last-child{ border-bottom: 0;}
+.menuStep1 li a:hover, .menuStep1 li a.active{ background: var(--clGray); padding: 5px 15px;}
+.menuStep1 li ul{ opacity: 0; visibility: hidden; height: 0; transform: scaleX(-20%);
+    transition: transform 0.5s ease-in-out;}
+.menuStep1 li.active ul{ opacity: 1; visibility: visible; height: auto; transform: translateX(0);}
+.menuStep1 li.active ul li a{ display: flex; justify-content: flex-start; gap: 15px; padding-left: 15px;}
+
+.navMenuBusiness{ display: none;}
+
+@media (max-width:991px){
+    .navMenuBusiness{ display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .navMenuBusiness h2{ flex: 1 1 70%; max-width: 70%;}
+    .navMenuBusiness div{ flex: 1 1 30%; max-width: 30%;}
+
+    #toggleMenuBusiness{ display: block; text-align: right;}
+    #toggleMenuBusiness button{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); 
+        border-radius: 5px;}
+    #toggleMenuBusiness button:hover{ background: var(--clRedHover); border: 1xp solid var(--clRedHover);}
+    .menuStep1{ opacity: 0; visibility: hidden; transform: translateY(-50%); height: 0; border-top: 1px solid var(--clBlackGray);
+        transition: all 0.5s ease-in-out;}
+    .menuStep1.show{ opacity: 1; visibility: visible; transform: translateY(0); height: auto; 
+        padding-top: 15px; margin-top: 15px; }
+}
+
+.recommentInfo{ background: transparent; border: none;}
+.flexInfo{ display: flex; justify-content: space-between; gap: 15px;}
+.flexInfo>*{ flex: 1 1 50%; max-width: 50%;}
+
+.flexButtonBusiness{ display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); grid-gap: 15px;}
+.flexButtonBusiness a, .flexButtonBusiness a.active{ display: flex; align-items: center; flex-direction: column; 
+    height: 100%; padding: 5px; color: var(--clBlackGray); text-align: center; position: relative; z-index: 2;}
+.flexButtonBusiness a.active{ background: var(--clWhitetGray); border-radius: 10px;}
+.flexButtonBusiness a::after{ content: ""; position: absolute; top: 0; left: 0; 
+    transform: scaleX(0); width: 100%; height: 100%; transition: all 0.5s ease-in-out; transform-origin: left; 
+    z-index: -1; background: var(--clWhitetGray); border-radius: 10px;}
+.flexButtonBusiness a:hover::after{ transform: scaleX(1); transform-origin: right;}
+.flexButtonBusiness img{ max-width: 75px;}
+
+.statistics{ display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;}
+.statistics a{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
+.statistics a:hover{ background: var(--clRedHover);}
+
+.girdChart{ display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); grid-gap: 15px;}
+.flexInChart{ display: flex; flex-direction: column; align-items: center;}
+
+canvas#donutChart{position:relative; z-index:99999 !important;}

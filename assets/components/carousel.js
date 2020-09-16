@@ -6,7 +6,7 @@ carousel += `<li data-target="#carouselExampleIndicators" data-slide-to="1"></li
 carousel += `<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>`;
 carousel += `</ol>`;
 
-let slide = (location.href.split('/').length == 5) ? '' : '../'
+let slide = (location.href.split('/').length == 6) ? '' : '../'
 
 carousel += `<div class="carousel-inner">`;
 carousel += `<div class="carousel-item active">`;

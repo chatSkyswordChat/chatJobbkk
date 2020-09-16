@@ -108,7 +108,7 @@ var gridWorks = [
 var gridcompanyWork = ''
 
 gridWorks.forEach((gridWork) => [
-    gridcompanyWork += `<a href="javascript:void(0)" onclick="link()">
+    gridcompanyWork += `<a href="premiumJobDetail.html" target="_blank">
     <div class="borderStyle borderRadiusStyle p-3 companyHeight">
         <div class="logoCompanyProfile mb-3">
             <figure><img src="images/lo${gridWork.img}.jpg" alt=""></figure>
@@ -175,8 +175,7 @@ gridWorks.forEach((gridWork) => {
                 <li><button class="applyNow">สมัครงานด่วน</button></li>
             </ul>
         </section>
-        <div><a href="javascript:void(0)"
-                onclick="link()">อ่านรายละเอียดเพิ่มเติม</a></div>
+        <div><a href="premiumJobDetail.html" target="_blank">อ่านรายละเอียดเพิ่มเติม</a></div>
     </div>
 </div>`
 })

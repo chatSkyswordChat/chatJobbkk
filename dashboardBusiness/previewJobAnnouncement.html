@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/show.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
     <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
     <link rel="stylesheet" href="css/preview.css">
+
+    <link rel="stylesheet" href="../assets/css/aboutLogin/userNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/businessLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/noShowEnterSystem.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
 </head>
 
 <body>
@@ -393,6 +396,25 @@
 
                         <div class="lineDash"></div>
 
+                        <!--  เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
+                        <div>
+                            <p class="mb-3 fontSubHead bgHead"> วันที่เปิดประกาศ และวันที่ปิดประกาศ</p>
+                            <div class="gridP">
+                                <div>
+                                    <p class="font-weight-bold">วันที่เปิดประกาศ : </p>
+                                    <p>วันที่ 12 ธันวาคม 2021</p>
+                                </div>
+
+                                <div>
+                                    <p class="font-weight-bold">วันที่ปิดประกาศ : </p>
+                                    <p>วันที่ 12 ธันวาคม 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end  เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
+
+                        <div class="lineDash"></div>
+
                         <div class="previewSubmit">
                             <button id="confirm">ยืนยันข้อมูลเพื่อประกาศงาน</button>
                             <a href="premiumJobAnnouncement.html">ยกเลิก</a>
@@ -420,8 +442,8 @@
 <script src="../assets/js/backToTop.js"></script>
 <script src="../assets/js/sweetalert2.all.min.js"></script>
 
-<script src="../assets/components/topBarBusiness.js"></script>
 <script src="../assets/components/topbar.js"></script>
+<script src="../assets/components/topBarBusiness.js"></script>
 <script src="../assets/components/footer.js"></script>
 
 <script>
@@ -433,7 +455,7 @@
             confirmButtonColor: "#d40101",
         }).then((result) => {
             if (result.value) {
-                window.location.href = "https://www.jobbkk.com/employer/dashboard";
+                window.location.href = "../index.html";
             }
         });
     })

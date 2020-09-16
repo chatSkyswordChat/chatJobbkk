@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/show.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
     <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
     <link rel="stylesheet" href="css/preview.css">
     <link rel="stylesheet" href="css/print.css">
+
+    <link rel="stylesheet" href="../assets/css/aboutLogin/userNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/businessLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/noShowEnterSystem.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
 </head>
 
 <body>
@@ -55,10 +58,10 @@
                     <div class="lineDashUrgent hiddenPrint"></div>
 
                     <div class="mb-3 hiddenPrint">
-                        <figure class="fontHead wizardBusiness mb-3">
-                            <img src="images/icon1.svg" alt="">
-                            <span>Wizard Resume</span>
-                        </figure>
+                        <div class="mb-3">
+                            <h6 class="fontText"><span class="font-weight-bold textRed">วันที่สมัครงาน : </span>30 ธันวาคม 2020</h6>
+                            <p><span class="font-weight-bold textRed">ตำแหน่งงาน : </span> Web Designer</p>
+                        </div>
 
                         <ul class="flexPrint flexPrintBusiness">
                             <li><a href="javascript:void(0)" onclick="link()"><i class="fas fa-angle-left"></i>
@@ -73,8 +76,14 @@
                     </div>
 
                     <!-- logo โชว์ตอน print -->
-                    <div class="showPrint text-right mb-3">
-                        <figure class="logoPrint"><img src="images/logo.png" alt=""></figure>
+                    <div class="showPrint mb-3">
+                        <section style="display: flex; align-items: center; justify-content: space-between;">
+                            <div>
+                                <h6 class="fontText"><span class="font-weight-bold textRed">วันที่สมัครงาน : </span>30 ธันวาคม 2020</h6>
+                                <p><span class="font-weight-bold textRed">ตำแหน่งงาน : </span> Web Designer</p>
+                            </div>
+                            <figure class="logoPrint"><img src="images/logo.png" alt=""></figure>
+                        </section>
                     </div>
                     <!-- end logo โชว์ตอน print -->
 

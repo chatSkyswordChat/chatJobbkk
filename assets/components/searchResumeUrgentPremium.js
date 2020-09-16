@@ -17,7 +17,7 @@ resumeUrgent += `<div class="accordion" id="resumeUrgentButton">
     </div>
 
     <div id="colButton" class="collapse show" aria-labelledby="headButton" data-parent="#resumeUrgentButton">
-        <div class="card-body cardBody mt-3 text-center">
+        <div class="card-body cardBody mt-4 text-center">
             <h6 class="fontSubHead mb-3"><span class="textRed">Resume Urgent</span> คือ
                 สถานะของผู้สมัครงานที่กด
                 <span class="textRed">ปุ่มต้องการงานด่วน</span>
@@ -31,16 +31,18 @@ resumeUrgent += `<div class="accordion" id="resumeUrgentButton">
 </div>`
 // Resume Urgent
 
-resumeUrgent += `<div class="lineDash"></div>`
+// ค้นหาจาก filter ค้นหาจากการพิมพ์
+resumeUrgent += `<section>`
+// ปุ่ม ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์
+resumeUrgent += `<article class="btnList mb-3 mt-4" id="btnList">
+    <div><button class="btn btnTab active" onclick="selectFilter()" id="filter">ค้นหาจากตัวกรองข้อมูล</button></div>
+    <div><button class="btn btnTab" onclick="selectPim()" id="pim">ค้นหาจากการพิมพ์</button></div>
+  </article>`
+// end ปุ่ม ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์
 
-resumeUrgent += `<div>`
-resumeUrgent += `<section class="flexGetPim mb-3">
-                    <h2 class="fontSubHead font-weight-bold">ค้นหาประวัติพร้อมใช้ เปิด Resume Urgent ทันใจ ได้คนที่ต้องการ</h2>
-                    <div class="getPim">
-                        <button onclick="getPim()">ค้นหาจากการพิมพ์</button>
-                    </div>
-                </section>`
-
+// ขั้นตอนที่ 1-6
+resumeUrgent += `<article id="selectFilter">`
+resumeUrgent += `<h2 class="fontSubHead font-weight-bold mb-3">ค้นหาประวัติพร้อมใช้ เปิด Resume Urgent ทันใจ ได้คนที่ต้องการ</h2>`
 // ขั้นตอน 1-2
 resumeUrgent += `<section class="formSearch gridResumeUrgent">`
 // ขั้นตอนที่ 1 เลือกสาขาอาชีพที่ต้องการค้นหา
@@ -309,28 +311,24 @@ resumeUrgent += `</div>`
 resumeUrgent += `</article>`
 // end ขั้นตอนที่ 6 เลือกคุณสมบัติอื่นๆ ที่ต้องการ
 resumeUrgent += `</section>`
-// ขั้นตอน 5-6
+// end ขั้นตอน 5-6
 
 // ค้นหา Resume Urgent
 resumeUrgent += `<div class="text-center mt-5"><button class="urgentSearch width">ค้นหา Resume Urgent</button></div>`
 // end ค้นหา Resume Urgent
 
-// end ขั้นตอนที่ 6 เลือกคุณสมบัติอื่นๆ ที่ต้องการ
-resumeUrgent += `</div>`
-
-resumeUrgent += `<div class="lineDash"></div>`
+resumeUrgent += `</article>`
+// end ขั้นตอนที่ 1 -6
 
 // ค้นหาจากการพิมพ์
-resumeUrgent += `<div id="mainGetPim">`
+resumeUrgent += `<article id="searchPim">`
 resumeUrgent += `<h2 class="fontSubHead font-weight-bold mb-3" id="pim">ค้นหาจากการพิมพ์</h2>`
 resumeUrgent += `<section class="gridTextSearch mb-3">`
 // พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา
 resumeUrgent += `<div>
-                <input type="text" class="form-control formControl"
-                    placeholder="พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา">
-                    <p class="fontSubText textlightGreen mt-1">ตัวอย่าง เช่น พนักงานขายรถยนต์,
-                                                    วิศวกรไฟฟ้า, ช่างอาคาร เป็นต้น</p>
-                                            </div>`
+                <input type="text" class="form-control formControl" placeholder="พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา">
+                    <p class="fontSubText textlightGreen mt-1">ตัวอย่าง เช่น พนักงานขายรถยนต์, วิศวกรไฟฟ้า, ช่างอาคาร เป็นต้น</p>
+                </div>`
 // end พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา
 
 // เลือกสถานที่ทำงาน
@@ -351,16 +349,15 @@ resumeUrgent += `<div>
 // end เลือกสถานที่ทำงาน
 
 // ค้นหา Resume Urgent
-resumeUrgent += `<div>
-    <button class="urgentSearch">ค้นหา Resume Urgent</button>
-    </div>`
-// end // ค้นหา Resume Urgent
+resumeUrgent += `<div><button class="urgentSearch">ค้นหา Resume Urgent</button></div>`
+// end ค้นหา Resume Urgent
 resumeUrgent += `</section>`
 
+// คำค้นหายอดนิยม
 resumeUrgent += `<section class="hiddenHit">`
 resumeUrgent += `<h6 class="mb-3 fontText font-weight-bold">คำค้นหายอดนิยม</h6>`
 
-let hit = (location.href.split('/').length == 6) ? '' : '../'
+let hit = (location.href.split('/').length == 5) ? '' : '../'
 let searchs = [
     'พนักงานขาย',
     'Digital Marketing',
@@ -381,8 +378,12 @@ for (let search = 0; search < searchs.length; search++) {
 }
 resumeUrgent += `</ul>`
 resumeUrgent += `</section>`
-resumeUrgent += `</div>`
-// end เลือกสถานที่ทำงาน
+// end คำค้นหายอดนิยม
+resumeUrgent += `</article>`
+// end ค้นหาจากการพิมพ์
+resumeUrgent += `</section>`
+// end ค้นหาจาก filter ค้นหาจากการพิมพ์
+
 resumeUrgent += `</div>`
 resumeUrgent += `</div>`
 resumeUrgent += `</div>`
@@ -395,21 +396,53 @@ $(document).on("click", ".dropDownScroll, .dropdownNative", function (e) {
 });
 
 // scroll ค้นหาจากการพิมพ์
-function getPim() {
-    $('html, body').animate({
-        scrollTop: eval($('#mainGetPim').offset().top - 70)
-    }, 1000);
-}
+// function getPim() {
+//     $('html, body').animate({
+//         scrollTop: eval($('#mainGetPim').offset().top - 70)
+//     }, 1000);
+// }
 
 // toggle ซ่อนข้อความ อ่านเพิ่มเติม
 $(document).on('click', '#getBox', function () {
     let aBox = `<button class="btn btn-link btn-block text-left aBox" type="button" data-toggle="collapse"
                     data-target="#colButton" aria-expanded="true" aria-controls="colButton" id="getBox">ซ่อนข้อความ
                 </button>`
-                
+
     let bBox = `<button class="btn btn-link btn-block text-left bBox" type="button" data-toggle="collapse"
                     data-target="#colButton" aria-expanded="true" aria-controls="colButton" id="getBox">อ่านข้อความ
                 </button>`
     let display = ($(this).hasClass('aBox')) ? $(this).replaceWith(bBox) : $(this).replaceWith(aBox);
 })
+// end toggle ซ่อนข้อความ อ่านเพิ่มเติม
 
+// ค้นหาจาก filter ค้นหาจากการพิมพ์
+let searchFilter = document.querySelector('#selectFilter');
+let searchPim = document.querySelector('#searchPim');
+    searchPim.style.display = 'none'
+let btnTab = document.getElementById('pim')
+let btnFil = document.getElementById('filter')
+
+// ค้นหาจาก filter
+function selectFilter() {
+    searchFilter.style.display = 'block';
+    searchPim.style.display = 'none';
+    btnTab.classList.remove('active');
+}
+
+// ค้นหาจากการพิมพ์
+function selectPim() {
+    searchPim.style.display = 'block';
+    searchFilter.style.display = 'none';
+    btnFil.classList.remove('active');
+}
+
+let idFilterPim = document.querySelector('#btnList')
+let buttonFilterPims = idFilterPim.querySelectorAll('.btn')
+for (let index = 0; index < buttonFilterPims.length; index++) {
+    buttonFilterPims[index].addEventListener('click', function () {
+        let active = document.querySelectorAll('.active')
+        active[0].className = active[0].className.replace(' active', '')
+        this.className += ' active'
+    })
+}
+// end ค้นหาจาก filter ค้นหาจากการพิมพ์

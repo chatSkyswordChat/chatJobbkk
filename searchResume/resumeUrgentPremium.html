@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/show.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
     <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
     <link rel="stylesheet" href="../assets/css/searchResumeUrgentPremium.css">
     <link rel="stylesheet" href="css/searchResumeUrgent.css">
+
+    <link rel="stylesheet" href="../assets/css/aboutLogin/userNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/businessNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
+    <link rel="stylesheet" href="../assets/css/aboutLogin/showEnterSystem.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
 </head>
 
 <body>
@@ -32,16 +35,6 @@
                     <!-- assets/components/topbar.js -->
                 </article>
                 <!-- end topbar --> 
-
-                <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
-                <article class="clWhitetGray calC businessMenuShow">
-                    <!-- assets/components/topBarBusiness.js -->
-                    <!-- หรือ -->
-                    <!-- assets/components/topBarJobSeeker.js -->
-                    <!-- businessMenuShow สำหรับผู้ประกอบการ -->
-                    <!-- userMenuShow สำหรับผู้สมัครงาน -->
-                </article>
-                <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
 
                 <!-- carousel -->
                 <article id="carouselExampleIndicators" class="carousel slide calC" data-ride="carousel">
@@ -60,7 +53,7 @@
                 <!-- ผลการค้นหาเรซูเม่ทั้งหมด -->
                 <article>
                     <h2 class="fontSubHead mb-3"><span class="font-weight-bold">ผลการค้นหาเรซูเม่ทั้งหมด :
-                        </span>แสดงข้อมูลทั้งหมดจากตัวกรองที่เลือก ทั้งหมด 99,800 ตำแหน่ง</h2>
+                        </span>แสดงข้อมูลทั้งหมดจากตัวกรองที่เลือก ทั้งหมด <span class="textRed">99,800</span> ตำแหน่ง</h2>
 
                     <div class="lineDash"></div>
 
@@ -100,7 +93,6 @@
 <script src="../assets/js/sweetalert2.all.min.js"></script>
 
 <script src="../assets/components/topbar.js"></script>
-<script src="../assets/components/topBarBusiness.js"></script>
 <script src="../assets/components/carousel.js"></script>
 <script src="../assets/components/footer.js"></script>
 <script src="../assets/components/searchResumeUrgentPremium.js"></script>

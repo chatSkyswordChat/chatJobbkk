@@ -247,6 +247,12 @@ $(function () {
       name: { required: true },
       email: { required: true, email: true },
       tel: { required: true, number: true, minlength: 10 },
+      day: { required: true },
+      month: { required: true },
+      year: { required: true },
+      day1: { required: true },
+      month1: { required: true },
+      year1: { required: true },
     },
     messages: {
       careerMain: { required: "กรุณาเลือกสาขาอาชีพหลัก" },
@@ -291,6 +297,12 @@ $(function () {
         required: "กรุณาระบุเบอร์โทรศัพท์",
         number: "ใส่เบอร์โทรเท่านั้น",
       },
+      day: { required: "กรุณาระบุวัน" },
+      month: { required: "กรุณาระบุเดือน" },
+      year: { required: "กรุณาระบุปี" },
+      day1: { required: "กรุณาระบุวัน" },
+      month1: { required: "กรุณาระบุเดือน" },
+      year1: { required: "กรุณาระบุปี" },
     },
   });
 
@@ -392,3 +404,17 @@ $("#confirm").on("click", function () {
   });
 });
 // end ตรวจสอบข้อมูลเพื่อประกาศงาน
+
+// disable วันเปิดประกาศ วันปิดประกาศ
+function toggleSelect(){
+  let isCheck = document.querySelector('#selectDisable').checked;
+  let x = document.querySelectorAll(".selectDis");
+  for (i = 0; i < x.length; i++) {
+    if (isCheck === true){
+      x[i].disabled = true;
+    }else{
+      x[i].disabled = false;
+    }   
+  }
+}
+// end disable วันเปิดประกาศ วันปิดประกาศ
