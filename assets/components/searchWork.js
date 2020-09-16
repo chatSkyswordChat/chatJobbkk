@@ -149,66 +149,39 @@ searchWork += `<div class="form-group">
             </div>`
 // end พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา
 
-// เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด
-searchWork += `<div class="dropdown dropdownFilter hiddenMobile">`
+// เลือกเงินเดือนที่ต้องการ ต่ำสุด
+searchWork += `<div class="dropdown dropdownFilter">`;
 searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="searchEllipsis">
-                        <i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการต่ำสุด-สูงสุด</span>
-                        <i class="fas fa-chevron-down"></i>
-               </button>`
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
+searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด</span>`;
+searchWork += `<i class="fas fa-chevron-down"></i>`;
+searchWork += `</button>`;
 
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="money">`
+searchWork += `<div class="dropdown-menu dropDownMenu">`;
+let minMoneys = ["10,000 บาท", "20,000 บาท", "30,000 บาท", "40,000 บาท", "50,000 บาท"];
+for (let minMoney = 0; minMoney < minMoneys.length; minMoney++) {
+  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${minMoneys[minMoney]}</a>`;
+}
+searchWork += `</div>`;
+searchWork += `</div>`;
+// end เลือกเงินเดือนที่ต้องการ ต่ำสุด
 
-let idMoney = 0
-let moneys = [
-    {
-        name: 'เงินเดือนที่ต้องการ ต่ำสุด',
-        collapes: [
-            '10,000 บาท', '20,000 บาท', '30,000 บาท', '40,000 บาท', '50,000 บาท', '60,000 บาท', '70,000 บาท', '80,000 บาท'
-        ]
-    },
-    {
-        name: 'เงินเดือนที่ต้องการ สูงสุด',
-        collapes: [
-            '10,000 บาท', '20,000 บาท', '30,000 บาท', '40,000 บาท', '50,000 บาท', '60,000 บาท', '70,000 บาท', '80,000 บาท'
-        ]
-    }
-]
-moneys.forEach((money) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-                id="headMoney${idMoney + 1}" type="button" data-toggle="collapse" data-target="#colMoney${idMoney + 1}"
-                aria-expanded="true" aria-controls="colMoney${idMoney + 1}">
-                    <span>${money.name}</span>
-                    <i class="fas fa-chevron-down"></i>
-               </button>`
+// เลือกเงินเดือนที่ต้องการ สูงสุด
+searchWork += `<div class="dropdown dropdownFilter">`;
+searchWork += `<button class="form-control formControl buttonFilter" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
+searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ สูงสุด</span>`;
+searchWork += `<i class="fas fa-chevron-down"></i>`;
+searchWork += `</button>`;
 
-    searchWork += `<div id="colMoney${idMoney + 1}" class="collapse" aria-labelledby="headMoney${idMoney + 1}" data-parent="#money">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-                    <label><input type="checkbox"> ทั้งหมด</label>
-                    <button>ตกลง</button>
-                </div>`
-
-    searchWork += `<div class="lineDashUrgent"></div>`
-    if (money.collapes != null && money.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < money.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${money.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idMoney += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด
+searchWork += `<div class="dropdown-menu dropDownMenu">`;
+let maxMoneys = ["50,000 บาท", "60,000 บาท", "70,000 บาท", "80,000 บาท", "90,000 บาท"];
+for (let maxMoney = 0; maxMoney < maxMoneys.length; maxMoney++) {
+  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${maxMoneys[maxMoney]}</a>`;
+}
+searchWork += `</div>`;
+searchWork += `</div>`;
+// end เลือกเงินเดือนที่ต้องการ สูงสุด
 
 // เลือกรูปแบบงานทั้งหมด
 searchWork += `<div class="hiddenMobile">
@@ -308,51 +281,37 @@ searchWork += `<div class="accordion" id="searchHidden">`
 searchWork += `<div id="colSearch" class="collapse" aria-labelledby="search1" data-parent="#searchHidden">`
 searchWork += `<div class="flexGap">`
 
-// เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด mobile
-searchWork += `<div class="dropdown dropdownFilter">`
+// เลือกเงินเดือนที่ต้องการ ต่ำสุด mobile
+searchWork += `<div class="dropdown dropdownFilter">`;
 searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="searchEllipsis">
-                        <i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการต่ำสุด-สูงสุด</span>
-                        <i class="fas fa-chevron-down"></i>
-               </button>`
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
+searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด</span>`;
+searchWork += `<i class="fas fa-chevron-down"></i>`;
+searchWork += `</button>`;
 
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="moneyMobile">`
+searchWork += `<div class="dropdown-menu dropDownMenu">`;
+for (let minMoney = 0; minMoney < minMoneys.length; minMoney++) {
+  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${minMoneys[minMoney]}</a>`;
+}
+searchWork += `</div>`;
+searchWork += `</div>`;
+// end เลือกเงินเดือนที่ต้องการ ต่ำสุด mobile
 
-moneys.forEach((money) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-                id="headMoney${idMoney + 1}" type="button" data-toggle="collapse" data-target="#colMoney${idMoney + 1}"
-                aria-expanded="true" aria-controls="colMoney${idMoney + 1}">
-                    <span>${money.name}</span>
-                    <i class="fas fa-chevron-down"></i>
-               </button>`
+// เลือกเงินเดือนที่ต้องการ สูงสุด mobile
+searchWork += `<div class="dropdown dropdownFilter">`;
+searchWork += `<button class="form-control formControl buttonFilter" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
+searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ สูงสุด</span>`;
+searchWork += `<i class="fas fa-chevron-down"></i>`;
+searchWork += `</button>`;
 
-    searchWork += `<div id="colMoney${idMoney + 1}" class="collapse" aria-labelledby="headMoney${idMoney + 1}" data-parent="#moneyMobile">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-                    <label><input type="checkbox"> ทั้งหมด</label>
-                    <button>ตกลง</button>
-                </div>`
-
-    searchWork += `<div class="lineDashUrgent"></div>`
-    if (money.collapes != null && money.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < money.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${money.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idMoney += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end เลือกเงินเดือนที่ต้องการ ต่ำสุด-สูงสุด mobile
+searchWork += `<div class="dropdown-menu dropDownMenu">`;
+for (let maxMoney = 0; maxMoney < maxMoneys.length; maxMoney++) {
+  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${maxMoneys[maxMoney]}</a>`;
+}
+searchWork += `</div>`;
+searchWork += `</div>`;
+// end เลือกเงินเดือนที่ต้องการ สูงสุด mobile
 
 // เลือกรูปแบบงานทั้งหมด mobile
 searchWork += `<div>
