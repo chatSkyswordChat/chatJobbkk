@@ -244,7 +244,7 @@ let menus = [
   },
   {
     name: "ค้นหางาน ",
-    link: linkMenu + "javascirpt:void(0)",
+    link: linkMenu + "searchWork/premiumUrgent.html",
     img: linkMenu + "assets/images/iconMenuHomeMobile-3.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
@@ -255,31 +255,31 @@ let menus = [
     dropdowns: [
       {
         name: "งานกรุงเทพปริมณฑล",
-        link: linkMenu + "index.html",
+        link: linkMenu + "searchWork/premiumUrgent.html",
         arrow: "",
         arrowMobile: "",
       },
       {
         name: "งานนักศึกษาฝึกงาน",
-        link: linkMenu + "index.html",
+        link: linkMenu + "searchWork/premiumUrgent.html",
         arrow: "",
         arrowMobile: "",
       },
       {
         name: "งานสหกิจศึกษา",
-        link: linkMenu + "index.html",
+        link: linkMenu + "searchWork/premiumUrgent.html",
         arrow: "",
         arrowMobile: "",
       },
       {
         name: "งานสำหรับคนพิการ",
-        link: linkMenu + "index.html",
+        link: linkMenu + "searchWork/premiumUrgent.html",
         arrow: "",
         arrowMobile: "",
       },
       {
         name: "งาน Jobfair",
-        link: linkMenu + "index.html",
+        link: linkMenu + "searchWork/premiumUrgent.html",
         arrow: "",
         arrowMobile: "",
       },
@@ -287,7 +287,7 @@ let menus = [
   },
   {
     name: "ค้นหาประวัติ",
-    link: linkMenu + "javascirpt:void(0)",
+    link: linkMenu + "searchResume/resumeUrgentPremium.html",
     img: linkMenu + "assets/images/iconMenuHomeMobile-4.png",
     classOrigin: "",
     class: "",
