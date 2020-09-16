@@ -244,7 +244,7 @@ let menus = [
   },
   {
     name: "ค้นหางาน ",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-3.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
@@ -287,7 +287,7 @@ let menus = [
   },
   {
     name: "ค้นหาประวัติ",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-4.png",
     classOrigin: "",
     class: "",
@@ -298,7 +298,7 @@ let menus = [
   },
   {
     name: "งานภุมิภาค ",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-5.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
@@ -358,7 +358,7 @@ let menus = [
   },
   {
     name: "งานสหกิจ/พาร์ทไทม์",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-6.png",
     classOrigin: "",
     class: "",
@@ -369,7 +369,7 @@ let menus = [
   },
   {
     name: "บทความ ",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-7.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
@@ -408,7 +408,7 @@ let menus = [
   },
   {
     name: "เกี่ยวกับจ๊อบบีเคเค ",
-    link: linkMenu + "",
+    link: linkMenu + "javascirpt:void(0)",
     img: linkMenu + "assets/images/iconMenuHomeMobile-8.png",
     classOrigin: "dropdown dropdownHover dropdownCl",
     class: "dropdownHead",
