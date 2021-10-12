@@ -1,0 +1,205 @@
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.credit > p {
+  border-right: 0.1rem solid var(--clBlackGray);
+}
+.credit > p:first-child {
+  padding-right: 1.5rem;
+}
+.credit > p:last-child {
+  border-right: 0;
+}
+.list_group ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.list_group ul li a {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.list_group ul li a:hover,
+.list_group ul li a.active {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+.list_all {
+  background: var(--clWhitetGray);
+  border-top: 0.1rem solid var(--clGray);
+  border-bottom: 0.1rem solid var(--clGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.list_all .select_del {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.list_all .select_del label {
+  display: none;
+}
+.create_group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.create_group .add_group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.create_group .add_group > section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.create_group .add_group > section:last-child {
+  flex-grow: 1;
+}
+.create_group .add_group > section:last-child button {
+  width: 100%;
+}
+.create_group .add_group > section span {
+  flex: 1 0 auto;
+}
+.create_group .add_group section input {
+  border-radius: 5rem;
+}
+.create_group .add_group section button {
+  height: calc(1.5em + 0.75rem + 2px);
+  border-radius: 5rem;
+  border: 0.1rem solid var(--clRed);
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 0 1.5rem;
+}
+
+.create_group .import {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.create_group .import div a {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  border-radius: 5rem;
+  padding: 0 1.5rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create_group .import div a:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+}
+
+.create_group .search_name {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+.create_group .search_name input {
+  border-radius: 5rem 0 0 5rem;
+}
+.create_group .search_name button {
+  height: calc(1.5em + 0.75rem + 2px);
+  border-radius: 0 5rem 5rem 0;
+  border: 0.1rem solid var(--clRed);
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .list_all .select_del label {
+    display: block;
+  }
+  .create_group {
+    flex-wrap: wrap;
+  }
+  .create_group .add_group > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .create_group .import {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .create_group .search_name {
+    width: 100%;
+  }
+  .create_group .add_group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .create_group .add_group > section {
+    width: 100%;
+  }
+  .create_group .add_group > section span {
+    flex-basis: 5rem;
+    text-align: right;
+  }
+  .create_group .add_group section button {
+    height: auto;
+    padding: 0.5rem 1.5rem;
+  }
+  .create_group .import div {
+    width: 100%;
+  }
+}
+
+.correct_name > section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.correct_name > section p {
+  flex-basis: 15rem;
+  text-align: right;
+}
+.correct_name > section input {
+  border-radius: 5rem;
+}
+
+.thead tr th {
+  vertical-align: middle;
+  text-align: center;
+}
+.tbody tr td {
+  vertical-align: middle;
+}
+.tbody tr td:not(td:nth-child(2)) {
+  text-align: center;
+}
+.tbody tr td button {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+.tbody tr td button:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+
+@media (max-width: 1200px) {
+  .tbody tr td:not(td:nth-child(2)) {
+    text-align: inherit;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm_otp</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/policy.css">
+    <link rel="stylesheet" href="css/confirm_otp.css">
+</head>
+
+<body class="clWhitetGray bodyCenter">
+    <section class="container">
+        <article class="row">
+            <div class="col-12">
+                <section class="confirm_otp my-5">
+                    <h2 class="fontHead mb-5 textRed">ยืนยันรหัส OTP</h2>
+
+                    <div class="text-center" style="width: 100%;">
+                        <p class="mb-3">เพื่อเป็นการยืนยันการลงทะเบียน ระบบได้ส่งรหัส One-Time Password (OTP)
+                            ไปยังเบอร์โทรศัพท์มือถือของท่านที่ได้ระบุไว้ ดังนี้</p>
+                        <p class="textRed mb-3 fontSubHead">089 123 4567</p>
+                        <p class="mb-3">กรุณากรอกรหัส OTP ของท่านลงในช่องว่างด้านล่าง</p>
+                        <div class="otp">
+                            <input type="text" placeholder="กรุณากรอก OTP ของท่าน" class="form-control fromControl">
+                            <div style="width: 100%; max-width: 32rem; text-align: left;" class="mb-5">
+                                <small class="fontSubText textRed">กรุณากรอก OTP</small>
+                            </div>
+                            <p class="mb-3">กรุณาดำเนินการภายใน 10 นาที</p>
+
+                            <a href="../dashboardJobSeeker/index.html" class="btn_red">ยืนยัน</a>
+                        </div>
+                    </div>
+
+                    <div class="lineDash"></div>
+
+                    <div class="return">
+                        <div><button type="button" class="" data-toggle="tooltip" data-placement="bottom"
+                                title="รอก่อนยังไม่ถึง 10 นาที">คลิกที่นี่หากคุณไมไ่ด้รับรหัส OTP</button></div>
+                        <div class="home">
+                            <a href="../index.html">กลับหน้าแรก</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
+
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sweetalert2@10.js"></script>
+    <script src="../assets/components/cookiePolicy.js"></script>
+
+    <script>
+        $(".return div button").on("click", function () {
+            swal.fire({
+                title: "ระบบได้ส่ง OTP ให้คุณเรียบร้อยแล้ว",
+                icon: "success",
+                //   showCancelButton: true,
+                showConfirmButton: true,
+                //   cancelButtonText: "ยกเลิก",
+                confirmButtonText: "ตกลง",
+                // showClass: {
+                //   popup: "animated fadeInDown faster",
+                // },
+                // hideClass: {
+                //   popup: "animated fadeOutUp faster",
+                // }
+            })
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

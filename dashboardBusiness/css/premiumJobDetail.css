@@ -1,78 +1,277 @@
-.gridList{ display: grid; grid-template-columns: 1fr 0.4fr; grid-gap: 15px;}
-.gridOver{ display: grid; grid-template-columns: 1fr 0.5fr; grid-gap: 15px;}
-.flexcompanyView{ display: flex; flex-direction: column; gap: 15px;}
-.gridCompanyProfile{ display: flex; gap: 15px;}
-
-@media (max-width:991px){
-    .gridList, .gridOver{ grid-template-columns: 1fr;}
+.gridList {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-gap: 15px;
+}
+.gridOver {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-gap: 15px;
+}
+.flexcompanyView {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.gridCompanyProfile {
+  display: flex;
+  gap: 15px;
 }
 
-.qr{ border: 1px solid var(--clGray); display: inline-block;}
-.qr img{ max-width: 120px;}
-
-.picCompany img{ max-width: 200px; width: auto; border: 1px solid var(--clGray); border-radius: 10px; padding: 10px;}
-.flexNow{ display: flex; gap: 15px; justify-content: space-between;}
-.flexNow ul{ flex: 1 1 60%; max-width: 60%;}
-.flexNow div{ flex: 1 1 40%; max-width: 40%;}
-
-@media (max-width:576px){
-    .picCompany img{ max-width: 150px;}
+@media (max-width: 991px) {
+  .gridList,
+  .gridOver {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width:480px){
-    .picCompany img{ max-width: 100px;}
+.qr {
+  border: 1px solid var(--clGray);
+  display: inline-block;
+}
+.qr img {
+  max-width: 120px;
 }
 
-.button4{ display: flex; gap: 15px; flex-wrap: wrap;}
-.button4 button{ background: var(--clWhite); border: 1px solid var(--clBlackGray); border-radius: 50px; padding: 5px 20px;}
-.button4 button:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
-.applyNow{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed); padding: 5px 20px; border-radius: 50px;}
-.applyNow:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
-
-.flexLong{ display: flex; gap: 15px; flex-wrap: wrap;}
-.gridNon{ display: grid; grid-template-columns: 10px 1fr; grid-gap: 15px; align-items: center;}
-.mark{ font-size: 0.5rem;}
-
-.positionAll a{ background: var(--clRed); color: var(--clWhite); padding: 10px 20px; border-radius: 50px; text-align: center;}
-.positionAll a:hover{ background: var(--clRedHover);}
-
-.popUpUrgent{ background: var(--clWhite); padding: 10px; border-radius: 10px; border: 1px solid var(--clBlackGray); 
-    text-align: center; position: sticky; top: 15px; z-index: 10; max-width: 312px; height: auto;}
-.popUpUrgent button{ padding: 5px 20px; border: 1px solid var(--clGreen); border-radius: 50px; color: var(--clWhite);}
-.popUpUrgent button:hover{ background: var(--clGreenHover);}
-
-@media (max-width:991px){
-    .popUpUrgent{ max-width: 100%; position: relative;  top: 0;}
+.picCompany img {
+  max-width: 200px;
+  width: auto;
+  border: 1px solid var(--clGray);
+  border-radius: 10px;
+  padding: 10px;
+}
+.flexNow {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.flexNow ul {
+  flex: 1 1 60%;
+  max-width: 60%;
+}
+.flexNow div {
+  flex: 1 1 40%;
+  max-width: 40%;
 }
 
-.similarJob{ display: flex; flex-direction: column;}
-.similarJob a{ color: var(--clBlackGray);}
-.similarJob li{ transition: 0.5s ease-in-out;}
-.similarJob li:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
-.detailSimilarJob li:hover{ box-shadow: none;}
-
-@media (max-width:991px){
-    .similarJobNone{ display: none;}
+@media (max-width: 576px) {
+  .picCompany img {
+    max-width: 150px;
+  }
 }
 
-.gridUrgentRec{ display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); grid-gap: 15px;}
-.workUrgent{ border: 1px solid var(--clGray); border-radius: 10px; padding: 15px; background: var(--clWhite);}
-.flexPic{ display: flex; justify-content: space-between; grid-gap: 15px;}
-.flexPic figure{ border: 1px solid var(--clGray); border-radius: 50%; max-width: 80px; height: 80px; width: 100%;}
-.flexPic img{ max-width: 80px; height: 80px; object-fit: scale-down; border-radius: 50%; padding: 5px;}
-
-.workUrgent{ transition: 0.5s ease-in-out;}
-.workUrgent a{ width: 100%;}
-.workUrgent:hover{ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); margin-top: -5px;}
-.workUrgent p{ color: var(--clBlackGray);}
-
-@media (max-width:991px){
-    .workUrgent{ margin-top: 0;}
+@media (max-width: 480px) {
+  .picCompany img {
+    max-width: 100px;
+  }
 }
 
-.tagHit{ display: flex; align-items: center; flex-wrap: wrap; grid-gap: 15px;}
-.tagHit a{ display: inline-block; padding: 5px 20px; background: var(--clWhite); border: 1px solid var(--clBlackGray); 
-    border-radius: 50px; color: var(--clBlackGray);}
-.tagHit a:hover{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed);}
+.button4 {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.button4 button {
+  background: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+.button4 button:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+}
+.applyNow {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.applyNow:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
 
-.headOverView{ background: var(--clBlackGray); color: var(--clWhite); border-radius: 50px; width: auto; text-align: center; padding: 10px 30px;}
+.flexLong {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.gridNon {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+.mark {
+  font-size: 0.5rem;
+}
+
+.positionAll a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+.positionAll a:hover {
+  background: var(--clRedHover);
+}
+
+.popUpUrgent {
+  background: var(--clWhite);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--clBlackGray);
+  text-align: center;
+  position: sticky;
+  top: 15px;
+  z-index: 10;
+  max-width: 312px;
+  height: auto;
+}
+.popUpUrgent button {
+  padding: 5px 20px;
+  border: 1px solid var(--clGreen);
+  border-radius: 50px;
+  color: var(--clWhite);
+}
+.popUpUrgent button:hover {
+  background: var(--clGreenHover);
+}
+
+@media (max-width: 991px) {
+  .popUpUrgent {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+}
+
+.similarJob {
+  display: flex;
+  flex-direction: column;
+}
+.similarJob a {
+  color: var(--clBlackGray);
+}
+.similarJob li {
+  transition: 0.5s ease-in-out;
+}
+.similarJob li:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+}
+.detailSimilarJob li:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .similarJobNone {
+    display: none;
+  }
+}
+
+.gridUrgentRec {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 15px;
+}
+.workUrgent {
+  border: 1px solid var(--clGray);
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--clWhite);
+}
+.flexPic {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 15px;
+}
+.flexPic figure {
+  border: 1px solid var(--clGray);
+  border-radius: 50%;
+  max-width: 80px;
+  height: 80px;
+  width: 100%;
+}
+.flexPic img {
+  max-width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.workUrgent {
+  transition: 0.5s ease-in-out;
+}
+.workUrgent a {
+  width: 100%;
+}
+.workUrgent:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+}
+.workUrgent p {
+  color: var(--clBlackGray);
+}
+
+@media (max-width: 991px) {
+  .workUrgent {
+    margin-top: 0;
+  }
+}
+
+.tagHit {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+}
+.tagHit a {
+  display: inline-block;
+  padding: 5px 20px;
+  background: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  color: var(--clBlackGray);
+}
+.tagHit a:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+}
+
+.headOverView {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border-radius: 50px;
+  width: auto;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.map_address ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.map_address ul button {
+  border: 1px solid var(--clWhitetGray);
+  color: var(--clBlackGray);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.map_address ul button.active {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  color: var(--clWhite);
+}
+.map_address img {
+  border: 0.1rem solid var(--clWhitetGray);
+}

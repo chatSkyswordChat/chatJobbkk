@@ -1,0 +1,25 @@
+#menu_policy ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu_policy a{
+    color: var(--clBlackGray);
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+#menu_policy li:hover a, #menu_policy li a.active{
+    background: var(--clGray);
+}
+
+@media (max-width:768px){
+  #menu_policy ul{
+    flex-direction: column;
+  }
+  #menu_policy li{
+    width: 100%;
+  }
+  #menu_policy a{
+    padding: 1rem 1.5rem;
+}
+}

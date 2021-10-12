@@ -1,0 +1,52 @@
+label{ cursor: inherit; margin-bottom: 5px;}
+.resize{ resize: none;}
+
+.flexUpdate{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.flexUpdate button{ background: var(--clSky); border: 1px solid var(--clSky); color: var(--clWhite); 
+    border-radius: 50px; padding: 5px 20px;}
+.flexUpdate button:hover{ background: var(--clSkyHover); border: 1px solid var(--clSkyHover);}
+
+.flexTech{ display: flex; flex-direction: column; gap: 15px;}
+.flexScore{ display: flex; align-items: center; gap: 15px;}
+
+.status_resume{ border-radius: 5rem; padding: .5rem 1.5rem; display: inline-block; text-align: center;}
+.success_resume{ background: var(--clGreen); color: var(--clWhite);}
+.error_resume{ background: var(--clRed); color: var(--clWhite);}
+.warning_resume{ background: var(--clOrange); color: var(--clWhite);}
+
+.score{ font-size: clamp(2rem, 5rem, 5.5rem); position: relative;}
+.percent{ font-size: var(--fontText); position: absolute; right: -15px; bottom: 25px;}
+
+@media (max-width:576px){
+    .percent{ bottom: 0; top: 55px;}
+}
+
+@media (max-width:480px){
+    .flexScore{ align-items: inherit;}
+}
+
+.card{ border-radius: 10px;}
+.card-header{ background: var(--clWhitetGray);}
+.card-header.sucess{ background: var(--clGreen);}
+.accordion>.card:not(:first-of-type){ border-radius: 10px;}
+.accordion>.card:not(:last-of-type){ border: 1px solid rgba(0,0,0,.125); border-radius: 10px;}
+
+.flexCollapse{ display: flex; align-items: center; justify-content: space-between; gap: 15px; width: 100%; border: none; 
+    background: transparent; padding: 0;}
+.flexCollapse:hover{ color: var(--clRed);}
+.flexCollapse.sucess{ color: var(--clWhite);}
+
+.formControl{ border-radius: 50px;}
+.formControl.error:focus{ border-color: var(--clred); box-shadow: 0 0 0 0.2rem rgba(212,1,1,0.5);}
+small.error{ color: var(--clRed);}
+
+.grid_one label, .grid_two label, .grid_three label{ font-weight: bold;}
+.grid_one{display: grid; grid-template-columns: 1fr; grid-gap: 1.5rem;}
+.grid_two{ display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); grid-gap: 1.5rem;}
+.grid_three{ display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); grid-gap: 1.5rem;}
+
+.flexBorn{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
+
+@media (max-width:576px){
+    .grid2, .grid4, .flexBorn{ grid-template-columns: 1fr;}
+}

@@ -1,937 +1,1487 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ประกาศงาน พรีเมียม</title>
 
-    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/animations.css">
-    <link rel="stylesheet" href="../assets/css/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/topbar.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css">
-    <link rel="stylesheet" href="../assets/css/topbarBusiness.css">
-    <link rel="stylesheet" href="../assets/css/select2.min.css">
-    <link rel="stylesheet" href="css/premiumJobAnnouncement.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/topbar.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css" />
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css" />
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
+    <link rel="stylesheet" href="css/premiumJobAnnouncement.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+  </head>
 
-    <link rel="stylesheet" href="../assets/css/aboutLogin/userNoLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
-    <link rel="stylesheet" href="../assets/css/aboutLogin/businessLogin.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
-    <link rel="stylesheet" href="../assets/css/aboutLogin/noShowEnterSystem.css"> <!-- สำหรับ designer  programmer ไม่ต้องใช้ ไฟล์นี้ -->
-</head>
-
-<body>
+  <body>
     <div class="fixBg"></div>
     <section class="container">
-        <article class="row">
-            <div class="col-12">
-                <!-- topbar -->
-                <article class="topbar">
-                    <!-- assets/components/topbar.js -->
+      <article class="row">
+        <div class="col-12">
+          <!-- topbar -->
+          <article class="topbar">
+            <!-- assets/components/topbar.js -->
+          </article>
+          <!-- end topbar -->
+
+          <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+          <article class="clWhitetGray calC businessMenuShow">
+            <!-- userMenuShow businessMenuShow -->
+            <!-- assets/components/topBarBusiness.js -->
+            <!-- assets/components/topBarJobSeeker.js -->
+          </article>
+          <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+          <!-- ประกาศงานด่วน -->
+          <article class="mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumbJobbkk">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <div class="lineDash"></div>
+
+            <section>
+              <h2 class="fontHead mb-5">
+                ประกาศงานด่วนให้ตรงใจผู้สมัครง่ายๆ ภายใน 5 นาที
+              </h2>
+              <p class="mb-5 fontSubHead">
+                <span class="textRed font-weight-bold">ขั้นตอนที่ 1 :</span>
+                <span class="font-weight-bold"> เลือกสร้างประกาศงานด่วน </span>
+                <button
+                  class="clickUrgent modalLang"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  title="คลิกแล้วเลือกภาษาที่ต้องการสร้าง ไทย/อังกฤษ"
+                >
+                  คลิก สร้างประกาศงานด่วน
+                </button>
+              </p>
+
+              <div class="gridText mb-5">
+                <p><span class="font-weight-bold">คำอธิบาย :</span></p>
+                <p>
+                  การสร้างประกาศงานด่วนนี้
+                  จะแสดงสถานะในการรับสมัครงานด่วนแก่ผู้สมัครงานอัตโนมัติ
+                  พร้อมประชาสัมพันธ์ ตำแหน่งงานนี้บนพื้นนี้ที่ดีที่สุดบน
+                  <span class="textRed">Website Jobbkk</span> ด้วย<span
+                    class="textRed"
+                  >
+                    Urgent Jobs System</span
+                  >
+                </p>
+              </div>
+
+              <div class="gridText mb-5">
+                <p><span class="font-weight-bold">หมายเหตุ :</span></p>
+                <p>
+                  เพื่อประสิทธิภาพในการแสดงตำแหน่งงาน
+                  และการสมัครงานของผู้สมัครที่รวดเร็ว
+                  ควรทำตามขั้นตอนและคำแนะนำที่ได้ระบุไว้ระหว่างการประกาศงานด่วน
+                </p>
+              </div>
+
+              <div class="flexAround borderRadiusStyle borderStyle">
+                <h6>
+                  <span class="font-weight-bold textRed"
+                    >Urgent Jobs System</span
+                  >
+                </h6>
+                <p>คืออะไร? ต้องการทำความรู้จัก Urgent Jobs System</p>
+                <button type="button" id="urgentJobsSystem">คลิก</button>
+              </div>
+            </section>
+
+            <div class="lineDash"></div>
+
+            <form class="formVaridate" method="POST" action="">
+              <!-- ขั้นตอนที่ 2 : เลือกสาขาอาชีพ, ตำแหน่งงาน -->
+              <section>
+                <article class="flexExample mb-3">
+                  <p class="fontSubHead">
+                    <span class="textRed font-weight-bold">ขั้นตอนที่ 2 :</span>
+                    <span class="font-weight-bold">
+                      เลือกสาขาอาชีพ, ตำแหน่งงาน</span
+                    >
+                  </p>
+                  <button
+                    type="button"
+                    class="btnExample"
+                    id="btnExample"
+                    data-toggle="modal"
+                    data-target="#modalAnnouncement"
+                  >
+                    ตัวอย่างคุณสมบัติ และหน้าที่รับผิดชอบ
+                  </button>
                 </article>
-                <!-- end topbar -->
 
-                <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
-                <article class="clWhitetGray calC businessMenuShow">
-                    <!-- assets/components/topBarBusiness.js -->
-                    <!-- หรือ -->
-                    <!-- assets/components/topBarJobSeeker.js -->
-                    <!-- businessMenuShow สำหรับผู้ประกอบการ -->
-                    <!-- userMenuShow สำหรับผู้สมัครงาน -->
+                <article class="modalAnnouncement"></article>
+
+                <article>
+                  <section class="gridStep2 mb-3">
+                    <div>
+                      <label>เลือกสาขาอาชีพหลัก</label>
+                      <select
+                        class="form-control formControl"
+                        name="careerMain"
+                        id="careerMain"
+                      >
+                        <option value="">เลือกสาขาอาชีพหลัก</option>
+                        <option value="1">Web Designer</option>
+                        <option value="1">Graphic Designer</option>
+                        <option value="1">Manager</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label>เลือกสาขาอาชีพรอง</label>
+                      <select
+                        class="form-control formControl"
+                        name="careerSub"
+                        id="careerSub"
+                      >
+                        <option value="">เลือกสาขาอาชีพรอง</option>
+                        <option value="2">Web Designer</option>
+                        <option value="2">Graphic Designer</option>
+                        <option value="2">Manager</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <label>ระบุชื่อตำแหน่งงาน</label>
+                        <div id="counter">0/20</div>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control formControl"
+                        id="work_position"
+                        name="position"
+                        placeholder="พิมพ์ชื่อตำแหน่งงานที่ต้องการ"
+                        maxlength="20"
+                      />
+                      <p class="fontSubText textGreen">
+                        ตัวอย่าง : พนักงานขายทางโทรศัพท์, Telesales, Account
+                        Executive เป็นต้น
+                      </p>
+                    </div>
+
+                    <figcaption class="alert_position p-4 hidden">
+                      <p>
+                        *โปรดระบุเฉพาะตัวอักษรและตัวเลขไม่เกิน 80
+                        ตัวอักษรเท่านั้น HTML Code และเครื่องหมายใด ๆ เช่น (-),
+                        *, # ไม่อนุญาตให้ใช้
+                      </p>
+                    </figcaption>
+                  </section>
+
+                  <section class="gridStep2-1">
+                    <div>
+                      <label>จำนวนอัตราที่รับ</label>
+                      <select class="form-control formControl" name="theRate">
+                        <option value="">เลือกจำนวนอัตราที่รับ</option>
+                        <option>1 อัตรา</option>
+                        <option>2 อัตรา</option>
+                        <option>3 อัตรา</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label>ประเภทงาน</label>
+                      <select class="form-control formControl" name="jobType">
+                        <option value="">เลือกประเภทงาน</option>
+                        <option>งานประจำ</option>
+                        <option>งาน part time</option>
+                        <option>งานชั่วคราว</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label>ระดับการทำงาน</label>
+                      <select
+                        class="form-control formControl"
+                        name="workingLevel"
+                      >
+                        <option value="">เลือกระดับการทำงาน</option>
+                        <option>ปฏิบัติการ</option>
+                        <option>Supervisor</option>
+                        <option>Manager</option>
+                      </select>
+                    </div>
+                  </section>
                 </article>
-                <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+              </section>
+              <!-- end ขั้นตอนที่ 2 : เลือกสาขาอาชีพ, ตำแหน่งงาน -->
 
-                <!-- ประกาศงานด่วน -->
-                <article class="mt-5">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrumbJobbkk">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Data</li>
-                        </ol>
-                    </nav>
+              <div class="lineDash"></div>
 
-                    <div class="lineDash"></div>
+              <!-- ขั้นตอนที่ 3 : คุณสมบัติผู้สมัครงาน -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 3 :</span>
+                  <span class="font-weight-bold"> คุณสมบัติผู้สมัครงาน</span>
+                </p>
 
-                    <section>
-                        <h2 class="fontHead mb-3">ประกาศงานด่วนให้ตรงใจผู้สมัครง่ายๆ ภายใน 5 นาที</h2>
-                        <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 1 :</span>
-                            <span class="font-weight-bold"> เลือกสร้างประกาศงานด่วน </span> <button
-                                class="clickUrgent modalLang" data-toggle="tooltip" data-placement="bottom"
-                                title="คลิกแล้วเลือกภาษาที่ต้องการสร้าง ไทย/อังกฤษ">คลิก
-                                สร้างประกาศงานด่วน</button></p>
+                <article>
+                  <section class="gridStep4 mb-3">
+                    <div>
+                      <label>เพศ</label>
+                      <select class="form-control formControl" name="sex">
+                        <option value="">เลือกเพศ</option>
+                        <option>ไม่ระบุเพศ</option>
+                        <option>ชาย/หญิง</option>
+                        <option>ชาย</option>
+                        <option>หญิง</option>
+                      </select>
+                    </div>
 
-                        <div class="gridText">
-                            <p><span class="font-weight-bold">คำอธิบาย :</span></p>
-                            <p>การสร้างประกาศงานด่วนนี้
-                                จะแสดงสถานะในการรับสมัครงานด่วนแก่ผู้สมัครงานอัตโนมัติ พร้อมประชาสัมพันธ์
-                                ตำแหน่งงานนี้บนพื้นนี้ที่ดีที่สุดบน <span class="textRed">Website Jobbkk</span>
-                                ด้วย<span class="textRed"> Urgent Jobs System</span></p>
+                    <div>
+                      <label>อายุผู้สมัคร</label>
+                      <div class="gridStep2">
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="ageStart"
+                          >
+                            <option value="">เลือกอายุผู้สมัครตั้งแต่</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                          </select>
                         </div>
 
-                        <div class="gridText mb-3">
-                            <p><span class="font-weight-bold">หมายเหตุ :</span></p>
-                            <p>เพื่อประสิทธิภาพในการแสดงตำแหน่งงาน และการสมัครงานของผู้สมัครที่รวดเร็ว
-                                ควรทำตามขั้นตอนและคำแนะนำที่ได้ระบุไว้ระหว่างการประกาศงานด่วน
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="ageEnd"
+                          >
+                            <option value="">ถึง(ไม่บังคับ)</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="gridStep4-1 mb-3">
+                    <div>
+                      <label>ระดับการศึกษา</label>
+                      <div class="gridStep2">
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="educationStart"
+                          >
+                            <option value="">เลือกระดับการศึกษาตั้งแต่</option>
+                            <option>ปริญญาตรี</option>
+                            <option>ปริญญาโท</option>
+                            <option>ปริญญาเอก</option>
+                          </select>
                         </div>
 
-                        <div class="flexAround borderRadiusStyle borderStyle">
-                            <h6><span class="font-weight-bold textRed">Urgent Jobs System</span></h6>
-                            <p>คืออะไร? ต้องการทำความรู้จัก Urgent Jobs System</p>
-                            <a href="javascript:void(0)">คลิก</a>
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="educationEnd"
+                          >
+                            <option value="">ถึง(ไม่บังคับ)</option>
+                            <option>ปริญญาตรี</option>
+                            <option>ปริญญาโท</option>
+                            <option>ปริญญาเอก</option>
+                          </select>
                         </div>
-                    </section>
+                      </div>
+                    </div>
 
-                    <div class="lineDash"></div>
+                    <div>
+                      <label>ประสบการณ์ทำงาน</label>
+                      <div class="gridStep2">
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="expStart"
+                          >
+                            <option value="">
+                              เลือกประสบการณ์ทำงานตั้งแต่
+                            </option>
+                            <option>1 ปี</option>
+                            <option>2 ปี</option>
+                            <option>3 ปี</option>
+                          </select>
+                        </div>
 
-                    <form class="formVaridate" method="POST" action="">
-                        <!-- ขั้นตอนที่ 2 : เลือกสาขาอาชีพ, ตำแหน่งงาน -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 2 :</span>
-                                <span class="font-weight-bold"> เลือกสาขาอาชีพ, ตำแหน่งงาน</span></p>
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="expEnd"
+                          >
+                            <option value="">ถึง(ไม่บังคับ)</option>
+                            <option>1 ปี</option>
+                            <option>2 ปี</option>
+                            <option>3 ปี</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
 
-                            <article>
-                                <section class="gridStep2 mb-3">
-                                    <div>
-                                        <label>เลือกสาขาอาชีพหลัก</label>
-                                        <select class="form-control formControl" name="careerMain">
-                                            <option value="">เลือกสาขาอาชีพหลัก</option>
-                                            <option>Web Designer</option>
-                                            <option>Graphic Designer</option>
-                                            <option>Manager</option>
-                                        </select>
-                                    </div>
+                  <section class="gridStep4-2">
+                    <div>
+                      <div>
+                        <label>คุณสมบัติด้านความรู้และความสามารถ</label>
+                        <article id="fieldSkill" class="mb-3">
+                          <div class="gridSkillEx mb-3">
+                            <p>1.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy1"
+                              placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ"
+                              name="skillSkill1"
+                            />
+                            <div class="flexAddPlus">
+                              <button class="btnRemoveSkill">
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                    <div>
-                                        <label>เลือกสาขาอาชีพรอง</label>
-                                        <select class="form-control formControl" name="careerSub">
-                                            <option value="">เลือกสาขาอาชีพรอง</option>
-                                            <option>Web Designer</option>
-                                            <option>Graphic Designer</option>
-                                            <option>Manager</option>
-                                        </select>
-                                    </div>
+                          <div class="gridSkillEx mb-3">
+                            <p>2.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy1"
+                              placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ"
+                              name="skillSkill2"
+                            />
+                            <div class="flexAddPlus">
+                              <button class="btnRemoveSkill">
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                    <div class="grid3">
-                                        <label>ระบุชื่อตำแหน่งงาน</label>
-                                        <input type="text" class="form-control formControl" name="position"
-                                            placeholder="พิมพ์ชื่อตำแหน่งงานที่ต้องการ (กำหนดจำนวนตัวอักษรและวรรค ไม่เกิน 50 ตัวอักษร)">
-                                        <p class="fontSubText textSky">ตัวอย่าง : พนักงานขายทางโทรศัพท์, Telesales,
-                                            Account
-                                            Executive เป็นต้น</p>
-                                    </div>
-                                </section>
+                          <div class="gridSkillEx mb-3">
+                            <p>3.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy1"
+                              placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ"
+                              name="skillSkill3"
+                            />
+                            <div class="flexAddPlus">
+                              <button class="btnRemoveSkill">
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                <section class="gridStep2-1">
-                                    <div>
-                                        <label>จำนวนอัตราที่รับ</label>
-                                        <select class="form-control formControl" name="theRate">
-                                            <option value="">เลือกจำนวนอัตราที่รับ</option>
-                                            <option>1 อัตรา</option>
-                                            <option>2 อัตรา</option>
-                                            <option>3 อัตรา</option>
-                                        </select>
-                                    </div>
+                          <div class="gridSkillEx mb-3">
+                            <p>4.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy1"
+                              placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ"
+                              name="skillSkill4"
+                            />
+                            <div class="flexAddPlus">
+                              <button class="btnRemoveSkill">
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                    <div>
-                                        <label>ประเภทงาน</label>
-                                        <select class="form-control formControl" name="jobType">
-                                            <option value="">เลือกประเภทงาน</option>
-                                            <option>งานประจำ</option>
-                                            <option>งาน part time</option>
-                                            <option>งานชั่วคราว</option>
-                                        </select>
-                                    </div>
+                          <div class="gridSkillEx mb-3">
+                            <p>5.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy1"
+                              placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ"
+                              name="skillSkill5"
+                            />
+                            <div class="flexAddPlus">
+                              <button class="btnRemoveSkill">
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
+                        </article>
+                        <p
+                          class="textRed fontSubText mb-3"
+                          id="skillSkill_error"
+                        ></p>
 
-                                    <div>
-                                        <label>ระดับการทำงาน</label>
-                                        <select class="form-control formControl" name="workingLevel">
-                                            <option value="">เลือกระดับการทำงาน</option>
-                                            <option>ปฏิบัติการ</option>
-                                            <option>Supervisor</option>
-                                            <option>Manager</option>
-                                        </select>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 2 : เลือกสาขาอาชีพ, ตำแหน่งงาน -->
+                        <div class="text-center mb-1">
+                          <button class="btnAddSkill">
+                            <i class="fas fa-plus-circle"></i> เพิ่ม
+                          </button>
+                        </div>
+                        <p class="text-center textRed fontSubText">
+                          คุณสมบัติด้านความรู้และความสามารถ เพิ่มได้สูงสุด 20
+                        </p>
+                      </div>
+                    </div>
 
-                        <div class="lineDash"></div>
+                    <div>
+                      <label>คุณสมบัติผู้สมัครงานเพิ่มเติม</label>
+                      <select
+                        class="form-control formControl"
+                        name="knowledgePlus"
+                      >
+                        <option value="">
+                          เลือกคุณสมบัติผู้สมัครงานเพิ่มเติม
+                        </option>
+                        <option>ยินดีรับนักศึกษาจบใหม่</option>
+                        <option>ยินดีรับผู้ไม่มีประสบการณ์</option>
+                        <option>ยินดีรับคนพิการ</option>
+                        <option>ยินดีรับผู้สูงอายุตั้งแต่ 50 ปีขึ้นไป</option>
+                        <option>ต้องการคะแนน TOEIC</option>
+                        <option>ไม่ระบุ</option>
+                      </select>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 3 : คุณสมบัติผู้สมัครงาน -->
 
-                        <!-- ขั้นตอนที่ 3 : การระบุเงินเดือน -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 3 :</span>
-                                <span class="font-weight-bold"> การระบุเงินเดือน</span></p>
+              <div class="lineDash"></div>
 
-                            <article>
-                                <section class="gridStep3 mb-5">
-                                    <div>
-                                        <label>สถานะเงินเดือน</label>
-                                        <select class="form-control formControl" name="salary">
-                                            <option value="">เลือกสถานะเงินเดือน</option>
-                                            <option>ระบุเงินเดือน</option>
-                                            <option>ไม่ระบุเงินเดือน</option>
-                                        </select>
-                                    </div>
+              <!-- ขั้นตอนที่ 4 : หน้าที่และความรับผิดชอบ -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 4 :</span>
+                  <span class="font-weight-bold"> หน้าที่และความรับผิดชอบ</span>
+                </p>
 
-                                    <div>
-                                        <label>เงินเดือนเริ่มต้น-สุงสุด</label>
-                                        <div class="gridStep2">
-                                            <div>
-                                                <select class="form-control formControl" name="salaryStart">
-                                                    <option value="">เลือกเงินเดือนเริ่มต้น</option>
-                                                    <option>10,000 บาท</option>
-                                                    <option>20,000 บาท</option>
-                                                    <option>30,000 บาท</option>
-                                                    <option>40,000 บาท</option>
-                                                </select>
-                                            </div>
+                <article>
+                  <section class="gridStep5">
+                    <div>
+                      <div>
+                        <label>หน้าที่และความรับผิดชอบ</label>
+                        <article id="fieldResponsibilities" class="mb-3">
+                          <div class="gridResponsibilitiesEx mb-3">
+                            <p>1.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy2"
+                              placeholder="ระบุหน้าที่และความรับผิดชอบ"
+                              name="responsibilities1"
+                            />
+                            <div class="flexAddPlus">
+                              <button
+                                class="btnRemoveResponsibilities"
+                                type="button"
+                              >
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                            <div>
-                                                <select class="form-control formControl" name="salaryEnd">
-                                                    <option value="">เลือกเงินเดือนสูงสุด</option>
-                                                    <option>10,000 บาท</option>
-                                                    <option>20,000 บาท</option>
-                                                    <option>30,000 บาท</option>
-                                                    <option>40,000 บาท</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                          <div class="gridResponsibilitiesEx mb-3">
+                            <p>2.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy2"
+                              placeholder="ระบุหน้าที่และความรับผิดชอบ"
+                              name="responsibilities2"
+                            />
+                            <div class="flexAddPlus">
+                              <button
+                                class="btnRemoveResponsibilities"
+                                type="button"
+                              >
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                    <div>
-                                        <label>การแสดงเงินเดือน</label>
-                                        <select class="form-control formControl" name="salarySpecify">
-                                            <option value="">เลือกการแสดงเงินเดือน</option>
-                                            <option>ตามโครงสร้างบริษัท</option>
-                                            <option>ไม่ระบุเงินเดือน</option>
-                                            <option>ไม่แสดงเงินเดือน</option>
-                                        </select>
-                                    </div>
-                                </section>
+                          <div class="gridResponsibilitiesEx mb-3">
+                            <p>3.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy2"
+                              placeholder="ระบุหน้าที่และความรับผิดชอบ"
+                              name="responsibilities3"
+                            />
+                            <div class="flexAddPlus">
+                              <button
+                                class="btnRemoveResponsibilities"
+                                type="button"
+                              >
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                <section class="clWhitetGray p-3 borderStyle borderRadiusStyle">
-                                    <div class="gridText">
-                                        <p class="font-weight-bold">คำอธิบาย : </p>
-                                        <p>การระบุเงินเดือนจะทำให้ การแสดงผลแม่นยำขึ้นจากการค้นหางานด่วนของผู้สมัคร
-                                            และการจับคู่เรซูเม่กับตำแหน่งงานให้ผู้ประกอบการ ด้วยระบบ <span
-                                                class="textRed">E-mail Urgent Jobs
-                                                Matching</span> มีประสิทธิภาพมากขึ้น</p>
-                                    </div>
+                          <div class="gridResponsibilitiesEx mb-3">
+                            <p>4.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy2"
+                              placeholder="ระบุหน้าที่และความรับผิดชอบ"
+                              name="responsibilities4"
+                            />
+                            <div class="flexAddPlus">
+                              <button
+                                class="btnRemoveResponsibilities"
+                                type="button"
+                              >
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
 
-                                    <div class="gridText">
-                                        <p class="font-weight-bold">คำแนะนำ : </p>
-                                        <p>ผู้ประกอบการสามารถเลือกไม่แสดงเงินเดือน
-                                            จากการระบุเงินเดือนเพื่อเพิ่มประสิทธิภาพในการประกาศงานและการค้นหาที่แม่นยำได้
-                                        </p>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 3 : การระบุเงินเดือน -->
+                          <div class="gridResponsibilitiesEx mb-3">
+                            <p>5.</p>
+                            <input
+                              type="text"
+                              class="form-control formControl dummy2"
+                              placeholder="ระบุหน้าที่และความรับผิดชอบ"
+                              name="responsibilities5"
+                            />
+                            <div class="flexAddPlus">
+                              <button
+                                class="btnRemoveResponsibilities"
+                                type="button"
+                              >
+                                <i class="fas fa-trash-alt"></i> ลบ
+                              </button>
+                            </div>
+                          </div>
+                        </article>
+                        <p
+                          class="textRed fontSubText mb-3"
+                          id="responsibilities_error"
+                        ></p>
 
-                        <div class="lineDash"></div>
+                        <div class="text-center mb-1">
+                          <button class="btnAddResponsibilities">
+                            <i class="fas fa-plus-circle"></i> เพิ่ม
+                          </button>
+                        </div>
+                        <p class="text-center textRed fontSubText">
+                          หน้าที่และความรับผิดชอบ เพิ่มได้สูงสุด 20
+                        </p>
+                      </div>
+                    </div>
 
-                        <!-- ขั้นตอนที่ 4 : คุณสมบัติผู้สมัครงาน -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 4 :</span>
-                                <span class="font-weight-bold"> คุณสมบัติผู้สมัครงาน</span></p>
+                    <div>
+                      <label>คุณสมบัติผู้สมัครงานเพิ่มเติม</label>
+                      <select
+                        class="form-control formControl"
+                        name="knowledgePlus"
+                      >
+                        <option value="">
+                          เลือกคุณสมบัติผู้สมัครงานเพิ่มเติม
+                        </option>
+                        <option>ยินดีรับนักศึกษาจบใหม่</option>
+                        <option>ยินดีรับผู้ไม่มีประสบการณ์</option>
+                        <option>ยินดีรับคนพิการ</option>
+                        <option>ยินดีรับผู้สูงอายุตั้งแต่ 50 ปีขึ้นไป</option>
+                        <option>ต้องการคะแนน TOEIC</option>
+                        <option>ไม่ระบุ</option>
+                      </select>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 4 : หน้าที่และความรับผิดชอบ -->
 
-                            <article>
-                                <section class="gridStep4 mb-3">
-                                    <div>
-                                        <label>เพศ</label>
-                                        <select class="form-control formControl" name="sex">
-                                            <option value="">เลือกเพศ</option>
-                                            <option>ไม่ระบุเพศ</option>
-                                            <option>ชาย/หญิง</option>
-                                            <option>ชาย</option>
-                                            <option>หญิง</option>
-                                        </select>
-                                    </div>
+              <div class="lineDash"></div>
 
-                                    <div>
-                                        <label>อายุผู้สมัคร</label>
-                                        <div class="gridStep2">
-                                            <div>
-                                                <select class="form-control formControl" name="ageStart">
-                                                    <option value="">เลือกอายุผู้สมัครตั้งแต่</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                </select>
-                                            </div>
+              <!-- ขั้นตอนที่ 5 : การระบุเงินเดือน -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 5 :</span>
+                  <span class="font-weight-bold"> การระบุเงินเดือน</span>
+                </p>
 
-                                            <div>
-                                                <select class="form-control formControl" name="ageEnd">
-                                                    <option value="">ถึง(ไม่บังคับ)</option>
-                                                    <option>21</option>
-                                                    <option>22</option>
-                                                    <option>23</option>
-                                                    <option>24</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                <article>
+                  <section class="gridStep3 mb-5">
+                    <div>
+                      <label>สถานะเงินเดือน</label>
+                      <select class="form-control formControl" name="salary">
+                        <option value="">เลือกสถานะเงินเดือน</option>
+                        <option>ระบุเงินเดือน</option>
+                        <option>ไม่ระบุเงินเดือน</option>
+                      </select>
+                    </div>
 
-                                <section class="gridStep4-1 mb-3">
-                                    <div>
-                                        <label>ระดับการศึกษา</label>
-                                        <div class="gridStep2">
-                                            <div>
-                                                <select class="form-control formControl" name="educationStart">
-                                                    <option value="">เลือกระดับการศึกษาตั้งแต่</option>
-                                                    <option>ปริญญาตรี</option>
-                                                    <option>ปริญญาโท</option>
-                                                    <option>ปริญญาเอก</option>
-                                                </select>
-                                            </div>
+                    <div>
+                      <label>เงินเดือนเริ่มต้น-สุงสุด</label>
+                      <div class="gridStep2">
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="salaryStart"
+                          >
+                            <option value="">เลือกเงินเดือนเริ่มต้น</option>
+                            <option>10,000 บาท</option>
+                            <option>20,000 บาท</option>
+                            <option>30,000 บาท</option>
+                            <option>40,000 บาท</option>
+                          </select>
+                        </div>
 
-                                            <div>
-                                                <select class="form-control formControl" name="educationEnd">
-                                                    <option value="">ถึง(ไม่บังคับ)</option>
-                                                    <option>ปริญญาตรี</option>
-                                                    <option>ปริญญาโท</option>
-                                                    <option>ปริญญาเอก</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div>
+                          <select
+                            class="form-control formControl"
+                            name="salaryEnd"
+                          >
+                            <option value="">เลือกเงินเดือนสูงสุด</option>
+                            <option>10,000 บาท</option>
+                            <option>20,000 บาท</option>
+                            <option>30,000 บาท</option>
+                            <option>40,000 บาท</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
 
-                                    <div>
-                                        <label>ประสบการณ์ทำงาน</label>
-                                        <div class="gridStep2">
-                                            <div>
-                                                <select class="form-control formControl" name="expStart">
-                                                    <option value="">เลือกประสบการณ์ทำงานตั้งแต่</option>
-                                                    <option>1 ปี</option>
-                                                    <option>2 ปี</option>
-                                                    <option>3 ปี</option>
-                                                </select>
-                                            </div>
+                    <div>
+                      <label>การแสดงเงินเดือน</label>
+                      <select
+                        class="form-control formControl"
+                        name="salarySpecify"
+                      >
+                        <option value="">เลือกการแสดงเงินเดือน</option>
+                        <option>ตามโครงสร้างบริษัท</option>
+                        <option>ไม่ระบุเงินเดือน</option>
+                        <option>ไม่แสดงเงินเดือน</option>
+                      </select>
+                    </div>
+                  </section>
 
-                                            <div>
-                                                <select class="form-control formControl" name="expEnd">
-                                                    <option value="">ถึง(ไม่บังคับ)</option>
-                                                    <option>1 ปี</option>
-                                                    <option>2 ปี</option>
-                                                    <option>3 ปี</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                  <section
+                    class="clWhitetGray p-3 borderStyle borderRadiusStyle"
+                  >
+                    <div class="gridText">
+                      <p class="font-weight-bold">คำอธิบาย :</p>
+                      <p>
+                        การระบุเงินเดือนจะทำให้
+                        การแสดงผลแม่นยำขึ้นจากการค้นหางานด่วนของผู้สมัคร
+                        และการจับคู่เรซูเม่กับตำแหน่งงานให้ผู้ประกอบการ ด้วยระบบ
+                        <span class="textRed">E-mail Urgent Jobs Matching</span>
+                        มีประสิทธิภาพมากขึ้น
+                      </p>
+                    </div>
 
-                                <section class="gridStep4-2">
-                                    <div>
-                                        <div>
-                                            <label>คุณสมบัติด้านความรู้และความสามารถ</label>
-                                            <textarea class="form-control formCon" rows="6" placeholder="กรุณาพิมพ์คุณสมบัติที่ต้องการเป็นข้อๆ และควรระบุตัวเลขลำดับด้านหน้า เพื่อความง่ายต่อการอ่านของผู้สมัครงาน 
-1. มีประสบการณ์ด้าน Supply Chains
-2. มีประสบการณ์เกี่ยวกับการดูแล ควบคุม คลังสินค้าประเภทอาหารสด คลังสินค้าประเภทอาหารแห้ง
-3. มีประสบการณ์ด้านระบบห้องเย็นในการขนส่งสินค้า" name="knowledge"></textarea>
-                                        </div>
-                                    </div>
+                    <div class="gridText">
+                      <p class="font-weight-bold">คำแนะนำ :</p>
+                      <p>
+                        ผู้ประกอบการสามารถเลือกไม่แสดงเงินเดือน
+                        จากการระบุเงินเดือนเพื่อเพิ่มประสิทธิภาพในการประกาศงานและการค้นหาที่แม่นยำได้
+                      </p>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 5 : การระบุเงินเดือน -->
 
-                                    <div>
-                                        <label>คุณสมบัติผู้สมัครงานเพิ่มเติม</label>
-                                        <select class="form-control formControl" name="knowledgePlus">
-                                            <option value="">เลือกคุณสมบัติผู้สมัครงานเพิ่มเติม</option>
-                                            <option>ยินดีรับนักศึกษาจบใหม่</option>
-                                            <option>ยินดีรับผู้ไม่มีประสบการณ์</option>
-                                            <option>ยินดีรับคนพิการ</option>
-                                            <option>ยินดีรับผู้สูงอายุตั้งแต่ 50 ปีขึ้นไป</option>
-                                            <option>ต้องการคะแนน TOEIC</option>
-                                            <option>ไม่ระบุ</option>
-                                        </select>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 4 : คุณสมบัติผู้สมัครงาน -->
+              <div class="lineDash"></div>
 
-                        <div class="lineDash"></div>
+              <!-- ขั้นตอนที่ 6 : สถานที่ปฏิบัติงาน -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 6 :</span>
+                  <span class="font-weight-bold"> สถานที่ปฏิบัติงาน</span>
+                </p>
 
-                        <!-- ขั้นตอนที่ 5 : หน้าที่และความรับผิดชอบ -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 5 :</span>
-                                <span class="font-weight-bold"> หน้าที่และความรับผิดชอบ</span></p>
+                <article>
+                  <section class="gridStep6">
+                    <div class="stepOrder">
+                      <label>จังหวัด</label>
+                      <select
+                        class="form-control formControl province"
+                        name="province"
+                      >
+                        <option value=""></option>
+                        <option>กรุงเทพมหานคร</option>
+                        <option>ชลบุรี</option>
+                        <option>อยุธยา</option>
+                        <option>เชียงใหม่</option>
+                        <option>เชียงราย</option>
+                        <option>น่าน</option>
+                      </select>
+                    </div>
 
-                            <article>
-                                <section class="gridStep5">
-                                    <div>
-                                        <label>หน้าที่และความรับผิดชอบ</label>
-                                        <textarea class="form-control formCon" rows="6" placeholder="กรุณาพิมพ์หน้าที่และความรับผิดชอบที่ต้องการเป็นข้อๆ และควรระบุตัวเลขลำดับด้านหน้า เพื่อความง่ายต่อการอ่านของผู้สมัครงาน เช่น
-1. ควบคุม ดูแล งานด้านคลังสินค้า 2 ประเภท 1. อาหารสด 2. อาหารแห้ง
-2. ควบคุมการขนส่งสินค้าให้ถูกต้องและตรงตามเวลาที่กำหนด" name="responsibilities"></textarea>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 5 : หน้าที่และความรับผิดชอบ -->
+                    <div class="stepOrder">
+                      <label>เขต/อำเภอ</label>
+                      <select
+                        class="form-control formControl district radius_change"
+                        name="district"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>บางกะปิ</option>
+                        <option>วังทองหลาง</option>
+                        <option>บึงกุ่ม</option>
+                        <option>รามคำแหง</option>
+                        <option>บางบัวทอง</option>
+                        <option>ลาดพร้าว</option>
+                      </select>
+                    </div>
 
-                        <div class="lineDash"></div>
+                    <div class="stepOrder workFormHome">
+                      <label class="pointer"
+                        ><input type="checkbox" name="workFromHome" />
+                        ทำงานที่บ้าน (Work From Home)</label
+                      >
+                    </div>
+                  </section>
 
-                        <!-- ขั้นตอนที่ 6 : สถานที่ปฏิบัติงาน -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 6 :</span>
-                                <span class="font-weight-bold"> สถานที่ปฏิบัติงาน</span></p>
+                  <section class="gridStep6-1">
+                    <div class="stepOrder">
+                      <label>นิคมอุตสาหกรรม</label>
+                      <select
+                        class="
+                          form-control
+                          formControl
+                          industrialEstate
+                          radius_change
+                        "
+                        name="industrialEstate"
+                        multiple="multiple"
+                        id="industrial_estate"
+                      >
+                        <option value="1">เขตส่งเสริมอุตสาหกรรมนวนคร</option>
+                        <option value="2">สวนอุตสาหกรรมโรจนะอยุธยา</option>
+                        <option value="3">เขตส่งเสริมอุตสาหกรรมนวนคร</option>
+                        <option value="4">สวนอุตสาหกรรมโรจนะอยุธยา</option>
+                        <option value="5">อื่นๆ</option>
+                      </select>
 
-                            <article>
-                                <section class="gridStep6">
-                                    <div class="stepOrder">
-                                        <label>จังหวัด</label>
-                                        <select class="form-control formControl province" name="province">
-                                            <option value=""></option>
-                                            <option>กรุงเทพมหานคร</option>
-                                            <option>ชลบุรี</option>
-                                            <option>อยุธยา</option>
-                                            <option>เชียงใหม่</option>
-                                            <option>เชียงราย</option>
-                                            <option>น่าน</option>
-                                        </select>
-                                    </div>
+                      <section class="gridDataList none mt-3">
+                        <div>
+                          <div>
+                            <input
+                              type="text"
+                              class="form-control formControl"
+                              name="other"
+                              list="others"
+                            />
+                          </div>
+                          <datalist id="others">
+                            <option value="เขตส่งเสริมอุตสาหกรรมนวนคร"></option>
+                            <option value="สวนอุตสาหกรรมโรจนะอยุธยา"></option>
+                            <option value="เขตส่งเสริมอุตสาหกรรมนวนคร"></option>
+                            <option value="สวนอุตสาหกรรมโรจนะอยุธยา"></option>
+                          </datalist>
+                        </div>
 
-                                    <div class="stepOrder">
-                                        <label>เขต/อำเภอ</label>
-                                        <select class="form-control formControl district" name="district"
-                                            multiple="multiple">
-                                            <option value=""></option>
-                                            <option>บางกะปิ</option>
-                                            <option>วังทองหลาง</option>
-                                            <option>บึงกุ่ม</option>
-                                            <option>รามคำแหง</option>
-                                            <option>บางบัวทอง</option>
-                                            <option>ลาดพร้าว</option>
-                                        </select>
-                                    </div>
+                        <div id="cancelBtn">
+                          <button type="button">ยกเลิก</button>
+                        </div>
+                      </section>
+                    </div>
 
-                                    <div class="stepOrder">
-                                        <label class="pointer"><input type="checkbox" name="workFromHome"> ทำงานที่บ้าน
-                                            (Work From Home)</label>
-                                    </div>
-                                </section>
+                    <div class="stepOrder">
+                      <label>สามารถเดินทางไปปฏิบัติงานต่างจังหวัดได้</label>
+                      <select
+                        class="form-control formControl travelprovinces"
+                        name="travelprovinces"
+                      >
+                        <option value="">
+                          เลือกสามารถเดินทางไปปฏิบัติงานต่างจังหวัดได้
+                          (ไม่บังคับ)
+                        </option>
+                        <option>ต้องการ</option>
+                        <option>เป็นครั้งคราว</option>
+                        <option>ตามโอกาสและความเหมาะสม</option>
+                        <option>สวนอุตสาหกรรมโรจนะอยุธยา</option>
+                        <option>ไม่ระบุ</option>
+                      </select>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 6 : สถานที่ปฏิบัติงาน -->
 
-                                <section class="gridStep6-1">
-                                    <div class="stepOrder">
-                                        <label>นิคมอุตสาหกรรม</label>
-                                        <select class="form-control formControl industrialEstate"
-                                            name="industrialEstate" multiple="multiple">
-                                            <option value="">เลือกนิคมอุตสาหกรรม (ไม่บังคับ)</option>
-                                            <option>เขตส่งเสริมอุตสาหกรรมนวนคร</option>
-                                            <option>สวนอุตสาหกรรมโรจนะอยุธยา</option>
-                                            <option>เขตส่งเสริมอุตสาหกรรมนวนคร</option>
-                                            <option>สวนอุตสาหกรรมโรจนะอยุธยา</option>
-                                            <option>อื่นๆ</option>
-                                        </select>
-                                    </div>
+              <div class="lineDash"></div>
 
-                                    <div class="stepOrder">
-                                        <label>สามารถเดินทางไปปฏิบัติงานต่างจังหวัดได้</label>
-                                        <select class="form-control formControl travelprovinces" name="travelprovinces">
-                                            <option value="">เลือกสามารถเดินทางไปปฏิบัติงานต่างจังหวัดได้ (ไม่บังคับ)
-                                            </option>
-                                            <option>ต้องการ</option>
-                                            <option>เป็นครั้งคราว</option>
-                                            <option>ตามโอกาสและความเหมาะสม</option>
-                                            <option>สวนอุตสาหกรรมโรจนะอยุธยา</option>
-                                            <option>ไม่ระบุ</option>
-                                        </select>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 6 : สถานที่ปฏิบัติงาน -->
+              <!-- ขั้นตอนที่ 7 : การเดินทาง -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 7 :</span>
+                  <span class="font-weight-bold"> การเดินทาง</span>
+                </p>
 
-                        <div class="lineDash"></div>
+                <article>
+                  <section class="gridStep7">
+                    <div class="stepOrder">
+                      <label>เดินทางด้วย BTS</label>
+                      <select
+                        class="form-control formControl BTS radius_change"
+                        name="BTS"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>ไม่มี</option>
+                        <option>สถานีหมอชิต</option>
+                        <option>สถานีสะพานควาย</option>
+                        <option>สถานีอนุเสารีย์ชัยสมรภูมิ</option>
+                        <option>สถานีสยาม</option>
+                        <option>สถานีราชเทวี</option>
+                        <option>สถานีพญาไท</option>
+                      </select>
+                    </div>
 
-                        <!-- ขั้นตอนที่ 7 : การเดินทาง -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 7 :</span>
-                                <span class="font-weight-bold"> การเดินทาง</span></p>
+                    <div class="stepOrder">
+                      <label>เดินทางด้วย MRT</label>
+                      <select
+                        class="form-control formControl MRT radius_change"
+                        name="MRT"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>ไม่มี</option>
+                        <option>สถานีลาดพร้าว</option>
+                        <option>สถานีพหลโยธิน</option>
+                        <option>สถานีรัชดา</option>
+                        <option>สถานีสุทธิสาร</option>
+                        <option>สถานีศูนย์วัฒนธรรม</option>
+                        <option>สถานีพระราม9</option>
+                      </select>
+                    </div>
 
-                            <article>
-                                <section class="gridStep7">
-                                    <div class="stepOrder">
-                                        <label>เดินทางด้วย BTS</label>
-                                        <select class="form-control formControl BTS" name="BTS" multiple="multiple">
-                                            <option value=""></option>
-                                            <option>ไม่มี</option>
-                                            <option>สถานีหมอชิต</option>
-                                            <option>สถานีสะพานควาย</option>
-                                            <option>สถานีอนุเสารีย์ชัยสมรภูมิ</option>
-                                            <option>สถานีสยาม</option>
-                                            <option>สถานีราชเทวี</option>
-                                            <option>สถานีพญาไท</option>
-                                        </select>
-                                    </div>
+                    <div class="stepOrder">
+                      <label>เดินทางด้วย Airport Rail Link</label>
+                      <select
+                        class="
+                          form-control
+                          formControl
+                          airportRailLink
+                          radius_change
+                        "
+                        name="airportRailLink"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>ไม่มี</option>
+                        <option>สถานีพญาไท</option>
+                        <option>สถานีมักกะสัน</option>
+                        <option>สถานีราชปรารถ</option>
+                        <option>สถานีรามคำแหง</option>
+                        <option>สถานีสุวรรณภูมิ</option>
+                      </select>
+                    </div>
 
-                                    <div class="stepOrder">
-                                        <label>เดินทางด้วย MRT</label>
-                                        <select class="form-control formControl MRT" name="MRT" multiple="multiple">
-                                            <option value=""></option>
-                                            <option>ไม่มี</option>
-                                            <option>สถานีลาดพร้าว</option>
-                                            <option>สถานีพหลโยธิน</option>
-                                            <option>สถานีรัชดา</option>
-                                            <option>สถานีสุทธิสาร</option>
-                                            <option>สถานีศูนย์วัฒนธรรม</option>
-                                            <option>สถานีพระราม9</option>
-                                        </select>
-                                    </div>
+                    <div class="stepOrder">
+                      <label>เดินทางด้วยรถเมล์</label>
+                      <select
+                        class="form-control formControl bus radius_change"
+                        name="bus"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>ไม่มี</option>
+                        <option>สาย 8</option>
+                        <option>สาย 96</option>
+                        <option>สาย 92</option>
+                        <option>สาย 108</option>
+                        <option>สาย 137</option>
+                      </select>
+                    </div>
 
-                                    <div class="stepOrder">
-                                        <label>เดินทางด้วย Airport Rail Link</label>
-                                        <select class="form-control formControl airportRailLink" name="airportRailLink"
-                                            multiple="multiple">
-                                            <option value=""></option>
-                                            <option>ไม่มี</option>
-                                            <option>สถานีพญาไท</option>
-                                            <option>สถานีมักกะสัน</option>
-                                            <option>สถานีราชปรารถ</option>
-                                            <option>สถานีรามคำแหง</option>
-                                            <option>สถานีสุวรรณภูมิ</option>
-                                        </select>
-                                    </div>
+                    <div class="grid2">
+                      <label>การเดินทางเพิ่มเติม</label>
+                      <textarea
+                        class="form-control formCon theTrip"
+                        rows="6"
+                        placeholder="พิมพ์รายละเอียดการเดินทางที่ต้องการ (ไม่บังคับ)"
+                        name="theTrip"
+                      ></textarea>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 7 : การเดินทาง -->
 
-                                    <div class="stepOrder">
-                                        <label>เดินทางด้วยรถเมล์</label>
-                                        <select class="form-control formControl bus" name="bus" multiple="multiple">
-                                            <option value=""></option>
-                                            <option>ไม่มี</option>
-                                            <option>สาย 8</option>
-                                            <option>สาย 96</option>
-                                            <option>สาย 92</option>
-                                            <option>สาย 108</option>
-                                            <option>สาย 137</option>
-                                        </select>
-                                    </div>
+              <div class="lineDash"></div>
 
-                                    <div class="grid2">
-                                        <label>การเดินทางเพิ่มเติม</label>
-                                        <textarea class="form-control formCon theTrip" rows="6"
-                                            placeholder="พิมพ์รายละเอียดการเดินทางที่ต้องการ (ไม่บังคับ)"
-                                            name="theTrip"></textarea>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 7 : การเดินทาง -->
+              <!-- ขั้นตอนที่ 8 : วัน-เวลาทำงาน -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 8 :</span>
+                  <span class="font-weight-bold"> วัน-เวลาทำงาน</span>
+                </p>
 
-                        <div class="lineDash"></div>
+                <article>
+                  <section class="gridStep8">
+                    <div class="stepOrder">
+                      <label>วันทำงาน</label>
+                      <select
+                        class="form-control formControl dayWork"
+                        name="dayWork"
+                      >
+                        <option value="">เลือกวันทำงาน</option>
+                        <option>จันทร์-ศุกร์</option>
+                        <option>จันทร์-เสาร์</option>
+                      </select>
+                    </div>
 
-                        <!-- ขั้นตอนที่ 8 : วัน-เวลาทำงาน -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 8 :</span>
-                                <span class="font-weight-bold"> วัน-เวลาทำงาน</span></p>
+                    <div class="stepOrder">
+                      <label>วันหยุด</label>
+                      <select
+                        class="form-control formControl holiday"
+                        name="holiday"
+                      >
+                        <option value="">เลือกวันหยุด</option>
+                        <option>เสาร์-อาทิตย์</option>
+                        <option>อาทิตย์</option>
+                      </select>
+                    </div>
 
-                            <article>
-                                <section class="gridStep8">
-                                    <div class="stepOrder">
-                                        <label>วันทำงาน</label>
-                                        <select class="form-control formControl dayWork" name="dayWork">
-                                            <option value="">เลือกวันทำงาน</option>
-                                            <option>จันทร์-ศุกร์</option>
-                                            <option>จันทร์-เสาร์</option>
-                                        </select>
-                                    </div>
+                    <div class="stepOrder">
+                      <label>เวลาทำงานตั้งแต่-ถึง</label>
+                      <div class="gridStep2">
+                        <div>
+                          <select
+                            class="form-control formControl timeStart"
+                            name="timeStart"
+                          >
+                            <option value="">เลือกเวลาทำงาน (ตั้งแต่)</option>
+                            <option>8.00 น.</option>
+                            <option>9.00 น.</option>
+                            <option>10.00 น.</option>
+                            <option>11.00 น.</option>
+                            <option>12.00 น.</option>
+                            <option>13.00 น.</option>
+                          </select>
+                        </div>
 
-                                    <div class="stepOrder">
-                                        <label>วันหยุด</label>
-                                        <select class="form-control formControl holiday" name="holiday">
-                                            <option value="">เลือกวันหยุด</option>
-                                            <option>เสาร์-อาทิตย์</option>
-                                            <option>อาทิตย์</option>
-                                        </select>
-                                    </div>
+                        <div>
+                          <select
+                            class="form-control formControl timeEnd"
+                            name="timeEnd"
+                          >
+                            <option value="">เลือกเวลาทำงาน (ถึง)</option>
+                            <option>8.00 น.</option>
+                            <option>9.00 น.</option>
+                            <option>10.00 น.</option>
+                            <option>11.00 น.</option>
+                            <option>12.00 น.</option>
+                            <option>13.00 น.</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
 
-                                    <div class="stepOrder">
-                                        <label>เวลาทำงานตั้งแต่-ถึง</label>
-                                        <div class="gridStep2">
-                                            <div>
-                                                <select class="form-control formControl timeStart" name="timeStart">
-                                                    <option value="">เลือกเวลาทำงาน (ตั้งแต่)</option>
-                                                    <option>8.00 น.</option>
-                                                    <option>9.00 น.</option>
-                                                    <option>10.00 น.</option>
-                                                    <option>11.00 น.</option>
-                                                    <option>12.00 น.</option>
-                                                    <option>13.00 น.</option>
-                                                </select>
-                                            </div>
+                    <div class="grid4">
+                      <label>เวลาทำงานอื่นๆ</label>
+                      <textarea
+                        class="form-control formCon timeWant"
+                        rows="6"
+                        placeholder="พิมพ์รายละเอียดเวลาทำงานที่ต้องการ (ไม่บังคับ)"
+                        name="timeWant"
+                      ></textarea>
+                      <p class="fontSubText textGreen">
+                        ตัวอย่าง : เฉพาะวันเสาร์ต้นเดือน (ทำกิจกรรม อบรม ดูหนัง)
+                      </p>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 8 : วัน-เวลาทำงาน -->
 
-                                            <div>
-                                                <select class="form-control formControl timeEnd" name="timeEnd">
-                                                    <option value="">เลือกเวลาทำงาน (ถึง)</option>
-                                                    <option>8.00 น.</option>
-                                                    <option>9.00 น.</option>
-                                                    <option>10.00 น.</option>
-                                                    <option>11.00 น.</option>
-                                                    <option>12.00 น.</option>
-                                                    <option>13.00 น.</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+              <div class="lineDash"></div>
 
-                                    <div class="grid3">
-                                        <label>เวลาทำงานอื่นๆ</label>
-                                        <textarea class="form-control formCon timeWant" rows="6"
-                                            placeholder="พิมพ์รายละเอียดเวลาทำงานที่ต้องการ (ไม่บังคับ)"
-                                            name="timeWant"></textarea>
-                                        <p class="fontSubText textSky">ตัวอย่าง : เฉพาะวันเสาร์ต้นเดือน (ทำกิจกรรม อบรม
-                                            ดูหนัง)</p>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 8 : วัน-เวลาทำงาน -->
+              <!-- ขั้นตอนที่ 9 : สวัสดิการ -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 9 :</span>
+                  <span class="font-weight-bold"> สวัสดิการ</span>
+                </p>
 
-                        <div class="lineDash"></div>
+                <article>
+                  <section class="gridStep9">
+                    <div class="stepOrder">
+                      <label>สวัสดิการ</label>
+                      <select
+                        class="form-control formControl welfare radius_change"
+                        name="welfare"
+                        multiple="multiple"
+                      >
+                        <option value=""></option>
+                        <option>ไม่มี</option>
+                        <option>สิทธิการเบิกค่าทันตกรรม</option>
+                        <option>บริการรถรับส่ง</option>
+                        <option>ค่าเดินทาง</option>
+                        <option>ท่องเที่ยวต่างประเทศ</option>
+                        <option>โบนัส 12 เดือน</option>
+                        <option>ปรับเงินเดือน 20 %</option>
+                      </select>
+                    </div>
 
-                        <!-- ขั้นตอนที่ 9 : สวัสดิการ -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 9 :</span>
-                                <span class="font-weight-bold"> สวัสดิการ</span></p>
-
-                            <article>
-                                <section class="gridStep9">
-                                    <div class="stepOrder">
-                                        <label>สวัสดิการ</label>
-                                        <select class="form-control formControl welfare" name="welfare"
-                                            multiple="multiple">
-                                            <option value=""></option>
-                                            <option>ไม่มี</option>
-                                            <option>สิทธิการเบิกค่าทันตกรรม</option>
-                                            <option>บริการรถรับส่ง</option>
-                                            <option>ค่าเดินทาง</option>
-                                            <option>ท่องเที่ยวต่างประเทศ</option>
-                                            <option>โบนัส 12 เดือน</option>
-                                            <option>ปรับเงินเดือน 20 %</option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <label>สวัสดิการเพิ่มเติม (ไม่บังคับ)</label>
-                                        <textarea class="form-control formCon welfarePlus" rows="6" placeholder="กรุณาพิมพ์สวัสดิการที่ต้องการเป็นข้อๆ และควรระบุตัวเลขด้านหน้า เพื่อความง่ายต่อการอ่านของผู้สมัครงาน เช่น
+                    <div>
+                      <label>สวัสดิการเพิ่มเติม (ไม่บังคับ)</label>
+                      <textarea
+                        class="form-control formCon welfarePlus"
+                        rows="6"
+                        placeholder="กรุณาพิมพ์สวัสดิการที่ต้องการเป็นข้อๆ และควรระบุตัวเลขด้านหน้า เพื่อความง่ายต่อการอ่านของผู้สมัครงาน เช่น
 1. ค่าใช้จ่ายสำหรับที่อยู่อาศัย
 2. บริการอาหารเช้า-กลางวัน ฟรี
-เป็นต้น" name="welfarePlus"></textarea>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 9 : สวัสดิการ -->
+เป็นต้น"
+                        name="welfarePlus"
+                      ></textarea>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 9 : สวัสดิการ -->
 
-                        <div class="lineDash"></div>
+              <div class="lineDash"></div>
 
-                        <!-- ขั้นตอนที่ 10 : สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 10 :</span>
-                                <span class="font-weight-bold"> สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ</span></p>
+              <!-- ขั้นตอนที่ 10 : สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 10 :</span>
+                  <span class="font-weight-bold">
+                    สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ</span
+                  >
+                </p>
 
-                            <article>
-                                <section class="gridStep10">
-                                    <div>
-                                        <label>ชื่อ-นามสกุล</label>
-                                        <input type="text" class="form-control formControl"
-                                            placeholder="ระบุชื่อ-นามสกุล" name="name">
-                                    </div>
+                <article>
+                  <label class="pointer mb-3">
+                    <div id="headAddressUser">
+                      <input type="checkbox" /> ใช้ข้อมูลการติดต่อเดียวกับ
+                      <span class="textRed">Company Profile</span>
+                    </div>
+                  </label>
+                  <section class="gridStep10">
+                    <div>
+                      <label>ชื่อ-นามสกุล</label>
+                      <input
+                        type="text"
+                        class="form-control formControl"
+                        placeholder="ระบุชื่อ-นามสกุล"
+                        name="name"
+                      />
+                    </div>
 
-                                    <div>
-                                        <label>เบอร์โทรศัพท์</label>
-                                        <input type="tel" class="form-control formControl"
-                                            placeholder="ระบุเบอร์โทรศัพท์" name="tel">
-                                    </div>
+                    <div>
+                      <label>เบอร์โทรศัพท์</label>
+                      <input
+                        type="tel"
+                        class="form-control formControl"
+                        placeholder="ระบุเบอร์โทรศัพท์"
+                        name="tel"
+                      />
+                    </div>
 
-                                    <div>
-                                        <label>อีเมล์</label>
-                                        <input type="email" class="form-control formControl" placeholder="ระบุอีเมล์"
-                                            name="email">
-                                    </div>
-                                </section>
+                    <div>
+                      <label>อีเมล์</label>
+                      <input
+                        type="email"
+                        class="form-control formControl"
+                        placeholder="ระบุอีเมล์"
+                        name="email"
+                      />
+                    </div>
+                  </section>
 
-                                <section class="gridStep10-1">
-                                    <div>
-                                        <label class="fontSubHead mb-2">วิธีการสมัครงาน</label>
-                                        <ul>
-                                            <li class="accordion" id="applicant">
-                                                <label class="pointer" data-toggle="collapse"
-                                                    data-target="#applicantUser" aria-expanded="true"
-                                                    aria-controls="applicantUser">
-                                                    <div id="headApplicantUser">
-                                                        <input type="checkbox">
-                                                        รับสมัครงานผ่านทาง <span class="textRed">Jobbkk.com</span>
+                  <section class="gridStep10-1">
+                    <div>
+                      <label class="fontSubHead mb-2">วิธีการสมัครงาน</label>
+                      <ul>
+                        <li class="accordion" id="applicant">
+                          <label
+                            class="pointer"
+                            data-toggle="collapse"
+                            data-target="#applicantUser"
+                            aria-expanded="true"
+                            aria-controls="applicantUser"
+                          >
+                            <div id="headApplicantUser">
+                              <input
+                                type="checkbox"
+                                class="dummy"
+                                name="jobbkk"
+                              />
+                              รับสมัครงานผ่านทาง
+                              <span class="textRed">jobbkk.com</span>
+                            </div>
+                          </label>
 
-                                                    </div>
-                                                </label>
-
-                                                <div id="applicantUser" class="collapse"
-                                                    aria-labelledby="headApplicantUser" data-parent="#applicant">
-                                                    <div
-                                                        class="card-body clWhitetGray borderRadiusStyle mb-2 text-center">
-                                                        <label class="pointer text-left mb-2"><input type="checkbox">
-                                                            รับสมัครทางอีเมล์ <span class="textRed">(กรุณาทำเครื่องหมาย
-                                                                หากต้องการรับใบสมัครทางอีเมล์)</span>
-                                                        </label>
-                                                        <div class="fieldMail">
-                                                            <div class="gridMail mb-3">
-                                                                <input type="text" class="form-control formControl"
-                                                                    name="emailUser" placeholder="ระบุอีเมล์">
-                                                                <label class="showDisplay pointer"><input
-                                                                        type="checkbox" />
-                                                                    แสดงหน้าเว็บ
-                                                                </label>
-                                                            </div>
-                                                        </div>
-                                                        <button class="addMail"><i class="fas fa-plus-circle"></i>
-                                                            เพิ่มอีเมล</button>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li><label class="pointer"><input type="checkbox">
-                                                    รับสมัครผ่านทางไปรษณีย์
-                                                    และสมัครด้วยตนเอง</label></li>
-                                        </ul>
-                                    </div>
-                                </section>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 10 : สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ -->
-
-                        <div class="lineDash"></div>
-
-                        <!-- ขั้นตอนที่ 11 : ข้อมูลการติดต่อบริษัท (ใช้ที่อยู่เดียวกับ Company Profile) -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 11 :</span>
-                                <span class="font-weight-bold"> ข้อมูลการติดต่อบริษัท</span></p>
-
-                            <article>
-                                <label class="pointer mb-3">
-                                    <div id="headAddressUser">
-                                        <input type="checkbox"> ใช้ที่อยู่เดียวกับ <span class="textRed">Company
-                                            Profile</span>
-                                    </div>
-                                </label>
-
-                                <div class="fieldAddress">
-                                    <div class="gridAddress mb-3">
-                                        <div>
-                                            <label>ที่อยู่</label>
-                                            <input type="text" class="form-control formControl" name="address"
-                                                placeholder="ที่อยู่">
-                                        </div>
-
-                                        <div>
-                                            <label>แขวง/ตำบล</label>
-                                            <select name="districtAdd" class="form-control formControl">
-                                                <option value="">เลือกแขวง/ตำบล</option>
-                                                <option>คลองจั่น</option>
-                                                <option>ลาดพร้าว</option>
-                                                <option>บึงกุ่ม</option>
-                                                <option>ประชาชื่น</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <label>เขต/อำเภอ</label>
-                                            <select name="county" class="form-control formControl">
-                                                <option value="">เลือกเขต/อำเภอ</option>
-                                                <option>บางกะปิ</option>
-                                                <option>วังทองหลาง</option>
-                                                <option>รามคำแหง</option>
-                                                <option>ลาดพร้าว</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <label>รหัสไปรษณีย์</label>
-                                            <input type="text" class="form-control formControl" name="postalcode"
-                                                placeholder="รหัสไปรษณีย์">
-                                        </div>
-
-                                        <div>
-                                            <label>จังหวัด</label>
-                                            <select name="provinceAdd" class="form-control formControl">
-                                                <option value="">เลือกจังหวัด</option>
-                                                <option>กรุงเทพมหานคร</option>
-                                                <option>อยุธยา</option>
-                                                <option>สมุทรปราการ</option>
-                                                <option>น่าน</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                          <div
+                            id="applicantUser"
+                            class="collapse"
+                            aria-labelledby="headApplicantUser"
+                            data-parent="#applicant"
+                          >
+                            <div
+                              class="
+                                card-body
+                                clWhitetGray
+                                borderRadiusStyle
+                                mb-2
+                                text-center
+                              "
+                            >
+                              <label class="pointer text-left mb-2"
+                                ><input type="checkbox" /> รับสมัครทางอีเมล์
+                                <span class="textRed"
+                                  >(กรุณาทำเครื่องหมาย
+                                  หากต้องการรับใบสมัครทางอีเมล์)</span
+                                >
+                              </label>
+                              <div class="fieldMail">
+                                <div class="gridMail mb-3">
+                                  <input
+                                    type="text"
+                                    class="form-control formControl"
+                                    name="emailUser"
+                                    placeholder="ระบุอีเมล์"
+                                  />
+                                  <label class="showDisplay pointer"
+                                    ><input type="checkbox" />
+                                    แสดงหน้าเว็บ</label
+                                  >
+                                  <button
+                                    class="removeMail"
+                                    style="display: none"
+                                    type="button"
+                                  >
+                                    <i class="fas fa-trash-alt"></i> ลบ
+                                  </button>
                                 </div>
+                              </div>
+                              <button class="addMail" type="button">
+                                <i class="fas fa-plus-circle"></i> เพิ่มอีเมล
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <label class="pointer"
+                            ><input
+                              type="checkbox"
+                              class="dummy"
+                              name="jobbkk"
+                            />
+                            รับสมัครผ่านทางไปรษณีย์ และสมัครด้วยตนเอง</label
+                          >
+                        </li>
+                      </ul>
+                      <p class="textRed fontSubText" id="jobbkk_error"></p>
+                    </div>
+                  </section>
+                </article>
+              </section>
+              <!-- end ขั้นตอนที่ 10 : สนใจสมัครงานตำแหน่งนี้กรุณาติดต่อ -->
 
-                                <div class="text-center">
-                                    <button class="addAddress"><i class="fas fa-plus-circle"></i>
-                                        เพิ่มที่อยู่</button>
-                                </div>
+              <div class="lineDash"></div>
 
-                                <!-- <div id="addressUser" class="collapse" aria-labelledby="headAddressUser"
+              <!-- ขั้นตอนที่ 11 : ข้อมูลการติดต่อบริษัท (ใช้ที่อยู่เดียวกับ Company Profile) -->
+              <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 11 :</span>
+                  <span class="font-weight-bold"> ข้อมูลการติดต่อบริษัท</span>
+                </p>
+
+                <article>
+                  <label class="pointer mb-3">
+                    <div id="headAddressUser">
+                      <input type="checkbox" /> ใช้ที่อยู่เดียวกับ
+                      <span class="textRed">Company Profile</span>
+                    </div>
+                  </label>
+
+                  <div class="fieldAddress">
+                    <div class="gridAddress">
+                      <div>
+                        <label>ที่อยู่</label>
+                        <input
+                          type="text"
+                          class="form-control formControl"
+                          name="address"
+                          placeholder="ที่อยู่"
+                        />
+                      </div>
+
+                      <div>
+                        <label>แขวง/ตำบล</label>
+                        <select
+                          name="districtAdd"
+                          class="form-control formControl"
+                        >
+                          <option value="">เลือกแขวง/ตำบล</option>
+                          <option>คลองจั่น</option>
+                          <option>ลาดพร้าว</option>
+                          <option>บึงกุ่ม</option>
+                          <option>ประชาชื่น</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label>เขต/อำเภอ</label>
+                        <select name="county" class="form-control formControl">
+                          <option value="">เลือกเขต/อำเภอ</option>
+                          <option>บางกะปิ</option>
+                          <option>วังทองหลาง</option>
+                          <option>รามคำแหง</option>
+                          <option>ลาดพร้าว</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label>รหัสไปรษณีย์</label>
+                        <input
+                          type="text"
+                          class="form-control formControl"
+                          name="postalcode"
+                          placeholder="รหัสไปรษณีย์"
+                        />
+                      </div>
+
+                      <div>
+                        <label>จังหวัด</label>
+                        <select
+                          name="provinceAdd"
+                          class="form-control formControl"
+                        >
+                          <option value="">เลือกจังหวัด</option>
+                          <option>กรุงเทพมหานคร</option>
+                          <option>อยุธยา</option>
+                          <option>สมุทรปราการ</option>
+                          <option>น่าน</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div id="addressUser" class="collapse" aria-labelledby="headAddressUser"
                                         data-parent="#address">
                                         <div class="card-body clWhitetGray borderRadiusStyle">
                                             
                                         </div>
                                     </div> -->
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 11 : ข้อมูลการติดต่อบริษัท (ใช้ที่อยู่เดียวกับ Company Profile) -->
-
-                        <div class="lineDash"></div>
-
-                        <!-- ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
-                        <section>
-                            <p class="mb-3 fontSubHead"><span class="textRed font-weight-bold">ขั้นตอนที่ 12 :</span>
-                                <span class="font-weight-bold"> เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ</span></p>
-
-                            <article class="gridDay">
-                                <div>
-                                    <label class="font-weight-bold">วันที่เปิดประกาศ :</label>
-                                    <div class="lineDashUrgent"></div>
-                                    <section class="gridDays">
-                                        <div>
-                                            <p>วัน</p>
-                                            <select name="day" class="form-control formControl selectDis">
-                                                <option value="">เลือกวัน</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <p>เดือน</p>
-                                            <select name="month" class="form-control formControl selectDis">
-                                                <option value="">เลือกเดือน</option>
-                                                <option>มกราคม</option>
-                                                <option>กุมภาพันธ์</option>
-                                                <option>มีนาคม</option>
-                                                <option>เมษายน</option>
-                                                <option>พฤษภาคม</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <p>ปี</p>
-                                            <select name="year" class="form-control formControl selectDis">
-                                                <option value="">เลือกปี</option>
-                                                <option>2019</option>
-                                                <option>2020</option>
-                                                <option>2021</option>
-                                                <option>2022</option>
-                                                <option>2023</option>
-                                            </select>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <div>
-                                    <label class="font-weight-bold">วันที่ปิดประกาศ :</label>
-                                    <div class="lineDashUrgent"></div>
-                                    <section class="gridDays">
-                                        <div>
-                                            <p>วัน</p>
-                                            <select name="day1" class="form-control formControl selectDis">
-                                                <option value="">เลือกวัน</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <p>เดือน</p>
-                                            <select name="month1" class="form-control formControl selectDis">
-                                                <option value="">เลือกเดือน</option>
-                                                <option>มกราคม</option>
-                                                <option>กุมภาพันธ์</option>
-                                                <option>มีนาคม</option>
-                                                <option>เมษายน</option>
-                                                <option>พฤษภาคม</option>
-                                            </select>
-                                        </div>
-
-                                        <div>
-                                            <p>ปี</p>
-                                            <select name="year1" class="form-control formControl selectDis">
-                                                <option value="">เลือกปี</option>
-                                                <option>2019</option>
-                                                <option>2020</option>
-                                                <option>2021</option>
-                                                <option>2022</option>
-                                                <option>2023</option>
-                                            </select>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <div>
-                                    <label class="font-weight-bold">ประกาศไม่มีกำหนดปิด :</label>
-                                    <div class="lineDashUrgent"></div>
-                                    <label class="mTop">
-                                        ประกาศไม่มีกำหนดปิด
-                                        <input type="checkbox" id="selectDisable" onclick="toggleSelect()"> 
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </article>
-                        </section>
-                        <!-- end ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
-
-                        <div class="lineDash"></div>
-
-                        <div class="flexConfirm mb-5">
-                            <button type="submit" class="mr-3" id="confirm">ตรวจสอบข้อมูลเพื่อประกาศงาน</button>
-                            <button type="reset" class="cancel">ยกเลิก</button>
-                        </div>
-
-                        <div class="one">
-
-                        </div>
-                    </form>
                 </article>
-                <!-- end ประกาศงานด่วน -->
-            </div>
-        </article>
+              </section>
+              <!-- end ขั้นตอนที่ 11 : ข้อมูลการติดต่อบริษัท (ใช้ที่อยู่เดียวกับ Company Profile) -->
 
-        <!-- footer -->
-        <footer class="calC footerJobbkk">
-            <!-- assets/components/footer.js -->
-        </footer>
-        <!-- end footer -->
+              <div class="lineDash"></div>
+
+              <!-- ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
+              <!-- <section>
+                <p class="mb-3 fontSubHead">
+                  <span class="textRed font-weight-bold">ขั้นตอนที่ 12 :</span>
+                  <span class="font-weight-bold">
+                    เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ</span
+                  >
+                </p>
+
+                <article class="gridDay">
+                  <div>
+                    <label class="font-weight-bold">วันที่เปิดประกาศ :</label>
+                    <div class="lineDashUrgent"></div>
+                    <section class="gridDays">
+                      <div>
+                        <p>วัน</p>
+                        <select
+                          name="day"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกวัน</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <p>เดือน</p>
+                        <select
+                          name="month"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกเดือน</option>
+                          <option>มกราคม</option>
+                          <option>กุมภาพันธ์</option>
+                          <option>มีนาคม</option>
+                          <option>เมษายน</option>
+                          <option>พฤษภาคม</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <p>ปี</p>
+                        <select
+                          name="year"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกปี</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div>
+                    <label class="font-weight-bold">วันที่ปิดประกาศ :</label>
+                    <div class="lineDashUrgent"></div>
+                    <section class="gridDays">
+                      <div>
+                        <p>วัน</p>
+                        <select
+                          name="day1"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกวัน</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <p>เดือน</p>
+                        <select
+                          name="month1"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกเดือน</option>
+                          <option>มกราคม</option>
+                          <option>กุมภาพันธ์</option>
+                          <option>มีนาคม</option>
+                          <option>เมษายน</option>
+                          <option>พฤษภาคม</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <p>ปี</p>
+                        <select
+                          name="year1"
+                          class="form-control formControl selectDis"
+                        >
+                          <option value="">เลือกปี</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div>
+                    <label class="font-weight-bold"
+                      >ประกาศไม่มีกำหนดปิด :</label
+                    >
+                    <div class="lineDashUrgent"></div>
+                    <label class="mTop">
+                      ประกาศไม่มีกำหนดปิด
+                      <input
+                        type="checkbox"
+                        id="selectDisable"
+                        onclick="toggleSelect()"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </article>
+              </section> -->
+              <!-- end ขั้นตอนที่ 12 : เลือกวันที่เปิดประกาศ และวันที่ปิดประกาศ -->
+
+              <!-- <div class="lineDash"></div> -->
+
+              <div class="flexConfirm mb-5">
+                <button type="submit" class="confirm" id="confirm">
+                  ตรวจสอบข้อมูลเพื่อประกาศงาน
+                </button>
+                <button type="reset" class="cancel" id="cancel">ยกเลิก</button>
+              </div>
+            </form>
+          </article>
+          <!-- end ประกาศงานด่วน -->
+        </div>
+      </article>
+
+      <!-- footer -->
+      <footer class="calC footerJobbkk">
+        <!-- assets/components/footer.js -->
+      </footer>
+      <!-- end footer -->
     </section>
 
     <!--backtotop-->
     <a href="javascript:void(0)" class="cd-top">Top</a>
-</body>
+    <div id="policy"></div>
 
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/js/jquery.validate.min.js"></script>
-<script src="../assets/js/additional-methods.min.js"></script>
-<script src="../assets/js/slide-menu.js"></script>
-<script src="../assets/js/backToTop.js"></script>
-<script src="../assets/js/jquery.dotdotdot.min.js"></script>
-<script src="../assets/js/sweetalert2.all.min.js"></script>
-<script src="../assets/js/select2.min.js"></script>
+    <script>
+      const work_position = document.querySelector("#work_position"),
+        alert_position = document.querySelector(".alert_position"),
+        counter = document.querySelector("#counter");
 
-<script src="../assets/components/topbar.js"></script>
-<script src="../assets/components/topBarBusiness.js"></script>
-<script src="../assets/components/footer.js"></script>
+      work_position.addEventListener("click", () => {
+        const work = work_position.closest(".gridStep2");
+        work.querySelector(".alert_position").classList.remove("hidden");
+      });
 
-<script src="js/premiumJobAnnouncement.js"></script>
+      work_position.addEventListener("input", (e) => {
+        const max = e.target.getAttribute("maxlength");
+        const current = e.target.value.length;
+        counter.innerHTML = `${current}/${max}`;
+      });
 
+      document.onclick = (e) => {
+        if (e.target.id !== "work_position") {
+          alert_position.classList.add("hidden");
+        }
+      };
+    </script>
+  </body>
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/jquery.validate.min.js"></script>
+  <script src="../assets/js/additional-methods.min.js"></script>
+  <script src="../assets/js/slide-menu.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/jquery.dotdotdot.min.js"></script>
+  <script src="../assets/js/sweetalert2.all.min.js"></script>
+  <script src="../assets/js/select2.min.js"></script>
+
+  <script src="../assets/components/pathActive.js"></script>
+  <script src="../assets/components/topBarBusiness.js"></script>
+  <script src="../assets/components/footer.js"></script>
+  <script src="../assets/components/cookiePolicy.js"></script>
+
+  <script src="js/premiumJobAnnouncement.js"></script>
+  <script src="js/modalAnnouncement.js"></script>
 </html>

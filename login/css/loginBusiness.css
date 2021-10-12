@@ -1,17 +1,24 @@
-.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; position: relative; top: 30px; max-width: 850px; margin: 0 auto;
+.bodyCenter{ display: flex; flex-direction: column; justify-content: space-between; height: 100vh;}
+.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; max-width: 850px; margin: 30px auto 0;
     width: 100%; grid-gap: 15px;}
+
+@supports (gap:30px){
+    .bodyCenter{ gap: 30px;}
+}
+    
+@supports not(gap:30px){
+    .bodyCenter{ grid-gap: 30px;}
+}
 
 @media (max-width:991px){
     .bgLogin{ grid-template-columns: 1fr;}
 }
 
 /* left */
-.loginLeft{ display: flex; flex-direction: column; align-items: center; padding: 25px 15px; background: var(--clWhite); 
+.loginLeft{ display: flex; flex-direction: column; justify-content: space-between; align-items: center; 
+    padding: 25px 15px; background: var(--clWhite); 
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px;}
 .flexBody{ display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;}
-
-.alertText{ background: var(--clWhite); border: 1px solid var(--clRed); border-radius: 50px; width: 100%;}
-.alertText p{ color: var(--clRed);}
 
 .flexForm{ display: flex; width: 100%;}
 .form-control-feed{ position: absolute; top: 10px; left: 10px;}
@@ -20,21 +27,34 @@
 
 .enterBack{ display: flex; align-items: center; justify-content: center; width: 100%; gap: 15px;}
 .enterBack button{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
-.enterBack a{ display: inline-block; background: var(--clWhite); border: 1px solid var(--clBlackGray); border-radius: 50px; 
-    color: var(--clBlackGray); padding: 5px 20px; text-decoration: none;}
+.enterBack a{ display: inline-block; background: var(--clWhite); border: 1px solid var(--clRed); border-radius: 50px; 
+    color: var(--clRed); padding: 5px 20px; text-decoration: none;}
 
 .enterBack button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
 .enterBack a:hover{ background: var(--clRedHover); color: var(--clWhite); border: 1px solid var(--clRedHover);}
 
-.forget{ display: flex; align-items: center; justify-content: center; width: 100%; gap: 15px;}
+.home a{ color: var(--clBlackGray);}
+.home a:hover{ text-decoration: underline !important;}
+
+@media (max-width: 991px){
+    .home{ margin-top: 15px;}
+}
+
+.forget{ display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 15px;}
 .forget a.clickRegis{ color: var(--clRed);}
 .forget a:hover{ text-decoration: underline !important;}
 
 /* right */
 .loginRight{ display: flex; flex-direction: column; align-items: center; position: relative; padding: 25px 15px;}
-
-.register a{ display: inline-block; border-radius: 50px; background: var(--clRed); color: var(--clWhite); padding: 10px 20px; text-decoration: none;}
-.register a:hover{ background: var(--clRedHover);}
-
+.searchFour{ max-width: 76.8rem; width: 100%;}
 .boxFour{ display: flex; flex-direction: column; gap: 15px;}
 .flexFour{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.flexFour > figure{ flex-basis: 4.2rem;}
+.flexFour > div{ flex-basis: 33rem;}
+
+@media (max-width: 991px){
+    .flexFour > div{ flex-basis: 60rem;}
+}
+
+.owner{ width: 100%; display: flex; align-items: center; justify-content: center;}
+.owner img{ max-width: 30rem;}

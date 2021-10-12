@@ -1,0 +1,82 @@
+.progressScore {
+  width: 100%;
+  height: 20px;
+}
+.progressGreen {
+  background: var(--clGreen);
+  font-size: var(--fontText);
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.icon.no_read,
+.icon.interview,
+.icon.wait_interview,
+.icon.swap,
+.icon.save {
+  background: var(--clGray);
+}
+.icon.interview button,
+.icon.wait_interview button,
+.icon.swap button,
+.icon.save button {
+  width: 3rem;
+  height: 3rem;
+  background: var(--clGray);
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon.interview,
+.icon.wait_interview,
+.icon.swap button,
+.icon.save button {
+  margin: 0 auto;
+}
+.icon.read {
+  background: var(--clGreen);
+  color: var(--clWhite);
+}
+.icon.confirm_mobile,
+.icon.confirm_email,
+.icon.confirm_eng {
+  background: var(--clGreen);
+  color: var(--clWhite);
+}
+.icon_order {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.grid_area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.grid_icon {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3rem 1fr;
+  grid-gap: 1.5rem;
+}
+.border_alert {
+  border: 0.1rem dashed var(--clGray);
+  border-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .icon.interview,
+  .icon.wait_interview {
+    margin: 0;
+  }
+}

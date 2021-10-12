@@ -1,0 +1,107 @@
+#policy .policy {
+  background: #878787;
+  width: 100%;
+  color: var(--clWhite);
+  padding: 1rem 0;
+}
+#policy .policy ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+#policy .policy ul li {
+  border-right: 0.1rem solid var(--clWhite);
+  padding-right: 1.5rem;
+}
+#policy .policy ul li:last-child {
+  border-right: 0;
+}
+#policy .policy ul li a {
+  color: var(--clWhite);
+}
+#policy .policy ul li a:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 991px) {
+  #policy .policy ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #policy .policy ul li:first-child {
+    flex-basis: 100%;
+    padding-right: 0;
+    text-align: center;
+    border-right: 0;
+  }
+}
+
+#policy .dbd {
+  background: var(--clWhitetGray);
+  width: 100%;
+  color: var(--clBlackGray);
+  padding: 1rem 0;
+}
+#policy .dbd img {
+  max-width: 5rem;
+}
+#policy .policy_fix {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 29;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+#policy .policy_fix.bottom {
+  display: none;
+}
+#policy .policy_fix section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#policy .policy_fix section p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#policy .policy_fix section a {
+  text-decoration: underline !important;
+}
+#policy .policy_fix h6,
+#policy .policy_fix p {
+  color: var(--clWhite);
+}
+#policy .policy_fix .confirm_close {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#policy .policy_fix button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+#policy .policy_fix button:hover {
+  background: var(--clRedHover);
+}
+#policy .policy_fix button:last-child {
+  background: var(--clWhite);
+  color: var(--clBlackGray);
+}
+#policy .policy_fix button:last-child:hover {
+  background: var(--clGray);
+}

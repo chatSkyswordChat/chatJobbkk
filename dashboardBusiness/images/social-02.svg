@@ -10,8 +10,8 @@
 	.st4{fill:#65A2D9;}
 	.st5{fill:#3A7CA5;}
 	.st6{fill:#D1D1D1;}
-	.st7{fill:#D22215;}
-	.st8{fill:#A81411;}
+	.st7{fill:#B7130F;}
+	.st8{fill:#870A0A;}
 	.st9{fill:#6C27B3;}
 	.st10{fill:#501A96;}
 	.st11{fill:#4376B1;}
@@ -19,6 +19,11 @@
 	.st13{fill:#6DC02D;}
 	.st14{fill:#559B18;}
 	.st15{fill:#6FC32E;}
+	.st16{fill:#9B8579;}
+	.st17{clip-path:url(#SVGID_2_);fill:#897164;}
+	.st18{fill:none;}
+	.st19{fill:#DC4E41;}
+	.st20{fill:#B72C25;}
 </style>
 <g>
 	<circle class="st4" cx="50" cy="50" r="50"/>

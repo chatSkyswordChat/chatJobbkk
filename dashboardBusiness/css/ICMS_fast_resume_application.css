@@ -1,0 +1,68 @@
+.search_icms {
+  display: flex;
+  align-items: center;
+}
+.search_icms input {
+  border-radius: 5rem 0 0 5rem;
+}
+.search_icms button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 0 5rem 5rem 0;
+  border: 0.1rem solid var(--clRed);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+.search_icms button:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+.list_all {
+  background: var(--clWhitetGray);
+  border-top: 0.1rem solid var(--clGray);
+  border-bottom: 0.1rem solid var(--clGray);
+}
+
+.thead tr th {
+  vertical-align: middle;
+  text-align: center;
+  background: var(--clWhitetGray);
+}
+.thead tr th:first-child {
+  width: 35rem;
+}
+.tbody tr td {
+  vertical-align: middle;
+}
+
+.tbody tr td:not(td:first-child) {
+  text-align: center;
+}
+.tbody tr td a:hover {
+  text-decoration: underline !important;
+}
+.tbody tr td:last-child a {
+  background: var(--clWhite);
+  border: 0.1rem solid var(--clSky);
+  color: var(--clSky);
+  border-radius: 5rem;
+  text-decoration: none !important;
+  height: 3.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tbody tr td:last-child a:hover {
+  background: var(--clSkyHover);
+  border: 0.1rem solid var(--clSkyHover);
+  color: var(--clWhite);
+}
+@media (max-width: 1200px) {
+  .tbody tr td:not(td:first-child) {
+    text-align: inherit;
+  }
+}

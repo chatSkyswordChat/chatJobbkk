@@ -1,0 +1,5 @@
+#cookie_policy ul li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  grid-gap: 1.5rem;
+}

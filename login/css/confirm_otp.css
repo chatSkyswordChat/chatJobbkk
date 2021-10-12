@@ -1,0 +1,41 @@
+.bodyCenter{ display: flex; flex-direction: column; justify-content: space-between; height: 100vh;}
+.confirm_otp{ display: flex; flex-direction: column; align-items: center; justify-content: center; max-width: 480px; margin: 0 auto;
+    padding: 25px 15px; background: var(--clWhite); box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px;}
+
+.flexGroup{ width: 100%;}
+.form-control-feed{ position: absolute; top: 10px; left: 10px;}
+.form-control-back{ padding-left: 30px; border-radius: 50px;}
+.hasJobbkk{ width: 100%; position: relative;}
+
+.code{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
+.code img{ max-width: 100%;}
+.code button{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); width: 40px; height: 40px; border-radius: 50%;}
+.code button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+
+.otp{ display: flex; align-items: center; justify-content: center; flex-wrap: wrap;}
+.otp .btn_red{ background: var(--clRed); padding: 5px 30px; border-radius: 50px; color: var(--clWhite); border: 1px solid var(--clRed);}
+.otp .btn_white{ background: var(--clWhite); padding: 5px 15px; border-radius: 50px; color: var(--clBlackGray); 
+    border: 1px solid var(--clBlackGray);}
+.otp .btn_red:hover{ background: var(--clRedHover);}
+.otp .btn_white:hover{ background: var(--clBlackGray); color: var(--clWhite); border: 1px solid var(--clBlackGray);}
+
+@supports (gap:15px){
+    .send{ gap: 15px;}
+}
+
+@supports (gap:15px){
+    .send{ grid-gap: 15px;}
+}
+
+.otp{ display: flex; align-items: center; justify-content: center; flex-direction: column;}
+.fromControl{ border-radius: 5rem; padding: 0.5rem 1.5rem; max-width: 32rem; width: 100%;}
+
+.home a{ color: var(--clBlackGray);}
+.home a:hover{ text-decoration: underline !important;}
+
+.return{ display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 1.5rem;}
+.return button{ background: none; border: none; outline: none; color: var(--clSky);}
+.return button:hover{ text-decoration: underline;}
+
+.return button.disbled{ background: none; border: none; outline: none; color: var(--clGray);}
+.return button.disbled:hover{ text-decoration: none;}

@@ -1,0 +1,53 @@
+#contact {
+  max-width: 576px;
+  width: 100%;
+}
+.form {
+  box-shadow: 0.2rem 0.2rem 1.5rem rgba(0, 0, 0, 0.4);
+}
+#form input.error,
+#form textarea.error,
+#form select.error {
+  border-color: var(--clRed);
+  box-shadow: 0 0 0 0.2rem rgba(212, 1, 1, 0.2);
+}
+#form label {
+  cursor: inherit;
+}
+#form small {
+  display: none;
+}
+.code section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.code section img {
+  max-width: 15rem;
+}
+.code section button {
+  border: 0;
+  background: transparent;
+  color: var(--clRed);
+}
+.code section button:hover {
+  transform: scale(1.5);
+}
+#send button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+}
+#send button:hover {
+  background: var(--clRedHover);
+}
+.map{
+    border: .1rem solid var(--clGray);
+    cursor: pointer;
+}
+.map.open{
+    width: calc( 50vw + 50%);
+    transform: translateX(calc(-50vw + 50%));
+}

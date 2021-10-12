@@ -1,0 +1,269 @@
+.gridResumeUrgentList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 15px;
+}
+.flexPicResume {
+  display: flex;
+  gap: 15px;
+}
+.flexPicResume figure {
+  border: 1px solid var(--clGray);
+  border-radius: 50%;
+  max-width: 80px;
+  height: 80px;
+  width: 100%;
+}
+.flexPicResume img {
+  max-width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: top;
+}
+
+.expWork {
+  display: flex;
+  gap: 0 15px;
+  flex-wrap: wrap;
+}
+.expWork li {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-gap: 5px;
+}
+
+.gridArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.flexColumns {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumeUrgent {
+  transition: 0.5s ease-in-out;
+  background: var(--clWhite);
+}
+.resumeUrgent a {
+  color: var(--clBlackGray);
+}
+.resumeUrgent:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+}
+
+@media (max-width: 576px) {
+  .gridArea {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .flexColumns {
+    display: flex;
+    flex-direction: inherit;
+    gap: 0 15px;
+  }
+}
+
+.gridResumeColumn {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-gap: 15px;
+}
+
+.flexAlign {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  flex: 0 0 13rem;
+  max-width: 13rem;
+  text-align: center;
+}
+.flexPicResume.between {
+  justify-content: space-between;
+  gap: 0 30px;
+}
+.growFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-basis: 15rem;
+  max-width: 15rem;
+}
+.growFlex .save button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: none;
+  border-radius: 5rem;
+  padding: 0 1.5rem;
+  min-height: calc(3.2rem + 2px);
+}
+.growFlex .save button:hover {
+  background: var(--clRedHover);
+}
+.growFlex .save button.active {
+  background: var(--clSky);
+}
+
+.progress {
+  font-size: var(--fontMark);
+  height: 1.5rem;
+}
+
+.flexTwo {
+  display: grid;
+  grid-template-columns: 1fr 15rem;
+  grid-gap: 1.5rem;
+}
+
+/* .flexTwo .ellipsisPosition {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+} */
+
+@media (max-width: 768px) {
+  .flexTwo {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .growFlex {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .flexAlign {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .flexPicResume.between {
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+  }
+  .growFlex {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .growFlex .save {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .bannerUrgent {
+    display: none;
+  }
+}
+
+.careerHit {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.careerHit a {
+  display: block;
+  padding: 5px;
+}
+.careerHit a:hover {
+  background: var(--clGray);
+  margin-left: 5px;
+  color: var(--clBlackGray);
+}
+
+@media (max-width: 991px) {
+  .gridResumeColumn {
+    grid-template-columns: 1fr;
+  }
+  .tagHit,
+  .careerHit {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexTwo {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.gridHotCareer {
+  display: grid;
+  grid-template-columns: repeat(19, 12rem);
+  grid-gap: 1.5rem;
+  overflow-x: scroll;
+}
+.gridHotCareer li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem 0;
+}
+.gridHotCareer::-webkit-scrollbar {
+  height: 10px;
+} /* width */
+.gridHotCareer::-webkit-scrollbar-track {
+  background: #fff;
+} /* Track */
+.gridHotCareer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+} /* Handle */
+.gridHotCareer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} /* Handle on hover */
+
+.slideScroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.slideScroll button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideScroll button:hover {
+  background: var(--clRedHover);
+}
+
+.statusBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.5rem;
+}
+.statusBtn .status {
+  border: 0;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statusBtn .status.success {
+  background: var(--clGreen);
+  color: var(--clWhite);
+}
+.statusBtn .status.disabled {
+  background: var(--clGray);
+  color: var(--clWhite);
+}

@@ -1,0 +1,279 @@
+.pr-7 {
+  padding-right: 3.5rem;
+}
+.pl-6 {
+  padding-left: 3rem;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+#gridFilter {
+  /* display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 0;
+}
+#gridFilter .dropdownColumns-3 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  padding-right: 1.5rem;
+}
+#gridFilter .dropdownColumns-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 1.5rem;
+}
+#gridFilter .formControlFilter {
+  border-radius: 5rem;
+}
+#gridFilter .dropdownFilter:nth-child(3),
+#gridFilter .dropdownFilter:nth-child(6),
+#gridFilter .dropdownFilter:nth-child(9),
+#gridFilter .dropdownFilter:nth-child(12),
+#gridFilter .dropdownFilter:nth-child(15) {
+  padding-right: 0;
+}
+/* #gridFilter .selectFilter {
+  position: relative;
+  display: block;
+}
+#gridFilter .selectFilter:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: var(--clBlackGray);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+} */
+
+#gridFilter .dropdownButton button:hover {
+  background: var(--clGray);
+}
+
+/* พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา */
+.inputSearch {
+  position: relative;
+}
+.iconSearch {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+/* end พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา */
+
+/* เงินเดือนขั้นต่ำ ถึง เงินเดือนสูงสุด */
+.dropdownGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dropdownLeft {
+  border-radius: 5rem 0 0 5rem;
+}
+.dropdownRight {
+  border-radius: 0 5rem 5rem 0;
+}
+/* end เงินเดือนขั้นต่ำ ถึง เงินเดือนสูงสุด */
+
+.buttonFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropDownScroll {
+  min-width: 450px;
+  height: 300px;
+  overflow-y: auto;
+}
+.dropDownScroll section {
+  border-bottom: 1px solid var(--clGray);
+}
+
+.dropdownNative {
+  min-width: 100%;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.dropdownWidth,
+.dropdownSelect {
+  min-width: 100%;
+}
+
+.dropdownAge {
+  min-width: 100%;
+  height: 30rem;
+  overflow-y: auto;
+}
+
+.dropDownScroll::-webkit-scrollbar,
+.dropdownNative::-webkit-scrollbar,
+.dropdownAge::-webkit-scrollbar {
+  width: 10px;
+} /* width */
+.dropDownScroll::-webkit-scrollbar-track,
+.dropdownNative::-webkit-scrollbar-track,
+.dropdownAge::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} /* Track */
+.dropDownScroll::-webkit-scrollbar-thumb,
+.dropdownNative::-webkit-scrollbar-thumb,
+.dropdownAge::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+} /* Handle */
+.dropDownScroll::-webkit-scrollbar-thumb:hover,
+.dropdownNative::-webkit-scrollbar-thumb:hover,
+.dropdownAge::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} /* Handle on hover */
+
+.flexPositionPre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--clBlackGray);
+  border-radius: 0;
+}
+.flexPositionPre:hover,
+.flexPositionPre:focus {
+  text-decoration: none;
+  color: var(--clBlackGray);
+  background: var(--clGray);
+}
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.card-body {
+  background: var(--clLightGray);
+}
+
+.allWorkList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.allWorkList label,
+.workList label {
+  cursor: pointer;
+}
+.allWorkList button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  border: 1px solid var(--clRed);
+}
+.allWorkList button:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
+
+.btnSearchReset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+.btnSearchReset button {
+  min-height: calc(3.2rem + 2px);
+  padding: 0 1.5rem;
+  border-radius: 5rem;
+  width: 100%;
+}
+.btnSearchReset button.search {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+.btnSearchReset button.reset {
+  background: var(--clWhite);
+  color: var(--clBlackGray);
+  border: 0.1rem solid var(--clBlackGray);
+}
+.btnSearchReset button.search:hover {
+  background: var(--clRedHover);
+  border: 0.1rem solid var(--clRedHover);
+}
+.btnSearchReset button.reset:hover {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clBlackGray);
+}
+
+@media (max-width: 1200px) {
+  #gridFilter .dropdownColumns-3,
+  #gridFilter .dropdownColumns-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  #gridFilter .dropdownFilter:nth-child(even) {
+    padding-right: 0;
+  }
+  #gridFilter .dropdownFilter:nth-child(odd) {
+    padding-right: 1.5rem;
+  }
+  #gridFilter .dropdownColumns {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0 !important;
+  }
+  .btnSearchReset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnSearchReset > div {
+    flex-basis: 20rem;
+  }
+}
+
+@media (max-width: 991px) {
+  #gridFilter .dropdownColumns-3,
+  #gridFilter .dropdownColumns-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #gridFilter .dropdownFilter {
+    padding-right: 0 !important;
+  }
+  .dropDownScroll {
+    min-width: 100%;
+  }
+  .btnSearchReset {
+    display: grid;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdownGrid {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem 0;
+  }
+  .dropdownLeft {
+    border-radius: 5rem;
+  }
+  .dropdownRight {
+    border-radius: 5rem;
+  }
+  .btnSearchReset {
+    grid-template-columns: 1fr;
+  }
+}

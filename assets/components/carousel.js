@@ -6,17 +6,15 @@ carousel += `<li data-target="#carouselExampleIndicators" data-slide-to="1"></li
 carousel += `<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>`;
 carousel += `</ol>`;
 
-let slide = (location.href.split('/').length == 5) ? '' : '../'
-
 carousel += `<div class="carousel-inner">`;
 carousel += `<div class="carousel-item active">`;
-carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${slide}assets/images/hero1.gif" class="d-block w-100" alt="..."></a>`;
-carousel += `</div>carousel`;
-carousel += `<div class="carousel-item">`;
-carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${slide}assets/images/hero2.gif" class="d-block w-100" alt="..."></a>`;
+carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${path}assets/images/hero1.gif" class="d-block w-100" alt="..."></a>`;
 carousel += `</div>`;
 carousel += `<div class="carousel-item">`;
-carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${slide}assets/images/hero3.gif" class="d-block w-100" alt="..."></a>`;
+carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${path}assets/images/hero2.gif" class="d-block w-100" alt="..."></a>`;
+carousel += `</div>`;
+carousel += `<div class="carousel-item">`;
+carousel += `<a href="javascript:void(0)" onclick="link()"><img src="${path}assets/images/hero3.gif" class="d-block w-100" alt="..."></a>`;
 carousel += `</div>`;
 carousel += `</div>`;
 carousel += `<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">`;

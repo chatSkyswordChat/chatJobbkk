@@ -1,0 +1,42 @@
+.container_maxwidth {
+  max-width: 768px;
+}
+.create_resume {
+  background: var(--clWhite);
+  border-radius: 1rem;
+  border: 1px solid var(--clGray);
+}
+
+.flex_resume {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.flex_resume > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+.flex_resume > div figure {
+  flex: 1 0 15rem;
+  max-width: 15rem;
+}
+.flex_resume div > div {
+  text-align: left;
+}
+.flex_resume div > div a {
+  display: inline-block;
+}
+.flex_resume div > div a:hover {
+  color: var(--clWhite);
+}
+
+@media (max-width: 576px) {
+  .flex_resume > div {
+    flex-direction: column;
+  }
+  .flex_resume div > div {
+    text-align: center;
+  }
+}

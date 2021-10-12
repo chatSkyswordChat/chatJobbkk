@@ -1,109 +1,633 @@
-.clickUrgent{ background: var(--clRed); border: 1px solid var(--clRed); border-radius: 50px; padding: 5px 10px; color: var(--clWhite);}
-.clickUrgent:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
-
-.gridText{ display: grid; grid-template-columns: 120px 1fr; grid-gap: 15px;}
-.flexAround{ display: flex; grid-gap: 15px; align-items: center; justify-content: center; background: var(--clWhitetGray); padding: 15px;}
-.flexAround a{ background: var(--clRed); color: var(--clWhite); padding: 5px 15px; border-radius: 5px;}
-.flexAround a:hover{ background: var(--clRedHover);}
-
-.gridStep2{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.gridStep2 label{ cursor: inherit; margin-bottom: 5px;}
-
-.gridStep2-1{ display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px;}
-.gridStep3{ display: grid; grid-template-columns: 0.5fr 1fr 0.5fr; grid-gap: 15px;}
-.gridStep4{ display: grid; grid-template-columns: 0.5fr 1fr; grid-gap: 15px;}
-.gridStep4-1{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.gridStep4-2{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
-.gridStep6{ display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; grid-gap: 15px; margin-bottom: 15px;}
-.gridStep6-1{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.gridStep7{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
-.gridStep8{ display: grid; grid-template-columns: 0.5fr 0.5fr 1fr; grid-gap: 15px;}
-.gridStep9{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
-.gridStep10{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px; margin-bottom: 15px;}
-.gridStep10-1{ display: grid; grid-template-columns: 1fr; grid-gap: 15px;}
-
-.formControl{ border-radius: 50px;}
-.formCon{ border-radius: 10px;}
-.grid3{ grid-column: 1/4;}
-.grid2{ grid-column: 1/3;}
-
-.boxStudy{ border-radius: 10px;}
-.gridList{ display: grid; grid-template-columns: 10px 1fr; grid-gap: 15px;}
-
-.select2-container--default .select2-selection--single{ outline: 0;}
-.select2-container--default .select2-selection--single .select2-selection__arrow{ height: 35px; right: 5px;}
-.select2-container--default .select2-selection--single .select2-selection__clear{ font-size: var(--fontHead); top: -3px;}
-.select2-container--default .select2-selection--multiple .select2-selection__clear{ font-size: var(--fontHead); top: -3px;}
-
-@media (max-width:991px){
-    .gridStep2, .gridStep2-1, .gridStep3, .gridStep4, .gridStep4-1, .gridStep4-2, .gridStep6, .gridStep6-1, .gridStep7, 
-    .gridStep8, .gridStep10{ grid-template-columns: 1fr;}
-    .grid2, .grid3{ grid-column: 1/2;}
+label {
+  margin-bottom: 5px;
+}
+.clickUrgent {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: var(--clWhite);
+}
+.clickUrgent:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
 }
 
-.formVaridate .stepOrder{ display: flex; flex-direction: column;}
-a.error, ul.error, input.error, .selection >.error, textarea.error, select.error, input.error:focus, textarea.error:focus, 
-select.error:focus{ box-shadow: 0 0 0 0.1rem rgba(212, 1, 1, 0.5);}
-label{ cursor: inherit;}
-p.error{ color: var(--clRed); font-size: var(--fontSubText); margin-top: 5px; order: 3;}
-label.pointer{ cursor: pointer;}
-
-.gridMail{ display: grid; grid-template-columns: 1fr 0.2fr 0.2fr; align-items: center; grid-gap: 15px;}
-.removeMail{ background: var(--clBlackGray); color: var(--clWhite); border: 1px solid var(--clBlackGray); border-radius: 50px; padding: 5px 10px;
-    display: inline-block;}
-.removeMail:hover{ background: var(--clBlack);}
-.addMail{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 10px; 
-    display: inline-block;}
-.addMail:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
-
-.gridAddress{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px; 
-    border-bottom: 1px dashed var(--clBlackGray); padding-bottom: 15px; margin-bottom: 15px;}
-.removeAddress{ background: var(--clBlackGray); color: var(--clWhite); border: 1px solid var(--clBlackGray); 
-    border-radius: 50px; padding: 5px 10px; display: inline-block; grid-column: 1/3; width: 200px; margin: 0 auto;}
-.removeAddress:hover{ background: var(--clBlack);}
-.addAddress{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); border-radius: 50px; 
-    padding: 5px 10px; display: inline-block;}
-.addAddress:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
-
-@media (max-width:991px){
-    .gridMail{ display: flex; flex-wrap: wrap; border-bottom: 1px dashed var(--clBlackGray); 
-        padding-bottom: 15px; margin-bottom: 15px; grid-gap: inherit;}
-    .gridMail > input{ flex: 1 1 100%; max-width: 100%; margin-bottom: 15px;}
-    .gridMail label{ text-align: left; margin-right: 15px;}
-    .gridAddress{ grid-template-columns: 1fr;}
-    .removeAddress{ grid-column: 1/2; width: 100%;}
+.gridText {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-gap: 15px;
+}
+.flexAround {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  background: var(--clWhitetGray);
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.flexAround button {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  color: var(--clWhite);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.flexAround button:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
 }
 
-.flexConfirm{ display: flex; justify-content: center; align-items: center;}
-.flexConfirm button{ background: var(--clRed); color: var(--clWhite); border: 1px solid var(--clRed); padding: 5px 10px; 
-    border-radius: 50px;}
-.flexConfirm button:last-child{ background: var(--clWhite); color: var(--clBlackGray); border: 1px solid var(--clBlackGray);}
-.flexConfirm button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover); color: var(--clWhite);}
-
-.gridDay{ display: grid; grid-template-columns: 1fr 1fr 0.5fr; grid-gap: 30px;}
-.gridDays{ display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 15px;}
-
-.mTop{ cursor: pointer; margin-top: 45px; padding-left: 35px; user-select: none; position: relative; transition: 0.5s ease-in-out;}
-.checkmark{ position: absolute; top: 0; left: 0; width: 25px; height: 25px; background: var(--clGray); border-radius: 4px;}
-.checkmark::after { content: ""; position: absolute; display: none;}
-.mTop input[type="checkbox"]{ position: absolute; opacity: 0; height: 0; width: 0;}
-.mTop input[type="checkbox"]:checked ~ .checkmark{ background: var(--clRed);}
-.mTop input[type="checkbox"]:checked ~ .checkmark::after{ display: block;}
-.mTop:hover input[type="checkbox"] ~ .checkmark { background: var(--clBlackGray);}
-.mTop .checkmark::after{ left: 8px; top: 5px; width: 8px; height: 13px; border: solid white; border-width: 0 3px 3px 0; transform: rotate(45deg);}
-
-@media (max-width:1199px){
-    .gridDay{ grid-template-columns: 1fr 1fr;}
-    .mTop{ margin-top: 0;}
+.gridStep2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep2 label {
+  cursor: inherit;
 }
 
-@media (max-width:991px){
-    .gridDay{ grid-template-columns: 1fr;}
+.gridStep2-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.gridStep3 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-gap: 15px;
+}
+.gridStep4 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep4-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep4-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+.gridStep6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin-bottom: 15px;
+}
+.gridStep6-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep7 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep8 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-gap: 15px;
+}
+.gridStep9 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+.gridStep10 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+  margin-bottom: 15px;
+}
+.gridStep10-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
 }
 
-@media (max-width:480px){
-    .gridDays{ grid-template-columns: 1fr;}
+.workFormHome {
+  margin-top: 35px;
+}
+.flexExample {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.btnExample {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  border: 1px solid var(--clRed);
+  padding: 5px 20px;
+  display: none;
+}
+.btnExample:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
 }
 
-.swal2-styled.swal2-cancel{ order: 2;}
-.swal2-styled.swal2-confirm{ order: 1;}
+@media (max-width: 991px) {
+  .workFormHome {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexExample {
+    align-items: baseline;
+    flex-direction: column;
+  }
+}
+
+.formControl {
+  border-radius: 50px;
+}
+.formCon {
+  border-radius: 10px;
+}
+.grid4 {
+  grid-column: 1/4;
+}
+.grid3 {
+  grid-column: 1/3;
+}
+.grid2 {
+  grid-column: 1/3;
+}
+
+.boxStudy {
+  border-radius: 10px;
+}
+.gridList {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  grid-gap: 15px;
+}
+
+.select2-container--default .select2-selection--single {
+  outline: 0;
+}
+.select2-container .select2-selection--multiple {
+  min-height: 3.35rem;
+}
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 1.5rem;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  margin-top: -0.2rem;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 35px;
+  right: 5px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__clear {
+  font-size: var(--fontHead);
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: var(--textBlackGray);
+}
+
+@media (max-width: 991px) {
+  .gridStep2,
+  .gridStep2-1,
+  .gridStep3,
+  .gridStep4,
+  .gridStep4-1,
+  .gridStep4-2,
+  .gridStep6,
+  .gridStep6-1,
+  .gridStep7,
+  .gridStep8,
+  .gridStep10 {
+    grid-template-columns: 1fr;
+  }
+  .grid2,
+  .grid3 {
+    grid-column: 1/2;
+  }
+}
+
+.formVaridate .stepOrder {
+  display: flex;
+  flex-direction: column;
+}
+a.error,
+ul.error,
+input.error,
+.selection > .error,
+textarea.error,
+select.error,
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+  box-shadow: 0 0 0 0.1rem rgba(212, 1, 1, 0.5);
+}
+input[type="checkbox"] {
+  box-shadow: none !important;
+}
+label {
+  cursor: inherit;
+}
+p.error {
+  color: var(--clRed);
+  font-size: var(--fontSubText);
+  margin-top: 5px;
+  order: 3;
+}
+label.pointer {
+  cursor: pointer;
+}
+
+.gridMail {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 0.2fr;
+  align-items: center;
+  grid-gap: 15px;
+}
+.removeMail {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.removeMail:hover {
+  background: var(--clBlack);
+}
+.addMail {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.addMail:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
+
+.gridAddress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.removeAddress {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: inline-block;
+  grid-column: 1/3;
+  width: 200px;
+  margin: 0 auto;
+}
+.removeAddress:hover {
+  background: var(--clBlack);
+}
+.addAddress {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.addAddress:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
+
+@media (max-width: 991px) {
+  .gridMail {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed var(--clBlackGray);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    grid-gap: inherit;
+  }
+  .gridMail > input {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .gridMail label {
+    text-align: left;
+    margin-right: 15px;
+  }
+  .gridAddress {
+    grid-template-columns: 1fr;
+  }
+  .removeAddress {
+    grid-column: 1/2;
+    width: 100%;
+  }
+}
+
+.gridSkillEx {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15px 1fr 150px;
+  grid-gap: 15px;
+}
+.flexAddPlus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.btnAddSkill {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 1px solid var(--clRed);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.btnAddSkill:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+}
+.btnRemoveSkill {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.gridResponsibilitiesEx {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15px 1fr 150px;
+  grid-gap: 15px;
+}
+.flexAddPlus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.btnAddResponsibilities {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 1px solid var(--clRed);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+.btnAddResponsibilities:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+}
+.btnRemoveResponsibilities {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .gridSkillEx,
+  .gridResponsibilitiesEx {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15px 1fr;
+    grid-gap: 15px;
+  }
+  .flexAddPlus {
+    grid-column: 1/3;
+    display: inherit;
+  }
+}
+
+.flexConfirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.flexConfirm button {
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: var(--clWhite);
+}
+.flexConfirm .confirm {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+}
+.flexConfirm .cancel {
+  background: var(--clWhite);
+  color: var(--clBlackGray);
+  border: 1px solid var(--clBlackGray);
+}
+.flexConfirm .confirm:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
+.flexConfirm .cancel:hover {
+  background: var(--clBlackGray);
+  border: 1px solid var(--clBlackGray);
+  color: var(--clWhite);
+}
+
+@media (max-width: 480px) {
+  .flexConfirm > * {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+  .flexConfirm button {
+    width: 100%;
+  }
+}
+
+.gridDay {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-gap: 30px;
+}
+.gridDays {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.mTop {
+  cursor: pointer;
+  margin-top: 45px;
+  padding-left: 35px;
+  user-select: none;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--clGray);
+  border-radius: 4px;
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.mTop input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.mTop input[type="checkbox"]:checked ~ .checkmark::after {
+  display: block;
+}
+.mTop:hover input[type="checkbox"] ~ .checkmark {
+  background: var(--clBlackGray);
+}
+.mTop .checkmark::after {
+  left: 8px;
+  top: 5px;
+  width: 8px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1199px) {
+  .gridDay {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mTop {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .gridDay {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridDays {
+    grid-template-columns: 1fr;
+  }
+}
+
+.swal2-styled.swal2-cancel {
+  order: 2;
+}
+.swal2-styled.swal2-confirm {
+  order: 1;
+}
+
+.gridCopy {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  grid-gap: 15px;
+}
+.gridDataList {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  grid-gap: 15px;
+}
+.gridDataList.none {
+  display: none;
+}
+.gridDataList button {
+  background: var(--clRed);
+  border: 1px solid var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 6px 20px;
+  width: 100%;
+}
+.gridDataList button:hover {
+  background: var(--clRedHover);
+  border: 1px solid var(--clRedHover);
+}
+
+@media (max-width: 768px) {
+  .gridDataList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn_lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.25em auto 0;
+}
+.btn_lang button {
+  background: var(--clWhite);
+  border: 0.1rem solid var(--clBlackGray);
+  color: var(--clBlackGray);
+  border-radius: 0.25em;
+  margin: 0.3125em;
+  padding: 0.625em 2em;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 1.0625em;
+}
+.btn_lang button:hover {
+  background: var(--clRedHover);
+  border: 0.1rem solid var(--clRedHover);
+  color: var(--clWhite);
+}
+
+@media (max-width: 380px) {
+  .btn_lang {
+    flex-direction: column;
+  }
+  .btn_lang button {
+    width: 100%;
+  }
+}
+.alert_position {
+  background: var(--clShineGray);
+  border: 0.1rem solid var(--clSky);
+  border-radius: 0.5rem;
+}
+.alert_position.hidden {
+  display: none;
+}
+.alert_position p {
+  color: var(--clSky);
+}
+/* input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+} */

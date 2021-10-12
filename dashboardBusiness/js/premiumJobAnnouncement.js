@@ -1,30 +1,37 @@
 // เพิ่ม email
-var max_fields = 5; //maximum input boxes allowed
-var fieldMail = $(".fieldMail"); //Fields fieldMail
-var addMail = $(".addMail"); //Add button ID
+let max_fields = 5,
+  fieldMail = document.querySelector(".fieldMail"),
+  addMail = document.querySelector(".addMail"),
+  x = 1;
 
-var x = 1; //initlal text box count
-$(addMail).click(function (e) {
-  //on add input button click
-  e.preventDefault();
+addMail.onclick = () => {
   if (x < max_fields) {
-    //max input box allowed
-    x++; //text box increment
-    $(fieldMail).append(`
-                <div class="gridMail mb-3">
-                    <input type="email" class="form-control formControl" name="emailUser" placeholder="ระบุอีเมล์"/>
-                    <label class="showDisplay pointer"><input type="checkbox"/> แสดงหน้าเว็บ</label>
-                    <button class="removeMail"><i class="fas fa-trash-alt"></i> ลบ</button>
-                </div>`); //add input box
+    x++;
+    const copy = `
+      <div class="gridMail mb-3">
+        <input type="email" class="form-control formControl" name="emailUser" placeholder="ระบุอีเมล์"/>
+        <label class="showDisplay pointer"><input type="checkbox"/> แสดงหน้าเว็บ</label>
+        <button class="removeMail" type="button"><i class="fas fa-trash-alt"></i> ลบ</button>
+      </div>`;
+    fieldMail.insertAdjacentHTML("beforeend", copy);
   }
-});
+  if (x > 1) {
+    removeMail = document.querySelectorAll(".removeMail");
+    removeMail[0].style.display = "block";
+  }
+};
 
-$(fieldMail).on("click", ".removeMail", function (e) {
-  //user click on remove text
-  e.preventDefault();
-  $(this).parent("div").remove();
-  x--;
-});
+fieldMail.onclick = (e) => {
+  if (e.target.matches(".removeMail")) {
+    const removeMail = e.target.parentElement;
+    removeMail.remove();
+    x--;
+
+    if (x === 1) {
+      removeMail.querySelectorAll(".removeMail")[0].style.display = "none";
+    }
+  }
+};
 // end เพิ่ม email
 
 // เพิ่มเพิ่มที่อยู่
@@ -98,6 +105,102 @@ $(fieldAddress).on("click", ".removeAddress", function (e) {
 });
 // end เพิ่มที่อยู่
 
+// คุณสมบัติด้านความรู้และความสามารถ
+const maxSkill = 20;
+const fieldSkill = $("#fieldSkill");
+const btnAddSkill = $(".btnAddSkill");
+const btnRemoveSkill = document.getElementsByClassName("btnRemoveSkill");
+
+let sectionSkill = 5;
+$(btnAddSkill).on("click", (e) => {
+  e.preventDefault();
+  if (sectionSkill < maxSkill) {
+    sectionSkill++;
+    $(fieldSkill).append(
+      `<div class="gridSkillEx mb-3">     
+          <p>${sectionSkill}</p>
+          <input type="text" class="form-control formControl dummy1" placeholder="ระบุคุณสมบัติด้านความรู้และความสามารถ" name="skillSkill${sectionSkill}">
+          <div class="flexAddPlus">
+            <button class="btnRemoveSkill"><i class="fas fa-trash-alt"></i> ลบ</button>
+          </div>
+        </div>`
+    );
+  }
+
+  if (sectionSkill > 1) {
+    btnRemoveSkill[0].style.display = "block";
+  }
+});
+
+$(fieldSkill).on("click", ".btnRemoveSkill", function (e) {
+  e.preventDefault();
+  $(this).closest("div.flexAddPlus").parent("div").remove();
+  sectionSkill--;
+  for (let index = 0; index < sectionSkill; index++) {
+    var num = index + 1;
+    document
+      .querySelectorAll(".gridSkillEx")
+      [index].getElementsByTagName("p")[0].innerHTML = index + 1;
+    $(document.getElementsByClassName("gridSkillEx")[index])
+      .find(".dummy1")
+      .attr("name", "skillSkill" + num);
+  }
+  if (sectionSkill == 1) {
+    btnRemoveSkill[0].style.display = "none";
+  }
+});
+// end คุณสมบัติด้านความรู้และความสามารถ
+
+// หน้าที่และความรับผิดชอบ
+const maxResponsibilities = 20;
+const fieldResponsibilities = $("#fieldResponsibilities");
+const btnAddResponsibilities = $(".btnAddResponsibilities");
+const btnRemoveResponsibilities = document.getElementsByClassName(
+  "btnRemoveResponsibilities"
+);
+// const btnRemoveResponsibilities = $('.btnRemoveResponsibilities');
+
+let responsibilities = 5;
+btnAddResponsibilities.on("click", (e) => {
+  e.preventDefault();
+  if (responsibilities < maxResponsibilities) {
+    responsibilities++;
+    $(fieldResponsibilities).append(
+      `<div class="gridResponsibilitiesEx mb-3">     
+            <p>${responsibilities}</p>
+            <input type="text" class="form-control formControl dummy2" placeholder="ระบุหน้าที่และความรับผิดชอบ" name="responsibilities${responsibilities}">
+            <div class="flexAddPlus">
+              <button class="btnRemoveResponsibilities" type="button"><i class="fas fa-trash-alt"></i> ลบ</button>
+            </div>
+        </div>`
+    );
+  }
+
+  if (responsibilities > 1) {
+    btnRemoveResponsibilities[0].style.display = "block";
+  }
+});
+
+fieldResponsibilities.on("click", ".btnRemoveResponsibilities", function (e) {
+  e.preventDefault();
+  $(this).closest("div.flexAddPlus").parent("div").remove();
+  responsibilities--;
+  for (let index = 0; index < responsibilities; index++) {
+    var number = index + 1;
+    document
+      .querySelectorAll(".gridResponsibilitiesEx")
+      [index].getElementsByTagName("p")[0].innerHTML = index + 1;
+    // $($('.gridResponsibilitiesEx')[index]).$($('p')[0]).html = index + 1
+    $($("gridResponsibilitiesEx")[index])
+      .find(".dummy2")
+      .attr("name", "responsibilities" + number);
+  }
+  if (responsibilities == 1) {
+    btnRemoveResponsibilities[0].style.display = "none";
+  }
+});
+// end หน้าที่และความรับผิดชอบ
+
 $(function () {
   // select2
   let province = $(".province").select2({
@@ -111,7 +214,7 @@ $(function () {
   });
 
   let industrialEstate = $(".industrialEstate").select2({
-    placeholder: "เลือกได้ไม่เกิน 5 นิคมอุตสาหกรรม",
+    placeholder: "เลือกได้ไม่เกิน 5 นิคมอุตสาหกรรม (ไม่บังคับ)",
     maximumSelectionLength: 5,
   });
 
@@ -142,7 +245,6 @@ $(function () {
   });
   $(".select2-container--default .select2-selection--multiple").css({
     "border-radius": "50px",
-    padding: "0rem .75rem",
   });
   $(
     ".select2-container, .select2-container--default .select2-search--inline .select2-search__field"
@@ -151,24 +253,129 @@ $(function () {
     ".select2-container--default .select2-selection--multiple .select2-selection__rendered li"
   ).css({ width: "100%" });
   $(".select2-container .select2-search--inline").css({ float: "inherit" });
+  $(".select2-search__field").css({ color: "#333" });
   // end select2
 
+  // เลือกสาขาอาชีพหลัก และ รอง เพื่อโชว์ปุ่ม ดูประกาศงาน
+  const careerMain = document.querySelector("#careerMain");
+  const careerSub = document.querySelector("#careerSub");
+  const btnExample = document.querySelector("#btnExample");
+
+  // เลือกสาขาอาชีพหลัก
+  careerMain.addEventListener("change", function () {
+    let main = careerMain.value;
+    let sub = careerSub.value;
+    if (main == "1") {
+      if (sub == "2") {
+        btnExample.style.display = "block";
+      } else {
+        btnExample.style.display = "none";
+      }
+    } else {
+      btnExample.style.display = "none";
+    }
+  });
+  // end เลือกสาขาอาชีพหลัก
+
+  // เลือกสาขาอาชีพรอง
+  careerSub.addEventListener("change", function () {
+    let main = careerMain.value;
+    let sub = careerSub.value;
+    if (main == "1") {
+      if (sub == "2") {
+        btnExample.style.display = "block";
+      } else {
+        btnExample.style.display = "none";
+      }
+    } else {
+      btnExample.style.display = "none";
+    }
+  });
+  // end เลือกสาขาอาชีพรอง
+  // end เลือกสาขาอาชีพหลัก และ รอง เพื่อโชว์ปุ่ม ดูประกาศงาน
+
   // jquery varidate
+  $(".formVaridate").submit(function () {
+    $(".gridSkillEx, .gridResponsibilitiesEx").each(function () {
+      $(this)
+        .find(".dummy1, .dummy2")
+        .rules("add", {
+          required: true,
+          messages: {
+            required: "",
+          },
+        });
+    });
+  });
+
+  $(".dummy1").keyup(function () {
+    var count = 0;
+    for (let index = 0; index < $(".dummy1").length; index++) {
+      if ($(".dummy1")[index].value != "") {
+        count++;
+      }
+    }
+    if (count == $(".dummy1").length) {
+      $("#skillSkill_error").empty();
+    }
+  });
+
+  $(".dummy2").keyup(function () {
+    var count = 0;
+    for (let index = 0; index < $(".dummy2").length; index++) {
+      if ($(".dummy2")[index].value != "") {
+        count++;
+      }
+    }
+    if (count == $(".dummy2").length) {
+      $("#responsibilities_error").empty();
+    }
+  });
+
   $.validator.addMethod(
-    "nourl",
+    "letter",
     function (value, element) {
-      return !/http\:\/\/|www\.|link\=|url\=/.test(value);
+      return this.optional(element) || /^[a-zA-Zก-ฮะ-์0-9-.,() ]+$/.test(value);
     },
-    "No URL's"
+    "ใส่ได้ a-z, A-Z, ก-ฮ, สระต่างๆ"
   );
+
   var valid = $(".formVaridate").validate({
     errorClass: "error",
     errorElement: "p",
     onfocusout: false,
 
+    // errorPlacement: function (error, element) {
+    //   var elem = $(element);
+    //   error.insertAfter(element);
+    // },
+
     errorPlacement: function (error, element) {
-      var elem = $(element);
-      error.insertAfter(element);
+      //console.log(element)
+      if (
+        element.attr("name") == "jobbkk" ||
+        element.attr("name") == "postOffice"
+      ) {
+        $(element)
+          .closest("form")
+          .find("p[id='" + element.attr("name") + "_error']")
+          .html(error[0].innerHTML);
+      } else if (element.attr("name").includes("skillSkill")) {
+        $(element)
+          .closest("form")
+          .find("p[id='skillSkill_error']")
+          .html(
+            "กรุณาระบุคุณสมบัติด้านความรู้และความสามารถ อย่างน้อย 1 คุณสมบัติ"
+          );
+      } else if (element.attr("name").includes("responsibilities")) {
+        $(element)
+          .closest("form")
+          .find("p[id='responsibilities_error']")
+          .html("กรุณาระบุหน้าที่และความรับผิดชอบ อย่างน้อย 1 คุณสมบัติ");
+      } else {
+        var elem = $(element);
+        error.insertAfter(element);
+      }
     },
 
     highlight: function (element, errorClass, validClass) {
@@ -194,10 +401,14 @@ $(function () {
     },
 
     unhighlight: function (element, errorClass, validClass) {
+      count = 0;
       var elem = $(element);
       // select2 ลบขอบแดง
       var checkselect2 = elem.attr("class").split(/\s+/);
       for (let index = 0; index < checkselect2.length; index++) {
+        if (checkselect2[index] == "dummy") {
+          $("#jobbkk_error, #skill_error").empty();
+        }
         if (checkselect2[index].includes("select2")) {
           if (elem.next().find(".selection").length == 0) {
             $(elem.next().next().find(".selection")[0])
@@ -218,7 +429,7 @@ $(function () {
     rules: {
       careerMain: { required: true },
       careerSub: { required: true },
-      position: { required: true },
+      position: { required: true, maxlength: 50, letter: true },
       theRate: { required: true },
       jobType: { required: true },
       workingLevel: { required: true },
@@ -253,11 +464,16 @@ $(function () {
       day1: { required: true },
       month1: { required: true },
       year1: { required: true },
+      jobbkk: { required: true },
+      other: { required: true },
     },
     messages: {
       careerMain: { required: "กรุณาเลือกสาขาอาชีพหลัก" },
       careerSub: { required: "กรุณาเลือกสาขาอาชีพรอง" },
-      position: { required: "กรุณาระบุชื่อตำแหน่งงาน" },
+      position: {
+        required: "กรุณาระบุชื่อตำแหน่งงาน",
+        maxlength: "เกิน 50 ตัวอักษร",
+      },
       theRate: { required: "กรุณาเลือกจำนวนอัตราที่รับ" },
       jobType: { required: "กรุณาเลือกประเภทงาน" },
       workingLevel: { required: "กรุณาเลือกระดับการทำงาน" },
@@ -303,6 +519,12 @@ $(function () {
       day1: { required: "กรุณาระบุวัน" },
       month1: { required: "กรุณาระบุเดือน" },
       year1: { required: "กรุณาระบุปี" },
+      jobbkk: { required: "กรุณาเลือกวิธีการสมัครงาน" },
+      other: { required: "กรุณาระบุนิคมอุตสาหกรรม" },
+    },
+
+    onkeyup: function (element, event) {
+      $(element).valid();
     },
   });
 
@@ -356,8 +578,10 @@ $(function () {
 
   $(".cancel").on("click", function () {
     valid.resetForm();
-    valid[0].reset();
-    $('.cancel').removeClass('select2-selection__rendered')
+    // valid[0].reset();
+    $(".cancel").removeClass("select2-selection__rendered");
+    $("#responsibilities_error").empty();
+    $("#skillSkill_error").empty();
   });
   // end jquery varidate
 
@@ -369,22 +593,17 @@ $(function () {
 const swalWithBootstrapButtons = Swal.mixin({});
 $(".modalLang").on("click", function () {
   $(".tooltip").removeClass("show");
-  swalWithBootstrapButtons
-    .fire({
-      title: "เลือกภาษาที่ต้องการประกาศงาน",
-      icon: "info",
-      showCancelButton: true,
-      confirmButtonText: "ภาษาอังกฤษ",
-      cancelButtonText: "ภาษาไทย",
-      reverseButtons: true,
-    })
-    .then((result) => {
-      if (result.value) {
-        window.location.href = "https://www.jobbkk.com/home";
-      } else if (result.dismiss === Swal.DismissReason.cancel) {
-        window.location.href = "https://www.jobbkk.com/home";
-      }
-    });
+  swalWithBootstrapButtons.fire({
+    title: "เลือกภาษาที่ต้องการประกาศงาน",
+    icon: "info",
+    showCloseButton: true,
+    showConfirmButton: false,
+    html: `
+      <div class="btn_lang">
+        <button type="button">ภาษาอังกฤษ</button>
+        <button type="button">ภาษาไทย</button>
+      </div>`,
+  });
 });
 // end เลือกภาษา
 
@@ -406,15 +625,96 @@ $("#confirm").on("click", function () {
 // end ตรวจสอบข้อมูลเพื่อประกาศงาน
 
 // disable วันเปิดประกาศ วันปิดประกาศ
-function toggleSelect(){
-  let isCheck = document.querySelector('#selectDisable').checked;
+function toggleSelect() {
+  let isCheck = document.querySelector("#selectDisable").checked;
   let x = document.querySelectorAll(".selectDis");
+  let p = document.querySelectorAll(".gridDay p.error");
   for (i = 0; i < x.length; i++) {
-    if (isCheck === true){
-      x[i].disabled = true;
-    }else{
-      x[i].disabled = false;
-    }   
+    if (isCheck === true) {
+      if ($(".gridDay p").hasClass("error")) {
+        x[i].disabled = true;
+        x[i].classList.remove("error");
+        p[i].style.display = "none";
+      } else {
+        x[i].disabled = true;
+      }
+    } else {
+      if ($(".gridDay p").hasClass("error")) {
+        x[i].disabled = false;
+        x[i].classList.add("error");
+        p[i].style.display = "block";
+      } else {
+        x[i].disabled = false;
+      }
+    }
   }
 }
 // end disable วันเปิดประกาศ วันปิดประกาศ
+
+// ตรวจสอบข้อมูลเพื่อประกาศงาน
+const urgentJobsSystem = document.querySelector("#urgentJobsSystem");
+urgentJobsSystem.addEventListener("click", () => {
+  Swal.fire({
+    title: "Urgent Jobs System?",
+    icon: "info",
+    showconfirmButton: true,
+    confirmButtonText: "เข้าใจแล้ว",
+    html: `<div class="lineDashUrgent"></div>
+            <figure><img src="images/example.jpg"/></figure>`,
+  });
+  let sweertPopup = document.getElementsByClassName("swal2-popup")[0];
+  sweertPopup.style.width = "100%";
+  sweertPopup.style.maxWidth = "900px";
+});
+// end ตรวจสอบข้อมูลเพื่อประกาศงานฆ
+
+// เพิ่มอุตสาหกรรม ยกเลิก
+$("#industrial_estate").change(function () {
+  var industrial_estate = $("#industrial_estate").val();
+
+  if (jQuery.inArray("5", industrial_estate) != -1) {
+    $(".gridDataList").removeClass("none");
+    $("#industrial_estate").prop("disabled", true);
+    $("#industrial_estate").val(null).trigger("change");
+    $("#industrial_estate").val("5");
+  } else {
+    $("#industrial_estate").prop("disabled", false);
+  }
+});
+
+$("#cancelBtn").click(() => {
+  if (this.value !== 5) {
+    $("#cancelBtn").parent("section").addClass("none");
+    $("#industrial_estate").prop("disabled", false);
+    $("#industrial_estate").val(null).trigger("change");
+  } else {
+    $("#cancelBtn").parent("section").removeClass("none");
+    $("#industrial_estate").prop("disabled", true);
+  }
+});
+// end เพิ่มอุตสาหกรรม ยกเลิก
+
+// คุณต้องการยกเลิกการแก้ไขประกาศงานนี้ใช่หรือไม่
+$("#cancel").on("click", function () {
+  Swal.fire({
+    title: "คุณต้องการยกเลิกการแก้ไขประกาศงานนี้ใช่หรือไม่?",
+    icon: "warning",
+    showCancelButton: true,
+    showconfirmButton: true,
+    confirmButtonText: "ตกลง",
+    cancelButtonText: "ยกเลิก",
+  });
+});
+// end คุณต้องการยกเลิกการแก้ไขประกาศงานนี้ใช่หรือไม่
+
+$(".radius_change").each(function () {
+  $(this).change(() => {
+    if ($(this).select2("data").length > 1) {
+      $(this).next().children().children().css({ borderRadius: "1rem" });
+    } else {
+      $(this).next().children().children().css({
+        borderRadius: "5rem",
+      });
+    }
+  });
+});

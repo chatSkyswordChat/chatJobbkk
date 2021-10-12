@@ -8,7 +8,7 @@
 .flexUserAlign{ display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .flexUserAlign img{ width: 80px; height: 80px; border-radius: 50%; object-fit: cover; background: var(--clWhitetGray); border: 1px solid var(--clBlackGray);}
 
-.dropdownMenuUser{ min-width: 350px; padding: 15px;}
+.dropdownMenuUser{ min-width: 350px !important; padding: 15px;}
 .editProfile a{ background: var(--clRed); color: var(--clWhite); padding: 5px 10px; border-radius: 50px;}
 .userMargin{ margin: 0 -15px;}
 .dropdownNone{ display: none;}

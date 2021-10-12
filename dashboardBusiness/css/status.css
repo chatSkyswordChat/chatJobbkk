@@ -1,0 +1,28 @@
+.jobbkk.bg_success{
+    background: var(--clGreen);
+    color: var(--clWhite);
+}
+.jobbkk.text_success{
+    color: var(--clGreen);
+}
+.jobbkk.bg_disable{
+    background: var(--clGray);
+    color: var(--clBlackGray);
+}
+.jobbkk.text_disable{
+    color: var(--clGray);
+}
+.jobbkk.bg_error{
+    background: var(--clRed);
+    color: var(--clBlackGray);
+}
+.jobbkk.text_error{
+    color: var(--clRed);
+}
+.jobbkk.bg_warning{
+    background: var(--clOrange);
+    color: var(--clWhite);
+}
+.jobbkk.text_warning{
+    color: var(--clOrange);
+}

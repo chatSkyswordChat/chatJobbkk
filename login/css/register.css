@@ -3,8 +3,18 @@
     background: var(--clWhite); border: 1px solid var(--clBlackGray); text-decoration: none;}
 .flexReturn a:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover); color: var(--clWhite)}
 
-.flexLogin{ background: var(--clWhite); border-radius: 10px; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); position: relative; top: 30px; 
-    max-width: 850px; width: 100%; margin: 0 auto;}
+.bodyCenter{ display: flex; flex-direction: column; justify-content: space-between; height: 100vh;}
+
+@supports (gap:30px){
+    .bodyCenter{ gap: 30px;}
+}
+
+@supports not(gap:30px){
+    .bodyCenter{ grid-gap: 30px;}
+}
+
+.flexLogin{ background: var(--clWhite); border-radius: 10px; box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); position: relative;
+    max-width: 850px; width: 100%; margin: 30px auto;}
 .bgLogin{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px;}
 .registerPush a{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px; display: inline-block;}
 .registerPush a:hover{ background: var(--clRedHover);}
@@ -12,6 +22,6 @@
 @media (max-width:576px){
     .bgLogin{ grid-template-columns: 1fr;}
     .applicant{ border-bottom: 1px dashed var(--clBlackGray);}
-    .flexLogin{ margin-bottom: 30px;}
+    .flexLogin{ margin-bottom: 0;}
     .flexReturn{ flex-direction: column;}
 }

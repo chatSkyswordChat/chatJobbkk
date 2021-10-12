@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard ผู้ประกอบการ</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+    <link rel="stylesheet" href="../assets/css/topbar.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css" />
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css" />
+    <link rel="stylesheet" href="css/Chart.css" />
+    <link rel="stylesheet" href="css/dashboardBusiness.css" />
+  </head>
+
+  <body>
+    <div class="fixBg"></div>
+    <section class="container">
+      <article class="row">
+        <div class="col-12">
+          <!-- topbar -->
+          <article class="topbar">
+            <!-- assets/components/topbar.js -->
+          </article>
+          <!-- end topbar -->
+
+          <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+          <article class="clWhitetGray calC businessMenuShow">
+            <!-- userMenuShow businessMenuShow -->
+            <!-- assets/components/topBarBusiness.js -->
+            <!-- assets/components/topBarJobSeeker.js -->
+          </article>
+          <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+          <article class="mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumbJobbkk">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <div class="lineDash"></div>
+
+            <section class="clWhitetGray borderRadiusStyle p-3 mb-5">
+              <article class="gridBoard">
+                <!-- left -->
+                <div>
+                  <!-- profile -->
+                  <section id="profile">
+                    <!-- js/profile.js -->
+                  </section>
+                  <!-- end profile -->
+
+                  <section
+                    id="menuDashboardBusiness"
+                    class="clWhite borderRadiusStyle py-3"
+                  >
+                    <!-- js/menuDashboard.js -->
+                  </section>
+                </div>
+                <!-- end left -->
+
+                <!-- right -->
+                <div>
+                  <section
+                    id="buttonUseBusiness"
+                    class="clWhite borderRadiusStyle p-3"
+                  >
+                    <article class="flexInfo">
+                      <h2 class="fontSubHead">
+                        แนะนำการใช้งาน
+                        <button class="textSky recommentInfo">
+                          <i class="fas fa-info-circle"></i>
+                        </button>
+                      </h2>
+                      <div class="text-right">
+                        <h6 class="textRed fontText font-weight-bold">
+                          เข้าสู่ระบบล่าสุด
+                        </h6>
+                        <p>10 ก.ย. 2020 | 14:09</p>
+                      </div>
+                    </article>
+
+                    <div class="lineDashUrgent"></div>
+
+                    <article class="mb-5">
+                      <ul class="flexButtonBusiness">
+                        <!-- js/button_businessFive.js -->
+                      </ul>
+                    </article>
+
+                    <!-- สถิติประจำเดือน -->
+                    <article class="mb-3">
+                      <div class="clWhitetGray borderRadiusStyle p-3">
+                        <div class="statistics">
+                          <h2 class="text-center">
+                            สถิติประจำเดือน กันยายน 2563
+                          </h2>
+                          <a href="">ดูสถิติทั้งหมด</a>
+                        </div>
+                      </div>
+                    </article>
+                    <!-- end สถิติประจำเดือน -->
+
+                    <!-- chart -->
+                    <article class="mb-5">
+                      <div class="girdChart">
+                        <section class="flexInChart mb-3">
+                          <p class="textRed mb-3">สถิติผู้สมัคร</p>
+                          <canvas
+                            id="donutChart"
+                            width="200"
+                            height="200"
+                          ></canvas>
+                        </section>
+
+                        <section class="flexInChart mb-3">
+                          <p class="textRed mb-3">เปิดดู/สมัคร แบนเนอ</p>
+                          <canvas
+                            id="donutChart1"
+                            width="200"
+                            height="200"
+                          ></canvas>
+                        </section>
+
+                        <section class="flexInChart mb-3">
+                          <p class="textRed mb-3">สถิติเปิดดูเรซูเม่</p>
+                          <canvas
+                            id="barChart"
+                            width="200"
+                            height="200"
+                          ></canvas>
+                        </section>
+
+                        <section class="flexInChart mb-3">
+                          <p class="textRed mb-3">สถิติจ็อบไฮไลท์</p>
+                          <canvas
+                            id="donutChart2"
+                            width="200"
+                            height="200"
+                          ></canvas>
+                        </section>
+                      </div>
+                    </article>
+                    <!-- end chart -->
+
+                    <!-- Packages -->
+                    <article class="mb-5 grid_packageWatch">
+                      <section class="clWhitetGray borderRadiusStyle">
+                        <div
+                          class="clGray"
+                          style="border-radius: 1rem 1rem 0 0"
+                        >
+                          <h2 class="p-3">Packages</h2>
+                        </div>
+
+                        <section class="p-3">
+                          <!-- แพ็กเกจล่าสุด -->
+                          <article>
+                            <section class="mb-3">
+                              <h6 class="textRed font-weight-bold">
+                                แพ็กเกจล่าสุด
+                              </h6>
+                              <p class="font-weight-bold">Urgent1</p>
+                            </section>
+
+                            <div class="flex_package">
+                              <div>
+                                <p>วันเริ่มใช้งาน : 26/11/2020</p>
+                                <p>วันที่หมดอายุ : 27/12/2021</p>
+                                <p>
+                                  อายุการใช้งานคงเหลือ
+                                  <span class="textRed">283</span> วัน
+                                </p>
+                              </div>
+
+                              <div>
+                                <a href="" class="btn_red" target="_blank"
+                                  ><i class="fas fa-shopping-cart"></i>
+                                  สั่งซื้อ</a
+                                >
+                              </div>
+                            </div>
+                          </article>
+                          <!-- end แพ็กเกจล่าสุด -->
+
+                          <div class="lineDashUrgent"></div>
+
+                          <!-- สิทธิ์ที่ได้รับในแพคเกจ -->
+                          <article>
+                            <section class="mb-3">
+                              <h6 class="textRed font-weight-bold">
+                                สิทธิ์ที่ได้รับในแพคเกจ
+                              </h6>
+                            </section>
+
+                            <div class="received_package">
+                              <ul>
+                                <li>
+                                  <p>-</p>
+                                  <p>ระยะเวลาการใช้งาน 12 เดือน</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>ออนไลน์ตำแหน่งงานไม่จำกัด</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>ค้นหาใบสมัครงานได้ไม่จำกัด</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>ระบบ E-mail Matching จำนวน 10 ตำแหน่ง</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>ระบบงานด่วนจำนวน 10 ตำแหน่ง</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>User สำหรับเข้าใช้งานจำนวน 10 User</p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>
+                                    ขึ้น JobFair Online Size M จำนวน 2 ครั้ง
+                                  </p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>
+                                    Facebook ยอดการเข้าถึงสื่อ 20,000 view 1
+                                    ครั้ง
+                                  </p>
+                                </li>
+                                <li>
+                                  <p>-</p>
+                                  <p>Hero Banner ระยะเวลา 30 วัน</p>
+                                </li>
+                              </ul>
+                              <figure>
+                                <img src="images/viral1.jpg" alt="" />
+                              </figure>
+                            </div>
+                          </article>
+                          <!-- end สิทธิ์ที่ได้รับในแพคเกจ -->
+
+                          <div class="lineDashUrgent"></div>
+
+                          <!-- โปรโมชั่นล่าสุด -->
+                          <article>
+                            <section class="mb-3">
+                              <h6 class="textRed font-weight-bold">
+                                โปรโมชั่นล่าสุด
+                              </h6>
+                              <p class="font-weight-bold">สั่งซื้อแพ็คเกจ</p>
+                            </section>
+
+                            <div class="flex_package">
+                              <div>
+                                <a href="" class="btn_red" target="_blank"
+                                  ><i class="fas fa-shopping-cart"></i>
+                                  สั่งซื้อ</a
+                                >
+                              </div>
+                            </div>
+                          </article>
+                          <!-- end โปรโมชั่นล่าสุด -->
+
+                          <div class="lineDashUrgent"></div>
+
+                          <!-- บริการเสริม -->
+                          <article>
+                            <section class="mb-3">
+                              <h6 class="textRed font-weight-bold">
+                                บริการเสริม
+                              </h6>
+                            </section>
+
+                            <!-- Credit -->
+                            <section>
+                              <p class="font-weight-bold">Credit</p>
+
+                              <div class="flex_package mb-3">
+                                <div>
+                                  <p>
+                                    ใช้งานสะดวก เพียงจ่ายผ่านเครดิต คงเหลือ
+                                    <span class="textRed">0</span> เครดิต
+                                  </p>
+                                </div>
+
+                                <div>
+                                  <a href="" class="btn_red" target="_blank"
+                                    ><i class="fas fa-shopping-cart"></i>
+                                    สั่งซื้อ</a
+                                  >
+                                </div>
+                              </div>
+                            </section>
+                            <!-- end Credit -->
+
+                            <!-- Easy SMS -->
+                            <section>
+                              <p class="font-weight-bold">Easy SMS</p>
+
+                              <div class="flex_package mb-3">
+                                <div>
+                                  <p>
+                                    สื่อสารง่าย สะดวก บริการทันใจ คงเหลือ
+                                    <span class="textRed">0</span>
+                                    เครดิต
+                                  </p>
+                                </div>
+
+                                <div>
+                                  <a href="" class="btn_red" target="_blank"
+                                    ><i class="fas fa-shopping-cart"></i>
+                                    สั่งซื้อ</a
+                                  >
+                                </div>
+                              </div>
+                            </section>
+                            <!-- end Easy SMS -->
+                          </article>
+                          <!-- end บริการเสริม -->
+                        </section>
+                      </section>
+
+                      <section class="borderStyle borderRadiusStyle p-3">
+                        <div class="clRed textWhite borderRadiusStyle p-3 mb-3">
+                          <h2>ผู้สมัครที่เปิดดูตำแหน่งงาน</h2>
+                        </div>
+
+                        <section class="overflow_watch">
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ</p>
+                              <p>เปิดดู <span class="textRed">การตลาด</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ</p>
+                              <p>เปิดดู <span class="textRed">การตลาด</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ ทัศนี เขาย้อย</p>
+                              <p>เปิดดู <span class="textRed">สจ๊วต</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ</p>
+                              <p>เปิดดู <span class="textRed">การตลาด</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ ทัศนี เขาย้อย</p>
+                              <p>เปิดดู <span class="textRed">สจ๊วต</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ</p>
+                              <p>เปิดดู <span class="textRed">การตลาด</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+
+                          <div class="mt-3">
+                            <article class="listWatch">
+                              <p class="font-weight-bold">คุณ ทัศนี เขาย้อย</p>
+                              <p>เปิดดู <span class="textRed">สจ๊วต</span></p>
+                              <p class="day_watch">03/03/2564</p>
+                            </article>
+                          </div>
+
+                          <div class="lineDashUrgent"></div>
+                        </section>
+                      </section>
+                    </article>
+                    <!-- end Packages -->
+                  </section>
+                </div>
+                <!-- end right -->
+              </article>
+            </section>
+          </article>
+        </div>
+      </article>
+
+      <!-- footer -->
+      <footer class="calC footerJobbkk">
+        <!-- assets/components/footer.js -->
+      </footer>
+      <!-- end footer -->
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
+  </body>
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/slide-menu.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/jquery.dotdotdot.min.js"></script>
+  <script src="../assets/js/sweetalert2.all.min.js"></script>
+  <script src="js/Chart.bundle.min.js"></script>
+
+  <script src="../assets/components/pathActive.js"></script>
+  <script src="../assets/components/topBarBusiness.js"></script>
+  <script src="../assets/components/footer.js"></script>
+  <script src="../assets/components/cookiePolicy.js"></script>
+
+  <script src="js/profile.js"></script>
+  <script src="js/menuDashboard.js"></script>
+  <script src="js/button_businessFive.js"></script>
+
+  <script>
+    const donutChart = document.querySelector("#donutChart");
+    const myDoughnutChart = new Chart(donutChart, {
+      type: "doughnut",
+      data: {
+        labels: ["จำนวนเปิดดูตำแหน่งงาน", "จำนวนผู้สมัครงาน"],
+        datasets: [
+          {
+            data: [200, 80],
+            backgroundColor: ["#bfbfbf", "#d40101"],
+            // hover: ['#b90303', '#333333'],
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: false,
+        },
+        tooltips: {
+          bodyFontSize: 11,
+        },
+      },
+    });
+
+    const donutChart1 = document.querySelector("#donutChart1");
+    const myDoughnutChart1 = new Chart(donutChart1, {
+      type: "doughnut",
+      data: {
+        labels: ["จำนวนเปิดดูตำแหน่งงาน", "จำนวนผู้สมัครงาน"],
+        datasets: [
+          {
+            data: [250, 20],
+            backgroundColor: ["#bfbfbf", "#d40101"],
+            // hover: ['#b90303', '#333333'],
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: false,
+        },
+        tooltips: {
+          bodyFontSize: 11,
+        },
+      },
+    });
+
+    const barChart = document.querySelector("#barChart");
+    const mybarChart = new Chart(barChart, {
+      type: "bar",
+      data: {
+        labels: ["จำนวนค้นหา"],
+        datasets: [
+          {
+            data: [850],
+            backgroundColor: ["#d40101"],
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: false,
+        },
+      },
+    });
+
+    const donutChart2 = document.querySelector("#donutChart2");
+    const mydonutChart2 = new Chart(donutChart2, {
+      type: "doughnut",
+      data: {
+        labels: ["จำนวนเปิดดูตำแหน่งงาน", "จำนวนผู้สมัครงาน"],
+        datasets: [
+          {
+            data: [350, 40],
+            backgroundColor: ["#bfbfbf", "#d40101"],
+            // hover: ['#b90303', '#333333'],
+          },
+        ],
+      },
+      options: {
+        legend: {
+          display: false,
+        },
+        tooltips: {
+          bodyFontSize: 11,
+        },
+      },
+    });
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // ตัดคำ
+    $(".cutCut").dotdotdot({
+      height: 48,
+      fallbackToLetter: true,
+      watch: true,
+    });
+  </script>
+</html>

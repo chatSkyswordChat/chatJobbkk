@@ -1,0 +1,136 @@
+.textCut {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.gridJobfairSearch {
+  display: grid;
+  grid-template-columns: 1fr 15rem 1fr 15rem;
+  grid-gap: 1.5rem;
+}
+.gridJobfairSearch .formControl {
+  border-radius: 5rem;
+}
+.gridJobfairSearch button {
+  background: var(--clRed);
+  border: 0;
+  color: var(--clWhite);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  min-height: calc(3.2rem + 2px);
+  width: 100%;
+}
+.gridJobfairSearch button:hover {
+  background: var(--clRedHover);
+}
+
+@media (max-width: 991px) {
+  .gridJobfairSearch {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridJobfairSearch {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* table */
+.tableJobfairEvent thead th,
+.tableJobfairEvent tbody td {
+  vertical-align: middle;
+}
+.tableJobfairEvent thead th:not(:nth-child(2)),
+.tableJobfairEvent tbody td:not(:nth-child(2)) {
+  text-align: center;
+}
+.tableJobfairEvent tbody td:nth-child(2),
+.tableJobfairEvent tbody td:nth-child(3) {
+  max-width: 45rem;
+}
+.tableJobfairEvent a {
+  color: var(--clSky);
+}
+.tableJobfairEvent a:hover {
+  text-decoration: underline !important;
+}
+.tableJobfairEvent button.live {
+  background: var(--clOrange);
+  color: var(--clWhite);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  min-height: calc(3.2rem + 2px);
+}
+.tableJobfairEvent button.live:hover {
+  background: var(--clOrangeHover);
+}
+
+@media (max-width: 991px) {
+  .tableJobfairEvent thead {
+    display: none;
+  }
+  .tableJobfairEvent,
+  .tableJobfairEvent tbody,
+  .tableJobfairEvent tr,
+  .tableJobfairEvent td {
+    display: block;
+    width: 100%;
+  }
+  .tableJobfairEvent tr {
+    margin-bottom: 1.5rem;
+  }
+  .tableJobfairEvent td {
+    position: relative;
+    padding-left: 51%;
+  }
+  .tableJobfairEvent td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: var(--clWhitetGray);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .tableJobfairEvent.table-bordered {
+    border: none;
+  }
+  .tableJobfairEvent tbody td:nth-child(2),
+  .tableJobfairEvent tbody td:nth-child(3) {
+    max-width: inherit;
+  }
+  .tableJobfairEvent.table-striped tbody tr:nth-of-type(odd) {
+    background: inherit;
+  }
+  .tableJobfairEvent thead th:not(:nth-child(2)),
+  .tableJobfairEvent tbody td:not(:nth-child(2)) {
+    text-align: inherit;
+  }
+}
+
+/* grid pattern ข่าวประชาสัมพันธ์ใหม่ กิจกรรม VDO */
+.gridPattern {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.gridPattern li {
+  border: 1px solid var(--clGray);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.gridPattern li:hover {
+  margin-top: -0.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.gridPattern a {
+  color: var(--clBlackGray);
+}

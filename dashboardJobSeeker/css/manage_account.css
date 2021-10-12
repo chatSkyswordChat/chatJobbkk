@@ -1,0 +1,93 @@
+.hide_password * {
+  pointer-events: none;
+}
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.flex_center > figure img {
+  max-width: 8rem;
+}
+.manage_alert {
+  border: 0.1rem dashed var(--clBlackGray);
+  border-radius: 1rem;
+}
+.manage_password > section {
+  position: relative;
+  width: 50%;
+}
+.manage_password input {
+  border-radius: 5rem;
+  padding-right: 4rem;
+}
+.manage_password input.error {
+  box-shadow: 0 0 0.2rem 0.2rem rgba(212, 1, 1, 0.5);
+}
+.manage_password button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.manage_password small {
+  display: none;
+}
+.manage_password small.error {
+  display: block;
+}
+.manage_alert .btn_del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.manage_alert .btn_del button {
+  background: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  color: var(--clWhite);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+}
+.manage_alert .btn_del button:hover {
+  background: var(--clRedHover);
+  border: 0.1rem solid var(--clRedHover);
+}
+.manage_alert .btn_del button.disabled {
+  background: var(--clWhitetGray);
+  border: 0.1rem solid var(--clWhitetGray);
+  color: var(--clBlackGray);
+  cursor: not-allowed;
+}
+
+#cancel_account {
+  display: none;
+}
+#cancel_account .cancel_account_btn {
+  background: transparent;
+  color: var(--clRed);
+  border: 0;
+}
+#cancel_account .tab_lab {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+#cancel_account .tab_lab.active {
+  visibility: visible;
+  opacity: 1;
+}
+#cancel_account .cancel_account_alert {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+}
+#cancel_account .cancel_account_alert:hover {
+  background: var(--clRedHover);
+}

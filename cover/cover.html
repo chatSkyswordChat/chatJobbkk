@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/policy.css" />
     <link rel="stylesheet" href="css/cover.css">
 </head>
 
@@ -33,16 +34,16 @@
                     </div>
 
                     <ul class="flexBoard mb-3">
-                        <li><a href="javascript:void(0)" onclick="link()">หางาน</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">สมัครงาน</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางาน part time</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานราชการ</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานเชียงใหม่</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานขอนแก่น</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานภูเก็ต</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานธนาคาร</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">หางานโรงแรม</a></li>
-                        <li><a href="javascript:void(0)" onclick="link()">เว็บบอร์ดคนหางาน</a></li>
+                        <li><a href="javascript:void(0)">หางาน</a></li>
+                        <li><a href="javascript:void(0)">สมัครงาน</a></li>
+                        <li><a href="javascript:void(0)">หางาน part time</a></li>
+                        <li><a href="javascript:void(0)">หางานราชการ</a></li>
+                        <li><a href="javascript:void(0)">หางานเชียงใหม่</a></li>
+                        <li><a href="javascript:void(0)">หางานขอนแก่น</a></li>
+                        <li><a href="javascript:void(0)">หางานภูเก็ต</a></li>
+                        <li><a href="javascript:void(0)">หางานธนาคาร</a></li>
+                        <li><a href="javascript:void(0)">หางานโรงแรม</a></li>
+                        <li><a href="javascript:void(0)">เว็บบอร์ดคนหางาน</a></li>
                     </ul>
                 </section>
 
@@ -55,17 +56,17 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="javascript:void(0)" onclick="link()">
+                            <a href="javascript:void(0)">
                                 <img src="images/cover1.gif" class="d-block w-100 borderStyle" alt="...">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="javascript:void(0)" onclick="link()">
+                            <a href="javascript:void(0)">
                                 <img src="images/cover2.gif" class="d-block w-100 borderStyle" alt="...">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="javascript:void(0)" onclick="link()">
+                            <a href="javascript:void(0)">
                                 <img src="images/cover3.gif" class="d-block w-100 borderStyle" alt="...">
                             </a>
                         </div>
@@ -81,7 +82,7 @@
                 </article>
                 <!-- end carousel -->
 
-                <ul class="enterSite fontSubHead mb-3">
+                <ul class="enterSite fontSubHead my-5">
                     <li><a href="../index.html">Enter Site</a></li>
                     <li><a href="../index.html">เข้าสู่เว็ปไซต์</a></li>
                 </ul>
@@ -97,19 +98,15 @@
 
     <!--backtotop-->
     <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
 </body>
-
+<script>
+    const path = location.href.split("/").length == 6 ? "" : "../";
+</script>
 <script src="../assets/js/jquery-3.5.1.min.js"></script>
 <script src="../assets/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/backToTop.js"></script>
-
 <script src="../assets/components/footer.js"></script>
-
-<script>
-    function link() {
-        var linked = location.href;
-        window.open(linked, "_blank");
-    }
-</script>
+<script src="../assets/components/cookiePolicy.js"></script>
 
 </html>

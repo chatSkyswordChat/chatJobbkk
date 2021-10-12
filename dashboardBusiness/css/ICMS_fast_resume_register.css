@@ -1,0 +1,118 @@
+.flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.flex_between > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.flex_between > ul li a {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+}
+.flex_between > ul li a:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+}
+@media (max-width: 1200px) {
+  .flex_between {
+    flex-direction: column;
+  }
+  .flex_between > ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 576px) {
+  .flex_between {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .flex_between > ul {
+    flex-direction: column;
+  }
+  .flex_between > ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+.search_icms {
+  display: flex;
+  align-items: center;
+}
+.search_icms input {
+  border-radius: 5rem 0 0 5rem;
+}
+.search_icms button {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 0 5rem 5rem 0;
+  border: 0.1rem solid var(--clRed);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+.search_icms button:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+@media (max-width: 1200px) {
+  .search_icms {
+    width: 100%;
+  }
+}
+.list_all {
+  background: var(--clWhitetGray);
+  border-top: 0.1rem solid var(--clGray);
+  border-bottom: 0.1rem solid var(--clGray);
+}
+
+.thead tr th {
+  vertical-align: middle;
+  text-align: center;
+  background: var(--clWhitetGray);
+}
+.thead tr th:first-child {
+  width: 25rem;
+}
+.tbody tr td {
+  vertical-align: middle;
+}
+.tbody tr td:not(td:first-child) {
+  text-align: center;
+}
+.tbody tr td a:hover {
+  text-decoration: underline !important;
+}
+.tbody tr td:last-child a {
+  background: var(--clWhite);
+  border: 0.1rem solid var(--clSky);
+  color: var(--clSky);
+  border-radius: 5rem;
+  text-decoration: none !important;
+  height: 3.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tbody tr td:last-child a:hover {
+  background: var(--clSkyHover);
+  border: 0.1rem solid var(--clSkyHover);
+  color: var(--clWhite);
+}
+@media (max-width: 1200px) {
+  .tbody tr td:not(td:first-child) {
+    text-align: inherit;
+  }
+}

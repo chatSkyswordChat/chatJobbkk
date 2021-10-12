@@ -1,0 +1,129 @@
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.credit > p {
+  border-right: 0.1rem solid var(--clBlackGray);
+}
+.credit > p:first-child {
+  padding-right: 1.5rem;
+}
+.credit > p:last-child {
+  border-right: 0;
+}
+.list_group ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.list_group ul li a {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.list_group ul li a:hover,
+.list_group ul li a.active {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+
+.write_form {
+  max-width: 57.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.write_form > div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.write_form > div:not(div:nth-child(2)),
+.write_form > div:not(div:last-child) {
+  align-items: flex-start;
+}
+.write_form > div p {
+  flex-basis: 35rem;
+  text-align: right;
+}
+.write_form > div input {
+  border-radius: 5rem;
+}
+.write_form > div article {
+  width: 100%;
+}
+.write_form > div article ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.write_form > div article ul li {
+  flex-basis: 50%;
+}
+.write_form > div article ul button {
+  background: var(--clWhite);
+  color: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  width: 100%;
+}
+.write_form > div article ul button:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 0.1rem solid var(--clRed);
+}
+.write_form > div .text_area,
+.write_form > div .date_area {
+  width: 100%;
+}
+.write_form > div textarea {
+  border-radius: 1rem;
+}
+form div .send {
+  background: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  color: var(--clWhite);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 15rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .write_form > div {
+    flex-direction: column;
+    gap: inherit;
+  }
+  .write_form > div p {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .write_form > div article ul {
+    flex-wrap: wrap;
+  }
+  .write_form > div article ul li {
+    flex-basis: 100%;
+  }
+}
+
+.list_phone {
+  display: flex;
+  gap: 1.5rem;
+}
+.list_phone > div > label {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}

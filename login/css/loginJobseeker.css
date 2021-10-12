@@ -1,11 +1,22 @@
-.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; position: relative; top: 30px; max-width: 850px; width: 100%; margin: 0 auto;}
+.bodyCenter{ display: flex; flex-direction: column; justify-content: space-between; height: 100vh;}
+.bgLogin{ display: grid; grid-template-columns: 1fr 1fr; max-width: 850px; margin: 30px auto 0;
+    width: 100%; grid-gap: 15px;}
+
+@supports (gap:30px){
+    .bodyCenter{ gap: 30px;}
+}
+
+@supports not(gap:30px){
+    .bodyCenter{ grid-gap: 30px;}
+}
 
 @media (max-width:991px){
     .bgLogin{ grid-template-columns: 1fr;}
 }
 
 /* left */
-.loginLeft{ display: flex; flex-direction: column; align-items: center; padding: 25px 15px; background: var(--clWhite); 
+.loginLeft{ display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    padding: 25px 15px; background: var(--clWhite); 
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); border-radius: 10px;}
 
 .loginSocial{ display: flex; align-items: center; justify-content: center; gap: 15px;}
@@ -20,9 +31,6 @@
 
 .flexBody{ display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;}
 
-.alertText{ background: var(--clWhite); border: 1px solid var(--clRed); border-radius: 50px; width: 100%;}
-.alertText p{ color: var(--clRed);}
-
 .flexForm{ display: flex; width: 100%;}
 .form-control-feed{ position: absolute; top: 10px; left: 10px;}
 .form-control-back{ padding-left: 30px; border-radius: 50px;}
@@ -34,22 +42,22 @@
     color: var(--clBlackGray); padding: 5px 20px; text-decoration: none;}
 
 .enterBack button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover);}
+.enterBack a{ display: inline-block; background: var(--clWhite); border: 1px solid var(--clRed); border-radius: 50px; 
+    color: var(--clRed); padding: 5px 20px; text-decoration: none;}
 .enterBack a:hover{ background: var(--clRedHover); color: var(--clWhite); border: 1px solid var(--clRedHover);}
 
-.forget{ display: flex; align-items: center; justify-content: center; width: 100%; gap: 15px;}
+.forget{ display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 15px;}
 .forget a.clickRegis{ color: var(--clRed);}
 .forget a:hover{ text-decoration: underline !important;}
 
-.easyResume{ display: flex; align-items: center; justify-content: center; flex-direction: column; background: var(--clWhitetGray);
-    border-radius: 10px; width: 100%; border: 1px solid var(--clGray); text-align: center;}
-.easyResume span{ color: var(--bg-red);}
-.clickEasy a{ display: inline-block; background: var(--clRed); border-radius: 50px; color: var(--clWhite); padding: 5px 20px; text-decoration: none;}
-.clickEasy a:hover{ background: var(--clRedHover);}
-
 /* right */
 .loginRight{ display: flex; flex-direction: column; align-items: center; position: relative; padding: 25px 15px;}
-.picApplicant{ margin-top: 15px; width: 80%;}
-.picApplicant img.imgTwo{ max-width: 100%;}
+.picApplicant{ margin-top: 70px; width: 100%; display: flex; align-items: center; justify-content: center;}
+.picApplicant img.imgTwo{ max-width: 30rem;}
+
+@media (max-width:991px){
+    .picApplicant{ margin-top: 0;}
+}
 
 .theStep{ display: flex; flex-direction: column;}
 .theStep li:first-child{ line-height: 2.5;}
@@ -58,9 +66,5 @@
 .ready{ border: 1px dashed var(--clBlackGray); padding: 10px; border-radius: 10px; width: 100%;}
 .ready span{ color: var(--clRed); font-weight: 900;}
 
-.register a{ display: inline-block; border-radius: 50px; background: var(--clRed); color: var(--clWhite); padding: 10px 20px; text-decoration: none;}
-.register a:hover{ background: var(--clRedHover);}
-
-@media (max-width:991px){
-    .picApplicant{ width: 80%;}
-}
+.home a{ color: var(--clBlackGray);}
+.home a:hover{ text-decoration: underline !important;}

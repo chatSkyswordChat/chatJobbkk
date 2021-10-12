@@ -1,47 +1,158 @@
-.gridBot{ display: grid; grid-template-columns: 1fr 1fr 0.5fr; grid-gap: 15px;}
-
-@media (max-width:768px){
-    .gridBot{ grid-template-columns: 1fr 1fr;}
+.gridBot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-gap: 15px;
 }
 
-@media (max-width:576px){
-    .gridBot{ grid-template-columns: 1fr;}
-    .gridBot>*{ border-bottom: 1px dashed var(--clBlackGray); padding-bottom: 15px;}
-    .gridBot>*:last-child{ border-bottom: 0; padding-bottom: 0;}
-    .bgBot, .bgAdress{ padding: 25px 15px !important;}
+@media (max-width: 768px) {
+  .gridBot {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-.gridCareerIndex{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 5px 15px;}
-.gridCareerIndex a{ color: var(--clBlackGray); font-size: var(--fontSubText);}
-.gridCareerIndex a:hover{ color: var(--clRed); text-decoration: underline !important;}
-
-.flexAbout{ display: flex; flex-direction: column;}
-.flexAbout a{ color: var(--clBlackGray); font-size: var(--fontSubText);}
-.flexAbout a:hover{ color: var(--clRed); text-decoration: underline !important;}
-
-.gridAdress{ display: grid; grid-template-columns: 1fr 0.5fr; grid-gap: 15px;}
-.flexAdress{ display: flex; font-size: var(--fontSubText); color: var(--clWhite); gap: 30px;}
-.flexAdress img{ max-width: 120px;}
-
-.social{ display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 15px;}
-.social a{ display: inline-block; width: 35px; height: 35px;}
-.social a:hover{ transform: scale(1.5);}
-.social a.fb{ background: url(../images/social-01.svg) top center no-repeat; background-size: cover;}
-.social a.tw{ background: url(../images/social-02.svg) top center no-repeat; background-size: cover;}
-.social a.yt{ background: url(../images/social-03.svg) top center no-repeat; background-size: cover;}
-.social a.ig{ background: url(../images/social-04.svg) top center no-repeat; background-size: cover;}
-.social a.in{ background: url(../images/social-05.svg) top center no-repeat; background-size: cover;}
-.social a.line{ background: url(../images/social-06.svg) top center no-repeat; background-size: cover;}
-
-.app{ display: flex; align-items: center; justify-content: flex-end; gap: 15px;}
-.app img{ max-width: 100px;}
-
-@media (max-width:991px){
-    .gridAdress{ grid-template-columns: 1fr;}
-    .social, .app{ justify-content: center;}
+@media (max-width: 576px) {
+  .gridBot {
+    grid-template-columns: 1fr;
+  }
+  .gridBot > * {
+    border-bottom: 1px dashed var(--clBlackGray);
+    padding-bottom: 15px;
+  }
+  .gridBot > *:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .bgBot,
+  .bgAdress {
+    padding: 25px 15px !important;
+  }
 }
 
-@media (max-width:768px){
-    .flexAdress{ flex-direction: column; justify-content: center; align-items: center; text-align: center;}
-    .social, .app{ justify-content: center; align-items: center; flex-wrap: wrap;}
+.gridCareerIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px 15px;
+}
+.gridCareerIndex a {
+  color: var(--clBlackGray);
+  font-size: var(--fontSubText);
+}
+.gridCareerIndex a:hover {
+  color: var(--clRed);
+  text-decoration: underline !important;
+}
+
+.flexAbout {
+  display: flex;
+  flex-direction: column;
+}
+.flexAbout a {
+  color: var(--clBlackGray);
+  font-size: var(--fontSubText);
+}
+.flexAbout a:hover {
+  color: var(--clRed);
+  text-decoration: underline !important;
+}
+
+.gridAdress {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.gridAdress > article figure img {
+  max-width: 15rem;
+}
+.gridAdress > article p {
+  color: var(--clWhite);
+}
+.gridAdress > article:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.gridAdress > article:nth-child(2) .app {
+  display: flex;
+  gap: 1.5rem;
+}
+.gridAdress > article:nth-child(2) .app img {
+  max-width: 12rem;
+}
+.gridAdress > article .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gridAdress > article .social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.gridAdress > article .social a:hover {
+  transform: scale(1.1);
+}
+.gridAdress > article .social a.fb {
+  background: url(../images/social-01.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article .social a.tw {
+  background: url(../images/social-02.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article .social a.yt {
+  background: url(../images/social-03.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article .social a.ig {
+  background: url(../images/social-04.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article .social a.in {
+  background: url(../images/social-05.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article .social a.line {
+  background: url(../images/social-06.svg) top center no-repeat;
+  background-size: cover;
+}
+.gridAdress > article:last-child > .help {
+  display: flex;
+  gap: 1rem;
+}
+.gridAdress > article:last-child section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.gridAdress > article:last-child .tel {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.gridAdress > article:last-child .btn_map a {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.gridAdress > article:last-child .btn_map a:hover {
+  background: var(--clBlack);
+}
+
+@media (max-width: 991px) {
+  .gridAdress {
+    grid-template-columns: 1fr;
+  }
+  .gridAdress > article {
+    text-align: center;
+  }
+  .gridAdress > article:last-child > .help,
+  .gridAdress > article:last-child section {
+    justify-content: center;
+  }
 }

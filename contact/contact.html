@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ติดต่อเรา</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+    <link rel="stylesheet" href="../assets/css/topbar.css" />
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css" />
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <section class="container" id="contact">
+      <article class="row">
+        <div class="col-12">
+          <!-- topbar -->
+          <article class="topbar">
+            <!-- assets/components/topbar.js -->
+          </article>
+          <!-- end topbar -->
+
+          <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+          <article class="clWhitetGray calC userMenuShow">
+            <!-- userMenuShow businessMenuShow -->
+            <!-- assets/components/topBarBusiness.js -->
+            <!-- assets/components/topBarJobSeeker.js -->
+          </article>
+          <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+          <!-- ติดต่อเรา -->
+          <article class="my-5">
+            <h1 class="mb-5">ติดต่อเรา</h1>
+            <div class="mb-5">
+              <h2 class="fontSubHead textRed mb-3">
+                บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด
+              </h2>
+              <p class="mb-3">
+                เลขที่ 625 อาคารทัศนียา ห้องเลขที่ ยูนิตดี ชั้น 5 ซอยรามคำแหง 39
+                <br />
+                ถนนประชาอุทิศ แขวงวังทองหลาง เขตวังทองหลาง กรุงเทพมหานคร 10310
+              </p>
+
+              <div class="mb-5">
+                <p>
+                  <span class="font-weight-bold">ติดต่อลูกค้าสัมพันธ์ :</span> 0
+                  2514 7474
+                </p>
+                <p><span class="font-weight-bold">แฟกซ์ :</span> 0 2514 7447</p>
+                <p>
+                  <span class="font-weight-bold">อีเมล :</span> help@jobbkk.com
+                </p>
+                <p>
+                  <span class="font-weight-bold">เวลาทำการ :</span> จันทร์ -
+                  เสาร์ 8:30 น. - 17:30 น.
+                </p>
+              </div>
+
+              <div class="map mb-5 p-3" onclick="map()">
+                <figure><img src="images/maps.svg" alt="" /></figure>
+              </div>
+
+              <div class="clWhitetGray p-3 form" style="border-radius: 1rem">
+                <p class="font-weight-bold mb-3">
+                  หากต้องการทราบรายละเอียดเพิ่มเติม กรุณากรอกข้อมูลด้านล่าง
+                </p>
+
+                <form id="form">
+                  <div class="mb-3">
+                    <select
+                      class="form-control"
+                      style="border-radius: 5rem"
+                      id="select"
+                    >
+                      <option value="">กรุณาเลือก</option>
+                      <option value="1">แจ้งถามข้อมูลสินค้าและบริการ</option>
+                      <option value="2">แจ้งปัญหาการใช้งาน</option>
+                    </select>
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label>
+                      <p>รายละเอียด</p>
+                      <textarea
+                        rows="7"
+                        class="form-control"
+                        id="detail"
+                        placeholder="รายละเอียด"
+                        style="border-radius: 1rem"
+                      ></textarea>
+                    </label>
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label>
+                      <p>ชื่อผู้ติดต่อ</p>
+                      <input
+                        type="text"
+                        id="user"
+                        class="form-control"
+                        style="border-radius: 5rem"
+                        placeholder="ชื่อผู้ติดต่อ"
+                      />
+                    </label>
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label>
+                      <p>อีเมล</p>
+                      <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        style="border-radius: 5rem"
+                        placeholder="อีเมล"
+                      />
+                    </label>
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label>
+                      <p>เบอร์โทรศัพท์</p>
+                      <input
+                        type="tel"
+                        id="tel"
+                        class="form-control"
+                        style="border-radius: 5rem"
+                        placeholder="เบอร์โทรศัพท์"
+                      />
+                    </label>
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div class="code mb-3">
+                    <section class="mb-3">
+                      <figure><img src="images/code.png" alt="" /></figure>
+                      <button type="button">
+                        <i class="fas fa-sync-alt"></i>
+                      </button>
+                    </section>
+                    <input
+                      type="text"
+                      id="password"
+                      class="form-control"
+                      style="border-radius: 5rem"
+                      placeholder="ใส่รหัส"
+                    />
+                    <small class="textRed">error</small>
+                  </div>
+
+                  <div id="send" class="text-center my-5">
+                    <button type="submit">ส่งข้อมูล</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </article>
+          <!-- ติดต่อเรา -->
+        </div>
+      </article>
+
+      <!-- footer -->
+      <footer class="calC footerJobbkk">
+        <!-- assets/components/footer.js -->
+      </footer>
+      <!-- end footer -->
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/slide-menu.js"></script>
+    <script src="../assets/js/backToTop.js"></script>
+    <script src="../assets/js/sweetalert2@10.js"></script>
+
+    <script src="../assets/components/topBarJobSeeker.js"></script>
+    <script src="../assets/components/footer.js"></script>
+    <script src="../assets/components/cookiePolicy.js"></script>
+
+    <script>
+      const form = document.querySelector("#form"),
+        select = document.querySelector("#select"),
+        detail = document.querySelector("#detail"),
+        user = document.querySelector("#user"),
+        email = document.querySelector("#email"),
+        tel = document.querySelector("#tel"),
+        password = document.querySelector("#password");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validate();
+      });
+
+      const validate = () => {
+        select_val = select.value.trim();
+        detail_val = detail.value.trim();
+        user_val = user.value.trim();
+        email_val = email.value.trim();
+        tel_val = tel.value.trim();
+        password_val = password.value.trim();
+
+        if (select_val === "") {
+          error_select(select, "กรุณาเลือกข้อมูลส่วนนี้");
+          error_sweet();
+        } else {
+          success_select(select, "");
+        }
+
+        if (detail_val === "") {
+          error(detail, "กรุณาระบุรายละเอียด");
+          error_sweet();
+        } else {
+          success(detail, "");
+        }
+
+        if (user_val === "") {
+          error(user, "กรุณาระบุชื่อผู้ติดต่อ");
+          error_sweet();
+        } else {
+          success(user, "");
+        }
+
+        if (email_val === "") {
+          error(email, "กรุณาระบุอีเมล");
+          error_sweet();
+        } else {
+          success(email, "");
+        }
+
+        if (tel_val === "") {
+          error(tel, "กรุณาระบุเบอร์โทรศัพท์");
+          error_sweet();
+        } else {
+          success(tel, "");
+        }
+
+        if (password_val === "") {
+          error_password(password, "กรุณาใส่รหัส");
+          error_sweet();
+        } else {
+          success_password(password, "");
+        }
+      };
+
+      const error = (input, message) => {
+        const input_group = input.parentElement;
+        input_group.firstElementChild.nextElementSibling.classList.add("error");
+
+        const small = input_group.parentElement.querySelector("small");
+        small.style.display = "block";
+        small.innerText = message;
+      };
+
+      const success = (input, message) => {
+        const input_group = input.parentElement;
+        input_group.firstElementChild.nextElementSibling.classList.remove(
+          "error"
+        );
+
+        const small = input_group.parentElement.querySelector("small");
+        small.style.display = "none";
+        small.innerText = message;
+      };
+
+      const error_password = (input, message) => {
+        const input_password = input.parentElement;
+        input_password.firstElementChild.nextElementSibling.classList.add(
+          "error"
+        );
+
+        const small_password = input_password.querySelector("small");
+        small_password.style.display = "block";
+        small_password.innerText = message;
+      };
+
+      const success_password = (input, message) => {
+        const input_password = input.parentElement;
+        input_password.firstElementChild.nextElementSibling.classList.remove(
+          "error"
+        );
+
+        const small_password = input_password.querySelector("small");
+        small_password.style.display = "none";
+        small_password.innerText = message;
+      };
+
+      const error_select = (input, message) => {
+        const input_select = input.parentElement;
+        input_select.firstElementChild.classList.add("error");
+
+        const small_select = input_select.querySelector("small");
+        small_select.style.display = "block";
+        small_select.innerText = message;
+      };
+
+      const success_select = (input, message) => {
+        const input_select = input.parentElement;
+        input_select.firstElementChild.classList.remove("error");
+
+        const small_select = input_select.querySelector("small");
+        small_select.style.display = "none";
+        small_select.innerText = message;
+      };
+
+      const error_sweet = () => {
+        Swal.fire({
+          icon: "error",
+          title: "กรุณาระบุข้อมูลให้ครบถ้วน",
+          showConfirmButton: false,
+          timer: 2000,
+        });
+      };
+
+      const map = () => {
+        const map = document.querySelector(".map");
+        map.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>

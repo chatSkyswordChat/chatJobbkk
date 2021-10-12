@@ -1,0 +1,367 @@
+.flexHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.textCut {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* menu content */
+.btnArticle ul,
+.btnArticle li a {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+}
+.btnArticle li {
+  flex-basis: 15rem;
+  max-width: 15rem;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+.btnArticle li:hover {
+}
+.btnArticle li::after,
+.btnArticle li a.active::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: -1;
+}
+.btnArticle li a.active::after {
+  transform: scaleX(1);
+  background: var(--clWhitetGray);
+}
+.btnArticle li:hover::after {
+  background: var(--clWhitetGray);
+  transform: scaleX(1);
+}
+.btnArticle li a {
+  flex-direction: column;
+  gap: 0;
+  color: var(--clBlackGray);
+}
+
+.btnArticle li a img {
+  max-width: 10rem;
+}
+/* end menu content */
+
+/* ไฮไลท์ */
+.gridHighlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.gridHighlight li {
+  transition: 0.5s ease-in-out;
+  border: 1px solid var(--clGray);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.gridHighlight li:hover {
+  margin-top: -0.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.gridHighlight a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  color: var(--clBlackGray);
+}
+.gridHighlight figure {
+  padding: 1rem 1rem 0;
+}
+.gridHighlight a > div {
+  background: var(--clWhitetGray);
+  padding: 1rem;
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  .gridHighlight {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+/* end ไฮไลท์ */
+
+/* คลังความรู้ Inspiration Hr Society */
+.articleTriple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+.articleTriple .articleContentList {
+  border: 1px solid var(--clGray);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.articleTriple .articleContentList li:not(:first-child) {
+  margin-bottom: 1.5rem;
+}
+.articleTriple .articleContentList li:first-child a {
+  flex-direction: column;
+}
+.articleTriple .articleContentList li:first-child figure {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+.articleTriple .articleContentList li button {
+  margin: 1rem 0;
+}
+.articleTriple .articleContentList li:not(:first-child) button {
+  display: none;
+}
+.articleTriple .articleContentList a {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  color: var(--clBlackGray);
+}
+
+.articleTriple .articleContentList figure {
+  flex: 1 0 15rem;
+  max-width: 15rem;
+}
+
+@media (max-width: 991px) {
+  .articleTriple {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .articleTriple .articleContentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+  .articleTriple .articleContentList li:first-child {
+    grid-column: 1/3;
+  }
+  .articleTriple .articleContentList a {
+    flex-direction: column;
+  }
+  .articleTriple .articleContentList figure {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+  .articleTriple .articleContentList li:not(:first-child) button {
+    display: inline-block;
+  }
+  .articleTriple .articleContentList li:not(:first-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .articleTriple .articleContentList li:first-child {
+    grid-column: inherit;
+  }
+}
+/* end คลังความรู้ Inspiration Hr Society */
+
+/* VDO */
+.gridVdo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+}
+.gridVdo li {
+  border: 1px solid var(--clGray);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.gridVdo li:hover {
+  margin-top: -0.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.gridContent .articleContentAll iframe {
+  flex: 1 0 30rem;
+  max-width: 30rem;
+}
+
+/* grid content ต่างๆ */
+.gridContent {
+  display: grid;
+  grid-template-columns: 1fr 35rem;
+  grid-gap: 3rem;
+}
+.gridContent .articleContentAll li {
+  border: 1px solid var(--clGray);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  color: var(--clBlackGray);
+  transition: 0.5s ease-in-out;
+}
+.gridContent .articleContentAll li:hover {
+  margin-top: -0.5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gridContent .articleContentAll figure {
+  flex: 1 0 30rem;
+  max-width: 30rem;
+}
+.gridContent .articleContentAll figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100%;
+  justify-content: space-between;
+}
+.gridContent .read {
+  background: var(--clRed);
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+  min-height: calc(3.2rem + 2px);
+  display: inline-block;
+  color: var(--clWhite);
+}
+.gridContent .read:hover {
+  background: var(--clRedHover);
+}
+
+/* เนื้อหาแนะนำ */
+.gridContent .contentRecommentList figure {
+  flex: 1 0 15rem;
+  max-width: 15rem;
+}
+.gridContent .contentRecommentList li {
+  margin-bottom: 3rem;
+}
+.gridContent .contentRecommentList a {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  color: var(--clBlackGray);
+}
+
+@media (max-width: 991px) {
+  .gridContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContent .articleContentAll li {
+    flex-direction: column;
+  }
+  .gridContent .articleContentAll figure,
+  .gridContent .articleContentAll iframe {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* vdo แนะนำ */
+.gridContent .vdoRecommentList iframe {
+  flex: 1 0 20rem;
+  max-width: 20rem;
+}
+.gridContent .vdoRecommentList li {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+  .gridContent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContent .articleContentAll li {
+    flex-direction: column;
+  }
+  .gridContent .articleContentAll figure {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContent .contentRecommentList figure,
+  .gridContent .vdoRecommentList iframe {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+  .gridContent .contentRecommentList a,
+  .gridContent .vdoRecommentList li {
+    flex-direction: column;
+  }
+}
+
+/* tag */
+.tagContent {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.tagContent li {
+  border: none !important;
+  padding: inherit !important;
+  margin-bottom: 0 !important;
+}
+.tagContent li a {
+  background: var(--clOrange);
+  color: var(--clWhite);
+  border-radius: 0.3rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+}
+.tagContent li:hover {
+  margin-top: 0 !important;
+  box-shadow: inherit !important;
+}
+.tagContent li a:hover {
+  background: var(--clOrangeHover);
+}
+
+/* อ่านต่อ */
+.read {
+  flex-shrink: 0;
+}
+.read a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  min-height: calc(3.2rem + 2px);
+  display: inline-block;
+}
+.read a:hover {
+  background: var(--clRedHover);
+}
+
+.btn_red.readArticle {
+  min-height: calc(3.2rem + 2px);
+  border: 0;
+}
+/* end อ่านต่อ */

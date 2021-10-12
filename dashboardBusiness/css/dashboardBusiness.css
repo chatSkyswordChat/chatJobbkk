@@ -1,72 +1,391 @@
-.gridBoard{ display: grid; grid-template-columns: 0.5fr 1fr; grid-gap: 15px;}
-
-@media (max-width:991px){
-    .gridBoard{ display: flex; flex-direction: column; gap: 15px;}
+a * {
+  pointer-events: none;
 }
 
-.flexDataCompany{ display: flex; align-items: center; justify-content: space-between; gap: 15px;}
-.create a{ background: var(--clRed); color: var(--clWhite); padding: 5px 20px; border-radius: 50px; text-align: center;}
-.create a:hover{ background: var(--clRedHover);}
-
-.doProfile a{ background: var(--clRed); color: var(--clWhite); padding: 5px 30px; border-radius: 50px; display: inline-block;}
-.doProfile a:hover{ background: var(--clRedHover);}
-
-.flexPic{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;}
-.flexPic div{ width: 100%; text-align: center;}
-.flexPic figure{ width: 150px; height: 150px; flex: 1 0 auto; margin: 0 auto;}
-.flexPic img{ border-radius: 50%; max-width: 150px; height: 150px; object-fit: cover; border: 1px solid var(--clBlackGray);}
-
-#menuDashboardBusiness{ overflow: hidden;}
-.menuStep1{ display: flex; flex-direction: column;}
-.menuStep1 figure{ width: 100%;}
-.menuStep1 img{ max-width: 25px;}
-.menuStep1 li a{ color: var(--clBlackGray); display: flex; align-items: center; justify-content: space-between; 
-    width: 100%; padding: 5px 0;}
-.menuStep1 ~ li{ display: flex; align-items: center; justify-content: space-between;}
-.menuStep1 li{ border-bottom: 1px dashed var(--clGray);}
-.menuStep1 li:last-child{ border-bottom: 0;}
-.menuStep1 li a:hover, .menuStep1 li a.active{ background: var(--clGray); padding: 5px 15px;}
-.menuStep1 li ul{ opacity: 0; visibility: hidden; height: 0; transform: scaleX(-20%);
-    transition: transform 0.5s ease-in-out;}
-.menuStep1 li.active ul{ opacity: 1; visibility: visible; height: auto; transform: translateX(0);}
-.menuStep1 li.active ul li a{ display: flex; justify-content: flex-start; gap: 15px; padding-left: 15px;}
-
-.navMenuBusiness{ display: none;}
-
-@media (max-width:991px){
-    .navMenuBusiness{ display: flex; align-items: center; justify-content: space-between; gap: 15px; }
-    .navMenuBusiness h2{ flex: 1 1 70%; max-width: 70%;}
-    .navMenuBusiness div{ flex: 1 1 30%; max-width: 30%;}
-
-    #toggleMenuBusiness{ display: block; text-align: right;}
-    #toggleMenuBusiness button{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite); 
-        border-radius: 5px;}
-    #toggleMenuBusiness button:hover{ background: var(--clRedHover); border: 1xp solid var(--clRedHover);}
-    .menuStep1{ opacity: 0; visibility: hidden; transform: translateY(-50%); height: 0; border-top: 1px solid var(--clBlackGray);
-        transition: all 0.5s ease-in-out;}
-    .menuStep1.show{ opacity: 1; visibility: visible; transform: translateY(0); height: auto; 
-        padding-top: 15px; margin-top: 15px; }
+.gridBoard {
+  display: grid;
+  grid-template-columns: 33rem 1fr;
+  grid-gap: 1.5rem;
+}
+.gridBoard > div:last-child {
+  overflow: hidden;
 }
 
-.recommentInfo{ background: transparent; border: none;}
-.flexInfo{ display: flex; justify-content: space-between; gap: 15px;}
-.flexInfo>*{ flex: 1 1 50%; max-width: 50%;}
+.tbody tr:nth-child(even) {
+  background: var(--clShineGray);
+}
 
-.flexButtonBusiness{ display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); grid-gap: 15px;}
-.flexButtonBusiness a, .flexButtonBusiness a.active{ display: flex; align-items: center; flex-direction: column; 
-    height: 100%; padding: 5px; color: var(--clBlackGray); text-align: center; position: relative; z-index: 2;}
-.flexButtonBusiness a.active{ background: var(--clWhitetGray); border-radius: 10px;}
-.flexButtonBusiness a::after{ content: ""; position: absolute; top: 0; left: 0; 
-    transform: scaleX(0); width: 100%; height: 100%; transition: all 0.5s ease-in-out; transform-origin: left; 
-    z-index: -1; background: var(--clWhitetGray); border-radius: 10px;}
-.flexButtonBusiness a:hover::after{ transform: scaleX(1); transform-origin: right;}
-.flexButtonBusiness img{ max-width: 75px;}
+@media (max-width: 1200px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 1.5rem;
+  }
+  .table td {
+    position: relative;
+    padding-left: 51%;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: var(--clWhitetGray);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .tbody tr:nth-child(even) {
+    background: inherit;
+  }
+  .table.table-bordered {
+    border: none;
+  }
+}
 
-.statistics{ display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;}
-.statistics a{ background: var(--clRed); color: var(--clWhite); border-radius: 50px; padding: 5px 20px;}
-.statistics a:hover{ background: var(--clRedHover);}
+@media (max-width: 991px) {
+  .gridBoard {
+    grid-template-columns: 1fr;
+  }
+}
 
-.girdChart{ display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); grid-gap: 15px;}
-.flexInChart{ display: flex; flex-direction: column; align-items: center;}
+.flexDataCompany {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.create a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 5px 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+.create a:hover {
+  background: var(--clRedHover);
+}
 
-canvas#donutChart{position:relative; z-index:99999 !important;}
+.doProfile a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 5px 30px;
+  border-radius: 50px;
+  display: inline-block;
+}
+.doProfile a:hover {
+  background: var(--clRedHover);
+}
+
+.flexPic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.flexPic div {
+  width: 100%;
+  text-align: center;
+}
+
+.flexPic img {
+  border-radius: 50%;
+  min-width: 150px;
+  height: 150px;
+  object-fit: scale-down;
+  border: 1px solid var(--clBlackGray);
+}
+
+.menuStep1 {
+  display: flex;
+  flex-direction: column;
+}
+.menuStep1 figure {
+  width: 100%;
+}
+.menuStep1 img {
+  max-width: 25px;
+}
+.menuStep1 > li a {
+  color: var(--clBlackGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.menuStep1 li a ~ ul li a {
+  color: var(--clBlackGray);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-gap: 1.5rem;
+  width: 100%;
+  padding-left: 3rem;
+}
+.menuStep1 > li,
+.menuStep1 > li a ~ ul li {
+  border-bottom: 1px dashed var(--clGray);
+}
+.menuStep1 > li:last-child,
+.menuStep1 > li a ~ ul li:last-child {
+  border-bottom: 0;
+}
+.menuStep1 > li a {
+  padding: 5px 15px;
+}
+.menuStep1 > li a:hover,
+.menuStep1 > li a.active {
+  background: var(--clGray);
+}
+.menuStep1 li > a ~ ul {
+  background: var(--clWhite);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menuStep1 li > a ~ ul.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navMenuBusiness {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navMenuBusiness {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .navMenuBusiness h2 {
+    flex: 1 1 70%;
+    max-width: 70%;
+  }
+  .navMenuBusiness div {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  #toggleMenuBusiness {
+    display: block;
+    text-align: right;
+  }
+  #toggleMenuBusiness button {
+    background: var(--clRed);
+    border: 1px solid var(--clRed);
+    color: var(--clWhite);
+    border-radius: 5px;
+  }
+  #toggleMenuBusiness button:hover {
+    background: var(--clRedHover);
+    border: 1xp solid var(--clRedHover);
+  }
+  .menuStep1 {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    border-top: 1px solid var(--clBlackGray);
+    transition: all 0.5s ease-in-out;
+  }
+  .menuStep1.show {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 15px;
+  }
+}
+
+.recommentInfo {
+  background: transparent;
+  border: none;
+}
+.flexInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.flexInfo > * {
+  flex: 1 1 50%;
+}
+.flexInfo > * h6 {
+  color: var(--clRed);
+}
+
+.flexButtonBusiness {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 15px;
+}
+.flexButtonBusiness a,
+.flexButtonBusiness a.active {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 5px;
+  color: var(--clBlackGray);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.flexButtonBusiness a.active {
+  background: var(--clWhitetGray);
+  border-radius: 10px;
+}
+.flexButtonBusiness a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left;
+  z-index: -1;
+  background: var(--clWhitetGray);
+  border-radius: 10px;
+}
+.flexButtonBusiness a:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.flexButtonBusiness img {
+  max-width: 75px;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.statistics a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+.statistics a:hover {
+  background: var(--clRedHover);
+}
+
+.girdChart {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 15px;
+}
+.flexInChart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid_packageWatch {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 27rem;
+  align-items: flex-start;
+}
+
+.flex_package {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.flex_package div > p {
+  font-size: var(--fontSubText);
+}
+.flex_package > div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.flex_package > div:first-child {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.flex_package > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+@media (max-width: 991px) {
+  .grid_packageWatch {
+    grid-template-columns: 1fr;
+  }
+
+  /* .flex_package > div:last-child {
+    flex-basis: auto;
+  } */
+}
+
+@media (max-width: 576px) {
+  .flex_package {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex_package > div:last-child {
+    justify-content: flex-start;
+  }
+}
+
+.listWatch .day_watch {
+  font-size: var(--fontSubText);
+}
+
+.overflow_watch {
+  overflow-y: auto;
+  height: 45rem;
+}
+.overflow_watch::-webkit-scrollbar {
+  width: 1rem;
+} /* width */
+.overflow_watch::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} /* Track */
+.overflow_watch::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+} /* Handle */
+.overflow_watch::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} /* Handle on hover */
+
+.received_package {
+  display: grid;
+  grid-template-columns: 1fr 10rem;
+  grid-gap: 3rem;
+}
+
+.received_package ul li {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  grid-gap: 1rem;
+}
+
+.received_package ul li p {
+  font-size: var(--fontSubText);
+}

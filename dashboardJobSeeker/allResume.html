@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เรซูเม่ทั้งหมดของ ผู้สมัครงาน</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/topbar.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css" />
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css" />
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
+    <link rel="stylesheet" href="css/dashboardJobseeker.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="css/jobRecomment.css" />
+    <link rel="stylesheet" href="css/allResume.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <article class="row">
+        <div class="col-12">
+          <!-- topbar -->
+          <article class="topbar">
+            <!-- assets/components/topbar.js -->
+          </article>
+          <!-- end topbar -->
+
+          <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+          <article class="clWhitetGray calC userMenuShow">
+            <!-- userMenuShow businessMenuShow -->
+            <!-- assets/components/topBarBusiness.js -->
+            <!-- assets/components/topBarJobSeeker.js -->
+          </article>
+          <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+          <article class="mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumbJobbkk">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <div class="lineDash"></div>
+
+            <section class="mb-5">
+              <div class="headResume mb-3">
+                <h2 class="fontHead">เรซูเม่</h2>
+                <p class="textRed">คุณสามารถบันทึกเรซูเม่ได้มากถึง 10 ฉบับ</p>
+              </div>
+
+              <div class="flexWang clWhitetGray p-3 mb-3 borderRadiusStyle">
+                <section class="flexLumdab">
+                  <p>จัดเรียงตาม</p>
+                  <select class="form-control formControl">
+                    <option value="">จัดเรียงตามลำดับ</option>
+                    <option value="">อัพเดตล่าสุด</option>
+                    <option value="">วันที่</option>
+                    <option value="">ตามพยัญชนะ</option>
+                  </select>
+                </section>
+                <div class="create">
+                  <a href="../dashboardJobSeeker/create_resume.html"
+                    >สร้างเรซูเม่</a
+                  >
+                </div>
+              </div>
+
+              <div class="table-responsive mb-5">
+                <table class="table table-bordered table-striped table-hover">
+                  <thead class="clGray">
+                    <tr>
+                      <th scope="col" class="first">ชื่อเรซูเม่</th>
+                      <th scope="col">สร้างวันที่</th>
+                      <th scope="col">อัพเดตล่าสุด</th>
+                      <th scope="col">สถานะเรซูเม่</th>
+                      <th scope="col">ดาวน์โหลด</th>
+                      <th scope="col">จัดการเรซูเม่</th>
+                      <th scope="col">ความเป็นส่วนตัว</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)"
+                            >Chatthong Hongwisuthikul</a
+                          >
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <button class="succes online">ออนไลน์</button>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)">Chat Skysword</a>
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <button class="offline">ออฟไลน์</button>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)">Chat Skysword</a>
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <button class="offline">ออฟไลน์</button>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)">Chat Dynastystrike</a>
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <span class="danger">ไม่ผ่านการตรวจสอบ</span>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)">Chat Chatthong</a>
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <span class="warning">รอการตรวจสอบ</span>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="first" data-label="ชื่อเรซูเม่">
+                        <p class="name mb-2">
+                          <a href="javascript:void(0)">Chat Hongwisuthikul</a>
+                        </p>
+                        <ul class="langResume">
+                          <li class="me">TH</li>
+                          <li class="notme">EN</li>
+                        </ul>
+                      </td>
+                      <td data-label="สร้างวันที่">30 ม.ค. 2564</td>
+                      <td data-label="อัพเดตล่าสุด">31 ธ.ค. 2564</td>
+                      <td data-label="สถานะเรซูเม่">
+                        <span class="noPerfect">ไม่สมบูรณ์</span>
+                      </td>
+                      <td data-label="ดาวน์โหลด">
+                        <button class="download resumeOnline" type="button">
+                          TH
+                        </button>
+                        <button class="download resumeOffline" type="button">
+                          EN
+                        </button>
+                      </td>
+                      <td data-label="จัดการเรซูเม่">
+                        <ul class="flexThree">
+                          <li>
+                            <button class="addResume">เพิ่ม : EN</button>
+                          </li>
+                          <li><a href="createCorrect_resume.html">แก้ไข</a></li>
+                          <li><button class="delete">ลบ</button></li>
+                        </ul>
+                      </td>
+                      <td data-label="ความเป็นส่วนตัว">
+                        <button
+                          class="reveal"
+                          data-toggle="modal"
+                          data-target="#revealAll"
+                        >
+                          เปิดเผยทั้งหมด
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- modal เปิดเผยทั้งหมด -->
+                <div
+                  class="modal fade"
+                  id="revealAll"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modalDialog">
+                    <div
+                      class="modal-content"
+                      style="max-width: 57.6rem; margin: 0 auto"
+                    >
+                      <div class="modal-header">
+                        <div class="flexHeadModal">
+                          <h2 class="fontSubHead textWhite lineH">
+                            สถานะการเปิดเผยข้อมูล
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="close fontSuperHead textWhite"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true"
+                            ><i class="fas fa-times-circle"></i
+                          ></span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <ul class="boxReveal">
+                          <li>
+                            <label
+                              ><input type="radio" name="reveal" />
+                              เปิดเผยทั้งหมด</label
+                            >
+                          </li>
+                          <li>
+                            <label
+                              ><input type="radio" name="reveal" />
+                              ปกปิดข้อมูลทั้งหมด</label
+                            >
+                          </li>
+                          <li class="revealParent">
+                            <label class="revealHide"
+                              ><input type="radio" name="reveal" data-reveal />
+                              ปกปิดข้อมูลบางส่วน</label
+                            >
+                            <ul>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  ชื่อ-สกุล</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  ที่อยู่</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  เบอร์โทรศัพท์บ้าน</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  อีเมล</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  เบอร์โทรมือถือ</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  Line</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  Facebook</label
+                                >
+                              </li>
+                              <li>
+                                <label
+                                  ><input type="checkbox" name="bb" />
+                                  รูปถ่าย</label
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="modal-footer flexCenter">
+                        <button type="button" class="btn_red save_alert">
+                          บันทึก
+                        </button>
+                        <button
+                          type="button"
+                          class="btn_white"
+                          data-dismiss="modal"
+                        >
+                          ปิด
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end เปิดเผยทั้งหมด -->
+              </div>
+
+              <div>
+                <h6 class="textRed mb-3 fontText">* หมายเหตุ</h6>
+
+                <div class="lineDashUrgent"></div>
+
+                <div class="gridNote mb-3 fontSubText">
+                  <div>
+                    <span class="number text-center">สถานะเรซูเม่</span>
+                  </div>
+                  <p>
+                    คือ ผู้ใช้สมัครสามารถ
+                    <span class="textGreen">"เปิด ปิด"</span> สถานะ
+                    <span class="textGreen">เรซูเม่ ออนไลน์ ออฟไลน์</span> ได้
+                  </p>
+                </div>
+
+                <div class="gridNote mb-3 fontSubText">
+                  <div><span class="number text-center">ดาวน์โหลด</span></div>
+                  <p>
+                    คือ ผู้ใช้สมัคร
+                    <span class="textGreen">"คลิก"</span> ดาวน์โหลดเรซูเม่ได้
+                  </p>
+                </div>
+
+                <div class="gridNote mb-3 fontSubText">
+                  <div>
+                    <span class="number text-center">จัดการเรซุเม่</span>
+                  </div>
+                  <p>
+                    คือ ผู้ใช้สมัครสามารถ
+                    <span class="textGreen">"คลิก แก้ไข"</span>
+                    สามารถกลับไปแก้ไขเรซูเม่ได้ และเมื่อ
+                    <span class="textGreen">"คลิก ลบ"</span> สามารถลบ เรซูเม่
+                    ของผู้สมัครได้
+                  </p>
+                </div>
+
+                <div class="gridNote mb-3 fontSubText">
+                  <div>
+                    <span class="number text-center">เพิ่มเรซูเม่</span>
+                  </div>
+                  <p>
+                    คือ ผู้ใช้สมัครสามารถ
+                    <span class="textGreen">"คลิก ปุ่มเพิ่มเรซูเม่"</span>
+                    เพื่อสร้างเรซูเม่ภาษาที่ยังไม่มีได้ เช่น ผู้ใช้งาน
+                    มีเรซูเม่ชื่อ
+                    <span class="textGreen">"JOBBKK"</span> เรซูเม่ชื่อ
+                    <span class="textGreen">"JOBBKK"</span> มีภาษาไทยแล้ว
+                    แต่ยังไม่มีภาษาอังกฤษ คุณสามารถกด ปุ่ม
+                    <span class="textGreen">"เพิ่มเรซูเม่"</span> ตรง
+                    <span class="font-weight-bold">ตารางจัดการเรซูเม่ได้</span>
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-5" id="job_recomment">
+              <h2 class="fontHead textRed mb-3">Job we recomment</h2>
+              <article class="gridRec mb-5">
+                <!-- js/jobRecomment.js -->
+              </article>
+
+              <div class="readNews">
+                <a href="javascript:void(0)">ดูทั้งหมด</a>
+              </div>
+            </section>
+          </article>
+        </div>
+      </article>
+
+      <!-- footer -->
+      <footer class="calC footerJobbkk">
+        <!-- assets/components/footer.js -->
+      </footer>
+      <!-- end footer -->
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
+  </body>
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/slide-menu.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/jquery.dotdotdot.min.js"></script>
+  <script src="../assets/js/sweetalert2@10.js"></script>
+
+  <script src="../assets/components/pathActive.js"></script>
+  <script src="../assets/components/topBarJobSeeker.js"></script>
+  <script src="../assets/components/footer.js"></script>
+  <script src="../assets/components/cookiePolicy.js"></script>
+
+  <script src="js/jobRecomment.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // ตัดคำ
+    $(".cutCut").dotdotdot({
+      height: 48,
+      fallbackToLetter: true,
+      watch: true,
+    });
+
+    // ลบเรซูเม่
+    $(".delete").on("click", function () {
+      Swal.fire({
+        title: "เลือกภาษาเรซูเม่ที่ต้องการลบ",
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonText: "ภาษาอังกฤษ",
+        cancelButtonText: "ภาษาไทย",
+        reverseButtons: true,
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            icon: "success",
+            title: "ลบเรซูเม่ภาษาอังกฤษเรียบร้อยแล้ว",
+            confirmButtonText: "ตกลง",
+          });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          Swal.fire({
+            icon: "success",
+            title: "ลบเรซูเม่ภาษาไทยเรียบร้อยแล้ว",
+            confirmButtonText: "ตกลง",
+          });
+        }
+      });
+    });
+    // end ลบเรซูเม่
+
+    // ออนไลน์เรซูเม่ ออฟไลน์เรซูเม่
+    const tbody = document.querySelector("tbody");
+
+    tbody.onclick = (e) => {
+      if (e.target.matches(".succes") && e.target.matches(".online")) {
+        Swal.fire({
+          title: "คุณต้องการที่จะออฟไลน์เรซูเม่ ?",
+          icon: "info",
+          showCancelButton: true,
+          showConfirmButton: true,
+          confirmButtonText: "ตกลง",
+          cancelButtonText: "ยกเลิก",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              icon: "success",
+              title: "ออฟไลน์เรซูเม่เรียบร้อยแล้ว",
+              confirmButtonText: "ตกลง",
+            });
+
+            const changeOffline = e.target;
+            changeOffline.className = "offline";
+            changeOffline.innerHTML = "ออฟไลน์";
+          }
+        });
+      } else if (e.target.matches(".offline")) {
+        Swal.fire({
+          title: "คุณต้องการที่จะออนไลน์เรซูเม่ ?",
+          icon: "info",
+          showCancelButton: true,
+          showConfirmButton: true,
+          confirmButtonText: "ตกลง",
+          cancelButtonText: "ยกเลิก",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              icon: "success",
+              title: "ออนไลน์เรซูเม่เรียบร้อยแล้ว",
+              confirmButtonText: "ตกลง",
+            });
+
+            const changeOnine = e.target;
+            changeOnine.className = "succes online";
+            changeOnine.innerHTML = "ออนไลน์";
+          }
+        });
+      }
+    };
+    // end ออนไลน์เรซูเม่ ออฟไลน์เรซูเม่
+
+    // เปิดเผยทั้งหมด
+    const revealParent = document.querySelector(".revealParent");
+    revealParent.onclick = (e) => {
+      if (e.target.hasAttribute("data-reveal")) {
+        const parent = e.target.closest(".revealParent"),
+          include = parent.querySelector("ul");
+
+        const removeReveal = () => {
+          include.classList.remove("open");
+          include.removeAttribute("style");
+        };
+
+        if (include.classList.contains("open")) {
+          removeReveal();
+        } else {
+          include.classList.add("open");
+          include.style.maxHeight = include.scrollHeight + 30 + "px";
+          include.style.padding = "15px";
+        }
+
+        window.onclick = (e) => {
+          if (!e.target.matches(".revealParent *")) {
+            removeReveal();
+          }
+        };
+      }
+    };
+    //end เปิดเผยทั้งหมด
+  </script>
+</html>

@@ -1,532 +1,436 @@
-var topbar = "";
-
-let linkWeb = (location.href.split("/").length == 5) ? "" : "../";
-
-let linkRegister = (location.href.split("/").length == 5) ? "" : "../";
-let registers = [
-  { name: "ผู้สมัครงาน", link: linkRegister + "login/loginJobSeeker.html" },
-  { name: "ผู้ประกอบการ", link: linkRegister + "login/loginBusiness.html" },
-  { name: "สมัครสมาชิก", link: linkRegister + "login/register.html" },
+const registers = [
+  { name: "ผู้สมัครงาน", link: path + "login/loginJobSeeker.html" },
+  { name: "ผู้ประกอบการ", link: path + "login/loginBusiness.html" },
+  { name: "สมัครสมาชิก", link: path + "login/register.html" },
 ];
+
+let topbar = "";
 
 topbar += `<div class="fixBg"></div>`;
-// banner king
-topbar += `<section class="king calC">`;
-topbar += `<figure><img src="${linkWeb}assets/images/king.jpg" alt=""></figure>`;
-topbar += `</section>`;
-// end banner king
 
-// ปุ่มแฮมเบอเกอ logo jobbkk banner topPage เข้าสู่ระบบ
-topbar += `<article class="bgTopbar calC py-3 px-5">`;
-topbar += `<section class="flexTop">`;
-// ปุ่มแฮมเบอเกอ
-topbar += `<button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="toggle">`;
-topbar += `<i class="fas fa-bars"></i>`;
-topbar += `</button>`;
-// end ปุ่มแฮมเบอเกอ
+// navbar
+topbar += `
+  <article class="bgTopbar calC py-3 px-5">
+    <section class="flexTop">
+      ${/* ปุ่มแฮมเบอเกอ */ ""}
+      <button type="button" class="btn slide-menu-control" data-target="test-menu-left" data-action="toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      ${/* end ปุ่มแฮมเบอเกอ */ ""}
 
-// logo jobbkk
-topbar += `<figure class="mr-2 logo">`;
-topbar += `<a href="${linkWeb}index.html"><img src="${linkWeb}assets/images/logo.png" alt=""></a>`;
-topbar += `</figure>`;
-// end logo jobbkk
+      ${/* logo jobbkk */ ""}
+      <figure class="mr-2 logo">
+        <a href="${path}index.html"><img src="${path}assets/images/logo.png" alt=""></a>
+      </figure>
+      ${/* end logo jobbkk */ ""}
 
-// banner topPage PC
-topbar += `<figure class="borderStyle banner mr-2">`;
-topbar += `<a href="javascript:void(0)" onclick="link()"></a>`;
-topbar += `<img src="${linkWeb}assets/images/toppage-ad.jpg" alt="">`;
-topbar += ` </a>`;
-topbar += `</figure>`;
-// end banner topPage PC
+      ${/* banner topPage PC */ ""}
+      <figure class="borderStyle banner mr-2">
+        <a href="javascript:void(0)" onclick="link()"></a>
+          <img src="${path}assets/images/toppage-ad.jpg" alt="">
+        </a>
+      </figure>
+      ${/* end banner topPage PC */ ""}
 
-topbar += `<section class="flexLangEnter">`;
-// ภาษา
-topbar += `<div class="flexLang mb-2">`;
-topbar += `<button class="active">TH</button>`;
-topbar += `<button>EN</button>`;
-topbar += `</div>`;
-// end ภาษา
+      ${/* ภาษา เข้าสู่ระบบ */ ""}
+      <section class="flexLangEnter">
+        ${/* ภาษา */ ""}
+        <div class="flexLang mb-2">
+          <button class="active">TH</button>
+          <button>EN</button>
+        </div>
+        ${/* end ภาษา */ ""}
 
-// เข้าสู่ระบบ
-topbar += `<div class="dropdown enterSystem">`;
-topbar += `<button class="dropdown-toggle dropdownToggle clWhite fontText" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-topbar += `<span class="mr-2">เข้าสู่ระบบ</span> <i class="fas fa-angle-down"></i>`;
-topbar += `</button>`;
+        ${/* เข้าสู่ระบบ */ ""}
+        <div class="dropdown enterSystem">
+          <button class="dropdown-toggle dropdownToggle clWhite fontText" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">เข้าสู่ระบบ</span> <i class="fas fa-angle-down"></i>
+          </button>
 
-topbar += `<div class="dropdown-menu dropdownMenu dropdown-menu-right" aria-labelledby="dropdownMenuButton">`;
-registers.forEach((register) => {
-  topbar += `<a class="dropdown-item dropdownItem" href="${register.link}">${register.name}</a>`;
-});
-topbar += `</div>`;
-topbar += `</div>`;
-// end เข้าสู่ระบบ
+          <div class="dropdown-menu dropdownMenu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="min-width:15rem">
+            ${registers
+              .map(
+                ({ name, link }) => `
+            <a class="dropdown-item dropdownItem" href="${link}">${name}</a>
+            `
+              )
+              .join("\n")}
+          </div>
+        </div>
+        ${/* end เข้าสู่ระบบ */ ""}
+      </section>
+      ${/* end ภาษา เข้าสู่ระบบ */ ""}
+    </section>
 
-// user เข้าสู่ระบบ
-let userLogin = (location.href.split('/').length == 5) ? '' : '../'
-topbar += `<div class="dropdown userLogin">`;
-topbar += `<button class="dropdown-toggle dropdownToggle userToggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-topbar += `<figure class="picUser mb-1"><img src="${userLogin}assets/images/pic.jpg" alt=""/> <i class="fas fa-angle-down"></i></figure>`;
-topbar += `<p class="idUser fontMark">ID : 123456</p>`;
-topbar += `</button>`;
-
-topbar += `<div class="dropdown-menu dropdown-menu-right dropdownMenuUser">`;
-topbar += `<section>`;
-topbar += `<div class="flexUserAlign mb-3">
-            <figure class="mb-2"><img src="${userLogin}assets/images/pic.jpg" alt=""/></figure>
-            <p>ID : 123456</p>
-            <p>dynastystrike@gmail.com</p>
-            <p class="editProfile mt-1"><a href="javascript:void(0)">Edit Profile</a></p>
-          </div>`;
-
-topbar += `<ul class="userMargin">`;
-let linkUser = (location.href.split("/").length == 5) ? "" : "../";
-userdropdowns = [
-  {
-    name: "หน้าสมาชิก",
-    link: linkUser + "index.html",
-    down: "",
-    dropdownClass: "",
-    class: "",
-    dropdownShow: "",
-    data: "",
-    span: "",
-    arrowShow: "",
-    badge: `<span class="badgeNew">ใหม่</span>`
-  },
-  {
-    name: "สร้าง/แก้ไขเรซูเม่",
-    link: linkUser + "index.html",
-    down: "",
-    dropdownClass: "",
-    class: "",
-    dropdownShow: "",
-    data: "",
-    span: "",
-    arrowShow: "",
-    badge: ""
-  },
-  {
-    name: "จัดการข้อมูล",
-    link: linkUser + "",
-    down: '<i class="fas fa-angle-down"></i>',
-    dropdownClass: "dropdownList",
-    class: "dropdownHead",
-    dropdownShow: "dropdown dropdownCl",
-    data: 'data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"',
-    span: "mr-1",
-    arrowShow: '<i class="fas fa-angle-down"></i>',
-    badge: "",
-    dropdowns: [
-      { name: "ประวัติการสมัครงาน", link: linkUser + "index.html" },
-      { name: "งานที่บันทึก", link: linkUser + "index.html" },
-      { name: "ผู้ประกอบการเปิดดูประวัติ", link: linkUser + "index.html" },
-      { name: "นัดสัมภาษณ์", link: linkUser + "index.html" },
-      { name: "Job Match", link: linkUser + "index.html" },
-      { name: "ขอดูใบสมัคร", link: linkUser + "index.html" },
-      { name: "ตารางนัดหมาย", link: linkUser + "index.html" },
-      { name: "ความเป็นส่วนตัว", link: linkUser + "index.html" },
-      { name: "ตั้งค่าการใช้งาน", link: linkUser + "index.html" },
-    ],
-  },
-  {
-    name: "ออกจากระบบ",
-    down: "",
-    dropdownClass: "",
-    class: "",
-    dropdownShow: "",
-    data: "",
-    span: "",
-    arrowShow: "",
-    badge: ""
-  },
-];
-userdropdowns.forEach((userdropdown) => {
-  if (userdropdown.dropdowns != null && userdropdown.dropdowns != "") {
-    topbar += `<li>`;
-    topbar += `<a class="dropdown-item dropdownItem py-2 px-3 ${userdropdown.dropdownClass}" href="javascript:void(0)">${userdropdown.name} ${userdropdown.down}</a>`;
-    topbar += `<ul class="dropdownNone">`;
-    userdropdown.dropdowns.forEach((dropdown) => {
-      topbar += `<li><a class="dropdown-item dropdownItem py-2 px-3" href="${dropdown.link}"><i class="fas fa-chevron-right"></i> ${dropdown.name}</a></li>`;
-    });
-    topbar += `</ul>`;
-    topbar += `</li>`;
-  } else {
-    topbar += `<a class="dropdown-item dropdownItem py-2 px-3" href="${userdropdown.link}">${userdropdown.name} ${userdropdown.down}</a>`;
-  }
-});
-topbar += `</ul>`;
-topbar += `</section>`;
-topbar += `</div>`;
-topbar += `</div>`;
-// end user เข้าสู่ระบบ
-
-// business เข้าสู่ระบบ
-let businessLog = (location.href.split('/').length == 5) ? '' : '../'
-topbar += `<div class="dropdown businessLogin">`;
-topbar += `<button class="dropdown-toggle dropdownToggle userToggle" type="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <figure class="picUser mb-1"><img src="${businessLog}assets/images/skysword.jpg" alt="" /> <i
-                                class="fas fa-angle-down"></i></figure>
-                        <p class="idUser fontMark">ID : 456789</p>
-                    </button>`;
-topbar += `<div class="dropdown-menu dropdown-menu-right dropdownMenuUser">`;
-topbar += `<section>`;
-topbar += `<div class="flexUserAlign mb-3">
-                                <figure class="mb-2"><img src="${businessLog}assets/images/skysword.jpg" alt="" /></figure>
-                                <p>ID : 123456</p>
-                                <p>dynastystrike@gmail.com</p>
-                                <p class="editProfile mt-1"><a href="javascript:void(0)">Edit Profile</a></p>
-                            </div>`;
-
-var businessLink = (location.href.split("/").length == 5) ? "" : "../";
-var businesses = [
-  { name: "หน้าสมาชิก", link: businessLink + "index.html", badge: `<span class="badgeNew">ใหม่</span>` },
-  { name: "ประกาศงาน", link: businessLink + "index.html", badge: '' },
-  { name: "อัพเดท/แก้ไขตำแหน่งงาน", link: businessLink + "index.html", badge: '' },
-  { name: "JobFair Online", link: businessLink + "index.html", badge: '' },
-  { name: "Resume Quick", link: businessLink + "index.html", badge: '' },
-  { name: "จัดการใบสมัครงาน iCMS", link: businessLink + "index.html", badge: '' },
-  { name: "รายงาน", link: businessLink + "index.html", badge: '' },
-  { name: "ตั้งค่า", link: businessLink + "index.html", badge: '' },
-  { name: "ออกจากระบบ", link: businessLink + "index.html", badge: '' },
-];
-topbar += `<ul class="userMargin">`;
-businesses.forEach((business) => {
-  topbar += `<li>
-                              <a class="dropdown-item dropdownItem py-2 px-3"
-                                  href="${business.link}">${business.name}</a>
-                          </li>`;
-});
-topbar += `</ul>`;
-topbar += `</section>`;
-topbar += `</div>`;
-topbar += `</div>`;
-// end business เข้าสู่ระบบ
-
-topbar += `</section>`;
-topbar += `</section>`;
-
-// banner topPage Mobile
-topbar += `<section class="bannerMobile mt-3">`;
-topbar += `<figure> <a href="javascript:void(0)" onclick="link()" class="borderStyle">`;
-topbar += `<img src="${linkWeb}assets/images/toppage-ad.jpg" alt=""></a>`;
-topbar += `</figure>`;
-topbar += `</section>`;
-// end banner topPage Mobile
-topbar += `</article>`;
-// end ปุ่มแฮมเบอเกอ logo jobbkk banner topPage เข้าสู่ระบบ
-
-let linkMenu = (location.href.split("/").length == 5) ? "" : "../";
-let path = location.href.split("/");
-let lastPath = path[path.length - 1];
-let menus = [
-  {
-    name: "หน้าแรก",
-    link: linkMenu + "index.html",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-1.png",
-    classOrigin: "",
-    class: "",
-    data: "",
-    arrow: "",
-    arrowMobile: "",
-    none: '',
-  },
-  {
-    name: "หางานด่วน",
-    link: linkMenu + "searchWork/premiumUrgent.html",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-2.png",
-    classOrigin: "",
-    class: "",
-    data: "",
-    arrow: "",
-    arrowMobile: "",
-    none: '',
-  },
-  {
-    name: "ค้นหางาน ",
-    link: linkMenu + "javascript:void(0)",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-3.png",
-    classOrigin: "dropdown dropdownHover dropdownCl",
-    class: "dropdownHead",
-    data: `data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"`,
-    arrowMobile: `<i class="fa fa-angle-right" aria-hidden="true"></i>`,
-    arrow: '<i class="fas fa-angle-down"></i>',
-    none: '',
-    dropdowns: [
-      {
-        name: "งานกรุงเทพปริมณฑล",
-        link: linkMenu + "searchWork/premiumUrgent.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานนักศึกษาฝึกงาน",
-        link: linkMenu + "searchWork/premiumUrgent.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานสหกิจศึกษา",
-        link: linkMenu + "searchWork/premiumUrgent.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานสำหรับคนพิการ",
-        link: linkMenu + "searchWork/premiumUrgent.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งาน Jobfair",
-        link: linkMenu + "jobfairEvent/jobfairEvent.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-    ],
-  },
-  {
-    name: "ค้นหาประวัติ",
-    link: linkMenu + "searchResume/resumeUrgentPremium.html",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-4.png",
-    classOrigin: "",
-    class: "",
-    data: "",
-    arrow: "",
-    arrowMobile: "",
-    none: '',
-  },
-  {
-    name: "งานภุมิภาค ",
-    link: linkMenu + "javascirpt:void(0)",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-5.png",
-    classOrigin: "dropdown dropdownHover dropdownCl",
-    class: "dropdownHead",
-    data: `data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"`,
-    arrowMobile: `<i class="fa fa-angle-right" aria-hidden="true"></i>`,
-    arrow: '<i class="fas fa-angle-down"></i>',
-    none: '',
-    dropdowns: [
-      {
-        name: "งานภาคกลาง",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานภาคตะวันออก",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานภาคเหนือ",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานภาคอีสาน",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานภาคใต้",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "งานภาคตะวันตก",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-    ],
-  },
-  {
-    name: "งานราชการ",
-    link: linkMenu + "governmentWork/governmentWork.html",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-9.png",
-    classOrigin: "",
-    class: "",
-    data: "",
-    arrow: "",
-    arrowMobile: "",
-    none: 'goverment',
-  },
-  {
-    name: "งานสหกิจ/พาร์ทไทม์",
-    link: linkMenu + "javascirpt:void(0)",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-6.png",
-    classOrigin: "",
-    class: "",
-    data: "",
-    arrow: "",
-    arrowMobile: "",
-    none: '',
-  },
-  {
-    name: "บทความ ",
-    link: linkMenu + "javascirpt:void(0)",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-7.png",
-    classOrigin: "dropdown dropdownHover dropdownCl",
-    class: "dropdownHead",
-    data: `data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"`,
-    arrowMobile: `<i class="fa fa-angle-right" aria-hidden="true"></i> `,
-    arrow: '<i class="fas fa-angle-down"></i>',
-    none: '',
-    dropdowns: [
-      {
-        name: "HR Society",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "Inspiration",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "วาไรตี้ ",
-        link: linkMenu + "",
-        arrow: '<i class="fas fa-chevron-right iconAB"></i>',
-        arrowMobile: `<i class="fa fa-angle-right" aria-hidden="true"></i> `,
-        dropdownsTwo: [
-          { name: "ข่าวน่าสนใจ", link: linkMenu + "index.html" },
-          { name: "กิจกรรม", link: linkMenu + "index.html" },
-          { name: "คลังความรู้", link: linkMenu + "index.html" },
-          { name: "Lifestyle", link: linkMenu + "index.html" },
-          { name: "จ๊อบชวนเจี๊ยะ", link: linkMenu + "index.html" },
-          { name: "วีดีโอ", link: linkMenu + "index.html" },
-        ],
-      },
-    ],
-  },
-  {
-    name: "เกี่ยวกับจ๊อบบีเคเค ",
-    link: linkMenu + "javascirpt:void(0)",
-    img: linkMenu + "assets/images/iconMenuHomeMobile-8.png",
-    classOrigin: "dropdown dropdownHover dropdownCl",
-    class: "dropdownHead",
-    data: `data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"`,
-    arrowMobile: `<i class="fa fa-angle-right" aria-hidden="true"></i>`,
-    arrow: '<i class="fas fa-angle-down"></i>',
-    none: '',
-    dropdowns: [
-      {
-        name: "ข่าวและกิจกรรม",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "ติดต่อเรา",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "ร่วมงานกับเรา",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "แนะนำการใช้งานเว็ปไซต์",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "อัตราค่าโฆษณา",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-      {
-        name: "วิธีการชำระเงิน",
-        link: linkMenu + "index.html",
-        arrow: "",
-        arrowMobile: "",
-      },
-    ],
-  },
-];
+    ${/* banner topPage Mobile */ ""}
+    <section class="bannerMobile mt-3">
+      <figure> <a href="javascript:void(0)" onclick="link()" class="borderStyle">
+        <img src="${path}assets/images/toppage-ad.jpg" alt=""></a>
+      </figure>
+    </section>
+    ${/* end banner topPage Mobile */ ""}
+  </article>`;
+// end navbar
 
 // menu PC
-topbar += `<section class="flexNav calC">`;
-menus.forEach((menu) => {
+topbar += `
+  <section class="flexNav calC">
+    <div><a href="${path}index.html" class="theFirst">หน้าแรก</a></div>
+    <div><a href="${path}searchWorkUrgent/premiumUrgent.html" class="theFirst">หางานด่วน</a></div>
 
-  let activeClass = "";
-  if (menu.link.includes(lastPath)) {
-    activeClass = "active";
-  }
+    <div class="dropdown dropdownHover dropdownCl">
+      <a href="${path}searchWork/searchWork.html" class="dropdownHead theFirst" aria-haspopup="true"
+        aria-expanded="false">ค้นหางาน <i class="fas fa-angle-down"></i>
+      </a>
+      <div class="dropdown-menu dropdownHeadDown">
+        <a class="dropdown-item dropdownItem" href="${path}searchWork/searchWork.html">งานกรุงเทพปริมณฑล</a>
+        <a class="dropdown-item dropdownItem" href="${path}searchWork/searchWork.html">งานนักศึกษาฝึกงาน</a>
+        <a class="dropdown-item dropdownItem" href="${path}searchWork/searchWork.html">งานสหกิจศึกษา</a>
+        <a class="dropdown-item dropdownItem" href="${path}searchWork/searchWork.html">งานสำหรับคนพิการ</a>
+        <a class="dropdown-item dropdownItem" href="${path}searchWork/searchWork.html">งาน Jobfair</a>
+      </div>
+    </div>
 
-  topbar += `<div class="${menu.classOrigin} ${menu.none}">`;
-  topbar += `<a href="${menu.link}" class="${menu.class} ${activeClass} theFirst" ${menu.data}> ${menu.name} ${menu.arrow}</a>`;
-  if (menu.dropdowns != null && menu.dropdowns != "") {
-    topbar += `<div class="dropdown-menu dropdownHeadDown">`;
-    menu.dropdowns.forEach((dropdown) => {
-      if (dropdown.dropdownsTwo != null && dropdown.dropdownsTwo != "") {
-        topbar += `<div class="dropdown dropright dropdownCl">`;
-        topbar += `<a class="${menu.class} dropdown-item" id="${menu.id}" href="javascript:void(0)" ${menu.data}> ${dropdown.name} ${dropdown.arrow}</a>`;
-        topbar += `<div class="dropdown-menu dropdownHeadDown">`;
-        dropdown.dropdownsTwo.forEach((dropdownTwo) => {
-          topbar += `<a class="dropdown-item dropdownItem" href="${dropdownTwo.link}" ${menu.data}> ${dropdownTwo.name}</a>`;
-        });
-        topbar += `</div>`;
-        topbar += `</div>`;
-      } else {
-        topbar += `<a class="dropdown-item dropdownItem" href="${dropdown.link}" > ${dropdown.name} ${dropdown.arrow}</a>`;
-      }
-    });
-  }
-  topbar += `</div>`;
-  topbar += `</div>`;
-});
-topbar += `</section>`;
+    <div>
+      <a href="${path}searchResume/searchResume.html" class="theFirst">ค้นหาประวัติ</a>
+    </div>
+
+    <div class="dropdown dropdownHover dropdownCl">
+      <a href="${path}regionWork/regionIndex.html" class="dropdownHead theFirst" aria-haspopup="true"
+        aria-expanded="false">งานภุมิภาค <i class="fas fa-angle-down"></i>
+      </a>
+
+      <div class="dropdown-menu dropdownHeadDown">
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionCenter.html">งานภาคกลาง</a>
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionEast.html">งานภาคตะวันออก</a>
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionNorth.html">งานภาคเหนือ</a>
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionEastNorth.html">งานภาคอีสาน</a>
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionSouth.html">งานภาคใต้</a>
+        <a class="dropdown-item dropdownItem" href="${path}regionWork/regionWest.html">งานภาคตะวันตก</a>
+      </div>
+    </div>
+    
+    <div><a href="${path}" class="theFirst">งานสหกิจ/พาร์ทไทม์</a></div>
+    
+    <div class="dropdown dropdownHover dropdownCl">
+      <a href="${path}article/article.html" class="dropdownHead theFirst" aria-haspopup="true"
+        aria-expanded="false">บทความ <i class="fas fa-angle-down"></i>
+      </a>
+
+      <div class="dropdown-menu dropdownHeadDown">
+        <a class="dropdown-item dropdownItem" href="${path}article/hrSociety.html">HR Society</a>
+        <a class="dropdown-item dropdownItem" href="${path}article/inspiration.html">Inspiration</a>
+        <div class="dropdown dropright dropdownCl">
+          <a class="dropdownHead dropdown-item" href="javascript(void):0" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">วาไรตี้ <i class="fas fa-chevron-right iconAB"></i>
+          </a>
+
+          <div class="dropdown-menu dropdownHeadDown">
+            <a class="dropdown-item dropdownItem" href="${path}article/new.html">ข่าวน่าสนใจ</a>
+            <a class="dropdown-item dropdownItem" href="${path}article/activity.html">กิจกรรม</a>
+            <a class="dropdown-item dropdownItem" href="${path}article/knowledge.html">คลังความรู้</a>
+            <a class="dropdown-item dropdownItem" href="${path}article/lifeStyle.html">Lifestyle</a>
+            <a class="dropdown-item dropdownItem" href="${path}article/jobEat.html">จ๊อบชวนเจี๊ยะ</a>
+            <a class="dropdown-item dropdownItem" href="${path}article/vdo.html">วีดีโอ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown dropdownHover dropdownCl">
+      <a href="javascript:void(0)" class="dropdownHead theFirst" aria-haspopup="true"
+        aria-expanded="false">เกี่ยวกับจ๊อบบีเคเค <i class="fas fa-angle-down"></i>
+      </a>
+
+      <div class="dropdown-menu dropdownHeadDown">
+        <a class="dropdown-item dropdownItem" href="">ข่าวและกิจกรรม</a>
+        <a class="dropdown-item dropdownItem" href="${path}contact/contact.html">ติดต่อเรา</a>
+        <a class="dropdown-item dropdownItem" href="${path}work_with_us/work_with_us.html">ร่วมงานกับเรา</a>
+        <a class="dropdown-item dropdownItem" href="">แนะนำการใช้งานเว็ปไซต์</a>
+        <a class="dropdown-item dropdownItem" href="">อัตราค่าโฆษณา</a>
+        <a class="dropdown-item dropdownItem" href="">วิธีการชำระเงิน</a>
+      </div>
+    </div>
+  </section>`;
 // end menu PC
 
 // menu mobile
-topbar += `<nav class="slide-menu" id = "test-menu-left">`;
-topbar += `<button type="button" class="btn slide-menu-control slideClose" data-action="close">`;
-topbar += `<i class="fa fa-times" aria-hidden="true"></i>`;
-topbar += `</button>`;
+topbar += `
+  <nav class="slide-menu" id = "test-menu-left">
+    <button type="button" class="btn slide-menu-control slideClose" data-action="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
 
-topbar += `<ul>`;
-menus.forEach((menu) => {
-  topbar += `<li>`;
-  topbar += `<a href ="${menu.link}" class="menu-mobile">`;
-  topbar += `<img src ="${menu.img}"> ${menu.name}`;
-  topbar += `${menu.arrowMobile}`;
-  topbar += `</a>`;
-  if (menu.dropdowns != null && menu.dropdowns != "") {
-    topbar += `<ul>`;
-    menu.dropdowns.forEach((dropdown) => {
-      topbar += `<li>`;
-      topbar += `<a href="${dropdown.link}" class="menu-mobile"> ${dropdown.name} ${dropdown.arrowMobile}</a>`;
-      if (dropdown.dropdownsTwo != null && dropdown.dropdownsTwo != "") {
-        topbar += `<ul>`;
-        dropdown.dropdownsTwo.forEach((dropdownTwo) => {
-          topbar += `<li><a href="${dropdownTwo.link}" class="menu-mobile">${dropdownTwo.name}</a></li>`;
-        });
-        topbar += `</ul>`;
-      }
-      topbar += `</li>`;
-    });
-    topbar += `</ul>`;
-  }
-  topbar += `</li>`;
-});
-topbar += `</ul>`;
-topbar += `</nav>`;
+    <ul>
+      <li>
+        <a href ="${path}index.html" class="menu-mobile"><img src ="${path}assets/images/iconMenuHomeMobile-1.png"> หน้าแรก</a>
+      </li>
+      <li>
+        <a href ="${path}searchWorkUrgent/premiumUrgent.html" class="menu-mobile"><img src ="${path}assets/images/iconMenuHomeMobile-2.png"> หางานด่วน</a>
+      </li>
+      <li>
+        <a href ="่javascript:void(0)" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-4.png"> ค้นหางาน
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <ul>
+          <li>
+            <a href="${path}searchWork/searchWork.html" class="menu-mobile"> งานกรุงเทพปริมณฑล</a>
+          </li>
+          <li>
+            <a href="${path}searchWork/searchWork.html" class="menu-mobile"> งานนักศึกษาฝึกงาน</a>
+          </li>
+          <li>
+            <a href="${path}searchWork/searchWork.html" class="menu-mobile"> งานสหกิจศึกษา</a>
+          </li>
+          <li>
+            <a href="${path}searchWork/searchWork.html" class="menu-mobile"> งานสำหรับคนพิการ</a>
+          </li>
+          <li>
+            <a href="${path}searchWork/searchWork.html" class="menu-mobile"> งาน Jobfair</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href ="${path}searchResume/searchResume.html" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-3.png"> ค้นหาประวัติ
+        </a>
+      </li>
+      <li>
+        <a href ="${path}regionWork/regionIndex.html" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-5.png"> งานภุมิภาค
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <ul>
+          <li>
+            <a href="${path}regionWork/regionCenter.html" class="menu-mobile"> งานภาคกลาง</a>
+          </li>
+          <li>
+            <a href="${path}regionWork/regionIndex.html" class="menu-mobile"> งานภาคตะวันออก</a>
+          </li>
+          <li>
+            <a href="${path}regionWork/regionIndex.html" class="menu-mobile"> งานภาคเหนือ</a>
+          </li>
+          <li>
+            <a href="${path}regionWork/regionIndex.html" class="menu-mobile"> งานภาคอีสาน</a>
+          </li>
+          <li>
+            <a href="${path}regionWork/regionIndex.html" class="menu-mobile"> งานภาคใต้</a>
+          </li>
+          <li>
+            <a href="${path}regionWork/regionIndex.html" class="menu-mobile"> งานภาคตะวันตก</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href ="${path}governmentWork/governmentWork.html" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-9.png"> งานราชการ
+        </a>
+      </li>
+      <li>
+        <a href ="${path}searchWork/premiumUrgent.html" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-6.png"> งานสหกิจ/พาร์ทไทม์
+        </a>
+      </li>
+      <li>
+        <a href ="่${path}article/article.html" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-7.png"> บทความ
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <ul>
+          <li>
+            <a href="${path}article/hrSociety.html" class="menu-mobile"> HR Society</a>
+          </li>
+          <li>
+            <a href="${path}article/inspiration.html" class="menu-mobile"> Inspiration</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="menu-mobile"> วาไรตี้ 
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="${path}article/new.html" class="menu-mobile">ข่าวน่าสนใจ</a>
+              </li>
+              <li>
+                <a href="${path}article/activity.html" class="menu-mobile">กิจกรรม</a>
+              </li>
+              <li>
+                <a href="${path}article/knowledge.html" class="menu-mobile">คลังความรู้</a>
+              </li>
+              <li>
+                <a href="${path}article/lifeStyle.html" class="menu-mobile">Lifestyle</a>
+              </li>
+              <li>
+                <a href="${path}article/jobEat.html" class="menu-mobile">จ๊อบชวนเจี๊ยะ</a>
+              </li>
+              <li>
+                <a href="${path}article/vdo.html" class="menu-mobile">วีดีโอ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href ="่javascript:void(0)" class="menu-mobile">
+          <img src ="${path}assets/images/iconMenuHomeMobile-8.png"> เกี่ยวกับจ๊อบบีเคเค
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <ul>
+          <li>
+            <a href="" class="menu-mobile"> ข่าวและกิจกรรม</a>
+          </li>
+          <li>
+            <a href="${path}contact/contact.html" class="menu-mobile"> ติดต่อเรา</a>
+          </li>
+          <li>
+            <a href="${path}work_with_us/work_with_us.html" class="menu-mobile"> ร่วมงานกับเรา</a>
+          </li>
+          <li>
+            <a href="" class="menu-mobile"> แนะนำการใช้งานเว็ปไซต์</a>
+          </li>
+          <li>
+            <a href="" class="menu-mobile"> อัตราค่าโฆษณา</a>
+          </li>
+          <li>
+            <a href="" class="menu-mobile"> วิธีการชำระเงิน</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>`;
 // end menu mobile
 
-document.getElementsByClassName("topbar")[0].innerHTML = topbar;
+document.querySelector(".topbar").innerHTML = topbar;
+
+// active menu
+const theFirst = document.querySelectorAll(".theFirst");
+
+theFirst.forEach((theFirst) => {
+  if (theFirst.getAttribute("href").includes(loPath)) {
+    theFirst.className = "theFirst active";
+  }
+});
+// end active menu
+
+// ค้นหาประวัติ
+const theThird = document.querySelectorAll(".theFirst")[3];
+
+if (loPath === "resumeUrgentPremium.html") {
+  theThird.classList.add("active");
+}
+// end ค้นหาประวัติ
+
+// menu ภูมิภาค
+const theFour = document.querySelectorAll(".theFirst")[4],
+  theFour1 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[0],
+  theFour2 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[1],
+  theFour3 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[2],
+  theFour4 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[3],
+  theFour5 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[4],
+  theFour6 = theFour.nextElementSibling.querySelectorAll(".dropdownItem")[5];
+
+if (
+  loPath === "regionCenter.html" ||
+  loPath === "regionEast.html" ||
+  loPath === "regionNorth.html" ||
+  loPath === "regionEastNorth.html" ||
+  loPath === "regionSouth.html" ||
+  loPath === "regionWest.html"
+) {
+  theFour.classList.add("active");
+}
+if (loPath === "regionCenter.html") {
+  theFour1.classList.add("active");
+}
+if (loPath === "regionEast.html") {
+  theFour2.classList.add("active");
+}
+if (loPath === "regionNorth.html") {
+  theFour3.classList.add("active");
+}
+if (loPath === "regionEastNorth.html") {
+  theFour4.classList.add("active");
+}
+if (loPath === "regionSouth.html") {
+  theFour5.classList.add("active");
+}
+if (loPath === "regionWest.html") {
+  theFour6.classList.add("active");
+}
+// end menu ภูมิภาค
+
+// menu บทความ
+const theSix = document.querySelectorAll(".theFirst")[6],
+  theSix1 = theSix.nextElementSibling.querySelectorAll(".dropdownItem")[0],
+  theSix2 = theSix.nextElementSibling.querySelectorAll(".dropdownItem")[1],
+  theSixSub1 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[0],
+  theSixSub2 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[1],
+  theSixSub3 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[2],
+  theSixSub4 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[3],
+  theSixSub5 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[4],
+  theSixSub6 = theSix.nextElementSibling
+    .querySelectorAll(".dropdown-item")[2]
+    .nextElementSibling.querySelectorAll(".dropdownItem")[5];
+
+if (
+  loPath === "hrSociety.html" ||
+  loPath === "knowledge.html" ||
+  loPath === "inspiration.html" ||
+  loPath === "jobEat.html" ||
+  loPath === "lifeStyle.html" ||
+  loPath === "vdo.html" ||
+  loPath === "new.html"
+) {
+  theSix.classList.add("active");
+}
+if (loPath === "hrSociety.html") {
+  theSix1.classList.add("active");
+} else if (loPath === "inspiration.html") {
+  theSix2.classList.add("active");
+} else if (loPath === "new.html") {
+  theSixSub1.classList.add("active");
+} else if (loPath === "activity.html") {
+  theSixSub2.classList.add("active");
+} else if (loPath === "knowledge.html") {
+  theSixSub3.classList.add("active");
+} else if (loPath === "lifeStyle.html") {
+  theSixSub4.classList.add("active");
+} else if (loPath === "jobEat.html") {
+  theSixSub5.classList.add("active");
+} else if (loPath === "vdo.html") {
+  theSixSub6.classList.add("active");
+}
+// end menu บทความ
+
+// menu เกี่ยวกับ จ็อบบีเคเค
+const the_seven = document.querySelectorAll(".theFirst")[7],
+  the_sub_seven1 =
+    the_seven.nextElementSibling.querySelectorAll(".dropdownItem")[1],
+  the_sub_seven2 =
+    the_seven.nextElementSibling.querySelectorAll(".dropdownItem")[2];
+
+if (loPath === "work_with_us.html" || loPath === "contact.html") {
+  the_seven.classList.add("active");
+}
+if (loPath === "contact.html") {
+  the_sub_seven1.classList.add("active");
+}
+if (loPath === "work_with_us.html") {
+  the_sub_seven2.classList.add("active");
+}
+// end menu เกี่ยวกับ จ็อบบีเคเค
 
 $(document).ready(function () {
   // slide menu
@@ -552,19 +456,24 @@ $(document).ready(function () {
 });
 
 function link() {
-  var linked = location.href;
-  window.open(linked, "_blank");
+  window.open(location.href, "_blank");
 }
 
 $(".dropdownMenuUser").on("click", (evt) => {
   evt.stopPropagation();
 });
 
-$(".dropdownList").click(() => {
-  let next = $(".dropdownList").next();
-  if (next.hasClass("dropdownNone")) {
-    next.removeClass("dropdownNone");
-  } else {
-    next.addClass("dropdownNone");
-  }
+const dropdownLists = document.querySelectorAll(".dropdownList");
+dropdownLists.forEach((dropdownList) => {
+  dropdownList.addEventListener("click", dropdown_open);
 });
+
+function dropdown_open(e) {
+  dropdownLists.forEach((dropdownList) => {
+    if (dropdownList.nextElementSibling.classList.contains("dropdownNone")) {
+      dropdownList.nextElementSibling.classList.remove("dropdownNone");
+    }
+    dropdownList.nextElementSibling.classList.add("dropdownNone");
+  });
+  e.target.nextElementSibling.classList.remove("dropdownNone");
+}

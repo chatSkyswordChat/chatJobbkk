@@ -1,133 +1,188 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ผู้ประกอบการ</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ผู้ประกอบการ</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="css/loginBusiness.css" />
+  </head>
 
-	<link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/css/all.min.css">
-	<link rel="stylesheet" href="../assets/css/main.css">
-	<link rel="stylesheet" href="css/loginBusiness.css">
-</head>
+  <body class="clWhitetGray">
+    <div class="bodyCenter">
+      <section class="container">
+        <article class="row">
+          <div class="col-12">
+            <section class="bgLogin">
+              <!-- left -->
+              <div class="loginLeft">
+                <section style="width: 100%">
+                  <h1 class="fontHead textRed text-center">ผู้ประกอบการ</h1>
 
-<body class="clWhitetGray">
-	<section class="container">
-		<article class="row">
-			<div class="col-12">
-				<section class="bgLogin">
-					<!-- left -->
-					<div class="loginLeft">
-						<h1 class="fontHead mb-5 textRed">ผู้ประกอบการ</h1>
+                  <div class="lineDashUrgent"></div>
 
-						<section class="flexBody">
-							<h6 class="text-center mb-3 font-weight-bold">เข้าสู่ระบบด้วยชื่อผู้ใช้งาน และรหัสผ่าน</h6>
-							<div class="alertText p-3 mb-3 text-center">
-								<p><i class="fa fa-exclamation-circle" aria-hidden="true"></i> กรุณากรอกชื่อผู้ใช้งาน
-									และรหัสผ่าน</p>
-							</div>
-							<div class="flexForm">
-								<div class="form-group has-primary has-feedback hasJobbkk">
-									<span class="fa fa-user form-control-feedback form-control-feed"
-										aria-hidden="true"></span>
-									<input type="text" class="form-control form-control-back" aria-describedby="text"
-										placeholder="username">
-								</div>
-							</div>
+                  <section class="flexBody">
+                    <h6 class="text-center mb-5 font-weight-bold">
+                      เข้าสู่ระบบด้วยชื่อผู้ใช้งาน และรหัสผ่าน
+                    </h6>
 
-							<div class="flexForm">
-								<div class="form-group has-primary has-feedback hasJobbkk">
-									<span class="fa fa-lock form-control-feedback form-control-feed"
-										aria-hidden="true"></span>
-									<input type="password" class="form-control form-control-back"
-										aria-describedby="text" placeholder="password">
-								</div>
-							</div>
+                    <div class="flexForm mb-4">
+                      <div
+                        class="form-group has-primary has-feedback hasJobbkk"
+                      >
+                        <span
+                          class="
+                            fa fa-user
+                            form-control-feedback form-control-feed
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control form-control-back"
+                          aria-describedby="text"
+                          placeholder="username"
+                        />
+                      </div>
+                    </div>
 
-							<ul class="enterBack mb-3">
-								<li><button>เข้าสู่ระบบ</button></li>
-								<li><a href="../index.html">กลับหน้าแรก</a></li>
-							</ul>
+                    <div class="flexForm">
+                      <div
+                        class="form-group has-primary has-feedback hasJobbkk"
+                      >
+                        <span
+                          class="
+                            fa fa-lock
+                            form-control-feedback form-control-feed
+                          "
+                          aria-hidden="true"
+                        ></span>
+                        <input
+                          type="password"
+                          class="form-control form-control-back"
+                          aria-describedby="text"
+                          placeholder="password"
+                        />
+                      </div>
+                    </div>
 
-							<ul class="forget">
-								<li><label><input type="checkbox"> เข้าสู่ระบบอัตโนมัติ</label></li>
-								<li><a href="javascript:void(0)">ลืมรหัสผ่าน</a></li>
-								<li><a href="registerBusiness.html" class="clickRegis">สมัครสมาชิก คลิก</a></li>
-							</ul>
-						</section>
-					</div>
-					<!-- end left -->
+                    <div class="text-right mb-5" style="width: 100%">
+                      <p class="fontSubText textRed">
+                        <i
+                          class="fa fa-exclamation-circle"
+                          aria-hidden="true"
+                        ></i>
+                        กรุณากรอกชื่อผู้ใช้งาน และรหัสผ่าน
+                      </p>
+                    </div>
 
-					<!-- right -->
-					<div class="loginRight">
-						<h2 class="fontHead textRed mb-3">ต้องการคนด่วน เริ่มงานทันที</h2>
-						<div class="register mb-3">
-							<a href="#">สมัครสมาชิก.. ที่นี่</a>
-						</div>
+                    <ul class="enterBack mb-3">
+                      <li>
+                        <button type="button" class="alertLogin">
+                          เข้าสู่ระบบ
+                        </button>
+                      </li>
+                      <li><a href="./registerBusiness.html">สมัครสมาชิก</a></li>
+                    </ul>
 
-						<ul class="theStep">
-							<li>เพียงแค่ 2 ขั้นตอนประกาศ</li>
-							<li>1. สร้างประกาศตาแหน่งงาน</li>
-							<li class="stepTwo">2. กดปุ่มเปิด ระบบงานด่วน</li>
-						</ul>
+                    <ul class="forget">
+                      <li>
+                        <label
+                          ><input type="checkbox" /> เข้าสู่ระบบอัตโนมัติ</label
+                        >
+                      </li>
+                      <li><a href="javascript:void(0)">ลืมรหัสผ่าน</a></li>
+                    </ul>
+                  </section>
+                </section>
 
-						<div class="lineDashUrgent"></div>
+                <section class="text-right home" style="width: 100%">
+                  <p><a href="../index.html">กลับหน้าแรก</a></p>
+                </section>
+              </div>
+              <!-- end left -->
 
-						<div class="searchFour">
-							<h2 class="fontHead mb-3">กับ 4 ตัวช่วยค้นหา ให้ได้คนเร็วขึ้น</h2>
-							<div class="boxFour">
-								<div class="flexFour">
-									<figure>
-										<img src="images/icon1.png" alt="">
-									</figure>
-									<div>
-										<h6 class="textRed font-weight-bold">Urgent Jobs System</h6>
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eveniet?</p>
-									</div>
-								</div>
+              <!-- right -->
+              <div class="loginRight">
+                <h2 class="fontHead textRed">ต้องการคนด่วน เริ่มงานทันที</h2>
+                <ul class="theStep">
+                  <li>เพียงแค่ 2 ขั้นตอนประกาศ</li>
+                  <li>1. สร้างประกาศตาแหน่งงาน</li>
+                  <li class="stepTwo">2. กดปุ่มเปิด ระบบงานด่วน</li>
+                </ul>
 
-								<div class="flexFour">
-									<figure>
-										<img src="images/icon2.png" alt="">
-									</figure>
-									<div>
-										<h6 class="textRed font-weight-bold">Resume Urgent</h6>
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eveniet?</p>
-									</div>
-								</div>
+                <div class="lineDashUrgent"></div>
 
-								<div class="flexFour">
-									<figure>
-										<img src="images/icon3.png" alt="">
-									</figure>
-									<div>
-										<h6 class="textRed font-weight-bold">JOBFAIR ONLINE</h6>
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eveniet?</p>
-									</div>
-								</div>
+                <div class="searchFour mb-5">
+                  <h2 class="fontSubHead mb-3">
+                    กับ 2 ตัวช่วยค้นหา ให้ได้คนเร็วขึ้น
+                  </h2>
+                  <div class="boxFour">
+                    <div class="flexFour">
+                      <figure>
+                        <img src="images/icon1.png" alt="" />
+                      </figure>
+                      <div>
+                        <h6 class="textRed font-weight-bold">
+                          Urgent Jobs System
+                        </h6>
+                        <p>
+                          ระบบเพิ่มจำนวนผู้สมัครงานแบบเร่งด่วน
+                          จากการเปิดฟังก์ชันงานด่วน
+                          โดยจะเปลี่ยนสถานะจากประกาศงานแบบปกติให้เป็น
+                          ประกาศงานด่วน
+                          เพื่อนำตำแหน่งงานของท่านขึ้นสู้พื้นที่การแสดงผลที่ดีที่สุดของ
+                          JOBBKK
+                        </p>
+                      </div>
+                    </div>
 
-								<div class="flexFour">
-									<figure>
-										<img src="images/icon4.png" alt="">
-									</figure>
-									<div>
-										<h6 class="textRed font-weight-bold">Resume Prompt</h6>
-										<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, eveniet?</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- end right -->
-				</section>
-			</div>
-		</article>
-	</section>
-</body>
-<script src="../assets/js/jquery-3.5.1.min.js"></script>
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+                    <div class="flexFour">
+                      <figure style="flex-basis: 4.2rem; max-width: 4.2rem">
+                        <img src="images/icon2.png" alt="" />
+                      </figure>
+                      <div>
+                        <h6 class="textRed font-weight-bold">Resume Urgent</h6>
+                        <p>
+                          เรซูเม่ของผู้สมัครงานที่ กดปุ่มต้องการงานด่วน
+                          เพื่อแสดงสถานะความพร้อมในการสัมภาษณ์และเริ่มงานได้ทันที
+                          ภายใน 7, 15 และ 30 วัน ตามระยะเวลาที่ผู้สมัครกำหนด
+                          ฟังก์ชันนี้ จะช่วยให้ HR
+                          ใช้เวลาในการค้นหาเรซูเม่ง่ายขึ้น
+                          เพื่อมีเวลาในการสกรีนทักษะหรือความสามารถในการทำงานของผู้สมัครมากขึ้น
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <figure class="owner">
+                  <img src="images/owner.svg" alt="" />
+                </figure>
+              </div>
+              <!-- end right -->
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <!--backtotop-->
+      <a href="javascript:void(0)" class="cd-top">Top</a>
+      <div id="policy"></div>
+    </div>
+  </body>
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/backToTop.js"></script>
+  <script src="../assets/js/sweetalert2@10.js"></script>
+  <script src="../assets/components/pathActive.js"></script>
+  <script src="../assets/components/cookiePolicy.js"></script>
+  <script src="js/alert.js"></script>
 </html>

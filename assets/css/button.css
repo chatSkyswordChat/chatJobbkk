@@ -1,0 +1,57 @@
+.btn_red {
+  background: var(--clRed);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  color: var(--clWhite);
+  border: none;
+}
+.btn_red:hover {
+  background: var(--clRedHover);
+  color: var(--clWhite);
+}
+
+.btn_green {
+  background: var(--clGreen);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  color: var(--clWhite);
+  border: none;
+}
+.btn_green:hover {
+  background: var(--clGreenHover);
+}
+
+.btn_white {
+  background: var(--clWhite);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  color: var(--clBlackGray);
+  border: 1px solid var(--clBlackGray);
+}
+.btn_white:hover {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+}
+
+.btn_sky {
+  background: var(--clSky);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  color: var(--clWhite);
+  border: none;
+}
+.btn_sky:hover {
+  background: var(--clSkyHover);
+}
+
+.btn_black {
+  background: var(--clWhite);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  color: var(--clBlackGray);
+  border: 0.1rem solid var(--clBlackGray);
+}
+.btn_black:hover {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+}

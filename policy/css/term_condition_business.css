@@ -1,0 +1,16 @@
+#policy_business span, #policy_business h6{
+    color: var(--clRed);
+}
+#policy_business .step > div{
+    display: grid; grid-template-columns: 1.8rem 1fr; grid-gap: 1.5rem;
+}
+#policy_business .step > div a:hover{
+    text-decoration: underline !important;
+}
+#policy_business .step .sub_list div{
+    display: grid; grid-template-columns: 3.2rem 1fr; grid-gap: 1.5rem;
+}
+
+@media (max-width: 768px){
+    #pagePolicy h6{ text-align: left;}
+}

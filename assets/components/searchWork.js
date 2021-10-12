@@ -1,442 +1,576 @@
-var searchWork = ''
+const positionHits = [
+  "พนักงานขาย",
+  "Sale Engineer",
+  "Digital Marketing",
+  "Programmer",
+  "Call Center",
+  "AE",
+  "เจ้าหน้าที่บัญชีต้นทุน",
+];
 
-searchWork += `<div class="container">`
-searchWork += `<div class="row">`
-searchWork += `<div class="col-12">`
-searchWork += `<section class="gridFilter">`
+const careers = [
+  {
+    id: 1,
+    name: "Part-time / พนักงานสัญญาจ้าง",
+    collapes: [
+      "นักศึกษาฝึกงาน",
+      "พนักงาน part-time",
+      "พนักงานสัญญาจ้าง",
+      "สหกิจศึกษา",
+    ],
+  },
+  {
+    id: 2,
+    name: "กฎหมาย",
+    collapes: ["กฎหมาย อื่นๆ", "ทนายความ", "ที่ปรึกษาด้านกฎหมาย", "นักกฎหมาย"],
+  },
+  {
+    id: 3,
+    name: "ก่อสร้าง",
+    collapes: [
+      "ก่อสร้าง ควบคุมอาคาร",
+      "ก่อสร้างอื่นๆ",
+      "ช่าง/คนงานทั่วไป",
+      "ตรวจสอบอาคาร/สำรวจ",
+    ],
+  },
+];
 
-// ประเภทงานทั้งหมด (สาขาอาชีพ)
-searchWork += `<div class="dropdown dropdownFilter">`
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="searchEllipsis"><i class="fas fa-briefcase"></i>
-                                                ประเภทงานทั้งหมด (สาขาอาชีพ)</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </button>`
+const areas = [
+  {
+    id: 1,
+    name: "กรุงเทพมหานคร",
+    collapes: ["รามคำแหง", "ลาดพร้าว", "รัชดา", "พระราม9"],
+  },
+  {
+    id: 2,
+    name: "เชียงใหม่",
+    collapes: ["ม่อนแจ่ม", "ม่อนอิงดาว", "ม่อนเหนือ", "ม่อนใต้"],
+  },
+  {
+    id: 3,
+    name: "กาญจนบุรี",
+    collapes: ["สังขละบุรี", "ทองผาภูมิ", "ไทรโยค", "ปิล็อค"],
+  },
+];
 
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="workAll">`
+const positions = [
+  "ระดับหัวหน้างาน",
+  "ระดับเจ้าหน้าที่",
+  "ระดับผู้บริหาร",
+  "ระดับหัวหน้าแผนก",
+];
 
-let idWorkall = 0
-let workAlls = [
-    {
-        name: 'Part-time / พนักงานสัญญาจ้าง',
-        collapes: ["นักศึกษาฝึกงาน", "พนักงาน part-time", "พนักงานสัญญาจ้าง", "สหกิจศึกษา"]
-    },
-    {
-        name: "กฎหมาย",
-        collapes: ["กฎหมาย อื่นๆ", "ทนายความ", "ที่ปรึกษาด้านกฎหมาย", "นักกฎหมาย"]
-    },
-    {
-        name: "ก่อสร้าง",
-        collapes: ["ก่อสร้าง ควบคุมอาคาร", "ก่อสร้างอื่นๆ", "ช่าง/คนงานทั่วไป", "ตรวจสอบอาคาร/สำรวจ"]
-    },
-]
-workAlls.forEach((workAll) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-    id="headWork${idWorkall + 1}" type="button" data-toggle="collapse" data-target="#colWork${idWorkall + 1}"
-    aria-expanded="true" aria-controls="colWork${idWorkall + 1}">
-        <span>${workAll.name}</span>
-        <i class="fas fa-chevron-down"></i>
-    </button>`
+const minMoneys = [
+  "10,000 บาท",
+  "20,000 บาท",
+  "30,000 บาท",
+  "40,000 บาท",
+  "50,000 บาท",
+];
+const maxMoneys = [
+  "50,000 บาท",
+  "60,000 บาท",
+  "70,000 บาท",
+  "80,000 บาท",
+  "90,000 บาท",
+];
+const types = ["อสังหาริมทรัพย์", "IT", "บริการ", "รักษาความปลอดภัย"];
+const works = ["งานประจำ", "งานพาร์ทไทม์", "งานนอกเวลา", "งานอิสระ"];
 
-    searchWork += `<div id="colWork${idWorkall + 1}" class="collapse" aria-labelledby="headWork${idWorkall + 1}"
-    data-parent="#workAll">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-            <label><input type="checkbox"> ทั้งหมด</label>
-            <button>ตกลง</button>
-        </div>`
+const transports = [
+  {
+    id: 1,
+    name: "BTS",
+    collapes: [
+      "สถานีหมอชิต",
+      "สถานีสะพานควาย",
+      "สถานีพญาไท",
+      "สถานีราชเทวี",
+      "สถานีสยาม",
+      "สถานีช่องนนทรี",
+    ],
+  },
+  {
+    id: 2,
+    name: "MRT",
+    collapes: [
+      "สถานีลาดพร้าว",
+      "สถานีรัชดา",
+      "สถานีสุทธิสาร",
+      "สถานีห้วยขวาง",
+      "สถานีศูนย์วัฒนธรรม",
+      "สถานีพระราม9",
+    ],
+  },
+  {
+    id: 3,
+    name: "Airport Rail Link",
+    collapes: ["สถานีมักกะสัน", "สถานีรามคำแหง", "สถานีสุวรรณภูมิ"],
+  },
+  {
+    id: 4,
+    name: "รถประจำทาง",
+    collapes: [
+      "สาย 8",
+      "สาย 96",
+      "สาย ปอ.137",
+      "สาย 36ก",
+      "สาย 44",
+      "สาย ปอ 73ก",
+    ],
+  },
+];
 
-    searchWork += `<div class="lineDashUrgent"></div>`
+const others = [
+  "Work From Home",
+  "ยินดีรับนักศึกษาจบใหม่",
+  "ยินดีรับผู้ไม่มีประสบการณ์",
+  "ยินดีรับคนพิการ",
+  "งานด่วน",
+];
 
-    if (workAll.collapes != null && workAll.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < workAll.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${workAll.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idWorkall += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end ประเภทงานทั้งหมด (สาขาอาชีพ)
+const lists = [
+  "พนักงานขาย",
+  "Sale Engineer",
+  "Digital Marketing",
+  "Programmer",
+  "Call Center",
+  "AE",
+  "เจ้าหน้าที่บัญชีต้นทุน",
+];
 
-// สถานที่ทำงานทั้งหมด
-searchWork += `<div class="dropdown dropdownFilter">`
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="searchEllipsis"><i class="fas fa-map-marked-alt"></i>
-                                                สถานที่ทำงานทั้งหมด</span>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </button>`
+let bgSearchPremium = "";
+bgSearchPremium += `
+  <div class="container mb-5">
+    <div class="row">
+      <section class="col-12">
+        ${/*ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์*/ ""}
+        <section class="pt-5">
+          ${/*ปุ่ม ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์*/ ""}
+          <article class="btnList mb-3" id="btnList">
+            <div><button class="btn btnTab active" onclick="searchFilter()">ค้นหาจากตัวกรองข้อมูล</button></div>
+            <div><button class="btn btnTab" onclick="searchPim()">ค้นหาจากการพิมพ์</button></div>
+          </article>
+          ${/*end ปุ่ม ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์*/ ""}
 
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="areaAll">`
+          ${/*เริ่มการค้นหาจากตัวกรองข้อมูล*/ ""}
+          <div class="dataFilter mb-5" id="selectFilter">
+            <h2 class="fontSubHead textRed mb-3">เริ่มการค้นหาจากตัวกรองข้อมูล</h2>
+            <section class="hiddenText">
+              <h6 class="mb-3 fontText font-weight-bold">ตำแหน่งงานยอดนิยม</h6>
+              <ul class="flexPositionHit mb-3">
+                ${positionHits
+                  .map(
+                    (positionHit) => `
+                <li class="mr-2 mb-2 fontSubText">
+                  <a href="${path}searchWork/premiumUrgent.html">${positionHit}</a>
+                </li>
+                `
+                  )
+                  .join("\n")}
+              </ul>
+            </section>
 
-idArea = 0
-let areas = [
-    {
-        name: "กรุงเทพมหานคร",
-        collapes: ["รามคำแหง", "ลาดพร้าว", "รัชดา", "พระราม9"],
-    },
-    {
-        name: "เชียงใหม่",
-        collapes: ["ม่อนแจ่ม", "ม่อนอิงดาว", "ม่อนเหนือ", "ม่อนใต้"],
-    },
-    {
-        name: "กาญจนบุรี",
-        collapes: ["สังขละบุรี", "ทองผาภูมิ", "ไทรโยค", "ปิล็อค"],
-    },
-]
+            ${/*gridFilter*/ ""}
+            <section class="gridFilter mb-5">
+              ${/*เลือกสาขาอาชีพ*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" 
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-briefcase"></i> เลือกสาขาอาชีพ</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+      
+                <div class="dropdown-menu dropDownScroll">
+                  <article class="accordion" id="accordionExample">
+                    ${careers
+                      .map(
+                        (career) => `
+                    <section>
+                      <button class="btn btn-link btn-block text-left flexPositionPre"
+                        type="button" data-toggle="collapse" data-target="#colCareer${
+                          career.id
+                        }" aria-expanded="true"
+                        aria-controls="colCareer${career.id}">
+                        <span>${career.name}</span>
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+                                            
+                      <div id="colCareer${
+                        career.id
+                      }" class="collapse" aria-labelledby="heading${career.id}" 
+                        data-parent="#accordionExample">
+                        <div class="card-body p-3">
+                          <div class="allWorkList">
+                            <label><input type="checkbox"> ทั้งหมด</label> <button>ตกลง</button>
+                          </div>
+                                            
+                          <div class="lineDashUrgent"></div>
+      
+                          <ul>
+                            ${career.collapes
+                              .map(
+                                (collape) => `
+                            <li><label><input type="checkbox"> ${collape}</label></li>
+                            `
+                              )
+                              .join("\n")}
+                          </ul> 
+                        </div>
+                      </div>
+                    </section>
+                    `
+                      )
+                      .join("\n")}
+                  </article>
+                </div>
+              </div>  
+              ${/*end เลือกสาขาอาชีพ*/ ""}
 
-areas.forEach((area) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-                    id="headArea${idArea + 1}" type="button" data-toggle="collapse" data-target="#colArea${idArea + 1}"
-                    aria-expanded="true" aria-controls="colArea${idArea + 1}">
+              ${/*เลือกสถานที่ทำงาน*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="searchEllipsis"><i class="fas fa-map-marked-alt"></i> เลือกสถานที่ทำงาน</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownScroll">
+                  <article class="accordion" id="accordionExample1">
+                    ${areas
+                      .map(
+                        (area) => `
+                    <section>
+                      <button class="btn btn-link btn-block text-left flexPositionPre" type="button"
+                        data-toggle="collapse" data-target="#colArea${
+                          area.id
+                        }" aria-expanded="true"
+                        aria-controls="colArea${area.id}">
                         <span>${area.name}</span>
                         <i class="fas fa-chevron-down"></i>
-                    </button>`
+                      </button>
 
-    searchWork += `<div id="colArea${idArea + 1}" class="collapse" aria-labelledby="headArea${idArea + 1}" data-parent="#areaAll">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-                        <label><input type="checkbox"> ทั้งหมด</label>
-                        <button>ตกลง</button>
-                    </div>`
+                      <div id="colArea${
+                        area.id
+                      }" class="collapse" aria-labelledby="heading${area.id}"
+                        data-parent="#accordionExample1">
+                        <div class="card-body p-3">
+                          <div class="allWorkList">
+                            <label><input type="checkbox"> ทั้งหมด</label><button>ตกลง</button>
+                          </div>
 
-    searchWork += `<div class="lineDashUrgent"></div>`
+                          <div class="lineDashUrgent"></div>
 
-    if (area.collapes != null && area.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < area.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${area.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idArea += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end สถานที่ทำงานทั้งหมด
+                          <ul>
+                            ${area.collapes
+                              .map(
+                                (collape) => `
+                            <li><label><input type="checkbox"> ${collape}</label></li>
+                            `
+                              )
+                              .join("\n")}
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                    `
+                      )
+                      .join("\n")}
+                    </article>
+                </div>
+              </div>
+              ${/*end เลือกสถานที่ทำงาน*/ ""}
 
-// พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา
-searchWork += `<div class="form-group">
+              ${/*เลือกระดับการทำงาน*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-layer-group"></i> เลือกระดับการทำงาน</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu">
+                  ${positions
+                    .map(
+                      (position) => `
+                  <a class="dropdown-item" href="javascript:void(0)">${position}</a>
+                  `
+                    )
+                    .join("\n")}
+                </div>
+              </div>
+              ${/*end เลือกระดับการทำงาน*/ ""}
+
+              ${/*เลือกเงินเดือนที่ต้องการ ต่ำสุด*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการต่ำสุด</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu dropDownHeight">
+                  ${minMoneys
+                    .map(
+                      (minMoney) => `
+                  <a class="dropdown-item" href="javascript:void(0)">${minMoney}</a>
+                  `
+                    )
+                    .join("\n")}
+                </div>
+              </div>
+              ${/*end เลือกเงินเดือนที่ต้องการ สูงสุด*/ ""}
+
+              ${/*เลือกเงินเดือนที่ต้องการ สูงสุด*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการสูงสุด</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu dropDownHeight">
+                  ${maxMoneys
+                    .map(
+                      (maxMoney) => `
+                  <a class="dropdown-item" href="javascript:void(0)">${maxMoney}</a>
+                  `
+                    )
+                    .join("\n")}
+                </div>
+              </div>
+              ${/*end เลือกเงินเดือนที่ต้องการ สูงสุด*/ ""}
+
+              ${/*เลือกประเภทธุรกิจ*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-building"></i> เลือกประเภทธุรกิจ</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu dropDownHeight">
+                  ${types
+                    .map(
+                      (type) => `
+                  <a class="dropdown-item" href="javascript:void(0)">${type}</a>
+                  `
+                    )
+                    .join("\n")}
+                </div>
+              </div>
+              ${/*end เลือกประเภทธุรกิจ*/ ""}
+
+              ${/*เลือกรูปแบบงาน*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-user-tie"></i> เลือกรูปแบบงาน</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu">
+                  ${works
+                    .map(
+                      (work) => `
+                  <a class="dropdown-item" href="javascript:void(0)">${work}</a>
+                  `
+                    )
+                    .join("\n")}
+                </div>
+              </div>
+              ${/*end เลือกรูปแบบงาน*/ ""}
+
+              ${/*เลือกการเดินทาง*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis"><i class="fas fa-bus"></i> เลือกการเดินทาง</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownAuto">
+                  <article class="accordion" id="accordionExampleTransport">
+                    ${transports
+                      .map(
+                        (transport) => `
+                    <section>
+                      <button class="btn btn-link btn-block text-left flexPositionPre" type="button"
+                        data-toggle="collapse" data-target="#colTransport${
+                          transport.id
+                        }"
+                        aria-expanded="true" aria-controls="colTransport${
+                          transport.id
+                        }">
+                        <span>${transport.name}</span>
+                        <i class="fas fa-chevron-down"></i>
+                      </button>
+
+                      <div id="colTransport${transport.id}" class="collapse"
+                        aria-labelledby="heading${
+                          transport.id
+                        }" data-parent="#accordionExampleTransport">
+                        <div class="card-body p-3">
+                          <section class="flexTransport_list" style="border: none">
+                            <ul>
+                              ${transport.collapes
+                                .map(
+                                  (collape) => `
+                              <li><label><input type="checkbox"> ${collape}</label></li>
+                              `
+                                )
+                                .join("\n")}
+                            </ul>
+
+                            <div class="allWorkList allWorkList_transport">
+                              <label><button>ตกลง</button>
+                            </div>
+                          </section>
+                        </div>
+                      </div>
+                    </section>
+                    `
+                      )
+                      .join("\n")}
+                  </article>
+                </div>
+              </div>
+              ${/*end เลือกการเดินทาง*/ ""}
+
+              ${/*อื่นๆ*/ ""}
+              <div class="dropdown dropdownFilter">
+                <button class="form-control formControl buttonFilter" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="searchEllipsis other"><i class="fab fa-ethereum"></i> อื่นๆ ( เลือกได้มากกว่า 1 )</span>
+                  <i class="fas fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-menu dropDownMenu dropDownHeightAuto">
+                  <div class="px-3 pt-3">
+                    <div class="allWorkList">
+                      <label><input type="checkbox"> ทั้งหมด</label><button id="confirm_other">ตกลง</button>
+                    </div>
+                  </div>
+
+                  <div class="lineDashUrgent px-3"></div>
+
+                  <div>
+                    ${others
+                      .map(
+                        (other) => `
+                    <a class="dropdown-item other" data-value="${other}" style="padding: .25rem 15px">
+                      <label><input type="checkbox" /> ${other}</label>
+                    </a>
+                    `
+                      )
+                      .join("\n")}
+                  </div>
+                </div>
+              </div>
+              ${/*end อื่นๆ*/ ""}
+            </section>
+            ${/*end gridFilter*/ ""}
+
+            ${/*ค้นหา รีเซ็ตเงื่อนไข*/ ""}
+            <div class="searchColumn fontSubHead">
+              <section class="flexSearch_condition">
+                <div class="search"><button>ค้นหา</button></div>
+                <div class="resetCondition"><button>รีเซ็ตเงื่อนไข</button></div>
+              </section>
+            </div>
+            ${/*end ค้นหา รีเซ็ตเงื่อนไข*/ ""} 
+          </div>
+          ${/*end เริ่มการค้นหาจากตัวกรองข้อมูล*/ ""}
+
+          ${/*เริ่มการค้นหาจากการพิมพ์*/ ""}
+          <div class="dataFilter mb-5" id="searchPim">
+            <h2 class="fontSubHead textRed mb-3">เริ่มการค้นหาจากการพิมพ์</h2>
+            <section class="gridFilterPim mb-3">
+              ${/*พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา*/ ""}
+              <div class="form-group">
                 <div class="inputSearch">
-                    <span class="iconSearch"><i class="fas fa-search"></i></span>
-                    <input type="email" class="form-control formControl formClLeft" id="exampleInputEmail1" 
-                    list="dataList" placeholder="พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา">
-                    <datalist id="dataList">
-                        <option value="พนักงานขาย">
-                        <option value="Web Designer">
-                        <option value="Graphic Designer">
-                        <option value="พนักงานสวน">
-                        <option value="การตลาด">
-                        <option value="Call Center">
-                    </datalist>
+                  <span class="iconSearch"><i class="fas fa-search"></i></span>
+                  <input type="email" class="form-control formControl formClLeft"
+                    id="exampleInputEmail1" placeholder="พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา">
                 </div>
-            </div>`
-// end พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา
+              </div>
+              ${/*end พิมพ์ชื่อตำแหน่งงานหรือคำค้นหา*/ ""}
+                                  
+              <div class="search pim fontSubHead"><button>ค้นหา</button></div>
 
-// เลือกเงินเดือนที่ต้องการ ต่ำสุด
-searchWork += `<div class="dropdown dropdownFilter">`;
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด</span>`;
-searchWork += `<i class="fas fa-chevron-down"></i>`;
-searchWork += `</button>`;
-
-searchWork += `<div class="dropdown-menu dropDownMenu">`;
-let minMoneys = ["10,000 บาท", "20,000 บาท", "30,000 บาท", "40,000 บาท", "50,000 บาท"];
-for (let minMoney = 0; minMoney < minMoneys.length; minMoney++) {
-  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${minMoneys[minMoney]}</a>`;
-}
-searchWork += `</div>`;
-searchWork += `</div>`;
-// end เลือกเงินเดือนที่ต้องการ ต่ำสุด
-
-// เลือกเงินเดือนที่ต้องการ สูงสุด
-searchWork += `<div class="dropdown dropdownFilter">`;
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ สูงสุด</span>`;
-searchWork += `<i class="fas fa-chevron-down"></i>`;
-searchWork += `</button>`;
-
-searchWork += `<div class="dropdown-menu dropDownMenu">`;
-let maxMoneys = ["50,000 บาท", "60,000 บาท", "70,000 บาท", "80,000 บาท", "90,000 บาท"];
-for (let maxMoney = 0; maxMoney < maxMoneys.length; maxMoney++) {
-  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${maxMoneys[maxMoney]}</a>`;
-}
-searchWork += `</div>`;
-searchWork += `</div>`;
-// end เลือกเงินเดือนที่ต้องการ สูงสุด
-
-// เลือกรูปแบบงานทั้งหมด
-searchWork += `<div class="hiddenMobile">
-                <label class="selectCus">
-                    <select class="form-control formControl">
-                        <option value="">เลือกรูปแบบงานทั้งหมด</option>
-                        <option>งานประจำ</option>
-                        <option>งานนอกเวลา</option>
-                        <option>งานอิสระ</option>
-                        <option>นักศึกษาฝึกงาน</option>
-                    </select>
-                </label>
-            </div>`
-// end เลือกรูปแบบงานทั้งหมด
-
-// เลือกการเดินทาง
-searchWork += `<div class="dropdown dropdownFilter hiddenMobile">`
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="searchEllipsis"><i class="fas fa-bus"></i> เลือกการเดินทาง</span>
-                        <i class="fas fa-chevron-down"></i>
-            </button>`
-
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="transport">`
-
-let idTransport = 0
-let transports = [
-    {
-        name: "BTS",
-        collapes: ["สถานีหมอชิต", "สถานีสะพานควาย", "สถานีพญาไท", "สถานีราชเทวี", "สถานีสยาม", "สถานีช่องนนทรี"],
-    },
-    {
-        name: "MRT",
-        collapes: ["สถานีลาดพร้าว", "สถานีรัชดา", "สถานีสุทธิสาร", "สถานีห้วยขวาง", "สถานีศูนย์วัฒนธรรม", "สถานีพระราม9"],
-    },
-    {
-        name: "Airport Rail Link",
-        collapes: ["สถานีมักกะสัน", "สถานีรามคำแหง", "สถานีสุวรรณภูมิ"],
-    },
-    {
-        name: "รถประจำทาง",
-        collapes: ["สาย 8", "สาย 96", "สาย ปอ.137", "สาย 36ก", "สาย 44", "สาย ปอ 73ก"],
-    }
-];
-transports.forEach((transport) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-                    id="headTransport${idTransport + 1}" type="button" data-toggle="collapse" 
-                    data-target="#coltransport${idTransport + 1}"
-                    aria-expanded="true" aria-controls="coltransport${idTransport + 1}">
-                        <span>${transport.name}</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>`
-
-    searchWork += `<div id="coltransport${idTransport + 1}" class="collapse" aria-labelledby="headTransport${idTransport + 1}" 
-                        data-parent="#transport">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-                    <label><input type="checkbox"> ทั้งหมด</label>
-                    <button>ตกลง</button>
-                   </div>`
-
-    searchWork += `<div class="lineDashUrgent"></div>`
-
-    if (transport.collapes != null && transport.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < transport.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${transport.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idTransport += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end เลือกการเดินทาง
-
-// อื่นๆ
-searchWork += `<div class="grid4 hiddenMobile">
-                <div class="clWhite flexOther formControl borderStyle border10">
-                    <p><i class="fab fa-ethereum"></i> อื่นๆ</p>
-                    <label><input type="checkbox"> ยินดีรับนักศึกษาจบใหม่</label>
-                    <label><input type="checkbox"> ยินดีรับผู้ไม่มีประสบการณ์</label>
-                    <label><input type="checkbox"> ยินดีรับคนพิการ</label>
-                    <label><input type="checkbox"> งานด่วน</label>
-                </div>
-            </div>`
-// end อื่นๆ
-
-// search Mobile
-searchWork += `<div class="accordion" id="searchHidden">`
-searchWork += `<div id="colSearch" class="collapse" aria-labelledby="search1" data-parent="#searchHidden">`
-searchWork += `<div class="flexGap">`
-
-// เลือกเงินเดือนที่ต้องการ ต่ำสุด mobile
-searchWork += `<div class="dropdown dropdownFilter">`;
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ ต่ำสุด</span>`;
-searchWork += `<i class="fas fa-chevron-down"></i>`;
-searchWork += `</button>`;
-
-searchWork += `<div class="dropdown-menu dropDownMenu">`;
-for (let minMoney = 0; minMoney < minMoneys.length; minMoney++) {
-  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${minMoneys[minMoney]}</a>`;
-}
-searchWork += `</div>`;
-searchWork += `</div>`;
-// end เลือกเงินเดือนที่ต้องการ ต่ำสุด mobile
-
-// เลือกเงินเดือนที่ต้องการ สูงสุด mobile
-searchWork += `<div class="dropdown dropdownFilter">`;
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">`;
-searchWork += `<span class="searchEllipsis"><i class="fas fa-money-bill-wave"></i> เลือกเงินเดือนที่ต้องการ สูงสุด</span>`;
-searchWork += `<i class="fas fa-chevron-down"></i>`;
-searchWork += `</button>`;
-
-searchWork += `<div class="dropdown-menu dropDownMenu">`;
-for (let maxMoney = 0; maxMoney < maxMoneys.length; maxMoney++) {
-  searchWork += `<a class="dropdown-item" href="javascript:void(0)">${maxMoneys[maxMoney]}</a>`;
-}
-searchWork += `</div>`;
-searchWork += `</div>`;
-// end เลือกเงินเดือนที่ต้องการ สูงสุด mobile
-
-// เลือกรูปแบบงานทั้งหมด mobile
-searchWork += `<div>
-                <label class="selectCus">
-                    <select class="form-control formControl">
-                        <option value="">เลือกรูปแบบงานทั้งหมด</option>
-                        <option>งานประจำ</option>
-                        <option>งานนอกเวลา</option>
-                        <option>งานอิสระ</option>
-                        <option>นักศึกษาฝึกงาน</option>
-                    </select>
-                </label>
-            </div>`
-// end เลือกรูปแบบงานทั้งหมด mobile
-
-// เลือกการเดินทาง mobile
-searchWork += `<div class="dropdown dropdownFilter">`
-searchWork += `<button class="form-control formControl buttonFilter" type="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="searchEllipsis"><i class="fas fa-bus"></i> เลือกการเดินทาง</span>
-                        <i class="fas fa-chevron-down"></i>
-            </button>`
-
-searchWork += `<div class="dropdown-menu dropDownScroll">`
-searchWork += `<article class="accordion" id="transportMobile">`
-
-transports.forEach((transport) => {
-    searchWork += `<section>`
-    searchWork += `<button class="btn btn-link btn-block text-left flexPositionPre"
-                    id="headTransport${idTransport + 1}" type="button" data-toggle="collapse" 
-                    data-target="#coltransport${idTransport + 1}"
-                    aria-expanded="true" aria-controls="coltransport${idTransport + 1}">
-                        <span>${transport.name}</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>`
-
-    searchWork += `<div id="coltransport${idTransport + 1}" class="collapse" aria-labelledby="headTransport${idTransport + 1}" 
-                        data-parent="#transportMobile">`
-    searchWork += `<div class="card-body p-3">`
-    searchWork += `<div class="allWorkList">
-                    <label><input type="checkbox"> ทั้งหมด</label>
-                    <button>ตกลง</button>
-                   </div>`
-
-    searchWork += `<div class="lineDashUrgent"></div>`
-
-    if (transport.collapes != null && transport.collapes != '') {
-        searchWork += `<ul>`
-        for (let collape = 0; collape < transport.collapes.length; collape++) {
-            searchWork += `<li><label><input type="checkbox"> ${transport.collapes[collape]}</label></li>`
-        }
-        searchWork += `</ul>`
-    }
-    searchWork += `</div>`
-    searchWork += `</div>`
-    searchWork += `</section>`
-    idTransport += 1
-})
-searchWork += `</article>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end เลือกการเดินทาง mobile
-
-// อื่นๆ mobile
-searchWork += `<div class="grid4">
-                <div class="clWhite flexOther formControl borderStyle border10">
-                    <p><i class="fab fa-ethereum"></i> อื่นๆ</p>
-                        <label><input type="checkbox"> ยินดีรับนักศึกษาจบใหม่</label>
-                        <label><input type="checkbox"> ยินดีรับผู้ไม่มีประสบการณ์</label>
-                        <label><input type="checkbox"> ยินดีรับคนพิการ</label>
-                        <label><input type="checkbox"> งานด่วน</label>
-                    </div>
-                </div>`
-// end อื่นๆ mobile
-
-searchWork += `</div>`
-searchWork += `</div>`
-searchWork += `</div>`
-// end search Mobile
-
-// tag
-searchWork += `<div class="grid3">
-                <ul class="flexAndWork">
-                    <li><a href="javascript:void(0)" onclick="link()">หางานด่วน</a></li>
-                    <li><a href="javascript:void(0)" onclick="link()">หางานบริษัทใหม่</a></li>
-                    <li><a href="javascript:void(0)" onclick="link()">หางานตำแหน่งใหม่</a></li>
-                    <li><a href="javascript:void(0)" onclick="link()">Job Fair</a></li>
-                    <li><a href="javascript:void(0)" onclick="link()">หางานพาร์ทไทม์</a></li>
+              <section class="hiddenText">
+                <h6 class="mb-3 fontText font-weight-bold">คำค้นหายอดนิยม</h6>
+                <ul class="flexPositionHit">
+                  ${lists
+                    .map(
+                      (list) => `
+                  <li class="mr-2 mb-2 fontSubText"><a href="javascript:void(0)" onclick="link()">${list}</a></li>
+                  `
+                    )
+                    .join("\n")}
                 </ul>
-            </div>`
-// end tag
+              </section>
+            </section>
+          </div>
+          ${/*end เริ่มการค้นหาจากการพิมพ์*/ ""}
+        </section>
+        ${/*end ค้นหาจากตัวกรองข้อมูล ค้นหาจากการพิมพ์*/ ""}
+      </section>
+    </div>
+  </div>`;
 
-// รายละเอียดเพิ่มเติม
-searchWork += `<div id="search1">
-                    <button class="btn btn-link btn-block text-center" type="button"
-                        data-toggle="collapse" data-target="#colSearch" aria-expanded="true" aria-controls="colSearch">
-                        รายละเอียดเพิ่มเติม
-                    </button>
-                </div>`
-// end รายละเอียดเพิ่มเติม
+document.querySelector(".bgSearchPremium").innerHTML = bgSearchPremium;
 
-// หางาน
-searchWork += `<div class="submitColumn">
-                    <div class="submit">
-                        <button>รีเซตเงื่อนไข</button>
-                        <button>หางาน</button>
-                    </div>
-                </div>`
-// end หางาน
+// เลือก filter หรือ ค้นหาจากการพิมพ์
+$("#searchPim").css({ display: "none" });
 
-searchWork += `</section>`
-searchWork += `</div>`
-searchWork += `</div>`
-searchWork += `</div>`
+// ค้นหาจาก filter
+function searchFilter() {
+  $("#selectFilter").css({ display: "block" });
+  $("#searchPim").css({ display: "none" });
+  $(".btnTab").removeClass("active");
+}
 
-document.getElementsByClassName('searchWork')[0].innerHTML = searchWork
+// ค้นหาจากพิมพ์
+function searchPim() {
+  $("#searchPim").css({ display: "block" });
+  $("#selectFilter").css({ display: "none" });
+  $(".btnTab").removeClass("active");
+}
+
+let container = document.getElementById("btnList");
+let btns = container.getElementsByClassName("btn");
+console.log(btns);
+for (let index = 0; index < btns.length; index++) {
+  btns[index].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+// end เลือก filter หรือ ค้นหาจากการพิมพ์
 
 // เลือกตรงดรอปดาว
-$(document).on("click", ".dropDownScroll", function (e) {
+$(document).on(
+  "click",
+  ".dropDownScroll, .dropDownAuto, .dropDownHeightAuto",
+  function (e) {
     e.stopPropagation();
-});
+  }
+);
 
 // ตัดคำ
 $(".searchEllipsis").dotdotdot({
-    height: 24,
-    fallbackToLetter: true,
-    watch: true,
+  height: 24,
+  fallbackToLetter: true,
+  watch: true,
 });
+
+// กดตกลง เพื่อปิดดรอปดาว ตรง filter
+const ddd = document.querySelectorAll(".allWorkList button");
+for (let index = 0; index < ddd.length; index++) {
+  ddd[index].addEventListener("click", () => {
+    ddd[index].closest(".dropdown-menu").classList.toggle("show");
+  });
+}

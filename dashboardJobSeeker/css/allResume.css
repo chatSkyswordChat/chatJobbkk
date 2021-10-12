@@ -1,0 +1,326 @@
+.headResume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.headResume h2 {
+  flex: 1 0 auto;
+}
+.formControl {
+  border-radius: 50px;
+}
+
+.flexWang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.flexWang > * {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+.flexWang > *:last-child {
+  text-align: right;
+}
+
+.flexLumdab {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.flexLumdab p {
+  flex: 1 0 auto;
+}
+
+.create a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 0 1.5rem;
+  min-height: calc(3.2rem + 2px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.create a:hover {
+  background: var(--clRedHover);
+  color: var(--clWhite);
+}
+
+@media (max-width: 768px) {
+  .flexWang {
+    flex-wrap: wrap;
+  }
+  .flexWang > * {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .flexWang > *:last-child {
+    text-align: center;
+  }
+  .flexLumdab {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+thead tr th:not(.first),
+tbody tr td:not(.first) {
+  text-align: center;
+  vertical-align: middle;
+}
+tbody tr td:not(.first) {
+  vertical-align: middle;
+}
+
+.succes {
+  background: var(--clGreen);
+  border: 1px solid var(--clGreen);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.succes:hover {
+  background: var(--clGreenHover);
+  border: 1px solid var(--clGreenHover);
+}
+
+.offline {
+  background: var(--clGray);
+  border: 1px solid var(--clGray);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+.offline:hover {
+  background: var(--clBlackGray);
+  border: 1px solid var(--clBlackGray);
+}
+
+.danger {
+  color: var(--clRed);
+  text-decoration: underline;
+}
+.warning {
+  color: var(--clOrange);
+  text-decoration: underline;
+}
+.noPerfect {
+  color: var(--clYellow);
+  text-decoration: underline;
+}
+
+button.download {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+button.download.resumeOnline {
+  background: var(--clGreen);
+  border: 1px solid var(--clGreen);
+  color: var(--clWhite);
+}
+button.download.resumeOffline {
+  background: var(--clGray);
+  border: 1px solid var(--clGray);
+  color: var(--clBlackGray);
+}
+button.download.resumeOnline:hover {
+  background: var(--clGreenHover);
+  border: 1px solid var(--clGreenHover);
+}
+button.reveal {
+  background: var(--clOrange);
+  border: 1px solid var(--clOrange);
+  color: var(--clWhite);
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+}
+button.reveal:hover {
+  background: var(--clOrangeHover);
+  border: 1px solid var(--clOrangeHover);
+  color: var(--clWhite);
+}
+
+.flexThree {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.flexThree button.addResume {
+  color: var(--clSky);
+  background: transparent;
+  border: 0;
+}
+.flexThree button.addResume:hover {
+  text-decoration: underline;
+}
+
+.flexThree a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+.flexThree a:hover {
+  background: var(--clRedHover);
+  color: var(--clWhite);
+}
+
+.flexThree button.delete {
+  background: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  color: var(--textBlackGray);
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+.flexThree button.delete:hover {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+}
+
+.langResume {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.langResume .me {
+  background: var(--clGreen);
+  border: 1px solid var(--clGreen);
+  color: var(--clWhite);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.langResume .notme {
+  background: var(--clGray);
+  border: 1px solid var(--clGray);
+  color: var(--clBlackGray);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.me,
+.notme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name a {
+  color: var(--clSky);
+}
+.name a:hover {
+  text-decoration: underline !important;
+}
+
+.table-responsive {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.table-responsive::-webkit-scrollbar {
+  height: 10px;
+}
+.table-responsive::-webkit-scrollbar-track {
+  background: var(--clWhitetGray);
+  border-radius: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: var(--clGray);
+  border-radius: 10px;
+}
+
+.gridNote {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  grid-gap: 15px;
+}
+.number {
+  background: var(--clGreen);
+  border-radius: 50px;
+  padding: 5px 10px;
+  color: var(--clWhite);
+}
+
+@media (max-width: 1200px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 1.5rem;
+  }
+  .table td {
+    position: relative;
+    padding-left: 51%;
+    background: var(--clWhite);
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: var(--clWhitetGray);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .tbody tr:nth-child(even) {
+    background: inherit;
+  }
+  .table.table-bordered {
+    border: none;
+  }
+  tbody tr td:not(.first) {
+    text-align: inherit;
+  }
+  .flexThree {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 991px) {
+  .gridNote {
+    align-items: baseline;
+  }
+}
+
+.boxReveal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.boxReveal li label {
+  cursor: pointer;
+}
+.revealHide ~ ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  background: var(--clWhitetGray);
+  border-radius: 0.5rem;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.revealHide ~ ul.open {
+  opacity: 1;
+  visibility: visible;
+}

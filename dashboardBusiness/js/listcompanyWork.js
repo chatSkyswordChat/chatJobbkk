@@ -8,7 +8,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '3 วันที่แล้ว',
-        classActive: '',
         target: 'ด่วน',
         color: 'urgent'
     },
@@ -21,7 +20,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '7 วันที่แล้ว',
-        classActive: 'active',
         target: 'ด่วน',
         color: 'urgent'
     },
@@ -34,7 +32,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '1 วันที่แล้ว',
-        classActive: 'active',
         target: 'ด่วน',
         color: 'urgent'
     },
@@ -47,7 +44,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '12 วันที่แล้ว',
-        classActive: 'active',
         target: 'ใหม่',
         color: 'new'
     },
@@ -60,7 +56,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '30 วันที่แล้ว',
-        classActive: '',
         target: 'ด่วน',
         color: 'urgent'
     },
@@ -73,7 +68,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '3 วันที่แล้ว',
-        classActive: '',
         target: 'ใหม่',
         color: 'new'
     },
@@ -86,7 +80,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '3 วันที่แล้ว',
-        classActive: 'active',
         target: 'ด่วน',
         color: 'urgent'
     },
@@ -99,7 +92,6 @@ var gridWorks = [
         exp: 'ยินดีรับนักศึกษาจบใหม่ / ผู้ไม่มีประสบการณ์ / ผู้พิการ',
         transport: 'MRT ลาดพร้าว / BTS สะพานควาย',
         time: '7 วันที่แล้ว',
-        classActive: '',
         target: 'ใหม่',
         color: 'new'
     },
@@ -169,9 +161,12 @@ gridWorks.forEach((gridWork) => {
                 <li><button class="share" data-toggle="tooltip"
                         data-placement="bottom" title="แชร์ตำแหน่งงาน"><i
                             class="fas fa-share-alt"></i></button></li>
-                <li><button class="save ${gridWork.classActive}" data-toggle="tooltip"
+                <li>
+                    <button class="save" data-toggle="tooltip"
                         data-placement="bottom" title="บันทึกงานไว้ดูภายหลัง"><i
-                            class="fas fa-heart"></i></button></li>
+                            class="fas fa-heart"></i>
+                    </button>
+                </li>
                 <li><button class="applyNow">สมัครงานด่วน</button></li>
             </ul>
         </section>

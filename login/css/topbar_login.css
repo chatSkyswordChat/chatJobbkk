@@ -1,0 +1,10 @@
+.flexTop{ display: flex; align-items: center; justify-content: space-between; position: relative;}
+
+.flexLang{ display: flex; align-items: center; justify-content: center; gap: 15px;}
+.flexLang button{ border-radius: 5px; background: var(--clWhite); border: 1px solid var(--clBlackGray); 
+    color: var(--clBlackGray);}
+.flexLang button:hover{ background: var(--clRedHover); border: 1px solid var(--clRedHover); color: var(--clWhite);}
+.flexLang button.active{ background: var(--clRed); border: 1px solid var(--clRed); color: var(--clWhite);}
+/* .flexLang div:not(:last-child){
+    border-right: 1px solid var(--clBlackGray); padding-right: 15px;
+} */

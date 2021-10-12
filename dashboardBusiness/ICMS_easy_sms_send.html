@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICMS Easy SMS ส่งข้อความ</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/animations.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="../assets/css/topbar.css" />
+    <link rel="stylesheet" href="../assets/css/policy.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/topbarJobSeeker.css" />
+    <link rel="stylesheet" href="../assets/css/topbarBusiness.css" />
+
+    <link rel="stylesheet" href="css/dashboardBusiness.css" />
+    <link rel="stylesheet" href="css/menu_icms.css" />
+    <link rel="stylesheet" href="css/icon_status.css" />
+    <link rel="stylesheet" href="css/status.css" />
+    <link rel="stylesheet" href="css/ICMS_easy_sms.css" />
+    <link rel="stylesheet" href="css/ICMS_easy_sms_send.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <article class="row">
+        <div class="col-12">
+          <!-- topbar -->
+          <article class="topbar">
+            <!-- assets/components/topbar.js -->
+          </article>
+          <!-- end topbar -->
+
+          <!-- menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+          <article class="clWhitetGray calC businessMenuShow">
+            <!-- userMenuShow businessMenuShow -->
+            <!-- assets/components/topBarBusiness.js -->
+            <!-- assets/components/topBarJobSeeker.js -->
+          </article>
+          <!-- end  menu show ผู้สมัครงาน และ ผู้ประกอบการ -->
+
+          <article class="mt-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumbJobbkk">
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="javascript:void(0)">Library</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  จัดการใบสมัครงาน iCMS
+                </li>
+              </ol>
+            </nav>
+
+            <div class="lineDash"></div>
+
+            <article class="menu_icms mb-5">
+              <!-- js/menu_icms.js -->
+            </article>
+
+            <section class="clWhitetGray borderRadiusStyle p-3 mb-5">
+              <article class="gridBoard">
+                <!-- left -->
+                <div>
+                  <!-- profile -->
+                  <section id="profile">
+                    <!-- js/profile.js -->
+                  </section>
+                  <!-- end profile -->
+
+                  <section
+                    id="menuDashboardBusiness"
+                    class="clWhite borderRadiusStyle py-3"
+                  >
+                    <!-- js/menuDashboard.js -->
+                  </section>
+                </div>
+                <!-- end left -->
+
+                <!-- right -->
+                <div>
+                  <section
+                    id="buttonUseBusiness"
+                    class="clWhite borderRadiusStyle p-3"
+                  >
+                    <article class="flexInfo">
+                      <div>
+                        <h2 class="fontSubHead">จัดการใบสมัครงาน ICMS</h2>
+                        <h6>ใบสมัคร Fast Resume / EASY SMS</h6>
+                      </div>
+                      <div class="text-right">
+                        <h6 class="textRed fontText font-weight-bold">
+                          เข้าสู่ระบบล่าสุด
+                        </h6>
+                        <p>10 ก.ย. 2020 | 14:09</p>
+                      </div>
+                    </article>
+
+                    <div class="lineDashUrgent"></div>
+
+                    <article class="mb-5">
+                      <ul class="flexButtonBusiness">
+                        <!-- js/button_businessFive.js -->
+                      </ul>
+                    </article>
+
+                    <article>
+                      <!-- เครดิต เหลือวันใช้งาน -->
+                      <section class="credit mb-3">
+                        <!-- js/group_sms.js -->
+                      </section>
+                      <!-- end เครดิต เหลือวันใช้งาน -->
+
+                      <!-- สมุดโทรศัพท์ กลุ่มรายชื่อ ส่งข้อความ ประวัติการส่ง -->
+                      <section id="group">
+                        <!-- js/group_sms.js -->
+                      </section>
+                      <!-- end สมุดโทรศัพท์ กลุ่มรายชื่อ ส่งข้อความ ประวัติการส่ง -->
+
+                      <form>
+                        <section class="write_form mb-5">
+                          <div>
+                            <p>เบอร์สำหรับติดต่อกลับ</p>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="เบอร์สำหรับติดต่อกลับ"
+                            />
+                          </div>
+                          <div>
+                            <p>เบอร์โทรศัพท์</p>
+                            <article>
+                              <div class="mb-3">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="เบอร์โทรศัพท์"
+                                />
+                              </div>
+                              <ul>
+                                <li>
+                                  <button
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#add_name"
+                                  >
+                                    เพิ่มรายชื่อติดต่อ
+                                  </button>
+                                </li>
+                                <li>
+                                  <button
+                                    type="button"
+                                    data-toggle="modal"
+                                    data-target="#add_group"
+                                  >
+                                    เพิ่มรายชื่อกลุ่ม
+                                  </button>
+                                </li>
+                              </ul>
+                            </article>
+                          </div>
+                          <div>
+                            <p>ข้อความ</p>
+                            <div class="text_area">
+                              <textarea
+                                class="form-control"
+                                rows="10"
+                                placeholder="ข้อความ"
+                              ></textarea>
+                              <small
+                                >Thai 150 character/sms (130 / 150) / 1
+                                sms</small
+                              >
+                            </div>
+                          </div>
+                          <div>
+                            <p>ส่งวันที่</p>
+                            <div class="date_area">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="date"
+                              />
+                              <small class="textRed"
+                                >* ส่งได้สูงสุด 250 เบอร์ / ครั้ง</small
+                              >
+                            </div>
+                          </div>
+                        </section>
+                        <div class="mb-5">
+                          <button type="submit" class="send">ส่ง</button>
+                        </div>
+                      </form>
+
+                      <!-- modal เพิ่มรายชื่อติดต่อ -->
+                      <div
+                        class="modal fade close_modal"
+                        id="add_name"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modalDialog">
+                          <div
+                            class="modal-content"
+                            style="max-width: 57.6rem; margin: 0 auto"
+                          >
+                            <div class="modal-header">
+                              <div class="flexHeadModal">
+                                <h2 class="fontSubHead textWhite lineH">
+                                  จากสมุดโทรศัพท์
+                                </h2>
+                              </div>
+                              <button
+                                type="button"
+                                class="close fontSuperHead textWhite"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true"
+                                  ><i class="fas fa-times-circle"></i
+                                ></span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body">
+                              <div class="list_phone">
+                                <p class="font-weight-bold">
+                                  รายชื่อผู้ติดต่อ :
+                                </p>
+                                <div>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>ฉัตรทอง หงส์วิสุทธิกุล</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Skysword</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Dynastystrike</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Chat_Skysword</p></label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer modalFooter flexFooter">
+                              <button
+                                class="btn_red successReport"
+                                type="button"
+                                data-dismiss="modal"
+                              >
+                                บันทึก
+                              </button>
+                              <button
+                                class="btn_white"
+                                type="button"
+                                data-dismiss="modal"
+                              >
+                                ยกเลิก
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end modal เพิ่มรายชื่อติดต่อ -->
+
+                      <!-- modal จากกลุ่ม -->
+                      <div
+                        class="modal fade close_modal"
+                        id="add_group"
+                        tabindex="-1"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modalDialog">
+                          <div
+                            class="modal-content"
+                            style="max-width: 57.6rem; margin: 0 auto"
+                          >
+                            <div class="modal-header">
+                              <div class="flexHeadModal">
+                                <h2 class="fontSubHead textWhite lineH">
+                                  จากกลุ่ม
+                                </h2>
+                              </div>
+                              <button
+                                type="button"
+                                class="close fontSuperHead textWhite"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true"
+                                  ><i class="fas fa-times-circle"></i
+                                ></span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body">
+                              <div class="list_phone">
+                                <p class="font-weight-bold">รายชื่อกลุ่ม :</p>
+                                <div>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>ฉัตรทอง หงส์วิสุทธิกุล</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Skysword</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Dynastystrike</p></label
+                                  >
+                                  <label>
+                                    <input type="checkbox" />
+                                    <p>Chat_Skysword</p></label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal-footer modalFooter flexFooter">
+                              <button
+                                class="btn_red successReport"
+                                type="button"
+                                data-dismiss="modal"
+                              >
+                                บันทึก
+                              </button>
+                              <button
+                                class="btn_white"
+                                type="button"
+                                data-dismiss="modal"
+                              >
+                                ยกเลิก
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end modal จากกลุ่ม -->
+                    </article>
+                  </section>
+                </div>
+                <!-- end right -->
+              </article>
+            </section>
+          </article>
+        </div>
+      </article>
+
+      <!-- footer -->
+      <footer class="calC footerJobbkk">
+        <!-- assets/components/footer.js -->
+      </footer>
+      <!-- end footer -->
+    </section>
+
+    <!--backtotop-->
+    <a href="javascript:void(0)" class="cd-top">Top</a>
+    <div id="policy"></div>
+
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/slide-menu.js"></script>
+    <script src="../assets/js/backToTop.js"></script>
+    <script src="../assets/js/sweetalert2@10.js"></script>
+
+    <script src="../assets/components/pathActive.js"></script>
+    <script src="../assets/components/topBarBusiness.js"></script>
+    <script src="../assets/components/footer.js"></script>
+    <script src="../assets/components/cookiePolicy.js"></script>
+
+    <script src="js/tooltip.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/menuDashboard.js"></script>
+    <script src="js/button_businessFive.js"></script>
+    <script src="js/menu_icms.js"></script>
+    <script src="js/group_sms.js"></script>
+
+    <script>
+      // ดำเนินการเรียบร้อยแล้ว
+      $(".successReport").on("click", () => {
+        Swal.fire({
+          title: "ดำเนินการเรียบร้อยแล้ว",
+          icon: "success",
+          showConfirmButton: false,
+          timer: 2000,
+        });
+      });
+      // end ดำเนินการเรียบร้อยแล้ว
+
+      // validae credit มีพอหรือไม่ อันนี้ทำให้ดูว่า มันจะแสดงอะไรบ้าง ไม่ต้องสนใจ js ตัวนี้
+      const form = document.querySelector("form"),
+        date = document.querySelector("#date");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        send_data();
+      });
+
+      const send_data = () => {
+        date_val = date.value.trim();
+
+        if (date_val === "") {
+          Swal.fire({
+            title: "จำนวนเครดิตไม่เพียงพอ",
+            icon: "warning",
+            showCancelButton: true,
+            showconfirmButton: true,
+            confirmButtonText: "สั่งซื้อ",
+            cancelButtonText: "ยกเลิก",
+          }).then((result) => {
+            if (result.value) {
+              window.location.href =
+                "https://www.jobbkk.com/orders/shopping/credit";
+            }
+          });
+        } else {
+          Swal.fire({
+            title: "ดำเนินการเรียบร้อยแล้ว",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2000,
+          });
+        }
+      };
+      // end validae credit มีพอหรือไม่ อันนี้ทำให้ดูว่า มันจะแสดงอะไรบ้าง ไม่ต้องสนใจ js ตัวนี้
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+#group ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+#group ul li a {
+  background: var(--clWhitetGray);
+  color: var(--clBlackGray);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+#group ul li a:hover,
+#group ul li a.active {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+}

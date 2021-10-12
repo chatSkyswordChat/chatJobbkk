@@ -1,0 +1,425 @@
+.workUrgent {
+  border: 1px solid var(--clGray);
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--clWhite);
+}
+.gridRecomment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.gridRecomment a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  text-align: center;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+.gridRecomment a:hover {
+  background: var(--clRedHover);
+}
+.gridUrgentRec {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.flexPic {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 15px;
+}
+.flexPic figure {
+  border: 1px solid var(--clGray);
+  border-radius: 50%;
+  max-width: 80px;
+  height: 80px;
+  width: 100%;
+}
+.flexPic img {
+  max-width: 80px;
+  height: 80px;
+  object-fit: scale-down;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@media (max-width: 991px) {
+  .gridUrgentRec {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+  }
+  .gridUrgentRec > * {
+    min-width: 250px;
+  }
+  .workUrgent:hover {
+    margin-top: 0;
+  }
+}
+
+.workUrgent {
+  transition: 0.5s ease-in-out;
+}
+.workUrgent a {
+  width: 100%;
+}
+.workUrgent:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+}
+.workUrgent p {
+  color: var(--clBlackGray);
+}
+
+.linkLink a:hover {
+  text-decoration: underline !important;
+  color: var(--clRedHover);
+}
+.flexIn {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 15px;
+  width: 100%;
+}
+
+.gridUnder {
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  grid-gap: 15px;
+}
+.gridUnder .btnApply {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.gridUnder .btnApply button {
+  background: var(--clWhite);
+  border: 0.1rem solid var(--clBlackGray);
+  color: var(--clBlackGray);
+  border-radius: 5rem;
+  min-height: calc(3.2rem + 2px);
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.gridUnder .btnApply button:hover {
+  background: var(--clBlackGray);
+  color: var(--clWhite);
+}
+.gridUnder .btnApply button.save.active {
+  background: var(--clSky);
+  border: 0.1rem solid var(--clSky);
+  color: var(--clWhite);
+}
+.gridUnder .btnApply button.apply {
+  background: var(--clRed);
+  border: 0.1rem solid var(--clRed);
+  color: var(--clWhite);
+}
+.gridUnder .btnApply button.apply:hover {
+  background: var(--clRedHover);
+  border: 0.1rem solid var(--clRedHover);
+}
+.gridUnder p {
+  font-size: var(--fontSubText);
+}
+
+.gridListWork {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-gap: 15px;
+}
+.flexTimeWork {
+  flex: 1 0 30%;
+  max-width: 30%;
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .gridListWork {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexTimeWork {
+    flex: 1 0 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+  .flexIn {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .gridUnder {
+    grid-template-columns: 1fr;
+  }
+  .gridUnder .btnApply {
+    justify-content: flex-start;
+  }
+}
+
+.workAll {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.workAll a {
+  display: block;
+  padding: 5px;
+}
+.workAll a:hover {
+  background: var(--clGray);
+  margin-left: 5px;
+  color: var(--clBlackGray);
+}
+
+.workHit {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.workHit a {
+  display: block;
+  padding: 5px;
+}
+.workHit a:hover {
+  background: var(--clGray);
+  margin-left: 5px;
+  color: var(--clBlackGray);
+}
+
+.careerHit {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.careerHit a {
+  display: block;
+  padding: 5px;
+}
+.careerHit a:hover {
+  background: var(--clGray);
+  margin-left: 5px;
+  color: var(--clBlackGray);
+}
+
+.tagHit {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.tagHit ul {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
+.tagHit a {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--clWhite);
+  border: 1px solid var(--clBlackGray);
+  border-radius: 50px;
+}
+.tagHit a:hover {
+  background: var(--clRed);
+  color: var(--clWhite);
+  border: 1px solid var(--clRed);
+}
+
+.popUpUrgent {
+  background: var(--clWhite);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--clBlackGray);
+  text-align: center;
+  position: sticky;
+  top: 15px;
+  z-index: 10;
+  max-width: 312px;
+  height: auto;
+}
+.popUpUrgent button {
+  padding: 5px 20px;
+  border: 1px solid var(--clGreen);
+  border-radius: 50px;
+  color: var(--clWhite);
+}
+.popUpUrgent button:hover {
+  background: var(--clGreenHover);
+}
+
+@media (max-width: 991px) {
+  .bannerUrgent {
+    display: none;
+  }
+  .workAll,
+  .workHit,
+  .careerHit,
+  .tagHit {
+    display: none;
+  }
+  .popUpUrgent {
+    max-width: 100%;
+  }
+}
+
+.jobSearch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .jobSearch {
+    grid-template-columns: 1fr;
+  }
+}
+
+.flexCheck {
+  display: flex !important;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
+  grid-gap: 15px;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.form-check {
+  padding: 0;
+}
+.formCheckInput {
+  margin-top: 0;
+  position: relative;
+}
+
+.socialShare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.socialShare a {
+  width: 60px;
+  height: 60px;
+  border: 0;
+}
+.socialShare a:hover {
+  transform: scale(1.2);
+}
+.socialShare a.fb {
+  background: url(../images/social-01.svg) top center no-repeat;
+  background-size: cover;
+}
+.socialShare a.tw {
+  background: url(../images/social-02.svg) top center no-repeat;
+  background-size: cover;
+}
+.socialShare a.line {
+  background: url(../images/social-06.svg) top center no-repeat;
+  background-size: cover;
+}
+.socialShare a.link {
+  background: url(../images/social-07.svg) top center no-repeat;
+  background-size: cover;
+}
+.socialShare a.google {
+  background: url(../images/social-08.svg) top center no-repeat;
+  background-size: cover;
+}
+.tableResume thead th {
+  text-align: center;
+}
+.tableResume thead th,
+.tableResume tbody td {
+  vertical-align: middle;
+}
+.tableResume thead th:nth-child(2) {
+  width: 40rem;
+}
+.tableResume tbody td:not(:nth-child(2)) {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 1.5rem;
+  }
+  .table td {
+    position: relative;
+    padding-left: 51%;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background: var(--clWhitetGray);
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background: var(--clWhite) !important;
+  }
+  .table.table-bordered {
+    border: none;
+  }
+  .tableResume tbody td:not(:nth-child(2)) {
+    text-align: left;
+  }
+}
+
+.createCopyResume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.noResume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.createCopyResume a,
+.noResume a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clRed);
+  color: var(--clWhite);
+  border-radius: 5rem;
+  min-height: calc(3.2rem + 2px);
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.createCopyResume a:hover,
+.noResume a:hover {
+  background: var(--clRedHover);
+}
+
+@media (max-width: 480px) {
+  .createCopyResume {
+    flex-direction: column;
+  }
+}
+
+.detailText a {
+  width: auto;
+  display: inline-block;
+}

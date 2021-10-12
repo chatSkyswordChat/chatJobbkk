@@ -1,0 +1,173 @@
+button * {
+  pointer-events: none;
+}
+.grid_setting_user {
+  display: grid;
+  grid-template-columns: 1fr 15rem;
+  grid-gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.1rem dashed var(--clBlackGray);
+}
+.grid_setting_user.no_align {
+  align-items: flex-start;
+}
+.grid_setting_name.no_align {
+  align-items: flex-start;
+}
+.grid_setting_user .grid_setting_name {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+.grid_setting_name.no_align {
+  align-items: flex-start;
+}
+.grid_setting_user .grid_setting_name.hidden {
+  display: none;
+}
+.grid_setting_user .grid_setting_name > div section {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  grid-gap: 1.5rem;
+}
+.grid_setting_user .grid_setting_name h6 {
+  text-align: right;
+}
+.grid_setting_show > div label {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  grid-gap: 1.5rem;
+}
+
+.grid_setting_user .grid_setting_show > section > div {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+.grid_setting_user .grid_setting_show .input {
+  position: relative;
+}
+.grid_setting_user .grid_setting_show h6 {
+  text-align: right;
+}
+.grid_setting_user .grid_setting_show input {
+  border-radius: 5rem;
+  padding-right: 3.5rem;
+}
+.grid_setting_user .grid_setting_show.no_align {
+  align-items: flex-start;
+}
+.grid_setting_user .grid_setting_show {
+  display: none;
+  grid-template-columns: 15rem 1fr;
+  align-items: center;
+  grid-gap: 1.5rem;
+}
+.grid_setting_user .grid_setting_show.open {
+  display: grid;
+}
+.grid_setting_user .btn_setting {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.grid_setting_user .btn_setting button {
+  background: transparent;
+  border: 0;
+}
+.grid_setting_user .btn_setting button:hover {
+  color: var(--clRed);
+  text-decoration: underline;
+}
+.grid_setting_user .btn_setting .edit.hidden {
+  display: none;
+}
+.grid_setting_user .btn_setting .save,
+.grid_setting_user .btn_setting .cancel {
+  display: none;
+}
+
+.grid_setting_user .btn_setting .save.open,
+.grid_setting_user .btn_setting .cancel.open {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .grid_setting_user {
+    align-items: flex-start;
+  }
+  .grid_setting_user .grid_setting_name {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  .grid_setting_user .grid_setting_name h6,
+  .grid_setting_user .grid_setting_show h6 {
+    text-align: left;
+  }
+  .grid_setting_user .grid_setting_show {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+  .grid_setting_user .grid_setting_show > section > div {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .grid_setting_user {
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+}
+
+.buy a {
+  background: var(--clRed);
+  color: var(--clWhite);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5rem;
+  display: inline-block;
+}
+.buy a:hover {
+  background: var(--clRedHover);
+}
+
+#grid_second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+#grid_second .service {
+  border: 0.1rem solid var(--clGray);
+  border-radius: 0.5rem;
+}
+#grid_second .service_helper h6,
+#grid_second .helper h6 {
+  border-bottom: 0.1rem solid var(--clGray);
+}
+#grid_second .service_helper .contact {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-gap: 1.5rem;
+}
+#grid_second .service_helper .contact p:first-child {
+  text-align: right;
+}
+#grid_second .helper a {
+  color: var(--clBlackGray);
+  display: inline-block;
+}
+#grid_second .helper a:hover {
+  text-decoration: underline !important;
+  color: var(--clRed);
+}
+
+@media (max-width: 1200px) {
+  #grid_second {
+    grid-template-columns: 1fr;
+  }
+}
