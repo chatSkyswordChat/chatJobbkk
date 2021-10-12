@@ -1,5 +1,5 @@
 // const path = location.href.split("/").length === 6 ? "" : "../";
-const path = location.pathname.split("/")[2] ? "" : "../";
+const path = location.href.split("/").length === 3 ? "" : "../";
 console.log(path);
 
 // active menu
