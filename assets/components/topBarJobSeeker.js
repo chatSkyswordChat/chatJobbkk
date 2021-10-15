@@ -1,8 +1,8 @@
-// const registers = [
-//   { name: "ผู้สมัครงาน", link: path + "login/loginJobSeeker.html" },
-//   { name: "ผู้ประกอบการ", link: path + "login/loginBusiness.html" },
-//   { name: "สมัครสมาชิก", link: path + "login/register.html" },
-// ];
+const registers = [
+  { name: "ผู้สมัครงาน", link: path + "login/loginJobSeeker.html" },
+  { name: "ผู้ประกอบการ", link: path + "login/loginBusiness.html" },
+  { name: "สมัครสมาชิก", link: path + "login/register.html" },
+];
 
 let topbar = "";
 
